@@ -16,6 +16,8 @@ An open research workspace for a conjecture that putatively persistent incident 
 - [Exact forward-target kinematics](docs/bound_target_kinematics_zh.md) — conservation constraints and composite-target excitations.
 - [Standard scattering baseline](docs/standard_scattering_baseline_zh.md) — NIST coefficients, dynamic structure factor, and falsifiable extra-signal criteria.
 - [Reference baseline code](models/standard_baseline.py) — NIST-based uncollided flux only.
+- [Synthetic spectral identifiability study](docs/spectral_identifiability_zh.md) — likelihood and nuisance degeneracy, **not real experimental data**.
+- [Synthetic spectral analysis code](models/spectral_discrimination.py) — self-contained Poisson counting demonstration.
 
 ## Mathematical starting point
 

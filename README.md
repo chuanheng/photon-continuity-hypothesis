@@ -13,6 +13,9 @@ An open research workspace for a conjecture that putatively persistent incident 
 - [中文假设清单](docs/hypotheses_zh.md) — author's hypotheses and unresolved questions.
 - [Proposed X-ray experiment](experiments/protocol.md) — energy-resolved transmission test and controls.
 - [Python toy simulation](models/attenuation.py) — reproducible, illustrative Monte Carlo; **not a validated transport code**.
+- [Exact forward-target kinematics](docs/bound_target_kinematics_zh.md) — conservation constraints and composite-target excitations.
+- [Standard scattering baseline](docs/standard_scattering_baseline_zh.md) — NIST coefficients, dynamic structure factor, and falsifiable extra-signal criteria.
+- [Reference baseline code](models/standard_baseline.py) — NIST-based uncollided flux only.
 
 ## Mathematical starting point
 
@@ -27,6 +30,8 @@ Alternative toy model: `K ~ Poisson(λx)`, `E_K = E_0(1-α)^K`, giving `E[E(x)] 
 ```bash
 python3 models/attenuation.py
 ```
+
+Run tests with `python3 -m unittest discover -s tests -v` (Python standard library only). Tests check mathematical implementation, **not the truth of the hypothesis**.
 
 Requires Python 3 standard library only. Produces `results.csv` (ignored by Python .gitignore where applicable).
 

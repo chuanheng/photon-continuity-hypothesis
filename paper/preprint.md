@@ -48,7 +48,15 @@ T = sqrt((m_e c²)² + Δ²) - m_e c².
 
 Energy conservation requires T=Δ, which implies 2 m_e c² Δ=0 and therefore Δ=0. Thus **nonzero strictly forward energy loss to a single initially stationary free electron is forbidden** for this two-body final state. A material with internal excitations and collective recoil may have different kinematics, but requires an explicit final state and transition dynamics. See [Chinese derivation](../docs/conservation_zh.md). This constraint is a challenge to, not a confirmation of, the conjecture.
 
-## 6b. Operational distinguishability
+## 6b. Inelastic forward scattering on a composite target
+
+The free-electron restriction does **not** extend to every target with internal states. For an initially stationary composite target of rest energy R=Mc² that transitions to an excited invariant rest energy R+U, exact four-momentum conservation for strictly forward outgoing photon gives
+
+(R+Δ)²−Δ²=(R+U)², hence **Δ=U+U²/(2R)**, subject to E_in>Δ.
+
+Thus forward inelastic energy loss is **kinematically allowed** if U>0. Whether it occurs, and with what probability, requires a material-specific interaction matrix element and dynamical structure factor. Such processes are already within conventional scattering theory and do not imply universal photon survival. See [derivation](../docs/bound_target_kinematics_zh.md) and [reference code](../models/forward_kinematics.py).
+
+## 6c. Operational distinguishability
 
 An energy-resolved detector measures outgoing excitations, not a persistent label identifying a specific incident photon. The proposed test therefore constrains **parameterized additional spectral components**, not the metaphysical persistence of an individually labeled photon. The latter needs an operational definition to become testable.
 

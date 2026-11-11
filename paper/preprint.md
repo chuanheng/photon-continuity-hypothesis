@@ -40,6 +40,18 @@ Use a characterized quasi-monochromatic X-ray beam, aluminum samples of multiple
 
 A specified extra forward degraded-energy component may be excluded by sufficiently sensitive null results. An unrestricted assertion that all surviving photons become arbitrarily undetectable is not falsifiable in this setup. The model lacks a microscopic Hamiltonian, momentum accounting, operational photon-identity definition and explanations for coherent reflection, refraction, polarization, dispersion and thermodynamics. It is **not** a complete competing theory of radiation transport.
 
+## 6a. A conservation-law obstruction for free electrons
+
+Suppose an incident photon of energy E exits with energy E'=E-Δ in exactly the same direction, with Δ>0. The target must receive energy Δ and momentum Δ/c in that direction. For a free electron initially at rest, its recoil kinetic energy would be
+
+T = sqrt((m_e c²)² + Δ²) - m_e c².
+
+Energy conservation requires T=Δ, which implies 2 m_e c² Δ=0 and therefore Δ=0. Thus **nonzero strictly forward energy loss to a single initially stationary free electron is forbidden** for this two-body final state. A material with internal excitations and collective recoil may have different kinematics, but requires an explicit final state and transition dynamics. See [Chinese derivation](../docs/conservation_zh.md). This constraint is a challenge to, not a confirmation of, the conjecture.
+
+## 6b. Operational distinguishability
+
+An energy-resolved detector measures outgoing excitations, not a persistent label identifying a specific incident photon. The proposed test therefore constrains **parameterized additional spectral components**, not the metaphysical persistence of an individually labeled photon. The latter needs an operational definition to become testable.
+
 ## 7. Next steps
 
 Replace the uncollided-only baseline with cross-section-based transport; include detector response and uncertainty; derive conservation-consistent dynamics; invite independent critique before any radiation experiments.

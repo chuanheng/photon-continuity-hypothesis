@@ -18,6 +18,8 @@ An open research workspace for a conjecture that putatively persistent incident 
 - [Reference baseline code](models/standard_baseline.py) — NIST-based uncollided flux only.
 - [Synthetic spectral identifiability study](docs/spectral_identifiability_zh.md) — likelihood and nuisance degeneracy, **not real experimental data**.
 - [Synthetic spectral analysis code](models/spectral_discrimination.py) — self-contained Poisson counting demonstration.
+- [Photoelectric absorption challenge (中文)](docs/photoelectric_absorption_zh.md) — energy accounting, alternative final states and the identity problem.
+- [Photoelectric energy-budget toy code](models/photoelectric_energy_budget.py) — simplified bookkeeping, **not a physical emission model**.
 
 ## Mathematical starting point
 

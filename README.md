@@ -56,3 +56,7 @@ Requires Python 3 standard library only. Produces `results.csv` (ignored by Pyth
 ## Attribution and licensing
 
 The repository's existing MIT LICENSE governs code; paper and documentation licensing will be clarified in a separate version. Please cite a specific commit or eventual archival DOI. A DOI records a public version, **not scientific endorsement**. Contributions and critical review are welcome.
+
+## Direction A (v0.9)
+
+The working research direction retains the **permanent-original-photon postulate as a hypothesis**, not an established fact. See [Chinese postulates and falsifiability constraints](docs/direction_a_postulates_zh.md) and [mathematical sequence demonstrations](models/persistence_sequences.py). The mathematical positivity of finite-step energy sequences does not establish photon persistence in nature.

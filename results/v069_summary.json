@@ -1,0 +1,20 @@
+{
+  "version": "v0.69",
+  "tests_local": "20 passed",
+  "lambda": 0.7,
+  "conditions": [
+    0.2,
+    0.4,
+    0.7,
+    1,
+    1.5,
+    2
+  ],
+  "best_kappa": 0.89202289,
+  "expected_llr": {
+    "100": 22.7415529663,
+    "1000": 227.415529663,
+    "10000": 2274.15529663
+  },
+  "identical_model_llr": 0
+}

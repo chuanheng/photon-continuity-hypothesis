@@ -1,0 +1,13 @@
+Local Python execution; 2026-11-13
+Directory: /mnt/data/photon_v078
+Command: PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.008s
+
+OK
+
+All 11 channel tests and 16 inference tests passed.
+Computed separately with: PYTHONPATH=. python experiments/run_v078.py
+Full verbose test log is included in downloadable photon_v078_complete.zip.
+GitHub Actions independently executed: no.

@@ -1,0 +1,35 @@
+{
+  "version": "v0.74",
+  "scope": "three-qubit Z2 finite-dimensional toy gauge model, not photon QED",
+  "local_tests": {
+    "passed": 33,
+    "failed": 0
+  },
+  "extended_hilbert_dim": 8,
+  "physical_hilbert_dim": 2,
+  "gauss_constraints": 2,
+  "bare_physical_weight": 0.5,
+  "twirled_physical_weight": 0.5,
+  "twirl_projection_frobenius_distance": 0.7071067811865476,
+  "logical_observable_Z": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      -1
+    ]
+  ],
+  "logical_observable_X": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "identity_ancilla_note": "Z_label is gauge-invariant with respect to original generators, though inaccessible by restricted system measurements"
+}

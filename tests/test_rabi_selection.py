@@ -1,0 +1,45 @@
+import pathlib,sys,unittest,math
+sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/'models'))
+from rabi_selection import *
+class TestSelection(unittest.TestCase):
+ def test_01(self): self.assertEqual(parity(0,1),1)
+ def test_10(self): self.assertEqual(parity(1,0),1)
+ def test_03(self): self.assertEqual(parity(0,3),1)
+ def test_12(self): self.assertEqual(parity(1,2),1)
+ def test_00(self): self.assertEqual(parity(0,0),-1)
+ def test_11(self): self.assertEqual(parity(1,1),-1)
+ def test_field_odd(self): self.assertEqual(operator_parity('field_x'),-1)
+ def test_atom_x_odd(self): self.assertEqual(operator_parity('sigma_x'),-1)
+ def test_number_even(self): self.assertEqual(operator_parity('number'),1)
+ def test_z_even(self): self.assertEqual(operator_parity('sigma_z'),1)
+ def test_identity_even(self): self.assertEqual(operator_parity('identity'),1)
+ def test_even_same(self): self.assertTrue(symmetry_allows(1,1,1))
+ def test_even_opposite(self): self.assertFalse(symmetry_allows(1,-1,1))
+ def test_odd_opposite(self): self.assertTrue(symmetry_allows(1,-1,-1))
+ def test_odd_same(self): self.assertFalse(symmetry_allows(1,1,-1))
+ def test_field_raise(self): self.assertEqual(bare_matrix_element('field_x',(0,0),(0,1)),1)
+ def test_field_lower(self): self.assertEqual(bare_matrix_element('field_x',(0,1),(0,0)),1)
+ def test_field_sqrt2(self): self.assertAlmostEqual(bare_matrix_element('field_x',(0,1),(0,2)),math.sqrt(2))
+ def test_field_atom_unchanged(self): self.assertEqual(bare_matrix_element('field_x',(0,1),(1,2)),0)
+ def test_atom_flip(self): self.assertEqual(bare_matrix_element('sigma_x',(0,1),(1,1)),1)
+ def test_atom_flip_no_number_change(self): self.assertEqual(bare_matrix_element('sigma_x',(0,1),(1,2)),0)
+ def test_number_diag(self): self.assertEqual(bare_matrix_element('number',(0,3),(0,3)),3)
+ def test_number_offdiag(self): self.assertEqual(bare_matrix_element('number',(0,3),(0,2)),0)
+ def test_z_ground(self): self.assertEqual(bare_matrix_element('sigma_z',(0,3),(0,3)),-1)
+ def test_z_excited(self): self.assertEqual(bare_matrix_element('sigma_z',(1,3),(1,3)),1)
+ def test_identity_diag(self): self.assertEqual(bare_matrix_element('identity',(1,3),(1,3)),1)
+ def test_identity_offdiag(self): self.assertEqual(bare_matrix_element('identity',(1,3),(0,3)),0)
+ def test_rabi_jc(self): self.assertAlmostEqual(rabi_coupling((0,1),(1,0),.4),.4)
+ def test_rabi_counterrotating(self): self.assertAlmostEqual(rabi_coupling((0,0),(1,1),.4),.4)
+ def test_rabi_same_atom(self): self.assertEqual(rabi_coupling((0,0),(0,1),.4),0)
+ def test_bad_operator(self):
+  with self.assertRaises(ValueError): operator_parity('unknown')
+ def test_bad_parity(self):
+  with self.assertRaises(ValueError): symmetry_allows(0,1,1)
+ def test_bad_basis(self):
+  with self.assertRaises(ValueError): parity(2,0)
+ def test_negative_n(self):
+  with self.assertRaises(ValueError): parity(0,-1)
+ def test_bad_g(self):
+  with self.assertRaises(ValueError): rabi_coupling((0,0),(1,1),float('nan'))
+if __name__=='__main__': unittest.main()

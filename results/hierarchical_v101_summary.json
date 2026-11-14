@@ -1,0 +1,133 @@
+{
+  "version": "v1.01",
+  "model": "Gaussian random walk HOM with 27-point unknown hyperparameter grid and separately calibrated aggregate optical controls",
+  "synthetic_only": true,
+  "truth": {
+    "M0": 0.72,
+    "phase_walk_sd": 0.095,
+    "phase_read_sd": 0.15,
+    "phase_bias": 0
+  },
+  "experimental_settings": {
+    "phase_blocks": 40,
+    "near_shots": 25000,
+    "optical_control_shots_each": 15000,
+    "zero_phase_refs": 80,
+    "latent_draws_per_trial": 240,
+    "M0_grid_points": 251,
+    "hyper_support": {
+      "walk": [
+        0.065,
+        0.095,
+        0.125
+      ],
+      "read": [
+        0.11,
+        0.15,
+        0.19
+      ],
+      "bias": [
+        -0.04,
+        0,
+        0.04
+      ]
+    }
+  },
+  "main_audit": {
+    "outer_per_repeat": 40,
+    "total_outer": 120,
+    "conditions": [
+      {
+        "reads_per_block": 1,
+        "plugin": {
+          "covered": 25,
+          "mean": 0.7136713120125668,
+          "rmse": 0.024337693678296028,
+          "mean_interval_width": 0.056487477246145654
+        },
+        "joint": {
+          "covered": 40,
+          "mean": 0.718434777304654,
+          "rmse": 0.024087267521561373,
+          "mean_interval_width": 0.09894446891766054
+        }
+      },
+      {
+        "reads_per_block": 2,
+        "plugin": {
+          "covered": 34,
+          "mean": 0.7191599334580141,
+          "rmse": 0.018192259291088104,
+          "mean_interval_width": 0.05643838461772024
+        },
+        "joint": {
+          "covered": 40,
+          "mean": 0.7221159418325621,
+          "rmse": 0.018006610250237556,
+          "mean_interval_width": 0.0911824019862452
+        }
+      },
+      {
+        "reads_per_block": 10,
+        "plugin": {
+          "covered": 32,
+          "mean": 0.7167202154740329,
+          "rmse": 0.019222597548190844,
+          "mean_interval_width": 0.05716002606465753
+        },
+        "joint": {
+          "covered": 39,
+          "mean": 0.7173945835009468,
+          "rmse": 0.01887049890214188,
+          "mean_interval_width": 0.0825677324408071
+        }
+      }
+    ]
+  },
+  "off_support_stress": {
+    "reads_per_block": 2,
+    "outer_per_case": 40,
+    "inside": {
+      "plugin_covered": 34,
+      "joint_covered": 39,
+      "plugin_mean": 0.7101851792636049,
+      "joint_mean": 0.712518908944711,
+      "plugin_mean_width": 0.05758343867049209,
+      "joint_mean_width": 0.0926028078635532
+    },
+    "outside": {
+      "true_walk_sd": 0.18,
+      "true_read_sd": 0.24,
+      "true_bias": 0.08,
+      "plugin_covered": 30,
+      "joint_covered": 37,
+      "plugin_mean": 0.7068878190388757,
+      "joint_mean": 0.7076904121752443,
+      "plugin_mean_width": 0.08020159043972677,
+      "joint_mean_width": 0.12420691082363673
+    }
+  },
+  "local_validation": {
+    "tests_passed": 38,
+    "sha256_checked_research_files": 21,
+    "zip_name": "photon_v101_complete.zip",
+    "zip_sha256": "9ace0fe1649d1db4f474d5f716e9799f8533099bd8830a31a148153e283184a9",
+    "figures": 2,
+    "raw_data": [
+      "results/hierarchical_v101.json",
+      "results/misspecified_grid_v101.json"
+    ]
+  },
+  "github_companion": {
+    "test_methods": 24,
+    "remote_CI_verified": false,
+    "byte_identical_to_local": false
+  },
+  "scientific_limitations": [
+    "Controls identify effective c0 and c1 only, not distinct PNR confusion, detector efficiencies, and electronics parameters.",
+    "Grid prior support includes true parameters in main simulation; models outside it can be biased.",
+    "Bayesian 95% equal-tail credible intervals; empirical coverage over 40 datasets, not proven guaranteed 95% frequentist coverage.",
+    "Joint intervals wider and can overcover.",
+    "No independently testable historical photon identity prediction."
+  ]
+}

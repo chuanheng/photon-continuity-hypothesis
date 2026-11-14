@@ -54,6 +54,11 @@ def components(m,p):
     extra=.5*c11+.25*(c20+c02)
     return np.array([two_photon_pair_coincidence(m,p),extra,extra,output_coincidence(0,0,p)])
 
+def source_component_probabilities(overlap,p):
+    """Compatibility alias for the original tested v0.94 source.
+    Used by v0.96 and later calibration models."""
+    return components(overlap,p)
+
 def coincidence_probability(p,far=False):
     return float(components(0 if far else p.overlap,p)@
                  np.array([p.w11,p.w20,p.w02,p.w00]))

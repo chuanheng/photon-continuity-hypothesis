@@ -1,0 +1,27 @@
+v0.93 local test provenance: 2026-11-14
+Command:
+  cd /mnt/data/photon_v093
+  PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.024s
+
+OK
+
+Actual numerical experiment:
+  PYTHONPATH=. python -m experiments.run_v093
+
+Result (100000 Monte Carlo samples):
+  analytic independent-noise HOM overlap = 0.708102263506253
+  simulated overlap = 0.7085353739498544
+  simulated Monte Carlo standard error = 0.0004942348975559645
+  analytic coincidence probability = 0.14594886824687348
+
+Local full ZIP photon_v093_complete.zip has 13 research files whose SHA-256
+digests were compared with the contents of the ZIP, 2 PNG figures, 121-point
+HOM dip curves, and 81-point jitter scans for 4 correlations.
+
+IMPORTANT: GitHub model/tests are separately authored text counterparts.
+They were NOT run in GitHub Actions in this turn, and their byte-level
+equivalence to the locally tested files is not claimed. Passing numerical
+tests is not evidence of permanent historical photon identity.

@@ -1,0 +1,91 @@
+{
+  "version": "v0.95",
+  "target": "intrinsic HOM overlap M0=0.72 (not necessarily time-averaged M)",
+  "synthetic_data_only": true,
+  "outer_per_scenario": 60,
+  "inner_bootstrap_per_outer": 79,
+  "scenarios": {
+    "correct_model": {
+      "covered": 55,
+      "coverage": 0.9166666666666666,
+      "mean_estimate": 0.7195408746434245,
+      "bias": -0.0004591253565754405,
+      "mean_actual_mode": 0.72,
+      "coverage_actual_mean": 0.9166666666666666,
+      "exact_95_ci": [
+        0.8161422166234142,
+        0.972386689662572
+      ]
+    },
+    "live_correlated_click": {
+      "covered": 0,
+      "coverage": 0,
+      "mean_estimate": 0.6789430654807974,
+      "bias": -0.04105693451920256,
+      "mean_actual_mode": 0.72,
+      "coverage_actual_mean": 0,
+      "exact_95_ci": [
+        0,
+        0.05962949228633472
+      ],
+      "q": 0.014
+    },
+    "unresolved_triplets": {
+      "covered": 0,
+      "coverage": 0,
+      "mean_estimate": 0.6237829511102277,
+      "bias": -0.09621704888977223,
+      "mean_actual_mode": 0.72,
+      "coverage_actual_mean": 0,
+      "exact_95_ci": [
+        0,
+        0.05962949228633472
+      ],
+      "triplet_fraction": 0.065
+    },
+    "nonstationary_mode_drift": {
+      "covered": 0,
+      "coverage": 0,
+      "mean_estimate": 0.5325706439427361,
+      "bias": -0.18742935605726385,
+      "mean_actual_mode": 0.5323820945019414,
+      "coverage_actual_mean": 0.95,
+      "exact_95_ci": [
+        0,
+        0.05962949228633472
+      ],
+      "walk_step_sd": 0.095
+    },
+    "combined_misspecification": {
+      "covered": 0,
+      "coverage": 0,
+      "mean_estimate": 0.4473732032101526,
+      "bias": -0.27262679678984736,
+      "mean_actual_mode": 0.54455290817901,
+      "coverage_actual_mean": 0,
+      "exact_95_ci": [
+        0,
+        0.05962949228633472
+      ]
+    }
+  },
+  "local_run": {
+    "tests_passed": 30,
+    "tests_total": 30,
+    "sha256_verified_research_files": 16,
+    "full_data": "results/robustness_v095.json",
+    "figures": [
+      "results/coverage_v095.png",
+      "results/estimate_v095.png"
+    ]
+  },
+  "github_code_status": "independently authored counterpart; tests not verified in remote CI",
+  "limits": [
+    "three contaminant photons explicitly assumed mutually distinguishable, not general |2,1> bosonic HOM",
+    "trigger-only correlated electronics clicks absent in blocked calibrations",
+    "source-class calibration misclassifies three-photon events",
+    "random-walk scenario has estimand mismatch intrinsic versus period-mean overlap",
+    "60 outer repetitions give uncertain coverage estimates",
+    "no claimed individual historical photon identity"
+  ]
+}

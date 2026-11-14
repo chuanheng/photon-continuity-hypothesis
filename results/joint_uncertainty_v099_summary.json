@@ -1,0 +1,92 @@
+{
+  "version": "v0.99",
+  "study": "conditional joint parametric bootstrap coverage audit",
+  "data_type": "synthetic only",
+  "intrinsic_truth": 0.72,
+  "outer_per_budget": 60,
+  "bootstrap_per_outer": 79,
+  "total_outer_datasets": 180,
+  "total_bootstrap_records": 14220,
+  "budgets": [
+    {
+      "pnr_per_class": 100,
+      "external_reference_trials": 1300,
+      "phase_reads_extra": 40,
+      "valid_outer": 60,
+      "failed_outer": 0,
+      "mean_intrinsic_estimate": 0.7331813172107008,
+      "intrinsic_bias": 0.013181317210700816,
+      "rmse_intrinsic": 0.03522777780631483,
+      "mean_ci_width": 0.11174863087538849,
+      "intrinsic_covered": 43,
+      "intrinsic_coverage": 0.7166666666666667,
+      "intrinsic_coverage_exact_95_ci": [
+        0.5855639310501699,
+        0.8254947164856249
+      ],
+      "period_covered": 56,
+      "period_coverage": 0.9333333333333333,
+      "bootstrap_fit_failures": 0
+    },
+    {
+      "pnr_per_class": 1000,
+      "external_reference_trials": 13000,
+      "phase_reads_extra": 80,
+      "valid_outer": 60,
+      "failed_outer": 0,
+      "mean_intrinsic_estimate": 0.7290182395336379,
+      "intrinsic_bias": 0.009018239533637895,
+      "rmse_intrinsic": 0.029686075554462378,
+      "mean_ci_width": 0.0997228695509536,
+      "intrinsic_covered": 48,
+      "intrinsic_coverage": 0.8,
+      "intrinsic_coverage_exact_95_ci": [
+        0.6766995761987096,
+        0.892158877475638
+      ],
+      "period_covered": 55,
+      "period_coverage": 0.9166666666666666,
+      "bootstrap_fit_failures": 0
+    },
+    {
+      "pnr_per_class": 10000,
+      "external_reference_trials": 130000,
+      "phase_reads_extra": 800,
+      "valid_outer": 60,
+      "failed_outer": 0,
+      "mean_intrinsic_estimate": 0.7222127251613305,
+      "intrinsic_bias": 0.002212725161330531,
+      "rmse_intrinsic": 0.02659537371283241,
+      "mean_ci_width": 0.08869616608304802,
+      "intrinsic_covered": 53,
+      "intrinsic_coverage": 0.8833333333333333,
+      "intrinsic_coverage_exact_95_ci": [
+        0.7742838468543517,
+        0.951785158128658
+      ],
+      "period_covered": 55,
+      "period_coverage": 0.9166666666666666,
+      "bootstrap_fit_failures": 0
+    }
+  ],
+  "local_package": {
+    "filename": "photon_v099_complete.zip",
+    "research_files_sha256_checked": 18,
+    "actual_python_tests_passed": 31,
+    "full_outer_records": "results/joint_uncertainty_v099.json",
+    "figures": 2,
+    "zip_sha256": "d525d10598cc14f56cfa66d6b44bc09f45205cadda9c92b63e11edd10a127c9e"
+  },
+  "github_companion": {
+    "independently_authored_regression_test_methods": 18,
+    "github_CI_verified": false
+  },
+  "limits": [
+    "fixed plug-in true environment phase path in bootstrap rather than full latent random-walk smoothing",
+    "40 measurement blocks, Gaussian phase readout",
+    "only PNR rows 11 and 21 uncertain, others identity",
+    "independent and correctly specified electronic reference assumed",
+    "no complete 95% interval restoration, despite resampling 8 observation channels",
+    "no QED novelty or individual historical photon identity evidence"
+  ]
+}

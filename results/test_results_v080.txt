@@ -1,0 +1,19 @@
+Local executed test log summary (2026-11-14):
+Directory: /mnt/data/photon_v080
+Command: python -m unittest discover -s /mnt/data/photon_v080/tests -v
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.774s
+
+OK
+
+Tests verify:
+- normalized, positive probabilities
+- exact test-only kappa/delta degeneracy
+- finite-difference Fisher gradient
+- rank 4/5 without calibration, 5/5 with assumed common drift
+- flat test-only Asimov profile, positive calibrated profile
+- ordinary model with group-specific drift reproduces all distributions
+
+Original verbose log: photon_v080/results/test_results.txt within photon_v080_complete.zip
+Remote GitHub CI execution: not performed.

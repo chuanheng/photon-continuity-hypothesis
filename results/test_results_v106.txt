@@ -1,0 +1,33 @@
+PCH-A v1.06 ACTUAL LOCAL TEST AND SIMULATION PROVENANCE — 2026-11-14
+
+Working root: /mnt/data/photon_v106
+
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m unittest discover -s tests -v
+----------------------------------------------------------------------
+Ran 43 tests in 0.389s
+OK
+
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.run_v106
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.plot_v106
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.package_v106
+
+Five fixed-truth stress scenarios x100 independent datasets =500 simulated datasets.
+160 joint continuous hyperparameter and source/detector calibration particles.
+True intrinsic HOM M0=.72.
+
+matched: 96/100 covered, mean .7061915307, mean interval width .2548965, median hyper ESS 104.36.
+partial mismatch (true rho .1, assumes 1): 4/100 covered, mean .4495552331.
+partial oracle calibrated (true rho .1, assumes .1): 94/100, mean .6974214125.
+off hyperprior sensor: 94/100 but mean interval width .423308 and ESS median 23.499.
+8% sensor anomaly: 96/100, mean .7225352545.
+
+Local ZIP photon_v106_complete.zip (308111 bytes) and its 21 research files
+were verified against manifest SHA-256; ZIP hash:
+700f92e96730aaf733fc7bb05126fc420e841cae9e076b33030f7010b2e6006f
+
+The local ZIP includes exact passed 43-test source and full per-dataset records,
+3 PNG plots, complete Chinese report, and SHA-256 manifest.
+
+GitHub source/tests independently authored as counterparts (22 tests); remote
+GitHub CI has not been verified. Not full-model prior SBC. No actual photon
+measurements or new QED identity effect.

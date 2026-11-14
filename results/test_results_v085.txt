@@ -1,0 +1,15 @@
+Local tested on 2026-11-14.
+Command:
+PYTHONPATH=/mnt/data/photon_v085 python -m unittest discover -s /mnt/data/photon_v085/tests -v
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.009s
+
+OK
+
+Initial run had 3 failures from requiring bitwise np.array_equal on quantities differing only by floating-point addition order (about 1e-14). The tests were corrected to np.allclose with explicit tolerance 1e-12 and all 31 tests passed. The mathematical mapping is exact, but machine float calculations need not be bitwise equal.
+
+Experiment reproduced from:
+cd /mnt/data/photon_v085 && PYTHONPATH=. python experiments/run_v085.py
+
+GitHub-hosted CI execution: not performed.

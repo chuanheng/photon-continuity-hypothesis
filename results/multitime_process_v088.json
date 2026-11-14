@@ -1,0 +1,31 @@
+{
+  "one_step_channel_of_zero": [
+    [
+      0.5,
+      0
+    ],
+    [
+      0,
+      0.5
+    ]
+  ],
+  "two_step_identity_intervention": {
+    "fixed_output_prob_zero": 1,
+    "fresh_output_prob_zero": 0.5,
+    "trace_distance": 0.5,
+    "optimal_equal_prior_success": 0.75
+  },
+  "two_step_X_intervention": {
+    "fixed_output_prob_zero": 0,
+    "fresh_output_prob_zero": 0.5,
+    "trace_distance": 0.5,
+    "optimal_equal_prior_success": 0.75
+  },
+  "two_step_Z_intervention": {
+    "fixed_output_prob_zero": 1,
+    "fresh_output_prob_zero": 0.5,
+    "trace_distance": 0.5,
+    "optimal_equal_prior_success": 0.75
+  },
+  "note": "A multitime memory witness does not distinguish ordinary memory from an asserted permanent photon identity."
+}

@@ -1,0 +1,78 @@
+{
+  "version": "v1.05",
+  "title": "Matched 12-parameter HOM joint-prior SBC and two-sided robust sensor holdout",
+  "synthetic_only": true,
+  "complete_local_zip": "photon_v105_complete.zip",
+  "local_zip_sha256": "8ec24b75bd67f011d2c2ca11b95a53a2668a5df9696468885721d0ed2264df9c",
+  "actual_local_tests_passed": 40,
+  "sha256_checked_content_files": 21,
+  "prior_sbc": {
+    "n": 450,
+    "posterior_draws_per_trial": 49,
+    "nuisance_particles": 850,
+    "M95_covered": 428,
+    "M95_coverage_fraction": 0.9511111111111111,
+    "M95_exact_binomial_ci95": [
+      0.9269147036910146,
+      0.9691114954933407
+    ],
+    "median_particle_ess": 582.4067554434037,
+    "parameters": [
+      "M",
+      "f_ratio",
+      "alpha",
+      "beta",
+      "q",
+      "eta_a",
+      "eta_b",
+      "dark_a",
+      "dark_b",
+      "walk_sd",
+      "read_sd",
+      "bias"
+    ],
+    "rank_uniformity_chi2_p_values": {
+      "M": 0.4771248001356727,
+      "f_ratio": 0.6070696183173794,
+      "alpha": 0.17611975122010107,
+      "beta": 0.6348056479766886,
+      "q": 0.24229360691726298,
+      "eta_a": 0.5119161519797071,
+      "eta_b": 0.8284584477169606,
+      "dark_a": 0.6855786049967054,
+      "dark_b": 0.39924650177326865,
+      "walk_sd": 0.33979941648719475,
+      "read_sd": 0.1255224966496461,
+      "bias": 0.05497124700789562
+    },
+    "physics": "single- and three-boson Fock splitter, 5 source events, threshold detectors, electronic background, Gaussian random walk and PNR report mixing",
+    "important": "Formal SBC for this specifically matched PRIOR-generative restricted model; no fixed-truth or real instrument guarantee."
+  },
+  "robust_heldout": {
+    "train_points_per_dataset": 100,
+    "heldout_points_per_dataset": 80,
+    "groups_per_case": 180,
+    "models": "Gaussian MLE vs Student-t location/scale MLE with fixed df=4",
+    "pure_gaussian": {
+      "student_wins": 17,
+      "mean_student_minus_normal_logscore": -0.02405931470018254
+    },
+    "both_training_and_holdout_8pct_contaminated": {
+      "student_wins": 180,
+      "mean_student_minus_normal_logscore": 0.4187190870890791
+    },
+    "important": "Separate zero-phase sensor reference submodel; NOT a Student-t HOM state-space posterior or full SBC."
+  },
+  "limitations": [
+    "Hyperparameters have a finite 27-point discrete prior, not the fully continuous hyperprior of v1.03",
+    "Source PNR classifier standards and matched electronics standards assume externally known conditions",
+    "Only optical 0-3 photon and ideal triplet indistinguishable versus fully distinguishable extremes",
+    "Approximate finite-particle/grid posterior; negative SBC p-test is not proof of error-free inference",
+    "No independent historical individual photon identity observable"
+  ],
+  "github_companion": {
+    "source_independently_authored": true,
+    "regression_methods": 27,
+    "remote_CI_verified": false
+  }
+}

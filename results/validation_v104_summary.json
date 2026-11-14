@@ -1,0 +1,125 @@
+{
+  "version": "v1.04",
+  "status": "Synthetic statistical validation of conventional optical HOM models. No permanent photon-history identity evidence.",
+  "scientific_scope": {
+    "formal_SBC": "one-dimensional explicit prior M~Uniform(0,1) and known binomial optical response ONLY",
+    "complex_model_validation": "heldout PPC and importance-sampling proposal sensitivity, NOT full complex model SBC",
+    "historical_photon_identity_tested": false
+  },
+  "sbc": {
+    "replicates": 450,
+    "posterior_draws": 49,
+    "optical_submodel": {
+      "shots": 280,
+      "intercept": 0.25,
+      "contrast": 0.17,
+      "known_attenuation": 0.76,
+      "prior": "Uniform(0,1)",
+      "grid_size": 801
+    },
+    "rank_histogram_10bins": [
+      59,
+      35,
+      47,
+      49,
+      43,
+      37,
+      36,
+      54,
+      47,
+      43
+    ],
+    "rank_chi_square": 12.31111111111111,
+    "rank_uniformity_pvalue": 0.19633312223356483,
+    "covered95": 430,
+    "coverage": 0.9555555555555556,
+    "coverage_exact_binomial_ci95": [
+      0.9321916555121094,
+      0.9726440787359447
+    ]
+  },
+  "heldout_ppc": {
+    "n_train_zero_phase": 70,
+    "n_heldout_zero_phase": 30,
+    "trials_per_case": 75,
+    "hyper_draws": 75,
+    "predictive_replications": 160,
+    "anomaly_rule": "posterior predictive tail count p<=0.05 for |heldout_z-b|>3*sigma_read",
+    "cases": {
+      "correct_gaussian": {
+        "flagged": 6,
+        "fraction": 0.08,
+        "mean_observed_tail_count": 0.12811384724517946,
+        "mean_predicted_tail_count": 0.08433333333333334
+      },
+      "holdout_contamination_only": {
+        "flagged": 51,
+        "fraction": 0.68,
+        "holdout_contamination_fraction": 0.09,
+        "added_outlier_sd": 0.85,
+        "mean_observed_tail_count": 1.5700767440349441,
+        "mean_predicted_tail_count": 0.08433333333333334
+      }
+    },
+    "important_limitation": "Contamination intentionally appears only in holdout, not training; not a general non-Gaussian sensor sensitivity estimate."
+  },
+  "proposal_sensitivity": {
+    "paired_outer": 32,
+    "hyper_proposals_each": 90,
+    "fixed_true_M0": 0.72,
+    "results": [
+      {
+        "scale": 0.8,
+        "median_ess": 64.54108149280097,
+        "min_ess": 25.347748017893306,
+        "mean_M": 0.7172923206270311,
+        "rmse": 0.01703817672681216,
+        "mean_width": 0.07456461801866873,
+        "covered": 31
+      },
+      {
+        "scale": 1.4,
+        "median_ess": 59.16959489125257,
+        "min_ess": 52.423033755533105,
+        "mean_M": 0.717068307371311,
+        "rmse": 0.017335149440915878,
+        "mean_width": 0.07599851659945477,
+        "covered": 31
+      },
+      {
+        "scale": 2.2,
+        "median_ess": 19.862791081479926,
+        "min_ess": 14.394388147056041,
+        "mean_M": 0.7173318700219644,
+        "rmse": 0.017983496081869565,
+        "mean_width": 0.07646157172768048,
+        "covered": 31
+      }
+    ],
+    "mean_absolute_difference_M_scale_08_vs_22": 0.002885640542261321
+  },
+  "local_validation": {
+    "unittest_passed": 34,
+    "unittest_total": 34,
+    "content_files_sha256_verified": 21,
+    "zip": "photon_v104_complete.zip",
+    "zip_bytes": 167412,
+    "zip_sha256": "f4daa44e20b00d42eb8abffbf1c8915c1225c964030d88c78a55486203b069ea",
+    "full_data": "results/validation_v104.json",
+    "figures": [
+      "results/sbc_ranks_v104.png",
+      "results/heldout_ppc_v104.png",
+      "results/importance_ess_v104.png"
+    ]
+  },
+  "github_counterpart": {
+    "independent_regression_test_methods": 20,
+    "ci_verified": false,
+    "byte_equal_local": false
+  },
+  "literature": [
+    "https://mc-stan.org/docs/stan-users-guide/simulation-based-calibration.html",
+    "https://sites.stat.columbia.edu/gelman/research/unpublished/sbc.pdf",
+    "https://quantitative.emory.edu/documents/Bayesian_Workflow_article_Gelman.pdf"
+  ]
+}

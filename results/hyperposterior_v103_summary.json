@@ -1,0 +1,108 @@
+{
+  "version": "v1.03",
+  "research": "continuous Gaussian phase hyperparameter importance posterior plus conditional latent phases and calibrated HOM nuisance",
+  "type": "synthetic conventional quantum-optics and statistics; no photon identity experiments",
+  "truth_M0": 0.72,
+  "sampling": {
+    "hyper_importance_draws_per_trial": 120,
+    "hyper_prior": "uniform in (log walk_sd,log read_sd,bias) in a bounded region",
+    "proposal": "Laplace-Hessian Gaussian scaled 1.4, with exact sensor-likelihood importance weights",
+    "phase": "conditional Gaussian phase path with analytic precision matrix",
+    "optical": "calibrated physical source, detector, PNR and electronics samples; near/far optical binomial likelihood",
+    "M0_grid": 161,
+    "interval": "Bayesian equal-tail 95% credible interval, empirical fixed-truth coverage"
+  },
+  "synthetic_audit": [
+    {
+      "scenario": "baseline",
+      "outer": 70,
+      "truth_sensor": [
+        0.095,
+        0.15,
+        0.015
+      ],
+      "plugin": {
+        "covered": 61,
+        "mean": 0.718261940000266,
+        "RMSE": 0.019180690481678867,
+        "mean_width": 0.06951008998280829
+      },
+      "joint": {
+        "covered": 63,
+        "mean": 0.718314924080901,
+        "RMSE": 0.019620689062810632,
+        "mean_width": 0.07454867246915148
+      },
+      "hyper_ess_median": 78.89524275405356,
+      "hyper_ess_min": 67.71880637975234
+    },
+    {
+      "scenario": "high_variance",
+      "outer": 50,
+      "truth_sensor": [
+        0.18,
+        0.24,
+        0.08
+      ],
+      "plugin": {
+        "covered": 45,
+        "mean": 0.7217768521566204,
+        "RMSE": 0.03261290740039234,
+        "mean_width": 0.11134628777873269
+      },
+      "joint": {
+        "covered": 49,
+        "mean": 0.7224510936252525,
+        "RMSE": 0.032218090414772964,
+        "mean_width": 0.12099763399417154
+      },
+      "hyper_ess_median": 79.61157626110858,
+      "hyper_ess_min": 70.1637642127888
+    },
+    {
+      "scenario": "sensor_outliers",
+      "outer": 50,
+      "true_sensor": [
+        0.095,
+        0.15,
+        0.015
+      ],
+      "outlier_fraction": 0.05,
+      "additional_outlier_sd": 0.55,
+      "plugin": {
+        "covered": 45,
+        "mean": 0.7182902392353507,
+        "RMSE": 0.01896825846584915,
+        "mean_width": 0.07348199909520757
+      },
+      "joint": {
+        "covered": 47,
+        "mean": 0.7183999779230479,
+        "RMSE": 0.01883623834682897,
+        "mean_width": 0.08205726914299699
+      },
+      "hyper_ess_median": 79.20304444931273,
+      "hyper_ess_min": 70.85985460562972
+    }
+  ],
+  "validation": {
+    "actual_local_unittests_passed": 38,
+    "outer_simulations": 170,
+    "research_content_files_sha256_verified": 18,
+    "local_zip": "photon_v103_complete.zip",
+    "local_zip_sha256": "1625013314effedd7b107246cb4809b43f4df463f4fad118da532a97b77b93a2",
+    "local_original_data": "results/hyperposterior_v103.json",
+    "figures": [
+      "results/coverage_v103.png",
+      "results/interval_width_v103.png"
+    ],
+    "github_companion_test_methods": 23,
+    "github_ci_confirmed": false
+  },
+  "conclusions": [
+    "Continuous hyperparameter uncertainty increased the widths of the Bayesian credible intervals and empirical coverage for three tested synthetic settings.",
+    "None of the coverages proves universal 95% frequentist coverage, especially with 70 or 50 outer simulations.",
+    "Non-Gaussian outlier example is not sufficient to prove robustness against arbitrary readout misspecification.",
+    "No independent experimentally testable prediction of persistent historical photon individuality."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": "v0.85",
+  "n_times": 24,
+  "bias": 0.11,
+  "hypothetical_identity_delta": 0.2,
+  "per_process": {
+    "ar1": {
+      "max_abs_mean_diff": 1.4210854715202004e-14,
+      "n_observations": 192
+    },
+    "random_walk": {
+      "max_abs_mean_diff": 2.1316282072803006e-14,
+      "n_observations": 192
+    },
+    "piecewise": {
+      "max_abs_mean_diff": 0,
+      "n_observations": 192
+    }
+  },
+  "matched_sample_log_likelihood_diff": {
+    "ar1": 1.1368683772161603e-13,
+    "random_walk": 0,
+    "piecewise": 0
+  },
+  "poisson_kl": {
+    "ar1": 0,
+    "random_walk": 1.4210854715202004e-14,
+    "piecewise": 0
+  },
+  "constant_signature_rank": 1,
+  "varying_signature_rank": 2,
+  "varying_signature_with_free_time_bias_rank": 24,
+  "calibrated_bias_delta_fisher_eigs": [
+    192.83683186842632,
+    5784.121336435926
+  ],
+  "uncalibrated_bias_delta_fisher_eigs": [
+    0,
+    5576.9581683043525
+  ],
+  "local_tests": {
+    "passed": 31,
+    "total": 31,
+    "time_s": 0.009
+  },
+  "model_status": "ordinary composite null exactly absorbs constant identity phase; no QED identity prediction"
+}

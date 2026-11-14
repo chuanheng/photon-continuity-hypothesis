@@ -1,0 +1,12 @@
+Local execution (2026-11-14)
+Working directory: /mnt/data/photon_v081
+Command: PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.027s
+
+OK
+
+Original per-test verbose log is packaged in photon_v081_complete.zip at photon_v081/results/test_results.txt.
+
+No GitHub CI run claimed. Local numerical summary generated with PYTHONPATH=. python -m experiments.run_v081.

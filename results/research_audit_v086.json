@@ -1,0 +1,238 @@
+{
+  "version": "v0.86",
+  "audit_date": "2026-11-14",
+  "versions_audited": 36,
+  "prior_versions_with_runnable_tests": 34,
+  "total_unit_tests_passed": 1086,
+  "missing_local_test_suites": [
+    "v0.68",
+    "v0.75"
+  ],
+  "v051_v066_historical_tests_passed": 666,
+  "v086_new_tests_passed": 15,
+  "github_history_v051_v066_backfill_complete": false,
+  "github_v051_v066_sample_checked_missing": [
+    "docs/bosonic_identity_v051_zh.md",
+    "docs/fock_identity_v066_zh.md"
+  ],
+  "github_v068_v075_research_docs_present": true,
+  "warning": "Unit tests of toy models are not physical evidence of permanently persistent photons. Passing tests are not an empirical verification.",
+  "records": [
+    {
+      "version": "v0.50",
+      "unittest_status": "pass",
+      "test_count": 35,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.51",
+      "unittest_status": "pass",
+      "test_count": 40,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.52",
+      "unittest_status": "pass",
+      "test_count": 45,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.53",
+      "unittest_status": "pass",
+      "test_count": 40,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.54",
+      "unittest_status": "pass",
+      "test_count": 40,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.55",
+      "unittest_status": "pass",
+      "test_count": 45,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.56",
+      "unittest_status": "pass",
+      "test_count": 45,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.57",
+      "unittest_status": "pass",
+      "test_count": 44,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.58",
+      "unittest_status": "pass",
+      "test_count": 55,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.59",
+      "unittest_status": "pass",
+      "test_count": 45,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.60",
+      "unittest_status": "pass",
+      "test_count": 40,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.61",
+      "unittest_status": "pass",
+      "test_count": 40,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.62",
+      "unittest_status": "pass",
+      "test_count": 40,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.63",
+      "unittest_status": "pass",
+      "test_count": 20,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.64",
+      "unittest_status": "pass",
+      "test_count": 40,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.65",
+      "unittest_status": "pass",
+      "test_count": 41,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.66",
+      "unittest_status": "pass",
+      "test_count": 46,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.67",
+      "unittest_status": "pass",
+      "test_count": 10,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.68",
+      "unittest_status": "missing_local_runnable_suite",
+      "test_count": null,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.69",
+      "unittest_status": "pass",
+      "test_count": 20,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.70",
+      "unittest_status": "pass",
+      "test_count": 10,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.71",
+      "unittest_status": "pass",
+      "test_count": 6,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.72",
+      "unittest_status": "pass",
+      "test_count": 10,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.73",
+      "unittest_status": "pass",
+      "test_count": 16,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.74",
+      "unittest_status": "pass",
+      "test_count": 33,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.75",
+      "unittest_status": "missing_local_runnable_suite",
+      "test_count": null,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.76",
+      "unittest_status": "pass",
+      "test_count": 27,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.77",
+      "unittest_status": "pass",
+      "test_count": 31,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.78",
+      "unittest_status": "pass",
+      "test_count": 27,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.79",
+      "unittest_status": "pass",
+      "test_count": 25,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.80",
+      "unittest_status": "pass",
+      "test_count": 28,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.81",
+      "unittest_status": "pass",
+      "test_count": 27,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.82",
+      "unittest_status": "pass",
+      "test_count": 29,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.83",
+      "unittest_status": "pass",
+      "test_count": 26,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.84",
+      "unittest_status": "pass",
+      "test_count": 29,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    },
+    {
+      "version": "v0.85",
+      "unittest_status": "pass",
+      "test_count": 31,
+      "audit_scope": "local files; zip fallback for v0.74 and v0.76-v0.79"
+    }
+  ]
+}

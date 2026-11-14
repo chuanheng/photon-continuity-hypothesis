@@ -1,0 +1,23 @@
+Local v0.89 execution 2026-11-14
+Command: cd /mnt/data/photon_v089 && PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.028s
+
+OK
+
+Also executed: PYTHONPATH=. python experiments/run_v089.py
+
+Numeric:
+one step channel zero -> I/2
+two-step fixed P(0)=1
+two-step fresh P(0)=0.5
+causal-break event 0 probability=0.5
+fixed event 0 conditioned final P(0)=1
+fresh event 0 conditioned final P(0)=0.5
+16 CP map Choi directions; 4 final effect directions; 64 joint tester probabilities
+max fixed-fresh tester difference=0.25
+max exact-hidden-label-relabel difference=0
+
+Full per-test verbose log and 64-element probability signatures exist in photon_v089_complete.zip.
+GitHub-hosted CI: no execution claimed.

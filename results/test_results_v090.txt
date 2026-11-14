@@ -1,0 +1,21 @@
+Locally executed on 2026-11-14:
+  cd /mnt/data/photon_v090
+  PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.182s
+
+OK
+
+Also executed:
+  PYTHONPATH=. python -m experiments.run_v090
+Produced: /mnt/data/photon_v090/results/eft_audit_v090.json
+
+Includes symbolic Ward vanishing, Lorentz boost invariance,
+physical polarization amplitude sum, operator dimensions, and
+effective constant-background photon dispersion.
+
+The local ZIP includes exact full verbose test output and SHA-256
+manifest. The GitHub source/test files were separately authored and
+remote CI execution has NOT been verified. 39 successful toy-model
+unit tests are NOT evidence for permanently surviving individual photons.

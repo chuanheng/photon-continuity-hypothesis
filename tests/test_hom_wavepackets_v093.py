@@ -27,6 +27,8 @@ class PureTests(unittest.TestCase):
   for a,b,w,d in [(1,1,0,0),(1,2,0,1),(.7,2,1,-.25)]:
    self.assertAlmostEqual(pure_overlap(a,b,w,d),numerical_pure_overlap(a,b,w,d),places=8)
 class NoiseTests(unittest.TestCase):
+ def test_noise_independence_bound(self):
+  self.assertTrue(0<=ensemble_overlap(onset_std=.2,frequency_std=.3)<=1)
  def test_time_zero(self):self.assertEqual(time_jitter_average(),1)
  def test_frequency_zero(self):self.assertEqual(spectral_jitter_average(),1)
  def test_common_time(self):self.assertEqual(time_jitter_average(onset_std=.2,correlation=1),1)

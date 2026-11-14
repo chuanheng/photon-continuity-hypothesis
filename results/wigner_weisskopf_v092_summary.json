@@ -1,0 +1,62 @@
+{
+  "version": "v0.92",
+  "gamma": 1,
+  "bandwidth": 12,
+  "modes": 401,
+  "frequency_grid_spacing": 0.0600000000000005,
+  "early_curvature": 3.829267930791034,
+  "max_norm_error": 2.531308496145357e-14,
+  "max_markov_population_abs_error_from_t_0_5": 0.024620336034381518,
+  "time_rows": [
+    {
+      "time": 0,
+      "finite_atomic_population": 1,
+      "finite_field_population": 0,
+      "markov_atomic_population": 1
+    },
+    {
+      "time": 0.5,
+      "finite_atomic_population": 0.6277842574861993,
+      "finite_field_population": 0.3722157425138055,
+      "markov_atomic_population": 0.6065306597126334
+    },
+    {
+      "time": 1,
+      "finite_atomic_population": 0.3759349020201548,
+      "finite_field_population": 0.6240650979798674,
+      "markov_atomic_population": 0.36787944117144233
+    },
+    {
+      "time": 2,
+      "finite_atomic_population": 0.13441578030839693,
+      "finite_field_population": 0.8655842196916282,
+      "markov_atomic_population": 0.1353352832366127
+    },
+    {
+      "time": 4,
+      "finite_atomic_population": 0.017193637373327166,
+      "finite_field_population": 0.9828063626266952,
+      "markov_atomic_population": 0.018315638888734182
+    },
+    {
+      "time": 8,
+      "finite_atomic_population": 0.000294787106810482,
+      "finite_field_population": 0.9997052128932121,
+      "markov_atomic_population": 0.0003354626279025118
+    }
+  ],
+  "lorentzian_fwhm": 1,
+  "temporal_mean_emission_time": 1,
+  "overlap_dw_gamma": 0.5,
+  "overlap_identical": 1,
+  "different_width_overlap": 0.8888888888888888,
+  "early_time_markov_slope": -1,
+  "early_time_closed_unitary_slope": 0,
+  "local_execution": {
+    "passed": 46,
+    "total": 46,
+    "test_time_s": 0.123
+  },
+  "physical_status": "Standard Wigner-Weisskopf RWA spontaneous emission; not novel QED and does not demonstrate persistent historical photon identity.",
+  "original_full_data_location": "Local ZIP results/wigner_weisskopf_v092.json includes 81-point time and 1001-point spectral scans"
+}

@@ -1,0 +1,16 @@
+Local execution 2026-11-14:
+cd /mnt/data/photon_v091
+PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.011s
+
+OK
+
+Experiment: PYTHONPATH=. python -m experiments.run_v091
+Includes a 0-to-pi/2 absorption-area scan and exact input/stored/output state amplitudes.
+
+Local tested source, complete per-test logs, JSON data, and SHA-256 file manifest
+are stored in photon_v091_complete.zip. The GitHub copies of model and
+tests were separately authored and have NOT been independently run on GitHub Actions.
+Numerical assertions are not experimental evidence of permanent photons.

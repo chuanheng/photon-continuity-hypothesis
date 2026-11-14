@@ -1,69 +1,73 @@
-# v1.08 — Identifiability boundaries and three-photon phase (2026-11-14)
+# v1.08：三光子模式标定的可辨识性边界（2026-11-14）
 
-**Status:** Independent mathematical toy-model study. Not a re-run of v1.07's 600 paired inferences; the underlying v1.07 dataset/code was not present on the repository default branch when this report was written. Not experimental validation of permanent photon identity.
+**研究性质：** 独立的解析简化模型与可运行数值核算，不是 v1.07 原始 600 组模拟的复现。仓库 main 分支尚未提供本轮所需的 v1.07 数据和随机种子。本研究既不测量也不验证“永久光子身份”。
 
-## 1. Product degeneracy and independent calibration
+## 1. 独立参考实验何时恢复局部可辨识性？
 
-Let X~Binomial(n, theta*q), Y~Binomial(m,q), independent, with interior theta,q in (0,1). The main experiment only determines theta*q. Define p=theta*q and f=n/[p(1-p)]. The joint Fisher information for (theta,q) is
+考虑相互独立的 X~Binomial(n,θq)、Y~Binomial(m,q)，其中 θ 与 q 均在 (0,1) 内，n 为主实验计数，m 为参考实验计数。只观测 X 时只能识别 θq。
 
-I = [[f*q^2, f*theta*q],
-     [f*theta*q, f*theta^2 + m/(q*(1-q))]].
+记 p=θq、f=n/[p(1-p)]，对参数 (θ,q) 的联合 Fisher 信息矩阵：
 
-For m=0, det(I)=0: there is a continuous nonidentifiability direction theta*q=constant. For m>0, det(I)=f*q^2*m/[q*(1-q)]>0, restoring local identification **within this toy model**.
+I=[[f q², f θq],[f θq, f θ²+m/(q(1-q))]]。
 
-With theta=0.7, q=0.8 and n=1000:
-| reference m | smallest Fisher eigenvalue | sqrt((I^-1)[theta,theta]) |
+m=0 时 det(I)=0，存在 θq=常数 的连续退化方向；m>0 时 det(I)=f q²m/[q(1-q)]>0，**仅在这个简化模型内部**恢复局部可辨识性。
+
+取 θ=0.7、q=0.8、n=1000，实际执行解析计算：
+
+| 参考样本 m | Fisher 最小特征值 | θ 的 Cramér–Rao 标准差下界 |
 |---:|---:|---:|
-| 0 | 0 | undefined/infinite |
+| 0 | 0 | 不存在有限下界 |
 | 100 | 332.777713 | 0.040125 |
 | 1000 | 1795.704080 | 0.022528 |
 | 10000 | 2514.057308 | 0.019931 |
 
-These are analytic information bounds, **not empirical RMSE or posterior coverage rates**. The m->infinity limit of the theta standard-deviation bound is sqrt(p*(1-p)/n)/q, approximately 0.01962.
+这些是**理论信息下界，不是蒙特卡洛 RMSE 或贝叶斯可信区间覆盖率**。m 趋于无穷大，仍受 n=1000 限制，标准差下界趋近 sqrt[p(1-p)/n]/q≈0.01962。
 
-## 2. Transfer error between experiments
+## 2. 不同实验之间的标定漂移
 
-If main experiment uses q_main but independent calibration measures q_ref, while the model incorrectly equates them, the asymptotic fitted theta is theta_true*q_main/q_ref (provided the solution remains in the parameter domain).
+若主实验真实模式参数为 q_main，而参考实验测得 q_ref，拟合时错误地令两者相等，则当样本数趋于无穷、参数未撞到边界时，目标参数的伪真实值为 θ_fit=θ_true q_main/q_ref。
 
-For theta_true=0.7 and q_main=0.8:
-| q_ref-q_main | asymptotic estimate | bias |
+取 θ_true=0.7，q_main=0.8：
+
+| q_ref-q_main | 渐近估计 θ_fit | 渐近偏差 |
 |---:|---:|---:|
 | -0.05 | 0.746667 | +0.046667 |
 | 0 | 0.700000 | 0 |
 | +0.05 | 0.658824 | -0.041176 |
 
-Thus extra reference counts cannot remove *systematic transfer mismatch*. Realistic joint inference must explicitly model/validate whether the two setups share the nuisance parameter.
+因此，增加参考计数不能消除**系统性的跨实验参数不一致**；应当检验共享参数的物理条件或将漂移项显式纳入联合模型。
 
-## 3. Three-photon triad phase counterexample
+## 3. 三光子闭环相位的数学反例
 
-For normalized pure internal states with Gram matrix G_ij=<phi_i|phi_j>, let each off-diagonal modulus be r=0.3. Choose the product G_12*G_23*G_31=r^3 exp(i Phi). The Gram matrix is Hermitian positive definite for these choices (strict diagonal dominance: 2r<1), and therefore realizable by vectors in a complex Hilbert space. All pairwise **magnitudes** are identical while the triad/Bargmann phase Phi differs.
+令三个归一化内部纯态的 Gram 矩阵为 G_ij=〈φ_i|φ_j〉，全部非对角元模长为 r=0.3。定义规范不变量 Φ=arg(G_12 G_23 G_31)。r<0.5 保证这里的厄米 Gram 矩阵严格对角占优且正定，因此对应合法复 Hilbert 空间态向量。
 
-perm(G)=1+3r^2+2r^3*cos(Phi).
+恒有 perm(G)=1+3r²+2r³cosΦ。
 
-| Phi | permanent |
+| Φ | perm(G) |
 |---|---:|
 | 0 | 1.324 |
-| pi/2 | 1.270 |
-| pi | 1.216 |
+| π/2 | 1.270 |
+| π | 1.216 |
 
-This is a mathematical counterexample to determining all collective interference information from pairwise overlap magnitudes. The Gram permanent alone is **not an arbitrary interferometer's measured probability**; an explicit optical transfer matrix, detector POVM, loss and noise model are required to predict physical observations. Pairwise phase assignments are gauge dependent, while the triad product is gauge invariant.
+三个配置的**所有两两重叠模长相同**，三体相位和 Gram permanent 却不同。因此，仅通过两光子重叠模长不能普遍确定三光子的全部集体干涉信息。
 
-Existing quantum optics literature has already demonstrated such triad-phase effects; this is **not a novel prediction**:
-Menssen et al., *Distinguishability and Many-Particle Interference*, Physical Review Letters 118, 153603 (2017), DOI: https://doi.org/10.1103/PhysRevLett.118.153603 .
+**限制：** Gram permanent 不等同于任意未指定干涉仪的探测概率。实际预测必须指定三端口变换矩阵、检测 POVM、损耗及噪声。两两复内积的相位具有规范自由度，闭环乘积相位则具有规范不变性。
 
-## 4. Consequences for the photon-continuity hypothesis
+这不是新发现的量子光学效应：Menssen 等，*Distinguishability and Many-Particle Interference*，Physical Review Letters 118, 153603 (2017)，https://doi.org/10.1103/PhysRevLett.118.153603 。
 
-- Independent two-photon references can reduce nuisance uncertainty where the **same calibrated parameter** controls the primary three-photon experiment.
-- Reference calibration alone need not identify the collective triad phase or other nonidentifiable parameters.
-- Local Fisher rank is not a proof of global identifiability; check parameter symmetries, exact observational equivalence, and boundary cases.
-- Nothing here measures persistent photon identity or distinguishes that postulate from standard quantum optics.
+## 4. 与光子连续性假说的关系
 
-## 5. v1.09 action items
+- 如果主实验和参考实验确实共享 q，独立标定可以抑制这一干扰参数造成的估计退化。
+- 独立两光子参考不必然确定三光子闭环相位等其他参数。
+- Fisher 信息满秩只说明局部可辨识，并不能排除全局参数对称性或观测等价模型。
+- 本轮全部结论属于普通量子光学与统计推断，**不能当作永久光子身份的证据**。
 
-1. Implement a specified three-port unitary scattering experiment and detector POVMs; compare full multinomial output distributions, not Gram permanents alone.
-2. Compute numerical Jacobian singular values and profile likelihoods across theta, pairwise overlap magnitudes, triad phase and loss.
-3. Introduce calibration-to-primary drift delta and compare fitting with/without its hierarchical uncertainty.
-4. Test global equivalence classes and pre-register a physically discriminating prediction versus standard quantum optics.
-5. Obtain v1.07 simulation files and seeds before attempting numerical reproduction of its claimed coverage and RMSE.
+## 5. v1.09 后续可检验任务
 
-Run: `python3 models/identifiability_v108.py` (Python standard library).
+1. 指定真实三端口 unitary 与探测 POVM，拟合完整多项式计数分布，不能只比较 Gram permanent。
+2. 扫描 θ、两两重叠、闭环相位、损耗等参数的雅可比矩阵奇异值和 profile likelihood。
+3. 引入参考实验与主实验间的漂移 δ，比较忽略与纳入漂移不确定性的偏差。
+4. 构造完全相同观测分布的不同参数反例，以排查全局不可辨识。
+5. 获取 v1.07 原始模拟代码、数据和随机种子之后，才尝试复现其 RMSE 与覆盖率。
+
+运行：`python3 models/identifiability_v108.py`，仅依赖 Python 标准库。

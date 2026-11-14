@@ -1,0 +1,19 @@
+{
+  "version": "v0.82",
+  "model": "paired Poisson detector counts with shared latent AR1 drift",
+  "t": 10,
+  "mean_exposure_per_condition": 80,
+  "ar1_rho": 0.8,
+  "ar1_innovation_sigma": 0.12,
+  "null_profile_stat": 2.102549362136358,
+  "signal_profile_stat": 3.759343017773915,
+  "null_bootstrap_replications": 60,
+  "null_bootstrap_95pct_threshold": 3.184486786218193,
+  "null_empirical_p_plus_one": 0.18032786885245902,
+  "bootstrap_replicates_both_optimizer_converged": 60,
+  "local_tests": {
+    "passed": 29,
+    "total": 29
+  },
+  "safety": "This is not QED; hyperparameters fixed; penalized/MAP profile rather than marginal likelihood; ordinary group offset confounds proposed identity phase."
+}

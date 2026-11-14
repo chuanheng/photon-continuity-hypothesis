@@ -76,16 +76,17 @@ def simulate_records(p,seed=9401,shots=80000,dark_frames=10000,efficiency_trials
     p.validate()
     if min(shots,dark_frames,efficiency_trials,source_trials)<=0:raise ValueError('shot counts')
     rng=np.random.default_rng(seed)
-    return {'near':int(rng.binomial(shots,coincidence_probability(p))),
-      'far':int(rng.binomial(shots,coincidence_probability(p,True))),
-      'shots':shots,
-      'dark_counts':[int(rng.binomial(dark_frames,p.dark_a)),int(rng.binomial(dark_frames,p.dark_b))],
-      'dark_frames':dark_frames,
-      'single_counts':[int(rng.binomial(efficiency_trials,click_probability(1,p.eta_a,p.dark_a))),
-                       int(rng.binomial(efficiency_trials,click_probability(1,p.eta_b,p.dark_b)))],
-      'efficiency_trials':efficiency_trials,
-      'source_counts':rng.multinomial(source_trials,[p.w11,p.w20,p.w02,p.w00]).tolist(),
-      'source_trials':source_trials}
+    # Order of RNG draws matches the separately executed local research package.
+    source_counts=rng.multinomial(source_trials,[p.w11,p.w20,p.w02,p.w00])
+    dark_counts=[rng.binomial(dark_frames,d) for d in (p.dark_a,p.dark_b)]
+    single_counts=[rng.binomial(efficiency_trials,click_probability(1,e,d))
+                   for e,d in ((p.eta_a,p.dark_a),(p.eta_b,p.dark_b))]
+    near=rng.binomial(shots,coincidence_probability(p))
+    far=rng.binomial(shots,coincidence_probability(p,True))
+    return {'near':int(near),'far':int(far),'shots':shots,
+            'dark_counts':list(map(int,dark_counts)),'dark_frames':dark_frames,
+            'single_counts':list(map(int,single_counts)),'efficiency_trials':efficiency_trials,
+            'source_counts':list(map(int,source_counts)),'source_trials':source_trials}
 
 def estimate_records(rec):
     d=np.asarray(rec['dark_counts'])/rec['dark_frames']

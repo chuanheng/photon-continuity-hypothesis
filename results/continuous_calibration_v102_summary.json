@@ -1,0 +1,150 @@
+{
+  "version": "v1.02",
+  "title": "continuous phase sensor MLE and decomposed HOM source/detector calibration",
+  "data_type": "fully synthetic, no quantum photonic laboratory measurements",
+  "scientific_status": "standard bosonic quantum optics statistical audit; no permanent photon historical identity prediction",
+  "truth": {
+    "intrinsic_mode_overlap": 0.72,
+    "base_phase_walk_sd": 0.095,
+    "base_sensor_sd": 0.15,
+    "base_sensor_bias": 0.015,
+    "off_grid_phase_walk_sd": 0.18,
+    "off_grid_sensor_sd": 0.24,
+    "off_grid_sensor_bias": 0.08
+  },
+  "optical_source": {
+    "input_classes": [
+      "11",
+      "20",
+      "02",
+      "00",
+      "21"
+    ],
+    "true_event_probabilities": [
+      0.835,
+      0.04,
+      0.04,
+      0.02,
+      0.065
+    ],
+    "pnr_miss_21_as_11": 0.2,
+    "pnr_miss_11_as_21": 0.025,
+    "detector_efficiencies": [
+      0.74,
+      0.68
+    ],
+    "detector_dark_probabilities": [
+      0.002,
+      0.003
+    ],
+    "triggered_background": 0.014
+  },
+  "trial_counts": {
+    "phase_blocks": 40,
+    "phase_reads_per_block": 3,
+    "known_zero_phase_refs": 100,
+    "main_optical_shots_per_condition": 25000,
+    "pnr_standards_each": 10000,
+    "source_monitor_events": 40000,
+    "detector_reference_trials": 30000,
+    "triggered_electronics_reference_trials": 30000
+  },
+  "estimation": {
+    "continuous_phase_hyper_MLE": true,
+    "latent_path_gaussian_conditional_sampling": true,
+    "source_and_detector_nuisance_randomized_calibration": true,
+    "far_delay_nuisance_update": true,
+    "hyperparameter_MLE_uncertainty_integrated": false,
+    "M0_grid_points": 161,
+    "local_particles_per_trial": 180
+  },
+  "jacobian": {
+    "parameter_order": [
+      "M0",
+      "triplet_fraction",
+      "triggered_background",
+      "eta_a",
+      "eta_b"
+    ],
+    "observation_order": [
+      "near",
+      "far"
+    ],
+    "matrix": [
+      [
+        -0.16531004020936546,
+        0.05483053232696599,
+        0.8782803496074075,
+        0.15598196380917084,
+        0.16966998810513664
+      ],
+      [
+        0,
+        0.2315188922324962,
+        0.736522485872415,
+        0.33694953857910104,
+        0.36703676903337973
+      ]
+    ],
+    "rank": 2,
+    "singular_values": [
+      1.2743592264175336,
+      0.2741429556728281
+    ]
+  },
+  "audit": [
+    {
+      "case": "baseline",
+      "outer": 80,
+      "covered": 72,
+      "coverage": 0.9,
+      "mean_estimated_M": 0.720144213021,
+      "RMSE": 0.019275419384871293,
+      "mean_ci_width": 0.06813434881159346,
+      "mean_continuous_hyper_MLE": [
+        0.09398995584452836,
+        0.1493164458194995,
+        0.01531441373073703
+      ]
+    },
+    {
+      "case": "outside_former_v101_hyper_grid",
+      "outer": 40,
+      "covered": 39,
+      "coverage": 0.975,
+      "mean_estimated_M": 0.7173055477175841,
+      "RMSE": 0.02527492191381048,
+      "mean_ci_width": 0.10261606813621826,
+      "mean_continuous_hyper_MLE": [
+        0.17919150569929054,
+        0.24209341099113071,
+        0.0754597211591025
+      ]
+    }
+  ],
+  "local_executed": {
+    "tests_passed": 37,
+    "tests_total": 37,
+    "zip": "photon_v102_complete.zip",
+    "zip_sha256": "463f731f042cc8909d402e94d2d6a83122b4f3429123fca43de6c834fa9e5013",
+    "sha256_verified_research_files": 21,
+    "outer_datasets": 120,
+    "figures": [
+      "results/overlap_estimates_v102.png",
+      "results/hyperparameter_recovery_v102.png"
+    ]
+  },
+  "github_counterpart": {
+    "independently_authored_regressions": 25,
+    "byte_identical_to_local": false,
+    "ci_verified": false
+  },
+  "caveats": [
+    "95% Bayesian equal-tail credible intervals were checked for empirical coverage, not mathematically guaranteed frequentist coverage",
+    "Continuous sensor nuisance hyperparameters estimated by MLE and FIXED in phase smoothing; their uncertainty not integrated",
+    "PNR model only two confusion rows unknown, all five classes assumed available under known standards",
+    "physical three-photon near/far extremes only",
+    "nuisance calibration samples assume independent known references",
+    "80 and 40 outer trials are insufficient to make definitive empirical coverage claims"
+  ]
+}

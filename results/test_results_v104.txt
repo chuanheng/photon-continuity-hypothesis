@@ -1,0 +1,42 @@
+v1.04 LOCAL ACTUAL EXECUTION — November 14, 2026.
+
+Working project root /mnt/data/photon_v104
+Commands:
+  OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.run_v104
+  OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m unittest discover -s tests -v
+  OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.plot_v104
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.858s
+
+OK
+
+Exact submodel prior SBC:
+450 prior predictive replicates, 49 posterior draws each,
+430/450 (95.5556%) 95% credible intervals included their prior-sampled
+ground truths. Rank histogram bins 59,35,47,49,43,37,36,54,47,43.
+chi^2(9)=12.311111, p=0.196333.
+
+Held-out predictive check:
+Correct Gaussian holdout: 6/75 flagged at posterior predictive
+tail probability <=.05. With deliberate 9% contamination ONLY in the
+heldout 30 zero-standard values: 51/75 flagged.
+
+Importance proposal sensitivity on 32 paired physical datasets,
+90 hyperparameter particles: proposal scales 0.8,1.4,2.2,
+median ESS 64.5411,59.1696,19.8628. All three mean M0 near .717.
+
+Full ORIGINAL locally executed source, 34 unit tests, complete raw data,
+three PNG figures, and SHA256 manifest are included in:
+photon_v104_complete.zip, 167412 bytes.
+All 21 research content files verified against exact ZIP-contained SHA-256.
+ZIP SHA-256:
+f4daa44e20b00d42eb8abffbf1c8915c1225c964030d88c78a55486203b069ea
+
+IMPORTANT: Full complex HOM detector/source/phase model NOT formally SBC
+validated. Restrict all rank-uniformity and 95.56% prior-coverage claims
+to exact one-dimensional optical submodel. No laboratory photon data.
+No permanently surviving historical individual photon identity result.
+
+GitHub source is separately authored; 20 counterpart regression tests
+are NOT claimed to have run in remote CI.

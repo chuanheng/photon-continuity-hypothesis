@@ -1,0 +1,78 @@
+{
+  "version": "v0.94",
+  "data_type": "synthetic model, not laboratory experiment",
+  "truth": {
+    "eta_a": 0.74,
+    "eta_b": 0.68,
+    "dark_a": 0.002,
+    "dark_b": 0.003,
+    "w11": 0.9,
+    "w20": 0.04,
+    "w02": 0.04,
+    "w00": 0.02,
+    "overlap": 0.72
+  },
+  "predicted_near_coincidence": 0.08557754880720003,
+  "predicted_far_coincidence": 0.24821511250800002,
+  "one_simulated_dataset": {
+    "near_counts": 6829,
+    "far_counts": 20046,
+    "shots_each": 80000,
+    "calibrated_overlap_estimate": 0.7239956322028758,
+    "w11_from_far": 0.926256486530006,
+    "w11_from_source_cal": 0.8994,
+    "estimated_eta_a": 0.7285571142284569,
+    "estimated_eta_b": 0.6780018055973518,
+    "estimated_dark_a": 0.002,
+    "estimated_dark_b": 0.0031,
+    "naive_wrong_overlap": 0.829275
+  },
+  "single_example_bootstrap": {
+    "replications": 500,
+    "percentile_95_ci": [
+      0.7140960377429886,
+      0.7337508375477682
+    ],
+    "estimated_overlap_sd": 0.005147872245627397,
+    "independent_calibrations_resimulated_each_bootstrap": true
+  },
+  "outer_replicates": {
+    "datasets": 120,
+    "bootstrap_per_dataset": 120,
+    "covered_true_overlap": 114,
+    "estimated_coverage": 0.95,
+    "exact_binomial_95_interval": [
+      0.8943461454812877,
+      0.9814324132173308
+    ],
+    "mean_estimated_overlap": 0.7201512027207909,
+    "sd_estimated_overlap": 0.007765237112910618
+  },
+  "structural_identifiability": {
+    "near_only_jacobian_rank": 1,
+    "near_and_far_jacobian_rank": 2,
+    "conditions": "calibrated source contamination and detector nuisance; not general identifiable for arbitrary imperfections"
+  },
+  "identity_no_go": "hypothetical factor on HOM overlap absorbed into valid ordinary mixed-state density operator",
+  "tested_local_zip": {
+    "tests_passed": 52,
+    "tests_total": 52,
+    "sha256_verified_content_files": 16,
+    "full_results": [
+      "results/mixed_hom_v094.json",
+      "results/coverage_v094.json"
+    ],
+    "figures": 2
+  },
+  "github_counterpart": {
+    "independently_authored_regression_test_methods": 26,
+    "remote_CI_verified": false
+  },
+  "limitations": [
+    "ideal independent photon-number-resolving source event calibration",
+    "photon classes 00,11,20,02 only",
+    "threshold detectors and independent dark clicks",
+    "no deadtime, correlated detector errors or arbitrary multimode environment memory",
+    "simulation coverage not physical coverage"
+  ]
+}

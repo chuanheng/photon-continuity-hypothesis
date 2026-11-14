@@ -13,7 +13,7 @@ class HyperTests(unittest.TestCase):
  def setUpClass(cls):
   cls.s=Setup();cls.rec=simulate(103007,cls.s)
  def test_baseline_sensor_shape(self):self.assertEqual(self.rec['y'].shape,(40,3))
- def test_initial_phase(self):self.assertEqual(self.rec['true_u'][0],0)
+ def test_initial_phase(self):self.assertEqual(self.rec['true_path'][0],0)
  def test_mle_shape(self):self.assertEqual(hyper_mle(self.rec).shape,(3,))
  def test_mle_bounded(self):
   x=hyper_mle(self.rec)

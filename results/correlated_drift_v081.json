@@ -1,0 +1,38 @@
+{
+  "version": "v0.81",
+  "n": 80,
+  "rho": 0.92,
+  "differential_ar1_innovation_sd": 0.09,
+  "paired_readout_sd": 0.05,
+  "null_rejection": {
+    "naive_rejection_rate": 0.9425,
+    "correlated_rejection_rate": 0.0525,
+    "analytic_threshold": 3.841458820694124,
+    "corrected_standard_error": 0.11120794081264435,
+    "naive_standard_error": 0.005590169943749474,
+    "corrected_mean_z": -0.03943535227487141
+  },
+  "alternative_rejection": {
+    "naive_rejection_rate": 0.97,
+    "correlated_rejection_rate": 0.29,
+    "analytic_threshold": 3.841458820694124,
+    "corrected_standard_error": 0.11120794081264435,
+    "naive_standard_error": 0.005590169943749474,
+    "corrected_mean_z": 1.30938919122342
+  },
+  "bootstrap_null_threshold_95pct": 3.842686504808346,
+  "chi_squared_1_95pct": 3.841458820694124,
+  "single_null_sequence": {
+    "delta_hat": 0.015488375706991925,
+    "standard_error": 0.11120794081264435,
+    "z": 0.13927400861675604,
+    "llr": 0.019397249476180236
+  },
+  "uncalibrated_group_bias_identifiability": "delta and ordinary group bias enter via their sum",
+  "local_tests": {
+    "total": 27,
+    "passed": 27,
+    "failed": 0
+  },
+  "caveat": "Known covariance; fitted phase is approximated as Gaussian; not raw photon counts or QED."
+}

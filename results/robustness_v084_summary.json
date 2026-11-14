@@ -1,0 +1,50 @@
+{
+  "version": "v0.84",
+  "outer_simulations": 120,
+  "bootstrap_each": 79,
+  "seed": 8401,
+  "parameters": {
+    "exposure": 700,
+    "eta": 0.72,
+    "visibility": 0.8,
+    "dark": 0.8,
+    "baseline": 0.18,
+    "rho": 0.78,
+    "sigma": 0.065,
+    "sensor_readout": 0.025
+  },
+  "scenarios": {
+    "stationary": {
+      "rejected": 4,
+      "rate": 0.03333333333333333,
+      "mc_se": 0.016386534670836252,
+      "mean_stat": 1.1124374569927744,
+      "mean_rho": 0.748798192305061,
+      "mean_sigma": 0.0653165906561524
+    },
+    "random_walk": {
+      "rejected": 69,
+      "rate": 0.575,
+      "mc_se": 0.04512713522187436,
+      "mean_stat": 22.626603278794278,
+      "mean_rho": 0.7316664222755558,
+      "mean_sigma": 0.06384006949926085
+    },
+    "ordinary_group_bias": {
+      "rejected": 108,
+      "rate": 0.9,
+      "mc_se": 0.027386127875258303,
+      "mean_stat": 23.8739066469258,
+      "mean_rho": 0.733426672424842,
+      "mean_sigma": 0.0642141196738242
+    }
+  },
+  "tests": {
+    "run": 29,
+    "passed": 29,
+    "elapsed_sec": 0.582
+  },
+  "critical_caveat": "Off-model data show rejections of a MISSPECIFIED null, not discovery of photon identity or necessarily Type-I error relative to a fair composite null",
+  "numerics": "Local full JSON includes all 360 outer p-values; this GitHub summary includes aggregated statistics",
+  "future": "v0.85 fair composite ordinary-memory null"
+}

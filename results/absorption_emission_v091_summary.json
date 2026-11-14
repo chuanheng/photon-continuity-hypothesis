@@ -1,0 +1,74 @@
+{
+  "version": "v0.91",
+  "basis": [
+    "|g,1_a,0_b>",
+    "|e,0_a,0_b>",
+    "|g,0_a,1_b>"
+  ],
+  "stages": {
+    "input": {
+      "P_a": 1,
+      "P_e": 0,
+      "P_b": 0,
+      "photon_count": 1,
+      "excitation_count": 1
+    },
+    "stored": {
+      "P_a": 0,
+      "P_e": 1,
+      "P_b": 0,
+      "photon_count": 0,
+      "excitation_count": 1
+    },
+    "output": {
+      "P_a": 0,
+      "P_e": 0,
+      "P_b": 1,
+      "photon_count": 1,
+      "excitation_count": 1
+    }
+  },
+  "commutator_norm_Ha_Nexc": 0,
+  "commutator_norm_Ha_Nphoton": 1.4142135623730951,
+  "commutator_norm_Hb_Nexc": 0,
+  "emission_channel_excited_input_pi_over_4": [
+    [
+      0.5,
+      0
+    ],
+    [
+      0,
+      0.5
+    ]
+  ],
+  "kraus_completeness_error": 0,
+  "reference_mode_coherence_error": 0,
+  "spectator_labels": {
+    "aux0": [
+      0,
+      0,
+      1
+    ],
+    "aux_plus": [
+      0,
+      0,
+      1
+    ]
+  },
+  "eight_dimensional_check": {
+    "commutator_Ha_Nexc": 0,
+    "commutator_Hb_Nexc": 0,
+    "photon_number_not_conserved": true
+  },
+  "local_tests": {
+    "passed": 49,
+    "total": 49
+  },
+  "physics": "QED-compatible resonant RWA toy dynamics. No historical individual photon identity demonstrated.",
+  "limitations": [
+    "two-level matter plus controlled cavity modes",
+    "one-excitation transfer",
+    "free space spontaneous emission requires continuum modes",
+    "no independent photon identity observable"
+  ]
+}

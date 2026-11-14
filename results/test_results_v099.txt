@@ -1,0 +1,37 @@
+v0.99 LOCAL run log, 2026-11-14.
+
+Project: /mnt/data/photon_v099
+PYTHONPATH=. python -m unittest discover -s tests -p 'test_joint_uncertainty_v099.py' -v
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.231s
+
+OK
+
+PYTHONPATH=. OPENBLAS_NUM_THREADS=1 python -m experiments.run_v099
+PYTHONPATH=. python -m experiments.plot_v099
+
+3 budgets x 60 outer datasets x 79 joint parametric bootstrap fits:
+180 outer synthetic datasets and 14220 bootstrap records.
+All were valid for the chosen random seeds and parameters.
+True zero-drift intrinsic HOM overlap M0 = .72.
+
+Budget 1300: mean intrinsic .733181, RMSE .035228,
+actual nominal 95-percent coverage 43/60, mean CI width .111749.
+Budget 13000: mean intrinsic .729018, RMSE .029686,
+coverage 48/60, mean CI width .099723.
+Budget 130000: mean intrinsic .722213, RMSE .026595,
+coverage 53/60, mean CI width .088696.
+
+The actual locally executed Python source, 31-case verbose log, full
+180-dataset per-case intervals, two PNG figures and per-file SHA-256
+are contained in photon_v099_complete.zip.
+Verified ZIP SHA-256:
+d525d10598cc14f56cfa66d6b44bc09f45205cadda9c92b63e11edd10a127c9e
+
+IMPORTANT: This conditional-bootstrap method plugs in noisy phase
+estimate as latent true phase; it DOES NOT attain verified 95% coverage.
+GitHub independently authored companion has 18 test methods but has
+NOT been verified to run through GitHub CI.
+No real photon measurements and no new proof of permanent historical
+photon identity.

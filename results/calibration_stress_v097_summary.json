@@ -1,0 +1,120 @@
+{
+  "version": "v0.97",
+  "study": "HOM detector/source/phase calibration misspecification",
+  "data_type": "synthetic only",
+  "true_intrinsic_overlap": 0.72,
+  "outer_per_scenario": 60,
+  "B_per_outer": 79,
+  "scenarios": {
+    "correct": {
+      "mean_estimated_intrinsic": 0.7113581279726912,
+      "mean_bias_intrinsic": -0.008641872027308737,
+      "coverage_intrinsic": 0.9,
+      "coverage_period_mean": 0.9,
+      "mean_true_period": 0.5273662420330133
+    },
+    "phase_readout_sd_0_05": {
+      "mean_estimated_intrinsic": 0.7183943172733838,
+      "mean_bias_intrinsic": -0.0016056827266163292,
+      "coverage_intrinsic": 0.9333333333333333,
+      "coverage_period_mean": 0.9333333333333333,
+      "mean_true_period": 0.5505305655022774
+    },
+    "phase_readout_sd_0_15": {
+      "mean_estimated_intrinsic": 0.7366069212049333,
+      "mean_bias_intrinsic": 0.016606921204933338,
+      "coverage_intrinsic": 0.7333333333333333,
+      "coverage_period_mean": 0.95,
+      "mean_true_period": 0.5546935933288822
+    },
+    "pnr_triplet_missed_10pct": {
+      "mean_estimated_intrinsic": 0.730342645184959,
+      "mean_bias_intrinsic": 0.01034264518495895,
+      "coverage_intrinsic": 0.9333333333333333,
+      "coverage_period_mean": 0.9333333333333333,
+      "mean_true_period": 0.5376255042224082
+    },
+    "pnr_triplet_missed_30pct": {
+      "mean_estimated_intrinsic": 0.7480034014146698,
+      "mean_bias_intrinsic": 0.02800340141466982,
+      "coverage_intrinsic": 0.7333333333333333,
+      "coverage_period_mean": 0.7333333333333333,
+      "mean_true_period": 0.5392439645810151
+    },
+    "q_reference_low_0_004": {
+      "mean_estimated_intrinsic": 0.711896407025219,
+      "mean_bias_intrinsic": -0.008103592974781006,
+      "coverage_intrinsic": 0.95,
+      "coverage_period_mean": 0.95,
+      "mean_true_period": 0.5340274585596689
+    },
+    "q_reference_high_0_004": {
+      "mean_estimated_intrinsic": 0.7270643011578163,
+      "mean_bias_intrinsic": 0.007064301157816174,
+      "coverage_intrinsic": 0.9333333333333333,
+      "coverage_period_mean": 0.9333333333333333,
+      "mean_true_period": 0.5355269098658038
+    },
+    "combined": {
+      "mean_estimated_intrinsic": 0.7568967119057646,
+      "mean_bias_intrinsic": 0.03689671190576465,
+      "coverage_intrinsic": 0.6,
+      "coverage_period_mean": 0.8666666666666667,
+      "mean_true_period": 0.5513161465681062
+    }
+  },
+  "population_limit_fixed_phase_seed_9719": {
+    "correct": {
+      "estimated_intrinsic": 0.72,
+      "bias_intrinsic": 0
+    },
+    "phase_readout_sd_0_05": {
+      "estimated_intrinsic": 0.7203120014294404,
+      "bias_intrinsic": 0.00031200142944043385
+    },
+    "phase_readout_sd_0_15": {
+      "estimated_intrinsic": 0.7235326868985588,
+      "bias_intrinsic": 0.00353268689855879
+    },
+    "pnr_triplet_missed_10pct": {
+      "estimated_intrinsic": 0.7281936846956287,
+      "bias_intrinsic": 0.008193684695628756
+    },
+    "pnr_triplet_missed_30pct": {
+      "estimated_intrinsic": 0.7442070883722818,
+      "bias_intrinsic": 0.024207088372281804
+    },
+    "q_reference_low_0_004": {
+      "estimated_intrinsic": 0.7165308178469064,
+      "bias_intrinsic": -0.003469182153093553
+    },
+    "q_reference_high_0_004": {
+      "estimated_intrinsic": 0.7234974443294934,
+      "bias_intrinsic": 0.0034974443294933932
+    },
+    "combined": {
+      "estimated_intrinsic": 0.7444519002871374,
+      "bias_intrinsic": 0.024451900287137396
+    }
+  },
+  "notes": [
+    "Correct-monitor scenario observed only 54/60 coverage; small Monte Carlo samples and bootstrap finite-sample limitations matter.",
+    "Different cases use different reproducible seeds; random phase path differences can affect mean estimates.",
+    "Conditional population-limit results fix one true phase trajectory, not a distribution over all random walks.",
+    "PNR confusion only 21→11 (and optional 11→21) not general full response matrix.",
+    "Bootstrap repeats the assumed monitor model and does not propagate systematic calibration error.",
+    "Zero actual photon experiments; no proof of permanently surviving historical photon identity."
+  ],
+  "local_package": {
+    "filename": "photon_v097_complete.zip",
+    "sha256": "775d777eb0306f2e16ef6509bc4f4b169e861a11ff4b97635c4b0c7cc533cd33",
+    "verified_research_files": 17,
+    "tests_passed": 44,
+    "raw_records": "results/calibration_stress_v097.json",
+    "figures": 2
+  },
+  "github_counterpart": {
+    "independently_authored_test_methods": 22,
+    "CI_verified": false
+  }
+}

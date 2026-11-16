@@ -1,0 +1,40 @@
+{
+  "version": "v0.88",
+  "review_scope": "non-exhaustive literature check, not claim of novelty",
+  "claims": [
+    {
+      "claim": "bosonic slot labels cannot establish historical identity",
+      "prior": "https://plato.stanford.edu/entries/qt-idind/",
+      "verdict": "known"
+    },
+    {
+      "claim": "minimal Stinespring uniqueness up to environmental unitary",
+      "prior": "https://mathweb.ucsd.edu/~helton/247A10/completePosIntro.pdf",
+      "verdict": "known"
+    },
+    {
+      "claim": "phase b+delta structural redundancy",
+      "prior": "https://pages.stern.nyu.edu/~dbackus/Identification/Rothenberg_id_Econometrica_71.pdf",
+      "verdict": "known principle applied"
+    },
+    {
+      "claim": "same one-step map, different two-step outcomes",
+      "prior": "https://doi.org/10.1103/PhysRevLett.120.040405",
+      "verdict": "known process-tensor phenomenon"
+    }
+  ],
+  "local_reproducibility": {
+    "tests": 25,
+    "passed": 25,
+    "failed": 0
+  },
+  "numeric_example": {
+    "one_step_channel_equal": true,
+    "two_step_trace_distance": 0.5,
+    "equal_prior_optimal_success": 0.75
+  },
+  "physics": {
+    "new_photon_identity_prediction": false,
+    "novel_theorem_established": false
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "version": "v1.07",
+  "scientific_status": "synthetic standard quantum optics, no historical individual photon persistence test",
+  "main_paired_datasets": 100,
+  "inference_conditions": 6,
+  "total_inferences": 600,
+  "truth": {
+    "intrinsic_HOM_M0": 0.72,
+    "restricted_three_photon_rho": 0.1,
+    "triplet_weight": 0.14
+  },
+  "instrument": {
+    "near_shots": 1500,
+    "far_shots": 1500,
+    "phase_blocks": 24,
+    "phase_readings_per_block": 2,
+    "phase_zero_refs": 40,
+    "continuous_phase_nuisance_particles": 160,
+    "reference_model": "ideal independent two-photon HOM; C~Binomial(n,(1-rho)/2); rho~Uniform(0,1); matched internal states from main triplet assumed"
+  },
+  "cases": [
+    {
+      "name": "wrong_fixed_rho_1",
+      "rho_reference_trials": null,
+      "mean_M": 0.4651690318436582,
+      "RMSE_M": 0.2639515377553935,
+      "coverage_count": 4,
+      "mean_CI_width": 0.2909413746363583,
+      "mean_est_rho": 1
+    },
+    {
+      "name": "no_reference",
+      "rho_reference_trials": 0,
+      "mean_M": 0.5955463298595447,
+      "RMSE_M": 0.1406899644659268,
+      "coverage_count": 89,
+      "mean_CI_width": 0.4138875619280639,
+      "mean_est_rho": 0.5009219070758341
+    },
+    {
+      "name": "reference_100",
+      "rho_reference_trials": 100,
+      "mean_M": 0.6890637876967917,
+      "RMSE_M": 0.07804089637353143,
+      "coverage_count": 95,
+      "mean_CI_width": 0.33282300495813816,
+      "mean_est_rho": 0.13975171622110094
+    },
+    {
+      "name": "reference_1000",
+      "rho_reference_trials": 1000,
+      "mean_M": 0.6989569749083759,
+      "RMSE_M": 0.0753643834602938,
+      "coverage_count": 96,
+      "mean_CI_width": 0.3265166235243441,
+      "mean_est_rho": 0.10052080713602152
+    },
+    {
+      "name": "reference_10000",
+      "rho_reference_trials": 10000,
+      "mean_M": 0.6995560933629541,
+      "RMSE_M": 0.07419899757691296,
+      "coverage_count": 96,
+      "mean_CI_width": 0.3260561202996415,
+      "mean_est_rho": 0.09832721663717864
+    },
+    {
+      "name": "oracle_known_rho_0.1",
+      "rho_reference_trials": null,
+      "mean_M": 0.6991954580473013,
+      "RMSE_M": 0.07411645930220266,
+      "coverage_count": 96,
+      "mean_CI_width": 0.32583767595061025,
+      "mean_est_rho": 0.1
+    }
+  ],
+  "gram_phase_counterexample": {
+    "spatial_input_ports": [
+      0,
+      0,
+      1
+    ],
+    "pairwise_overlap_squares": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "case_phase0": {
+      "triad_phase_rad": 0,
+      "p_occupancy_A_k0_to3": [
+        0.2,
+        0.3,
+        0.3,
+        0.2
+      ]
+    },
+    "case_phase_pi2": {
+      "triad_phase_rad": 1.5707963267948966,
+      "p_occupancy_A_k0_to3": [
+        0.175,
+        0.325,
+        0.325,
+        0.175
+      ]
+    },
+    "conclusion": "all pair HOM squared overlaps same but three-photon distribution different: general triad phase unidentifiable by pairwise overlaps alone"
+  },
+  "actual_local_validation": {
+    "unittests_passed": 44,
+    "sha256_verified_research_files": 25,
+    "zip_name": "photon_v107_complete.zip",
+    "zip_bytes": 290677,
+    "zip_sha256": "6badebe6888aae6d076f255f48f5be3a601109c6670ce71deaea2ea3b0b95d07",
+    "results": "results/full_audit_v107.json",
+    "figures": [
+      "results/coverage_v107.png",
+      "results/estimates_v107.png",
+      "results/gram_phase_v107.png"
+    ]
+  },
+  "github_companion": {
+    "model_gram": "models/gram_v107.py",
+    "model_rho": "models/rho_reference_v107.py",
+    "simplification": "rho companion fixes other instrument/sensor nuisance, full local ZIP propagates them",
+    "test_methods": 22,
+    "ci_confirmed": false,
+    "byte_identical_to_local": false
+  },
+  "warnings": [
+    "The 600 inferences share 100 primary datasets: not 600 independent physics experiments.",
+    "Ideal pair-reference rho must refer to same pure internal states as triplet source; experimental mismatch unmodeled.",
+    "The rho interpolation is valid only for two photons identical internal state in same spatial port and one photon in other.",
+    "Fixed truth audit, not full prior-predictive SBC, not a laboratory optical experiment."
+  ]
+}

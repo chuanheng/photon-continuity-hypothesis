@@ -1,0 +1,17 @@
+Local v0.88 Python test execution, 2026-11-14.
+Directory: /mnt/data/photon_v088
+Command: PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.003s
+
+OK
+
+Computed results using: PYTHONPATH=. python experiments/run_v088.py
+one-step output for |0>: I/2
+two-step fixed hidden bit output: |0><0|
+two-step fresh independent hidden bit output: I/2
+trace distance: 0.5
+equal prior optimal success: 0.75
+
+This is a standard multitime-memory toy demonstration. It does not establish permanent photon identity. Remote GitHub CI has not been verified.

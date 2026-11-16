@@ -1,0 +1,33 @@
+v0.98 actual local execution, 2026-11-14.
+
+cd /mnt/data/photon_v098
+PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.023s
+
+OK
+
+PYTHONPATH=. python -m experiments.run_v098
+PYTHONPATH=. python -m experiments.plot_v098
+
+300 paired synthetic physical experiments, three reference budgets:
+n=100: 1,300 external reference shots, additional 40 phase repeats;
+  corrected M0 mean 0.737496, bias +0.017496, RMSE 0.034274.
+n=1000: 13,000 external reference shots, additional 80 phase repeats;
+  corrected M0 mean 0.729776, bias +0.009776, RMSE 0.027264.
+n=10000: 130,000 external reference shots, additional 800 phase repeats;
+  corrected M0 mean 0.722261, bias +0.002261, RMSE 0.022658.
+
+Uncorrected paired data mean M0=0.757653, bias +0.037653,
+RMSE=0.046791.
+
+17 research files were verified against exact ZIP-contained bytes using
+SHA-256; local package: photon_v098_complete.zip (132,474 bytes).
+The source files and 34 tests executed are the local ZIP versions.
+The GitHub companion files were authored separately and GitHub CI has
+NOT been confirmed to run them. 16 companion regression methods are
+available on GitHub but not counted as the 34 local tests.
+
+No claim of 95% interval coverage recovery, real laboratory data,
+novel photonic QED, or permanent historical photon identity.

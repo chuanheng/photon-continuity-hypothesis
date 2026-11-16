@@ -1,0 +1,16 @@
+Local tested v0.92 on 2026-11-14.
+cd /mnt/data/photon_v092
+PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.123s
+
+OK
+
+PYTHONPATH=. python -m experiments.run_v092
+Results include 401 field modes + atomic state; uniform detunings [-12,12], Gamma=1.
+Max norm error 2.531308496145357e-14.
+Maximum atomic population difference for t >= 0.5: 0.024620336034381518.
+Full original local test log, plots, time scan, spectrum and SHA-256 manifest are in the downloadable ZIP.
+
+The GitHub files were separately authored and have not been independently tested in GitHub CI. Numerical unit tests are not empirical evidence for permanent photon identity.

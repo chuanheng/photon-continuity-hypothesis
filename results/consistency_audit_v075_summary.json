@@ -1,0 +1,17 @@
+{
+  "version": "v0.75",
+  "document_type": "synthesis of completed deep-research conclusions",
+  "original_artifacts_accessible_in_current_session": false,
+  "github_uploaded": [
+    "docs/consistency_audit_v075_zh.md",
+    "results/consistency_audit_v075_summary.json"
+  ],
+  "original_code_and_tests_uploaded": false,
+  "prior_research_reported_unittest": {
+    "passed": 21,
+    "total": 21,
+    "independently_reexecuted_here": false
+  },
+  "scientific_status": "Conditional slot-identity no-go; conserved internal label possible as extended toy model; no independent PCH-A experimental prediction",
+  "next": "v0.76 Lorentz-covariant field theory, Noether current, QED consistency"
+}

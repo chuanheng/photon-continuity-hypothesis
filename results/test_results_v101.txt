@@ -1,0 +1,42 @@
+PCH-A v1.01 LOCAL TEST PROVENANCE, 2026-11-14.
+
+Project working directory: /mnt/data/photon_v101
+Test:
+  OPENBLAS_NUM_THREADS=1 python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.099s
+
+OK
+
+Actual calculations:
+  OPENBLAS_NUM_THREADS=1 python -m experiments.run_v101
+  OPENBLAS_NUM_THREADS=1 python -m experiments.stress_v101
+  OPENBLAS_NUM_THREADS=1 python -m experiments.plot_v101
+
+Main audit: 3 repeated sensor reading settings (1, 2, 10) x 40 independent
+synthetic experiments = 120 outer datasets, 240 joint posterior attenuation
+and optical control draws per dataset. M0 truth=0.72.
+
+Empirical nominal 95% equal-tail Bayesian credible interval coverages:
+  1 read: plug-in 25/40, joint 40/40
+  2 reads: plug-in 34/40, joint 40/40
+ 10 reads: plug-in 32/40, joint 39/40.
+
+Outside-grid stress: true sigma_walk=.18, sigma_read=.24, bias=.08;
+40 datasets at 2 reads: plug-in 30/40 and joint 37/40.
+With correct grid: plug-in 34/40 and joint 39/40.
+
+The LOCAL zip photon_v101_complete.zip contains 21 SHA-256 verified
+research files plus sha256_manifest.json, the exact actually tested
+source files and 38 unittest methods, 120+80 complete synthetic records,
+2 PNG result plots, and complete executed CLI logs.
+ZIP SHA256:
+9ace0fe1649d1db4f474d5f716e9799f8533099bd8830a31a148153e283184a9
+
+GitHub model and 24 regression test methods are independently authored
+companions, NOT byte-for-byte identical copies of the locally executed
+files. GitHub Actions CI execution has NOT been verified.
+
+The research is ordinary quantum optics and statistical inference,
+not experimental evidence of an individual historical photon's survival.

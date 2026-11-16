@@ -1,0 +1,39 @@
+name: Photon research regression v0.87
+
+on:
+  push:
+    branches:
+      - research/v0.1-initial-draft
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install research dependencies
+        run: python -m pip install --upgrade pip numpy scipy
+      - name: v0.85 fair composite null
+        run: python -m unittest discover -s tests -p 'test_fair_composite_null_v085.py' -v
+      - name: v0.86 research manifest and mathematical assertions
+        run: python -m unittest discover -s tests -p 'test_research_audit_v086.py' -v
+      - name: Verify versioned research documents exist
+        run: |
+          test -f docs/research_audit_v086_zh.md
+          test -f docs/reproducibility_v087_zh.md
+          test -f docs/historical_backfill_index_v087.md
+          test -f results/research_audit_v086.json
+          python - <<'PY'
+          import json
+          x=json.load(open('results/research_audit_v086.json'))
+          assert x['versions_audited']==36
+          assert x['total_unit_tests_passed']==1086
+          print('Audited historical report and metadata present.')
+          PY

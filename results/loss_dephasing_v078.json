@@ -1,0 +1,40 @@
+{
+  "version": "v0.78",
+  "eta": 0.65,
+  "visibility": 0.8,
+  "phase_rad": 1.5707963267948966,
+  "alternative_phase_offset_rad": 0.2,
+  "n": 1000,
+  "identity_probability": [
+    0.35,
+    0.325,
+    0.325
+  ],
+  "memory_probability": [
+    0.35,
+    0.325,
+    0.325
+  ],
+  "alternative_probability": [
+    0.35,
+    0.2733459739932841,
+    0.3766540260067158
+  ],
+  "identity_vs_memory_total_variation": 0,
+  "identity_vs_memory_kl": 0,
+  "phase_offset_kl_per_trial": 0.008244573973433422,
+  "expected_twice_llr_n1000": 16.489147946866844,
+  "fisher_phase_per_trial": 0.416,
+  "fisher_phase_n1000": 416,
+  "simulated_counts_alternative": [
+    345,
+    276,
+    379
+  ],
+  "tests": {
+    "passed": 27,
+    "failed": 0,
+    "local_execution": true
+  },
+  "not_QED": true
+}

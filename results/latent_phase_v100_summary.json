@@ -1,0 +1,80 @@
+{
+  "version": "v1.00",
+  "synthetic_data_only": true,
+  "known_nuisance": true,
+  "physics": "v0.96 50:50 boson Fock HOM with calibrated PNR pollution, detector efficiency/dark counts and matched electronics",
+  "latent_model": {
+    "blocks": 40,
+    "initial_phase": 0,
+    "walk_sd": 0.095,
+    "read_sd": 0.15,
+    "bias": 0,
+    "near_shots": 25000,
+    "prior_M0": "Uniform(0,1)",
+    "latent_integration_draws": 700,
+    "M0_grid_points": 401,
+    "method": "Gaussian random walk precision-matrix Cholesky smoothing and Monte Carlo marginalized binomial likelihood"
+  },
+  "truth_M0": 0.72,
+  "local_coverage_audit": {
+    "outer_per_reading_budget": 100,
+    "total_outer": 300,
+    "results": [
+      {
+        "sensor_reads_per_block": 1,
+        "plugin_covered": 79,
+        "latent_covered": 99,
+        "plugin_mean": 0.7142343611953375,
+        "latent_mean": 0.7192721814225752,
+        "plugin_rmse": 0.022480577544398205,
+        "latent_rmse": 0.021337550606370454,
+        "plugin_interval_mean_width": 0.05696650997021318,
+        "latent_interval_mean_width": 0.08005177010351101
+      },
+      {
+        "sensor_reads_per_block": 2,
+        "plugin_covered": 82,
+        "latent_covered": 94,
+        "plugin_mean": 0.7183313257384399,
+        "latent_mean": 0.7217305909264546,
+        "plugin_rmse": 0.018735445476872684,
+        "latent_rmse": 0.01842952680532884,
+        "plugin_interval_mean_width": 0.05699072708809692,
+        "latent_interval_mean_width": 0.07041781274286653
+      },
+      {
+        "sensor_reads_per_block": 20,
+        "plugin_covered": 92,
+        "latent_covered": 97,
+        "plugin_mean": 0.720200100129802,
+        "latent_mean": 0.7208272914176126,
+        "plugin_rmse": 0.015377548575792214,
+        "latent_rmse": 0.015304577457952714,
+        "plugin_interval_mean_width": 0.05714084966180389,
+        "latent_interval_mean_width": 0.058948468876826025
+      }
+    ]
+  },
+  "local_zip": {
+    "filename": "photon_v100_complete.zip",
+    "sha256": "f379fcef8843248e7f69d4f317a4af4a4d55d1b7199001a0844135e7fe2ef9d1",
+    "verified_research_files": 17,
+    "actually_passed_tests": 27,
+    "full_results": "results/latent_phase_v100.json",
+    "png_figures": [
+      "results/coverage_v100.png",
+      "results/phase_smoothing_v100.png"
+    ]
+  },
+  "github_counterpart": {
+    "independently_authored_regression_tests": 22,
+    "CI_success_verified": false,
+    "byte_identical_to_local": false
+  },
+  "statistical_notes": [
+    "Intervals are Bayesian 95% equal-tail credible intervals; empirically checked for frequentist coverage at fixed truth.",
+    "Other detector/source calibration nuisance including hyperparameters were treated known, unlike full v0.99 unknown-nuisance problem.",
+    "Each coverage rate derives from 100 simulations, with substantial binomial sampling uncertainty.",
+    "No independent permanently identified historical photon observable or new QED prediction."
+  ]
+}

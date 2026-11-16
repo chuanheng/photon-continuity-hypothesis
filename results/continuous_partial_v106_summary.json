@@ -1,0 +1,102 @@
+{
+  "version": "v1.06",
+  "study": "fixed-truth M0 interval coverage under partial three-boson indistinguishability and continuous sensor hyperprior misspecification",
+  "synthetic_only": true,
+  "truth_M0": 0.72,
+  "experiments_per_case": 100,
+  "total_outer": 500,
+  "hyper_particles_per_dataset": 160,
+  "notes": [
+    "NOT full prior SBC; fixed-parameter coverage experiment",
+    "triplet rho formula strictly for |2_phi,1_psi> with two photons in same internal state phi",
+    "partial_calibrated assumes rho is precisely known from an oracle reference, without propagating rho uncertainty",
+    "generic 3-photon Gram matrix interference not modeled",
+    "rho and M0 nonidentifiable from near/far coincidences alone (Jacobian rank 1)",
+    "off-prior high coverage conceals very wide credible intervals and severe hyper importance ESS loss",
+    "no experiment on historical individual photon identity"
+  ],
+  "scenarios": {
+    "matched": {
+      "true_rho": 1,
+      "assumed_rho": 1,
+      "mean_estimate": 0.7061915306979191,
+      "bias": -0.013808469302080906,
+      "rmse": 0.06509136969219641,
+      "covered": 96,
+      "mean_ci_width": 0.2548965120953055,
+      "median_hyper_ess": 104.36329629391194,
+      "exact_binomial_95": [
+        0.90074284328734,
+        0.9889955060138118
+      ]
+    },
+    "partial_mismatch": {
+      "true_rho": 0.1,
+      "assumed_rho": 1,
+      "mean_estimate": 0.4495552330911112,
+      "bias": -0.2704447669088888,
+      "rmse": 0.28064239554811865,
+      "covered": 4,
+      "mean_ci_width": 0.3049105853925687,
+      "median_hyper_ess": 104.36329629391194,
+      "exact_binomial_95": [
+        0.011004493986188203,
+        0.09925715671265992
+      ]
+    },
+    "partial_calibrated": {
+      "true_rho": 0.1,
+      "assumed_rho": 0.1,
+      "mean_estimate": 0.6974214125408125,
+      "bias": -0.022578587459187505,
+      "rmse": 0.08441865005993263,
+      "covered": 94,
+      "mean_ci_width": 0.3390078153360627,
+      "median_hyper_ess": 104.36329629391194
+    },
+    "off_prior_sensor": {
+      "true_rho": 1,
+      "assumed_rho": 1,
+      "true_phase_parameters": [
+        0.31,
+        0.32,
+        0.11
+      ],
+      "mean_estimate": 0.6841370724642973,
+      "bias": -0.03586292753570264,
+      "rmse": 0.12051574690177203,
+      "covered": 94,
+      "mean_ci_width": 0.42330765587483976,
+      "median_hyper_ess": 23.49907466935328
+    },
+    "heavy_tail_sensor": {
+      "true_rho": 1,
+      "assumed_rho": 1,
+      "outlier_fraction": 0.08,
+      "mean_estimate": 0.7225352544508334,
+      "bias": 0.0025352544508334685,
+      "rmse": 0.06944909074197134,
+      "covered": 96,
+      "mean_ci_width": 0.25573105733671014,
+      "median_hyper_ess": 106.91128594551937
+    }
+  },
+  "local_execution": {
+    "actual_unit_tests_passed": 43,
+    "actual_research_files_sha256_verified": 21,
+    "zip": "photon_v106_complete.zip",
+    "zip_bytes": 308111,
+    "zip_sha256": "700f92e96730aaf733fc7bb05126fc420e841cae9e076b33030f7010b2e6006f",
+    "full_records": "results/full_audit_v106.json",
+    "figures": [
+      "results/coverage_v106.png",
+      "results/triplet_v106.png",
+      "results/precision_ess_v106.png"
+    ]
+  },
+  "github_counterpart": {
+    "independently_authored_regression_test_methods": 22,
+    "remote_ci_confirmed": false,
+    "byte_identical_to_local": false
+  }
+}

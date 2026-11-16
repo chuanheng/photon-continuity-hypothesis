@@ -1,0 +1,18 @@
+Local execution (2026-11-13):
+Command: PYTHONPATH=. python -m unittest discover -s tests -v
+Directory: /mnt/data/photon_v074
+Summary:
+----------------------------------------------------------------------
+Ran 33 tests in 0.006s
+
+OK
+
+Test coverage:
+- 10 Gauss/projector constraint tests
+- 8 gauge invariant observables tests
+- 8 gauge twirling versus physical projection tests
+- 5 identity-ancilla tests
+- 2 summary/validation tests
+
+Source of record: /mnt/data/photon_v074/test_results.txt
+Note: the remote repository has the equivalent tests with the v074-suffixed module import.

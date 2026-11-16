@@ -1,0 +1,57 @@
+{
+  "version": "v0.80",
+  "true_parameters": {
+    "loss": 0.35,
+    "amplitude": 0.49,
+    "beta": 0.13,
+    "ordinary_drift": 0.11,
+    "hypothetical_delta": 0.2
+  },
+  "n_per_condition": 1000,
+  "test_only_rank": 4,
+  "joint_rank": 5,
+  "test_only_eigenvalues": [
+    4.3262172546916796e-14,
+    511.5234134869904,
+    3012.2206807900648,
+    9223.644471684966,
+    44062.43492688453
+  ],
+  "joint_eigenvalues": [
+    312.1802046419309,
+    876.1142894096931,
+    4963.950347507394,
+    18474.649877666747,
+    88170.86648959137
+  ],
+  "test_only_conditional_delta_fisher": -1.1368683772161603e-13,
+  "joint_conditional_delta_fisher": 441.8438101539392,
+  "test_only_null_fit": {
+    "deviance": 3.120050615431786e-13,
+    "nuisance_fit": [
+      0.34999999910166435,
+      0.4899999997480868,
+      0.1299999999159331,
+      0.3099999999501593
+    ],
+    "optimization_success": true
+  },
+  "joint_null_fit": {
+    "deviance": 17.65232258825427,
+    "nuisance_fit": [
+      0.34999999284876254,
+      0.48878952658982666,
+      0.1298422340483966,
+      0.21028630430687037
+    ],
+    "optimization_success": true
+  },
+  "free_ordinary_test_drift_max_error": 0,
+  "tests": {
+    "total": 28,
+    "passed": 28,
+    "failed": 0,
+    "elapsed_s": 0.774
+  },
+  "interpretation": "Conditional identifiability requires sharing ordinary drift between test and calibration; unrestricted ordinary model predictions exactly equivalent; not evidence photon permanent identity."
+}

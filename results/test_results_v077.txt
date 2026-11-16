@@ -1,0 +1,12 @@
+Local execution on 2026-11-13.
+Command: PYTHONPATH=. python -m unittest discover -s tests -v
+Project root: /mnt/data/photon_v077
+Summary:
+----------------------------------------------------------------------
+Ran 31 tests in 0.029s
+
+OK
+
+Coverage: 8 unitarity/absorption, 12 interference/observable, 11 operational-equivalence/validation checks.
+The original full output is in the downloadable v0.77 ZIP (test_results.txt).
+GitHub CI independently executed: no.

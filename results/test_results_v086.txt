@@ -1,0 +1,22 @@
+Local independent research audit (2026-11-14)
+
+Python sub-process unittest re-execution of all locally runnable v0.50–v0.85 suites:
+  Versions reviewed: 36
+  Versions pass: 34
+  Versions missing locally runnable original suite: v0.68, v0.75
+  Historical unit tests passed: 1086
+  Tests re-executed for historical v0.51–v0.66: 666
+  Re-executed test failures: 0
+
+This audit uses ZIP extraction fallback for v0.74 and v0.76–v0.79, whose
+local extracted directories are incomplete. The actual complete local
+results are recorded at /mnt/data/photon_v086/reports/audit_results_v086.json.
+
+Additional local v0.86 test run:
+  PYTHONPATH=/mnt/data/photon_v086 python -m unittest discover -s /mnt/data/photon_v086/tests -v
+  Ran 15 tests in 0.003s
+  OK
+
+These are checks of mathematical toy model assertions and file/test consistency.
+They are NOT experimental proof that historical individual photons persist.
+GitHub CI has NOT independently run this audit.

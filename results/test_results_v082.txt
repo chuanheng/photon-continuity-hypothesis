@@ -1,0 +1,17 @@
+Local execution on 2026-11-14
+Directory: /mnt/data/photon_v082
+Command: PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.639s
+
+OK
+
+Experiment command: PYTHONPATH=. python experiments/run_v082.py
+Bootstrapped null profile statistic: 2.102549362136358
+Null 95th percentile: 3.184486786218193
+Empirical null p-value (+1 correction): 0.18032786885245902
+Successful paired refits (each of null and alternative): 60 of 60
+
+The complete local log is included in photon_v082_complete.zip.
+GitHub Actions CI: no execution claimed.

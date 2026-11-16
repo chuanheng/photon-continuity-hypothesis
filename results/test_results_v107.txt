@@ -1,0 +1,39 @@
+PCH-A v1.07 — EXACT LOCAL EXECUTION VERIFIED (2026-11-14)
+
+Actual source directory: /mnt/data/photon_v107
+
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m unittest discover -s tests -p 'test_*v107.py' -v
+----------------------------------------------------------------------
+Ran 44 tests in 0.677s
+
+OK
+
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.run_v107
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.plot_v107
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.package_v107
+
+100 independently generated physical datasets (M0=.72, rho=.1, f=.14).
+6 paired inference strategies per primary dataset: 600 posterior fits.
+Reference shots 0, 100, 1000, 10000 vs fixed wrong rho=1 vs oracle .1.
+160 particles for continuous phase + instrument calibration per fit.
+
+Average inferred M0:
+wrong rho=1: 0.4651690, interval covers truth 4/100
+no reference: 0.5955463, coverage 89/100
+100 matched ideal rho references: 0.6890638, coverage 95/100
+1000 matched ideal rho references: 0.6989570, coverage 96/100
+10000 matched ideal rho references: 0.6995561, coverage 96/100
+oracle true rho=.1: 0.6991955, coverage 96/100
+
+Three-photon full Gram example: all pair |Gij|^2=.25,
+triad 0 => [0.2,0.3,0.3,0.2]; triad pi/2 =>
+[0.175,0.325,0.325,0.175].
+
+Zip: photon_v107_complete.zip, 290677 bytes,
+25 local research files SHA-256 checked against ZIP bytes,
+ZIP SHA-256:
+6badebe6888aae6d076f255f48f5be3a601109c6670ce71deaea2ea3b0b95d07
+
+IMPORTANT: The GitHub companion has 22 separate regressions and a
+simplified known-nuisance rho model, not byte-identical local code.
+GitHub CI NOT confirmed. No laboratory optics, no historical photon identity.

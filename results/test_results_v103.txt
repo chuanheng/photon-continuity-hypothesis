@@ -1,0 +1,47 @@
+v1.03 — VERIFIED ACTUAL LOCAL EXECUTION (2026-11-14)
+
+Working directory: /mnt/data/photon_v103
+
+OPENBLAS_NUM_THREADS=1 python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.745s
+
+OK
+
+OPENBLAS_NUM_THREADS=1 python -m experiments.run_v103
+OPENBLAS_NUM_THREADS=1 python -m experiments.plot_v103
+
+170 complete synthetic outer datasets (70 ordinary Gaussian, 50 stronger
+Gaussian random walk/readout and 50 non-Gaussian readout mixtures).
+120 hyperparameter importance proposals and separately sampled conditional
+latent phase paths + independently calibrated optical nuisance per dataset.
+
+TRUE intrinsic HOM optical overlap M0 = 0.72.
+
+BASELINE:
+  plug-in hyper MLE 61/70 covered, mean 0.7182619400, width 0.06951009.
+  joint continuous hyper posterior 63/70 covered, mean 0.7183149241,
+  interval width 0.07454867.
+  median hyperparameter ESS 78.895 of 120 proposal samples.
+
+STRONGER GAUSSIAN SENSOR:
+  plug-in 45/50; joint 49/50 covered.
+  joint mean M0 0.7224510936, width 0.12099763.
+  median hyperparameter ESS 79.612.
+
+5% UNMODELED SENSOR OUTLIERS:
+  plug-in 45/50; joint 47/50 covered.
+  joint mean M0 0.7183999779, width 0.08205727.
+  median hyperparameter ESS 79.203.
+
+Exact locally executed source, all 38 test methods, full 170 trial records,
+2 PNG figures and 18 research files with SHA-256 verified in ZIP:
+photon_v103_complete.zip, size 191656 bytes.
+ZIP SHA-256: 1625013314effedd7b107246cb4809b43f4df463f4fad118da532a97b77b93a2
+
+This is conventional quantum optical HOM statistics. It does NOT establish
+a universal 95% frequentist coverage guarantee, robustness to arbitrary
+non-Gaussian noise, or permanent photon historical identity.
+The GitHub model and its 23 companion tests are separately authored
+and have NOT been independently executed in GitHub CI.

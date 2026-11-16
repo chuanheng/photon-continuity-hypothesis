@@ -1,0 +1,37 @@
+{
+  "version": "v0.79",
+  "model": "dark-count/visibility/loss phase-scan toy model",
+  "scope": "not QED",
+  "parameters": {
+    "eta": 0.65,
+    "visibility": 0.8,
+    "dark": 0.05,
+    "beta": 0.13,
+    "delta": 0.2,
+    "n_each": 1000
+  },
+  "effective_loss": 0.3491666666666666,
+  "effective_amplitude": 0.494,
+  "single_group_rank": 3,
+  "single_group_fisher_eigenvalues": [
+    1.0760277775485044e-13,
+    1800.2696749542088,
+    4602.652842495597,
+    22107.345231643012
+  ],
+  "profile_max_deviance": 5.1345502443323855e-14,
+  "controlled_intervention_rank": 4,
+  "controlled_intervention_fisher_eigenvalues": [
+    340.7729506775227,
+    2346.9439691244806,
+    9280.518025018628,
+    44344.96030565285
+  ],
+  "conditional_identity_fisher_without_intervention": 0,
+  "conditional_identity_fisher_with_intervention": 447.71203852562047,
+  "tests": {
+    "passed": 25,
+    "total": 25,
+    "local": true
+  }
+}

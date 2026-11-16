@@ -1,0 +1,42 @@
+v1.05 — ACTUAL LOCAL TEST AND SIMULATION PROVENANCE (2026-11-14)
+
+Working directory: /mnt/data/photon_v105
+
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.180s
+
+OK
+
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.run_v105
+OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.plot_v105
+
+Matched restricted joint-generative-model SBC:
+  450 datasets; 850 calibrated-posterior particles; 49 posterior samples per dataset.
+  12 marginal rank diagnostics (10-bin chi-square).
+  Intrinsic HOM M: 428/450 nominal Bayesian 95% credible intervals covered
+  the PRIOR-SAMPLED true M: 0.9511111111.
+  Exact-binomial coverage 95% uncertainty interval:
+  [0.9269147036910146, 0.9691114954933407].
+  Median nuisance proposal ESS: 582.4067554434037.
+  M-rank uniformity p=0.4771248001356727; all 12 p-values >0.05.
+  These are finite prior-average checks, not universal fixed-truth guarantees.
+
+Separate zero-phase sensor forecasting:
+  Pure Gaussian, 180 datasets; Student-t(df=4) wins 17 datasets;
+  Student-t minus Gaussian per-point heldout log score = -0.02405931470018254.
+  8% contamination simultaneously in training and holdout, 180 datasets;
+  Student-t wins 180; log-score gain = +0.4187190870890791.
+  Not a Student-t full latent HOM posterior.
+
+Original full local package:
+  photon_v105_complete.zip, 289788 bytes,
+  21 research files SHA-256 compared with their exact ZIP-contained bytes,
+  plus sha256_manifest.json.
+  ZIP SHA256: 8ec24b75bd67f011d2c2ca11b95a53a2668a5df9696468885721d0ed2264df9c
+
+All actually executed Python source and 40 tests are in that local ZIP.
+The GitHub code and 27 test definitions are independently authored companions
+and are NOT claimed to have run on GitHub Actions CI.
+No optical laboratory experiment and no identification of a permanent historical photon.

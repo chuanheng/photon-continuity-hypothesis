@@ -1,0 +1,77 @@
+{
+  "version": "v0.98",
+  "type": "synthetic statistical research; no real photon measurements",
+  "truth_M0": 0.72,
+  "error": {
+    "phase_noise_sd": 0.15,
+    "phase_bias": 0,
+    "pnr_triplet_to_pair": 0.3,
+    "pnr_pair_to_triplet": 0,
+    "q_monitor_offset": -0.004
+  },
+  "paired_primary_datasets": 300,
+  "uncorrected": {
+    "mean": 0.7576526723375259,
+    "bias": 0.03765267233752589,
+    "rmse": 0.04679067046233846,
+    "sd": 0.027824878334670154
+  },
+  "calibration_budgets": [
+    {
+      "pnr_per_class": 100,
+      "external_reference_shots": 1300,
+      "phase_repeats_per_block": 1,
+      "phase_reads_extra": 40,
+      "mean": 0.737496121044844,
+      "bias": 0.017496121044843885,
+      "rmse": 0.03427414838618002,
+      "sd": 0.029521314718766716,
+      "valid": 300,
+      "invalid": 0
+    },
+    {
+      "pnr_per_class": 1000,
+      "external_reference_shots": 13000,
+      "phase_repeats_per_block": 2,
+      "phase_reads_extra": 80,
+      "mean": 0.7297764210713473,
+      "bias": 0.009776421071347368,
+      "rmse": 0.02726398919680602,
+      "sd": 0.02549339276902002,
+      "valid": 300,
+      "invalid": 0
+    },
+    {
+      "pnr_per_class": 10000,
+      "external_reference_shots": 130000,
+      "phase_repeats_per_block": 20,
+      "phase_reads_extra": 800,
+      "mean": 0.7222611371750352,
+      "bias": 0.0022611371750352023,
+      "rmse": 0.022658257566921153,
+      "sd": 0.022582821807306294,
+      "valid": 300,
+      "invalid": 0
+    }
+  ],
+  "local_package": {
+    "name": "photon_v098_complete.zip",
+    "unit_tests_executed_and_passed": 34,
+    "sha256_verified_research_files": 17,
+    "figures": 2
+  },
+  "github_companion": {
+    "different_source_files": true,
+    "regression_methods": 16,
+    "remote_CI_verified": false
+  },
+  "limits": [
+    "5-class PNR but only two response rows unknown",
+    "known optical input category in calibration",
+    "trusted zero-phase standards",
+    "online condition-matched electronics no-signal reference assumed feasible",
+    "point estimator calibration, not full joint confidence interval",
+    "phase noise variance measured but nonlinear full deconvolution not implemented",
+    "no independent permanent photon history observable"
+  ]
+}

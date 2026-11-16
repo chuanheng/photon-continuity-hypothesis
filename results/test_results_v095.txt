@@ -1,0 +1,32 @@
+v0.95 actual local execution /mnt/data/photon_v095, 2026-11-14
+
+cd /mnt/data/photon_v095
+PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.146s
+
+OK
+
+PYTHONPATH=. python -m experiments.run_v095
+
+5 synthetic mechanisms, 60 outer datasets each, 79 inner parametric
+bootstrap replicates per dataset. Exactly 5*60*79 = 23700 inner
+bootstrap datasets were simulated; each re-estimated modeled
+calibrations under the (possibly wrong) baseline model.
+
+Coverage of intrinsic M0=.72:
+correct 55/60, live correlated click 0/60, unresolved triplet 0/60,
+ordinary random walk 0/60, combined 0/60.
+
+Nonstationary drift interval coverage of its own actual period-mean
+overlap: 57/60. 95% exact-binomial uncertainty for 0/60 coverage has
+an upper bound about 5.96%; for 55/60 [81.61%,97.24%].
+
+Full local /mnt/data/photon_v095_complete.zip includes 16 research
+files with verified SHA-256, exact tested code, full 300-dataset
+results, and two graphics. The independently authored GitHub
+counterpart has 24 regression tests, not claimed to have run in CI.
+
+No photon laboratory experiment performed. No photon-history identity
+prediction found.

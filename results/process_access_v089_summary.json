@@ -1,0 +1,42 @@
+{
+  "version": "v0.89",
+  "single_step_channel_zero": [
+    [
+      0.5,
+      0
+    ],
+    [
+      0,
+      0.5
+    ]
+  ],
+  "two_step_fixed_p0": 1,
+  "two_step_fresh_p0": 0.5,
+  "two_step_trace_distance": 0.5,
+  "causal_break_outcome_0": {
+    "occurrence_probability": 0.5,
+    "fixed_conditional_future_p0": 1,
+    "fresh_conditional_future_p0": 0.5
+  },
+  "causal_break_outcome_1": {
+    "occurrence_probability": 0.5,
+    "fixed_conditional_future_p1": 1
+  },
+  "tomography": {
+    "final_effect_span_rank": 4,
+    "instrument_choi_span_rank": 16,
+    "joint_linear_span_rank": 64,
+    "min_final_gram_eigenvalue": 0.21922359359558483,
+    "min_instrument_gram_eigenvalue": 0.048058983988961704,
+    "number_observables": 64,
+    "max_label_rewrite_error": 0,
+    "max_fixed_vs_fresh_probability_difference": 0.25,
+    "rms_fixed_vs_fresh_probability_difference": 0.09882117688026185
+  },
+  "tests": {
+    "local_passed": 33,
+    "total": 33,
+    "seconds": 0.028
+  },
+  "note": "Educational finite process-tensor example: does not demonstrate photon identity. Full arrays of 64 probabilities are in the local ZIP; this is the GitHub summarized numeric report."
+}

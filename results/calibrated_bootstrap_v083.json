@@ -1,0 +1,42 @@
+{
+  "version": "v0.83",
+  "model": "independent noisy AR1 phase sensor + paired Poisson test/calibration optical counts",
+  "kalman_calibration": {
+    "length": 120,
+    "readout_sd_known": 0.03,
+    "rho_true": 0.8,
+    "sigma_true": 0.12,
+    "rho_hat": 0.861319759822415,
+    "sigma_hat": 0.11601374007699011,
+    "fit_success": true
+  },
+  "bootstrap": {
+    "replications": 24,
+    "every_replication_refits_rho_and_sigma": true,
+    "every_replication_refits_poisson_null_and_alternative": true,
+    "all_calibration_refits_converged": 24,
+    "both_poisson_refits_converged": 24,
+    "null_observed_stat": 0.11590402296678803,
+    "null_95pct": 6.2856378131628485,
+    "null_p_plus_one": 0.68,
+    "min_p_resolution": 0.04
+  },
+  "other_independent_simulations": {
+    "delta_0_18_statistic": 6.2858668926330665,
+    "random_walk_plus_ordinary_group_bias_0_23_statistic": 2.4961335664564217,
+    "not_population_error_rate": true
+  },
+  "tests": {
+    "ran": 26,
+    "passed": 26,
+    "actual_local_execution": true
+  },
+  "scientific_status": "Toy statistical model; not QED or evidence of permanent photon identity; ordinary group-specific phase is exactly confounded with claimed identity phase",
+  "limitations": [
+    "known sensor readout variance",
+    "shared AR1 distribution between independent calibration and optical experiment",
+    "MAP not marginalized likelihood",
+    "24 bootstrap replicates",
+    "mis-specified stationary drift potentially invalidates null distribution"
+  ]
+}

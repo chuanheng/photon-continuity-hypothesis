@@ -1,0 +1,10 @@
+Local validation: 2026-11-13
+Project directory: /mnt/data/photon_v079
+Command: PYTHONPATH=. python -m unittest discover -s tests -v
+---------------------------------------------
+Ran 25 tests in 0.012s
+
+OK
+
+The original verbose log is available in the v0.79 local ZIP (test_results.txt).
+Remote GitHub CI: not independently executed.

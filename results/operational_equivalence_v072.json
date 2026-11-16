@@ -1,0 +1,6 @@
+{
+  "version": "v0.72",
+  "local_tests_passed": 10,
+  "formula": "D(theta)=abs(sin(theta))",
+  "status": "toy_model_not_QED"
+}

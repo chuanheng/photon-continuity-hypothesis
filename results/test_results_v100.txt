@@ -1,0 +1,37 @@
+v1.00 ACTUAL local run provenance, 2026-11-14.
+
+Directory: /mnt/data/photon_v100
+Test command:
+  OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m unittest discover -s tests -v
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.110s
+
+OK
+
+Experiment:
+  OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.run_v100
+  OPENBLAS_NUM_THREADS=1 PYTHONPATH=. python -m experiments.plot_v100
+
+300 synthetic datasets (100 each with 1, 2, 20 repeated phase readings
+per block), 700 latent-path posterior samples per dataset. Truth
+intrinsic M0=.72. 401-point M0 grid with Uniform(0,1) prior.
+
+Number of nominal 95% Bayesian credible intervals covering fixed truth:
+  phase plug-in       : 79/100, 82/100, 92/100
+  latent marginalized : 99/100, 94/100, 97/100
+
+Each experiment has 40-phase-block random walk, true initial phase 0,
+step noise sd .095, sensor sd .15, known bias 0, and 25,000 near-delay
+HOM exposure trials. Source Fock and detector/electronics nuisance
+parameters are treated KNOWN, unlike v0.99's unknown-calibration task.
+
+The complete local photon_v100_complete.zip is 202,311 bytes,
+with 17 SHA-256 checked research files + SHA-256 manifest,
+full 300 synthetic records, two PNG figures, and actual 27 tests.
+ZIP SHA-256:
+f379fcef8843248e7f69d4f317a4af4a4d55d1b7199001a0844135e7fe2ef9d1
+
+The GitHub code and its 22 regression methods were authored separately;
+their remote CI execution has NOT been verified.
+No new QED identity-preservation effect is claimed.

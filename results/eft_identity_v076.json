@@ -1,0 +1,15 @@
+{
+  "version": "v0.76",
+  "model": "finite-mode illustration plus classical gauge-invariance checks",
+  "not_QED": true,
+  "local_tests": {
+    "passed": 27,
+    "failed": 0
+  },
+  "carrier_charge_commutator": 0,
+  "photon_number_commutator": 1.5491933384829673,
+  "f2": -0.9104000000000001,
+  "f2_boosted": -0.9103999999999979,
+  "carrier_current_density_at_A1_w2": 4,
+  "operator_dimension": 6
+}

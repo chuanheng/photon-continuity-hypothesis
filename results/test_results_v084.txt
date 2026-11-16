@@ -1,0 +1,14 @@
+v0.84 LOCAL execution, verified in Python container session
+Command: PYTHONPATH=. python -m unittest discover -s tests -v
+Project root: /mnt/data/photon_v084
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.582s
+
+OK
+
+Reproduction command: PYTHONPATH=. python experiments/run_v084.py
+Full output and original test-results log stored in downloadable photon_v084_complete.zip.
+Study simulation: outer=120 for each of 3 scenarios, inner=79 bootstrap each.
+Stationary 4/120 rejections; random walk 69/120; ordinary group bias 108/120.
+No GitHub Actions CI execution claimed.

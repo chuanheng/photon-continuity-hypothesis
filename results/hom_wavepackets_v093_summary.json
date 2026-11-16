@@ -1,0 +1,66 @@
+{
+  "version": "v0.93",
+  "gamma": 1,
+  "ideal_beam_splitter": "50:50",
+  "pure_cases": {
+    "identical": {
+      "overlap": 1,
+      "ideal_coincidence": 0
+    },
+    "detuning_1_gamma": {
+      "overlap": 0.5,
+      "ideal_coincidence": 0.25
+    },
+    "linewidth_1_to_2": {
+      "overlap": 0.8888888888888888,
+      "ideal_coincidence": 0.05555555555555555
+    },
+    "arrival_delay_1_lifetime": {
+      "overlap": 0.36787944117144233,
+      "ideal_coincidence": 0.31606027941427883
+    }
+  },
+  "ensemble_cases": {
+    "no_noise": {
+      "mean_overlap": 1,
+      "ideal_coincidence": 0
+    },
+    "independent_noise": {
+      "mean_overlap": 0.708102263506253,
+      "ideal_coincidence": 0.14594886824687348
+    },
+    "fully_common_mode": {
+      "mean_overlap": 1,
+      "ideal_coincidence": 0
+    },
+    "partially_correlated_08": {
+      "mean_overlap": 0.8769429272607854,
+      "ideal_coincidence": 0.06152853636960731
+    },
+    "independent_more_noise": {
+      "mean_overlap": 0.5083713851545963,
+      "ideal_coincidence": 0.24581430742270183
+    }
+  },
+  "simulation_independent": {
+    "n": 100000,
+    "mean_overlap": 0.7085353739498544,
+    "mc_standard_error": 0.0004942348975559645,
+    "mean_coincidence": 0.1457323130250728,
+    "seed": 9301
+  },
+  "local_tests": {
+    "count": 40,
+    "passed": 40,
+    "elapsed_s": 0.024
+  },
+  "local_package": {
+    "zip": "photon_v093_complete.zip",
+    "sha256_checked_files": 13,
+    "hom_delay_points": 121,
+    "jitter_scan_points": 81,
+    "jitter_correlation_scenarios": 4,
+    "png_figures": 2
+  },
+  "note": "A measurable internal mode affects HOM; a fully decoupled spectator historical identity is not identified. No independent photon identity prediction."
+}

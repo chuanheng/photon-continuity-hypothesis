@@ -1,0 +1,96 @@
+{
+  "version": "v0.96",
+  "status": "synthetic modeling; standard bosonic beamsplitter and HOM, not photon individual persistence",
+  "distributions": {
+    "bosonic_2_1": [
+      0.375,
+      0.125,
+      0.125,
+      0.375
+    ],
+    "mutually_distinguishable_three": [
+      0.125,
+      0.375,
+      0.375,
+      0.125
+    ]
+  },
+  "detector": {
+    "eta_a": 0.74,
+    "eta_b": 0.68,
+    "dark_a": 0.002,
+    "dark_b": 0.003,
+    "near_triplet_coincidence": 0.16432294046600002,
+    "far_triplet_coincidence": 0.488086783334
+  },
+  "data_generation": {
+    "M0": 0.72,
+    "triplet_fraction": 0.065,
+    "correlated_live_click": 0.014,
+    "phase_random_walk_step": 0.095,
+    "phase_blocks": 40,
+    "source_PNR_calibration": "perfect category identification of five event classes",
+    "electronic_monitor": "matched optical-trigger electronics with blocked photons",
+    "phase_monitor": "exact true phase trajectory (oracle)"
+  },
+  "jacobian_optical_2_by_3": [
+    [
+      -0.2066375502624007,
+      0.048396309206000236,
+      0.8728314892555987
+    ],
+    [
+      0,
+      0.2315188922324962,
+      0.736522485872415
+    ]
+  ],
+  "single_trial": {
+    "true_period_mean": 0.5566398361798411,
+    "estimated_period_mean": 0.5525450039371961,
+    "true_intrinsic": 0.72,
+    "estimated_intrinsic": 0.7147034347470742,
+    "prior_misspecified_estimate": 0.5391203130734575,
+    "estimated_triplet": 0.06522,
+    "estimated_correlated_click": 0.014578441700717938,
+    "bootstrap_99_intrinsic_ci_95": [
+      0.6617202193524326,
+      0.7606417295995412
+    ]
+  },
+  "coverage": {
+    "outer": 60,
+    "B_per_outer": 99,
+    "total_bootstrap": 5940,
+    "covered_intrinsic": 57,
+    "covered_period_mean": 57,
+    "coverage_fraction": 0.95,
+    "exact_binomial_95_interval": [
+      0.8607567532789272,
+      0.9895676703556517
+    ],
+    "average_est_intrinsic": 0.722060268051859,
+    "average_old_model_estimate": 0.5311652587241787,
+    "average_period_truth": 0.545121943161041,
+    "average_est_period": 0.5456798823760212
+  },
+  "local_execution": {
+    "actual_unit_tests_passed": 44,
+    "test_suite": "photon_v096_complete.zip",
+    "sha256_verified_content_files": 15,
+    "figures": 2,
+    "full_records": "results/fock_calibration_v096.json"
+  },
+  "github_companion": {
+    "test_definitions": 31,
+    "ci_executed_and_confirmed": false
+  },
+  "limitations": [
+    "source calibration assumes ideal 5-category photon-number resolving monitoring",
+    "noiseless phase monitor oracle",
+    "matched electronics baseline assumed valid",
+    "triplet near and far only at full indistinguishable/distinguishable extremes",
+    "real optical experiments not performed",
+    "no operational historical photon identity effect"
+  ]
+}

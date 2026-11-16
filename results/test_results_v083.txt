@@ -1,0 +1,22 @@
+Local execution 2026-11-14 (America/Los_Angeles environment date may differ from user's project date).
+Directory: /mnt/data/photon_v083
+Command:
+  PYTHONPATH=/mnt/data/photon_v083 python -m unittest discover -s /mnt/data/photon_v083/tests -v
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.608s
+
+OK
+
+Experiment:
+  PYTHONPATH=/mnt/data/photon_v083 python /mnt/data/photon_v083/experiments/run_v083.py
+
+24 independent AR1 hyperparameter refits succeeded;
+24 paired H0/H1 optical fits converged;
+observed null statistic = 0.11590402296678803;
+null bootstrap 95th percentile = 6.2856378131628485;
+null bootstrap p(+1) = 0.68.
+
+Actual verbose unittest output is packaged in /mnt/data/photon_v083_complete.zip
+at photon_v083/results/test_results.txt.
+No GitHub-hosted CI test run is claimed.

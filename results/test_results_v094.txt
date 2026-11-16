@@ -1,0 +1,28 @@
+v0.94 local research execution (2026-11-14).
+
+Source: /mnt/data/photon_v094 (actual executed files).
+Command: cd /mnt/data/photon_v094 && PYTHONPATH=. python -m unittest discover -s tests -v
+----------------------------------------------------------------------
+Ran 52 tests in 0.037s
+
+OK
+
+Reproduction:
+  PYTHONPATH=. python -m experiments.run_v094
+  PYTHONPATH=. python -m experiments.coverage_v094
+
+Local simulation truth: mode overlap 0.72.
+One simulated calibrated overlap: 0.7239956322028758.
+Single-example 500-bootstrap 95% CI: [0.7140960377429886, 0.7337508375477682].
+Coverage experiment: 120 outer datasets, 120 refitted bootstrap copies each,
+114/120 CIs covered the simulation truth (empirical coverage 0.95);
+exact-binomial uncertainty interval [0.8943461454812877, 0.9814324132173308].
+
+The complete local ZIP has 16 research content files, corresponding SHA-256
+manifest, the full 52-test per-case log, coverage_v094.json with all 120 outer
+results, and two PNG figures. JSON data files were re-generated inside the
+project root and re-packaged after archive path auditing.
+
+The GitHub source and its 26-case independent regression suite have NOT
+been executed in GitHub Actions or otherwise claimed to have passed.
+Unit tests of a toy model do not verify historical photon identity.

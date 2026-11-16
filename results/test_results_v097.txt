@@ -1,0 +1,37 @@
+v0.97: ACTUAL local provenance, 2026-11-14.
+
+Directory: /mnt/data/photon_v097
+Commands:
+  cd /mnt/data/photon_v097
+  PYTHONPATH=. python -m experiments.run_v097
+  PYTHONPATH=. python -m unittest discover -s tests -v
+  PYTHONPATH=. python -m experiments.plot_v097
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.090s
+
+OK
+
+8 scenarios, 60 independent outer simulations per scenario, 79 refit
+parametric bootstrap records per outer trial: 480 outer datasets and
+37920 inner bootstrap copies. Truth intrinsic M0=0.72.
+
+Baseline: mean estimated intrinsic M0=0.7113581279726912; nominal
+95% interval coverage 54/60.
+Combined monitor error: mean estimated intrinsic M0=0.7568967119057646;
+nominal 95% interval coverage 36/60.
+
+Conditional population-limit fixed phase path seed 9719:
+baseline estimate M0=.720000000000; triplet misclassification 30%:
+.744207088372; correlated electronics reference lower by .004:
+.716530817847; three stressors combined: .744451900287.
+
+Full exact local source, detailed 480 synthetic records, two PNG figures,
+44-case verbose unittest log, and per-file SHA-256 manifest are in
+photon_v097_complete.zip. ZIP SHA-256:
+775d777eb0306f2e16ef6509bc4f4b169e861a11ff4b97635c4b0c7cc533cd33
+
+GitHub v0.97 model/tests are independently authored text counterparts
+(22 test methods) and have NOT been executed in GitHub CI; do not
+confuse their presence with the actual 44 local tests.
+No laboratory evidence of historical photon identity is provided.

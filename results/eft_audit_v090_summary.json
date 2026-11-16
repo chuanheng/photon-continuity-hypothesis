@@ -1,0 +1,80 @@
+{
+  "version": "v0.90",
+  "operator": "(|S|^2 F_mu_nu F^mu_nu)/Lambda^2",
+  "operator_dimensions": {
+    "dim_S": 1,
+    "dim_A": 1,
+    "dim_derivative": 1,
+    "dim_F": 2,
+    "dim_abs_S_squared": 2,
+    "dim_F_squared": 4,
+    "operator_dim": 6,
+    "coupling_dim": -2
+  },
+  "symbolic_ward": {
+    "left": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "right": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "dimension": 6
+  },
+  "angle_examples": [
+    {
+      "theta": 0,
+      "k1_dot_k2": 0,
+      "sum_physical_polarization_amplitudes_squared": 0
+    },
+    {
+      "theta": "pi/6",
+      "k1_dot_k2": 0.5358983848622456,
+      "sum_physical_polarization_amplitudes_squared": 0.000919
+    },
+    {
+      "theta": "pi/3",
+      "k1_dot_k2": 2,
+      "sum_physical_polarization_amplitudes_squared": 0.0128
+    },
+    {
+      "theta": "pi/2",
+      "k1_dot_k2": 4,
+      "sum_physical_polarization_amplitudes_squared": 0.0512
+    },
+    {
+      "theta": "2pi/3",
+      "k1_dot_k2": 6,
+      "sum_physical_polarization_amplitudes_squared": 0.1152
+    },
+    {
+      "theta": "pi",
+      "k1_dot_k2": 8,
+      "sum_physical_polarization_amplitudes_squared": 0.2048
+    }
+  ],
+  "lorentz_boost_amplitude_error_near_zero": true,
+  "wilson_degeneracy": {
+    "c1": 1,
+    "Lambda1": 10,
+    "c2": 4,
+    "Lambda2": 20,
+    "g": 0.01
+  },
+  "constant_background": {
+    "Z_example": 0.992,
+    "free_photon_massless": true
+  },
+  "local_tests": {
+    "passed": 39,
+    "total": 39,
+    "elapsed_s": 0.182
+  },
+  "novel_photon_identity_prediction": false,
+  "note": "Local full ZIP includes exact per-angle floats, source and full execution log; repository source is an independently authored equivalent implementation and was not independently tested on GitHub."
+}

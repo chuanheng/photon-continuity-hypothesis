@@ -1,0 +1,27 @@
+{
+  "version": "v0.77",
+  "tests": {
+    "ran": 31,
+    "passed": 31,
+    "seconds": 0.029,
+    "runner": "local Python unittest"
+  },
+  "phase_pi_label0": {
+    "plus": 1,
+    "minus": 0
+  },
+  "phase_pi_label1": {
+    "plus": 0,
+    "minus": 1
+  },
+  "distinguishability_phi_pi": 1,
+  "distinguishability_phi_pi_over_2": 0.7071067811865476,
+  "storage": {
+    "material_e": 0.5,
+    "signal_a": 0,
+    "reference_b": 0.5
+  },
+  "identity_vs_environment_memory_reduced_state_error": 0,
+  "claim": "coherent retrieval and ordinary memory suffice; no evidence of unique permanent photon identity",
+  "scope": "finite-dimensional toy model; not QED"
+}

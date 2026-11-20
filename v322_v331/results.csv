@@ -1,0 +1,17 @@
+version,metric,value,provenance
+3.22,tensor_contraction_error,0,synthetic
+3.23,causal_break_gap,1,synthetic
+3.23,uncoupled_gap,0,synthetic
+3.24,pairwise_max_gap,0,synthetic
+3.24,triple_tv,0.5,synthetic
+3.25,bell_x_branch_gap,0.5,synthetic
+3.25,bell_z_branch_gap,0,synthetic
+3.26,shared_phase_echo,1,synthetic
+3.26,fresh_phase_echo,0.5,synthetic
+3.27,silent_label_tensor_gap,0,synthetic
+3.28,correlated_vs_product_tensor_gap,0.25,synthetic
+3.29,memoryless_mean_kl,0.192744757021758,synthetic
+3.29,shared_memory_mean_kl,0,synthetic
+3.30,nominal_residual,0.05,synthetic
+3.30,profiled_residual,0,synthetic
+3.31,causal_prefix_error,0,synthetic

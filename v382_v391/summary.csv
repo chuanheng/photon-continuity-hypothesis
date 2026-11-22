@@ -1,0 +1,8 @@
+version,metric,value,provenance
+v3.82,fit_best_nll,27137.5575983,synthetic
+v3.83,grid_count,20,synthetic
+v3.84,heldout_truth_1,0.30549046208,synthetic
+v3.85,heldout_counts_2,2974,synthetic
+v3.85,max_abs_z,2.83786398,synthetic
+v3.88,max_abs_error,0.00506329,synthetic
+v3.90,standard_profile_KL,0,synthetic

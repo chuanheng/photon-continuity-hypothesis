@@ -1,0 +1,10 @@
+version,metric,value,provenance
+v3.72,reference_epsilon,0.05,synthetic
+v3.73,first_count,2340,synthetic
+v3.73,mle_material,0.19780783,synthetic
+v3.73,mle_detector,0.50125260,synthetic
+v3.75,profile_grid_points,18,synthetic
+v3.76,LR_null_simulations,30,synthetic
+v3.76,LR_exceed_fraction,0,synthetic
+v3.79,Fisher_condition_number,6970.8025,synthetic
+v3.80,standard_profile_KL,0,synthetic

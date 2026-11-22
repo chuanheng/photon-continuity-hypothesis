@@ -1,0 +1,11 @@
+version,metric,value,provenance
+v4.02,transition_rows_sum,1,synthetic-exact
+v4.04,len2_00,0.4668,synthetic-exact
+v4.05,history_probability_difference,0.08310388546,synthetic-exact
+v4.06,strong_lumpability_gap,0.3,synthetic-exact
+v4.07,observable_firstorder_TV,0.04772072727,synthetic-exact
+v4.08,reset_normalization,1,synthetic-exact
+v4.09,independent_implementation_max_gap,2.220446049250313e-16,synthetic-exact
+v4.09,reset_max_gap,2.7755575615628914e-17,synthetic-exact
+v4.10,len5_normalization,1,synthetic-exact
+v4.11,identity_specific_prediction,false,synthetic-exact

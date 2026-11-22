@@ -36,11 +36,14 @@ def empirical(y):
   return counts[len(w)][idx]/n
  return calc
 def run():
- rng=np.random.default_rng(20261122)
  a={d:svdvals(H(d,pword)) for d in (1,2,3,4)}
- em=svdvals(H(3,empirical(draw(50000,rng))))
+ em=svdvals(H(3,empirical(draw(50000,np.random.default_rng(20261122)))))
+ # Local evidence independently seeds each null sequence from a master generator.
+ rng=np.random.default_rng(20261122)
  null=[]
- for i in range(60):null.append(svdvals(H(3,empirical(draw(50000,rng))))[4])
+ for i in range(60):
+  seed=int(rng.integers(0,2**31))
+  null.append(svdvals(H(3,empirical(draw(50000,np.random.default_rng(seed)))))[4])
  return {'one_time':[pword((0,)),pword((1,))],
  'theoretical_ranks':{str(d):int(sum(a[d]>1e-11)) for d in a},
  'hankel_shapes':{str(d):list(H(d,pword).shape) for d in a},

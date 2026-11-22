@@ -4,17 +4,42 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-22",
-  "checkpoint_kind": "completed_batch",
+  "checkpoint_kind": "partial_batch",
   "research_base_commit_sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
   "latest_completed_version": "v4.41",
   "latest_completed_version_evidence": "v432_v441/README.md",
   "next_batch": {
     "first_version": "v4.42",
     "last_version": "v4.51",
-    "first_unfinished_version": "v4.42",
-    "completed_versions": [],
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md"
+    "first_unfinished_version": "v4.44",
+    "completed_versions": [
+      "v4.42",
+      "v4.43"
+    ],
+    "status": "partial_checkpoint",
+    "roadmap": "docs/research_roadmap.md",
+    "pending_versions": [
+      "v4.44",
+      "v4.45",
+      "v4.46",
+      "v4.47",
+      "v4.48",
+      "v4.49",
+      "v4.50",
+      "v4.51"
+    ],
+    "checkpoint": {
+      "source_parent_sha": "9a3f1c397139f43f48ba1b01b8377d044bed6a83",
+      "index": "v442_v451/README.md",
+      "model_command": "python -m v442_v451.model",
+      "test_command": "python -m unittest -v v442_v451.test_model",
+      "model_exit_code": 0,
+      "tests_ran": 2,
+      "tests_passed": 2,
+      "test_exit_code": 0,
+      "results": "v442_v451/results.json",
+      "results_sha256": "e5a0d422c006ee11238155cce0e4ebddaa30c26a80497078183da5b4f88436f5"
+    }
   },
   "completed_batches": [
     {
@@ -400,6 +425,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "9a3f1c397139f43f48ba1b01b8377d044bed6a83",
+      "role": "completed_v4.32-v4.41_batch"
+    },
     {
       "sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
       "role": "v4.32-v4.33_partial"

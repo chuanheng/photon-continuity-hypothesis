@@ -36,6 +36,8 @@ def run():
  F=jac(probs,TRUE).T@np.diag(N/(train*(1-train)))@jac(probs,TRUE)
  J=jac(lambda x:probs(x,True),TRUE);vv=np.sum(J@np.linalg.inv(F)*J,axis=1)
  z2=(kh/N-pp)/np.sqrt(se**2+vv)
+ # Preserve the local reference RNG stream before the 100 refit bootstraps.
+ _null=rng.binomial(N,hold,(1000,4))
  maxzs=[]
  for _ in range(100):
   a=rng.binomial(N,train);b=rng.binomial(N,hold)

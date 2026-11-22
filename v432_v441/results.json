@@ -47,5 +47,149 @@
       1.1102230246251565e-16,
       1.1102230246251565e-16
     ]
+  },
+  "v4.34": {
+    "table": [
+      [
+        0.54,
+        0.396
+      ],
+      [
+        0.396,
+        0.324
+      ]
+    ],
+    "ordinary_interaction": 0.07200000000000001,
+    "with_additive_drift": 0.07199999999999995,
+    "with_aliased_drift": 0.15200000000000008,
+    "drift_bias_bound": 0.08
+  },
+  "v4.35": {
+    "read_probabilities": [
+      [
+        0.5184000000000001,
+        0.09
+      ],
+      [
+        0.2916,
+        0.16000000000000003
+      ]
+    ],
+    "basis_relabel_error": 0.0
+  },
+  "v4.36": {
+    "full_rank": 4,
+    "z_only_rank": 2,
+    "rank_four_minor": 0.25,
+    "table": [
+      [
+        1.0,
+        0.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.0,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5,
+        1.0,
+        0.0,
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5,
+        0.0,
+        1.0,
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "v4.37": {
+    "blocks": 50,
+    "block_length": 20,
+    "iid_threshold": 527,
+    "actual_size_using_iid": 0.3359055168826828,
+    "block_mean_threshold": 0.6730818382602285,
+    "block_bound_actual_size": 0.007673338916315053
+  },
+  "v4.38": {
+    "total_feasible": true,
+    "spectrum_feasible": false,
+    "spectrum_solver_status": 2,
+    "calibrated_middle_ceiling": 0.27749999999999997,
+    "target_middle": 0.35,
+    "free_background_weights": [
+      0.41818181818181827,
+      0.39999999999999997,
+      0.18181818181818182
+    ],
+    "free_background_residual": 5.551115123125783e-17
+  },
+  "v4.39": {
+    "symmetric_dimension": 3,
+    "slot_difference_norm": 4.4742286341514763e-17,
+    "collective_eigenvalues": [
+      -2.0,
+      0.0,
+      2.0
+    ],
+    "unsymmetrized_commutator_norm": 2.8284271247461903
+  },
+  "v4.40": {
+    "trajectories_checked": 121,
+    "max_reduced_difference": 0.0,
+    "addressable_environment_x_difference": 1.0
+  },
+  "v4.41": {
+    "ordinary_ceiling": 0.04,
+    "one_sided_radius": 0.038702275602049495,
+    "synthetic_inputs": [
+      [
+        true,
+        0.07
+      ],
+      [
+        true,
+        0.09
+      ],
+      [
+        false,
+        0.15
+      ]
+    ],
+    "decisions": [
+      "insufficient_separation",
+      "reject_scoped_family",
+      "calibration_inconclusive"
+    ],
+    "identity_mechanism_confirmed": false
   }
 }

@@ -1,7 +1,10 @@
-"""First two theoretical checkpoints for v4.32–v4.41."""
+"""Deterministic theoretical calculations for v4.32–v4.41."""
 import json
 
 import numpy as np
+
+from .controls import (bosonic_operator, correlated_trials, decision_gates,
+                       dimension_witness, factorial, ordinary_dilation, route_swap, spectral_refit)
 
 I = np.eye(2, dtype=complex)
 Z = np.diag([1, -1])
@@ -77,7 +80,10 @@ def calibration_design():
 
 def run():
     return {"evidence_scope": "finite-dimensional standard quantum theory, no optical data",
-            "v4.32": quantum_break(), "v4.33": calibration_design()}
+            "v4.32": quantum_break(), "v4.33": calibration_design(),
+            "v4.34": factorial(), "v4.35": route_swap(), "v4.36": dimension_witness(),
+            "v4.37": correlated_trials(), "v4.38": spectral_refit(),
+            "v4.39": bosonic_operator(), "v4.40": ordinary_dilation(), "v4.41": decision_gates()}
 
 
 if __name__ == "__main__":

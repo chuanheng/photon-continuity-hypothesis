@@ -4,50 +4,17 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-22",
-  "checkpoint_kind": "partial_batch",
-  "research_base_commit_sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
-  "latest_completed_version": "v4.31",
-  "latest_completed_version_evidence": "v422_v431/README.md",
+  "checkpoint_kind": "completed_batch",
+  "research_base_commit_sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
+  "latest_completed_version": "v4.41",
+  "latest_completed_version_evidence": "v432_v441/README.md",
   "next_batch": {
-    "first_version": "v4.32",
-    "last_version": "v4.41",
-    "first_unfinished_version": "v4.34",
-    "completed_versions": [
-      "v4.32",
-      "v4.33"
-    ],
-    "status": "partial_checkpoint",
-    "roadmap": "docs/research_roadmap.md",
-    "pending_versions": [
-      "v4.34",
-      "v4.35",
-      "v4.36",
-      "v4.37",
-      "v4.38",
-      "v4.39",
-      "v4.40",
-      "v4.41"
-    ],
-    "checkpoint": {
-      "source_parent_sha": "4a3364b2b1eb8bf9f0f792503853c33321ffc251",
-      "index": "v432_v441/README.md",
-      "results": "v432_v441/results.json",
-      "notebook": "v432_v441/reproduce.ipynb",
-      "model_command": "python -m v432_v441.model",
-      "model_exit_code": 0,
-      "test_command": "python -m unittest -v v432_v441.test_model",
-      "tests_ran": 2,
-      "tests_passed": 2,
-      "test_exit_code": 0,
-      "runtime": {
-        "python": "3.12.14",
-        "numpy": "2.3.5",
-        "ipykernel": "7.4.0"
-      },
-      "random_seeds": [],
-      "next_action": "v4.34: 2x2 independent material/detector causal breaks and shared-drift controls",
-      "results_sha256": "1e2b249939db7ccee6b536a170c95013155edc494b404b20fe515dcf51f429f3"
-    }
+    "first_version": "v4.42",
+    "last_version": "v4.51",
+    "first_unfinished_version": "v4.42",
+    "completed_versions": [],
+    "status": "planned",
+    "roadmap": "docs/research_roadmap.md"
   },
   "completed_batches": [
     {
@@ -275,6 +242,15 @@
       "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v422_v431",
       "verification": "model_cli_and_10_unit_tests_passed",
       "notebook": "v422_v431/reproduce.ipynb"
+    },
+    {
+      "first_version": "v4.32",
+      "last_version": "v4.41",
+      "index": "v432_v441/README.md",
+      "notebook": "v432_v441/reproduce.ipynb",
+      "source_parent_sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
+      "verification": "model_notebook_and_10_unit_tests_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v432_v441"
     }
   ],
   "early_history": {
@@ -288,38 +264,26 @@
     "model_scope": "finite HMMs, quantum diagonal subtheory and explicitly scoped finite-dimensional process counterexamples",
     "open_questions": [
       {
-        "id": "quantum_causal_break_distance_bound",
-        "status": "planned",
         "versions": [
-          "v4.32",
-          "v4.33"
-        ]
+          "v4.42",
+          "v4.43",
+          "v4.44",
+          "v4.45"
+        ],
+        "id": "calibrate_noncommuting_environment_and_additional_carriers",
+        "status": "planned"
       },
       {
-        "id": "calibrated_carrier_isolation_and_route_exchange",
-        "status": "planned",
         "versions": [
-          "v4.34",
-          "v4.35",
-          "v4.36"
-        ]
-      },
-      {
-        "id": "correlated_calibration_and_spectral_standard_null",
-        "status": "planned",
-        "versions": [
-          "v4.37",
-          "v4.38"
-        ]
-      },
-      {
-        "id": "identity_specific_consistent_dynamics_and_protocol",
-        "status": "not_constructed",
-        "versions": [
-          "v4.39",
-          "v4.40",
-          "v4.41"
-        ]
+          "v4.46",
+          "v4.47",
+          "v4.48",
+          "v4.49",
+          "v4.50",
+          "v4.51"
+        ],
+        "id": "robust_comparison_and_identity_specific_dynamics",
+        "status": "planned"
       }
     ],
     "scoped_counterexamples": [
@@ -346,6 +310,14 @@
       {
         "version": "v4.31",
         "claim_excluded": "The held-out rejection can uniquely distinguish the synthetic alternative from unmonitored ordinary drift."
+      },
+      {
+        "version": "v4.34",
+        "claim_excluded": "Ordinary independently intervened serial paths cannot produce an interaction."
+      },
+      {
+        "version": "v4.40",
+        "claim_excluded": "Restricted system control alone identifies coherence of a persistent dephasing environment."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -397,32 +369,41 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "scope": "v4.22-v4.31 files included in this checkpoint",
-      "source_parent_sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
+      "model_command": "python -m v432_v441.model",
+      "test_command": "python -m unittest -v v432_v441.test_model",
+      "ran": 10,
+      "passed": 10,
+      "model_exit_code": 0,
+      "exit_code": 0,
+      "results": "v432_v441/results.json",
+      "results_sha256": "e47f28f7bb57a528af8ab9c8cc77957813edd3983363a38ec4c382d95d6944a8",
+      "notebook_executed": true,
+      "source_parent_sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
+      "github_actions": "not run for this batch",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
-        "scipy": "1.17.0",
-        "sympy": "1.14.0"
-      },
-      "model_command": "python -m v422_v431.model",
-      "model_exit_code": 0,
-      "results": "v422_v431/results.json",
-      "results_sha256": "2f350d458844a3e71c6839ad8484187ab4874a0cf8ee04a4868c74a3936098ef",
-      "test_command": "python -m unittest -v v422_v431.test_model",
-      "ran": 10,
-      "passed": 10,
-      "exit_code": 0,
-      "github_actions": "not run for this batch"
+        "scipy": "1.17.0"
+      }
     },
     "latest_six_batches": {
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
       "ran": 60,
       "passed": 60,
       "exit_code": 0
+    },
+    "latest_seven_batches": {
+      "ran": 70,
+      "passed": 70,
+      "exit_code": 0,
+      "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     }
   },
   "commit_history": [
+    {
+      "sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
+      "role": "v4.32-v4.33_partial"
+    },
     {
       "sha": "4a3364b2b1eb8bf9f0f792503853c33321ffc251",
       "role": "completed_v4.22-v4.31_research_batch"

@@ -1,0 +1,9 @@
+version,metric,value,provenance
+v3.92,heldout_count_1,3016,synthetic
+v3.94,max_naive_abs_z,2.837861,synthetic
+v3.94,min_naive_p,0.0045417,synthetic
+v3.95,min_bonferroni_p,0.0181668,synthetic
+v3.97,max_adjusted_abs_z,2.23778,synthetic
+v3.98,bootstrap_resamples,100,synthetic
+v3.98,bootstrap_exceedance,0.06,synthetic
+v4.00,standard_profile_KL,0,synthetic

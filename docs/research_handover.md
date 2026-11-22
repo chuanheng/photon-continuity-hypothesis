@@ -1,6 +1,14 @@
 # 光子连续性假说研究交接
 
-核对日期为 2026-11-22。研究基准为 main 的 `fbe0e647a9083965ad2d3eee0854eb42e145648f`。最新完成轮次为 **v4.21**，首个未完成轮次为 **v4.22**。本检查点整理研究状态与计划，未推进研究版本。下一次先读 [research_state.json](../research_state.json)，再核对 GitHub 最新 main。[基准提交](https://github.com/chuanheng/photon-continuity-hypothesis/commit/fbe0e647a9083965ad2d3eee0854eb42e145648f)
+最新完成轮次为 **v4.31**，首个未完成轮次为 **v4.32**。从 GitHub 最新 main 和 [research_state.json](../research_state.json) 恢复，不依赖历史会话。
+
+[v4.22–v4.31 批次](../v422_v431/README.md) 已完成十项。受控字母的精确可达闭包给出任意有限长度等价证书，普通位采用不同重置时出现两步差异。已有普通量子存储能突破单经典位上界。独立标定盒可产生正 KL 下界，放开串扰约束即出现精确普通重拟合。候选色散身份耦合也是普通失谐混合。尚无身份专属的物理预测或光学实测。
+
+本批模型生成可解析 JSON，新批十项测试与近六批共六十项回归均通过。旧版 1,812 项发现既有两个错误，见下文。此次批次入口和精确环境版本见 [批次索引](../v422_v431/README.md)。下一批按 [v4.32–v4.41 路线](research_roadmap.md) 先检验含普通量子记忆的近似因果切断界。
+
+## v4.21 档案核对记录
+
+前序核对基准为 main 的 [fbe0e647](https://github.com/chuanheng/photon-continuity-hypothesis/commit/fbe0e647a9083965ad2d3eee0854eb42e145648f)。下文保留该检查点的范围、历史脉络和已有测试。
 
 ## 研究命题和出处
 
@@ -50,7 +58,3 @@ python -m unittest discover -s tests -v
 - `tests/` 汇总报告 1,812 项及 2 个既有错误。v1.06 测试模块导入 `models.full_sbc_v105.REPEATS` 失败，v1.03 的 `test_initial_phase` 读取返回结果的 `true_path` 时出现 KeyError。它们在未修改的基准源码上重现，单列为技术欠项。
 - 基准提交没有报告 GitHub combined status。仓库现有 [Actions 工作流](../.github/workflows/photon-regression-v087.yml) 的 push 触发分支为早期研究分支，所列测试也限于 v0.85/v0.86。以上结果来自本次检出后执行。
 - v4.12–v4.21 批次引用中的 arXiv:1203.1314 不宜用于加权自动机背景。交接和后续论文应采用已核对的 [Balle 等的正式论文](https://doi.org/10.1007/s10994-013-5416-x)。
-
-## 恢复点
-
-从 [路线图的 v4.22](research_roadmap.md#十个独立问题) 起步。先列出可访问受控算子和标准普通设备态模型，构造有限等价证书及破坏等价的反例。若新干预仍可用普通环境精确重拟合，记录等价域；下一轮依计划推进独立问题。待十轮实际复现、论文修订、提交和远端核验完成后，再推进已完成的版本号。

@@ -4,14 +4,14 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-22",
-  "checkpoint_kind": "handover_and_roadmap",
-  "research_base_commit_sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f",
-  "latest_completed_version": "v4.21",
-  "latest_completed_version_evidence": "docs/v372_v421_continuous_fifty_round_index_zh.md",
+  "checkpoint_kind": "completed_batch",
+  "research_base_commit_sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
+  "latest_completed_version": "v4.31",
+  "latest_completed_version_evidence": "v422_v431/README.md",
   "next_batch": {
-    "first_version": "v4.22",
-    "last_version": "v4.31",
-    "first_unfinished_version": "v4.22",
+    "first_version": "v4.32",
+    "last_version": "v4.41",
+    "first_unfinished_version": "v4.32",
     "completed_versions": [],
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
@@ -233,6 +233,14 @@
       "index": "v412_v421/README.md",
       "last_path_commit_sha": "7835f6f51766a3dc280d735ca72c06d7f062d8b9",
       "verification": "model_cli_and_10_unit_tests_passed"
+    },
+    {
+      "first_version": "v4.22",
+      "last_version": "v4.31",
+      "index": "v422_v431/README.md",
+      "source_parent_sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
+      "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v422_v431",
+      "verification": "model_cli_and_10_unit_tests_passed"
     }
   ],
   "early_history": {
@@ -246,37 +254,37 @@
     "model_scope": "finite HMMs, quantum diagonal subtheory and explicitly scoped finite-dimensional process counterexamples",
     "open_questions": [
       {
-        "id": "controlled_equivalence",
+        "id": "quantum_causal_break_distance_bound",
         "status": "planned",
         "versions": [
-          "v4.22",
-          "v4.23",
-          "v4.24"
+          "v4.32",
+          "v4.33"
         ]
       },
       {
-        "id": "independent_constraints_on_ordinary_memory",
-        "status": "pending_verification",
+        "id": "calibrated_carrier_isolation_and_route_exchange",
+        "status": "planned",
         "versions": [
-          "v4.25",
-          "v4.26"
+          "v4.34",
+          "v4.35",
+          "v4.36"
         ]
       },
       {
-        "id": "positive_global_distance_against_calibrated_null",
-        "status": "pending_verification",
+        "id": "correlated_calibration_and_spectral_standard_null",
+        "status": "planned",
         "versions": [
-          "v4.27",
-          "v4.28",
-          "v4.29"
+          "v4.37",
+          "v4.38"
         ]
       },
       {
         "id": "identity_specific_consistent_dynamics_and_protocol",
         "status": "not_constructed",
         "versions": [
-          "v4.30",
-          "v4.31"
+          "v4.39",
+          "v4.40",
+          "v4.41"
         ]
       }
     ],
@@ -292,8 +300,21 @@
       {
         "version": "v4.17",
         "claim_excluded": "Counting empirical Hankel singular values above 1e-4 recovers the ordinary HMM rank in the stated simulation."
+      },
+      {
+        "version": "v4.27",
+        "claim_excluded": "The positive constrained marginal KL survives freeing ordinary crosstalk. An explicit ordinary zero-KL fit exists."
+      },
+      {
+        "version": "v4.30",
+        "claim_excluded": "The specific finite dispersive ansatz yields an identity-specific reduced light–matter state. Ordinary detuning mixtures reproduce it."
+      },
+      {
+        "version": "v4.31",
+        "claim_excluded": "The held-out rejection can uniquely distinguish the synthetic alternative from unmonitored ordinary drift."
       }
-    ]
+    ],
+    "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
   },
   "tests": {
     "tested_sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f",
@@ -337,11 +358,41 @@
           "test": "test_hyperposterior_v103.HyperTests.test_initial_phase",
           "error": "KeyError: true_path"
         }
-      ]
+      ],
+      "rechecked_at_v431": true
     },
-    "github_combined_status": "no_reported_statuses_at_research_base"
+    "github_combined_status": "no_reported_statuses_at_research_base",
+    "current_batch": {
+      "scope": "v4.22-v4.31 files included in this checkpoint",
+      "source_parent_sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
+      "runtime": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "sympy": "1.14.0"
+      },
+      "model_command": "python -m v422_v431.model",
+      "model_exit_code": 0,
+      "results": "v422_v431/results.json",
+      "results_sha256": "2f350d458844a3e71c6839ad8484187ab4874a0cf8ee04a4868c74a3936098ef",
+      "test_command": "python -m unittest -v v422_v431.test_model",
+      "ran": 10,
+      "passed": 10,
+      "exit_code": 0,
+      "github_actions": "not run for this batch"
+    },
+    "latest_six_batches": {
+      "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
+      "ran": 60,
+      "passed": 60,
+      "exit_code": 0
+    }
   },
   "commit_history": [
+    {
+      "sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
+      "role": "v4.21_research_handover_and_v4.22_roadmap"
+    },
     {
       "sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f",
       "role": "research_base_and_master_index"
@@ -383,5 +434,6 @@
       "role": "independent_calibration_audit"
     }
   ],
-  "checkpoint_commit_location": "Resolve the commit containing this file from the remote branch. The research base and test SHAs above refer to predecessor code."
+  "checkpoint_commit_location": "Resolve the verified commit containing this file from origin/main. A commit cannot contain its own SHA.",
+  "previous_research_base_commit_sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f"
 }

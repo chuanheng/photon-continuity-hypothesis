@@ -1,0 +1,553 @@
+{
+  "evidence_scope": "exact finite models and synthetic simulations; no optical measurements",
+  "seeds": {
+    "calibration": 422425,
+    "operating": 422428,
+    "design": 422429,
+    "design_validation": 431429,
+    "blind": 422431
+  },
+  "v4.22": {
+    "equivalent": {
+      "basis_dimension": 4,
+      "witness": null
+    },
+    "changed_reset": {
+      "basis_dimension": 8,
+      "witness": {
+        "word": [
+          [
+            "reset",
+            0
+          ],
+          [
+            "normal",
+            0
+          ]
+        ],
+        "difference": "-12/625"
+      }
+    },
+    "adaptive_total_mass": "1",
+    "adaptive_changed_total_variation": "615548231/18000000000"
+  },
+  "v4.23": {
+    "controlled": {
+      "depth": 2,
+      "ranks_by_depth": [
+        1,
+        2,
+        4
+      ],
+      "determinant": "5225472/95367431640625",
+      "rows": [
+        [],
+        [
+          [
+            "normal",
+            0
+          ]
+        ],
+        [
+          [
+            "normal",
+            1
+          ]
+        ],
+        [
+          [
+            "reset",
+            0
+          ]
+        ]
+      ],
+      "columns": [
+        [],
+        [
+          [
+            "normal",
+            0
+          ]
+        ],
+        [
+          [
+            "normal",
+            0
+          ],
+          [
+            "normal",
+            0
+          ]
+        ],
+        [
+          [
+            "normal",
+            1
+          ],
+          [
+            "normal",
+            0
+          ]
+        ]
+      ]
+    },
+    "passive": {
+      "depth": 2,
+      "ranks_by_depth": [
+        1,
+        2,
+        4
+      ],
+      "determinant": "-793230732/2384185791015625",
+      "rows": [
+        [],
+        [
+          [
+            "normal",
+            0
+          ]
+        ],
+        [
+          [
+            "normal",
+            1
+          ]
+        ],
+        [
+          [
+            "normal",
+            0
+          ],
+          [
+            "normal",
+            0
+          ]
+        ]
+      ],
+      "columns": [
+        [],
+        [
+          [
+            "normal",
+            0
+          ]
+        ],
+        [
+          [
+            "normal",
+            0
+          ],
+          [
+            "normal",
+            0
+          ]
+        ],
+        [
+          [
+            "normal",
+            1
+          ],
+          [
+            "normal",
+            0
+          ]
+        ]
+      ]
+    }
+  },
+  "v4.24": {
+    "square_rank": 3,
+    "simpler_rank": 3,
+    "largest_positive_rectangle": 2,
+    "square_nonnegative_lower": 4,
+    "square_nonnegative_upper": 4,
+    "simpler_nonnegative_upper": 3,
+    "square_table": [
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "simpler_table": [
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  "v4.25": {
+    "joint_reference_coverage": {
+      "count": 3999,
+      "trials": 4000,
+      "rate": 0.99975,
+      "mc_95_interval": [
+        0.9986078848780338,
+        0.9999936705680349
+      ]
+    },
+    "nominal_amplitude": 0.027999999999999997,
+    "reference_radius": 0.021924721578988126,
+    "main_upper_envelope_coverage": {
+      "in_budget_shared_drift": {
+        "count": 4000,
+        "trials": 4000,
+        "rate": 1.0,
+        "mc_95_interval": [
+          0.9990782052505169,
+          1.0
+        ]
+      },
+      "out_of_budget_shared_drift": {
+        "count": 0,
+        "trials": 4000,
+        "rate": 0.0,
+        "mc_95_interval": [
+          0.0,
+          0.0009217947494830555
+        ]
+      },
+      "unmonitored_carrier": {
+        "count": 0,
+        "trials": 4000,
+        "rate": 0.0,
+        "mc_95_interval": [
+          0.0,
+          0.0009217947494830555
+        ]
+      }
+    }
+  },
+  "v4.26": {
+    "quantum_success": 0.8535533905932737,
+    "classical_one_bit_maximum": 0.75,
+    "two_bit_match_error": 0.0,
+    "preparation_choi_min_eigenvalue": 5.551115123125783e-17,
+    "preparation_trace_error": 0.0,
+    "storage_choi_min_eigenvalue": 0.0,
+    "storage_trace_error": 0.0,
+    "measurement_commutator_norm": 2.8284271247461903
+  },
+  "v4.27": {
+    "amplitude_range": [
+      0.0162,
+      0.044000000000000004
+    ],
+    "candidate": [
+      0.54,
+      0.58
+    ],
+    "null_ceiling": [
+      0.528,
+      0.55
+    ],
+    "kl_each": [
+      0.0002891939530008797,
+      0.0018266926575704646
+    ],
+    "exact_equal_weight_kl": 0.0010579433052856722,
+    "unrestricted_crosstalk_refit": [
+      0.2,
+      0.8,
+      0.34,
+      0.3
+    ],
+    "refit_max_error": 1.1102230246251565e-16
+  },
+  "v4.28": {
+    "ordinary_interior": {
+      "certified_reject": {
+        "count": 0,
+        "trials": 4000,
+        "rate": 0.0,
+        "mc_95_interval": [
+          0.0,
+          0.0009217947494830555
+        ]
+      },
+      "naive_reject": {
+        "count": 362,
+        "trials": 4000,
+        "rate": 0.0905,
+        "mc_95_interval": [
+          0.08178566472626489,
+          0.09981769592750563
+        ]
+      },
+      "chosen_b": {
+        "count": 1245,
+        "trials": 4000,
+        "rate": 0.31125,
+        "mc_95_interval": [
+          0.2969187380568187,
+          0.3258574558764657
+        ]
+      }
+    },
+    "ordinary_positive_drift_edge": {
+      "certified_reject": {
+        "count": 4,
+        "trials": 4000,
+        "rate": 0.001,
+        "mc_95_interval": [
+          0.00027253142615528175,
+          0.002558400143375155
+        ]
+      },
+      "naive_reject": {
+        "count": 588,
+        "trials": 4000,
+        "rate": 0.147,
+        "mc_95_interval": [
+          0.13616215369629894,
+          0.15835617823324455
+        ]
+      },
+      "chosen_b": {
+        "count": 448,
+        "trials": 4000,
+        "rate": 0.112,
+        "mc_95_interval": [
+          0.10238789663478261,
+          0.12218285541118198
+        ]
+      }
+    },
+    "ordinary_negative_drift_edge": {
+      "certified_reject": {
+        "count": 0,
+        "trials": 4000,
+        "rate": 0.0,
+        "mc_95_interval": [
+          0.0,
+          0.0009217947494830555
+        ]
+      },
+      "naive_reject": {
+        "count": 194,
+        "trials": 4000,
+        "rate": 0.0485,
+        "mc_95_interval": [
+          0.04204973717735394,
+          0.05561951413734297
+        ]
+      },
+      "chosen_b": {
+        "count": 2081,
+        "trials": 4000,
+        "rate": 0.52025,
+        "mc_95_interval": [
+          0.5046328038645584,
+          0.5358375892953388
+        ]
+      }
+    },
+    "exact_refit_in_reference_domain": {
+      "certified_reject": {
+        "count": 0,
+        "trials": 4000,
+        "rate": 0.0,
+        "mc_95_interval": [
+          0.0,
+          0.0009217947494830555
+        ]
+      },
+      "naive_reject": {
+        "count": 356,
+        "trials": 4000,
+        "rate": 0.089,
+        "mc_95_interval": [
+          0.08035346829875867,
+          0.09825218493444422
+        ]
+      },
+      "chosen_b": {
+        "count": 1094,
+        "trials": 4000,
+        "rate": 0.2735,
+        "mc_95_interval": [
+          0.25973063537565383,
+          0.2876009424345635
+        ]
+      }
+    },
+    "separated_positive_control": {
+      "certified_reject": {
+        "count": 3918,
+        "trials": 4000,
+        "rate": 0.9795,
+        "mc_95_interval": [
+          0.9746172314659096,
+          0.9836633611668859
+        ]
+      },
+      "naive_reject": {
+        "count": 3962,
+        "trials": 4000,
+        "rate": 0.9905,
+        "mc_95_interval": [
+          0.9869836095134911,
+          0.9932687113509848
+        ]
+      },
+      "chosen_b": {
+        "count": 4000,
+        "trials": 4000,
+        "rate": 1.0,
+        "mc_95_interval": [
+          0.9990782052505169,
+          1.0
+        ]
+      }
+    }
+  },
+  "v4.29": {
+    "budget": 36000,
+    "uniform": [
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000
+    ],
+    "optimized": [
+      5414,
+      4060,
+      6393,
+      3429,
+      8696,
+      8008
+    ],
+    "design_points": 3201,
+    "uniform_proxy": 0.7547633340304739,
+    "optimized_proxy": 0.8206712646378813,
+    "validation": {
+      "uniform_nominal": {
+        "count": 4000,
+        "trials": 4000,
+        "rate": 1.0,
+        "mc_95_interval": [
+          0.9990782052505169,
+          1.0
+        ]
+      },
+      "uniform_perturbed": {
+        "count": 2711,
+        "trials": 4000,
+        "rate": 0.67775,
+        "mc_95_interval": [
+          0.6630164039766114,
+          0.6922235254503595
+        ]
+      },
+      "optimized_nominal": {
+        "count": 4000,
+        "trials": 4000,
+        "rate": 1.0,
+        "mc_95_interval": [
+          0.9990782052505169,
+          1.0
+        ]
+      },
+      "optimized_perturbed": {
+        "count": 3003,
+        "trials": 4000,
+        "rate": 0.75075,
+        "mc_95_interval": [
+          0.7370393007811964,
+          0.7640934900794689
+        ]
+      }
+    }
+  },
+  "v4.30": {
+    "detuning_mixture_population_error": 6.672796141282535e-16,
+    "detuning_mixture_full_reduced_state_error": 6.672796141282535e-16,
+    "energy_error": 6.217248937900877e-15,
+    "min_photonic_population": 0.03973652996583556,
+    "number_commutator_norm": 0.0,
+    "memory_min_eigenvalue": 0.26146279116246873,
+    "time_samples": 81
+  },
+  "v4.31": {
+    "rule": "one-sided exact tail at 0.025 after 97.5% joint reference box",
+    "unblinded_results": {
+      "unmonitored_ordinary_drift": {
+        "count": 4000,
+        "trials": 4000,
+        "rate": 1.0,
+        "mc_95_interval": [
+          0.9990782052505169,
+          1.0
+        ]
+      },
+      "synthetic_separation": {
+        "count": 4000,
+        "trials": 4000,
+        "rate": 1.0,
+        "mc_95_interval": [
+          0.9990782052505169,
+          1.0
+        ]
+      },
+      "weak_separation": {
+        "count": 33,
+        "trials": 4000,
+        "rate": 0.00825,
+        "mc_95_interval": [
+          0.0056855303156513074,
+          0.01156672489690259
+        ]
+      },
+      "ordinary_calibrated": {
+        "count": 3,
+        "trials": 4000,
+        "rate": 0.00075,
+        "mc_95_interval": [
+          0.0001546947446580444,
+          0.0021902386628751907
+        ]
+      }
+    }
+  }
+}

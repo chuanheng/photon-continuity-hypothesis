@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "project": "Photon Continuity Hypothesis",
+  "repository": "chuanheng/photon-continuity-hypothesis",
+  "default_branch": "main",
+  "reviewed_on": "2026-11-22",
+  "checkpoint_kind": "handover_and_roadmap",
+  "research_base_commit_sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f",
+  "latest_completed_version": "v4.21",
+  "latest_completed_version_evidence": "docs/v372_v421_continuous_fifty_round_index_zh.md",
+  "next_batch": {
+    "first_version": "v4.22",
+    "last_version": "v4.31",
+    "first_unfinished_version": "v4.22",
+    "completed_versions": [],
+    "status": "planned",
+    "roadmap": "docs/research_roadmap.md"
+  },
+  "completed_batches": [
+    {
+      "first_version": "v1.12",
+      "last_version": "v1.21",
+      "index": "docs/v112_v121_batch_index_zh.md",
+      "last_path_commit_sha": "d6f37555bb5333282f2d07a7c8a3a5e9b476579c",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v1.22",
+      "last_version": "v1.31",
+      "index": "docs/v122_v131_batch_index_zh.md",
+      "last_path_commit_sha": "beccd2f9a665453880289dfa02e7a5b38b356879",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v1.32",
+      "last_version": "v1.41",
+      "index": "docs/v132_v141_batch_index_zh.md",
+      "last_path_commit_sha": "566fd399c9a99849e766e781efb95a1b5a5e06cf",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v1.42",
+      "last_version": "v1.51",
+      "index": "docs/v142_v151_batch_index_zh.md",
+      "last_path_commit_sha": "ee6981e0feb4cee0bcea1ae1ae75003413698e77",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v1.52",
+      "last_version": "v1.61",
+      "index": "docs/v152_v161_batch_index_zh.md",
+      "last_path_commit_sha": "70f307b391d4fd8316c68ea19294ab3ac491b5b6",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v1.62",
+      "last_version": "v1.71",
+      "index": "docs/v162_v171_batch_index_zh.md",
+      "last_path_commit_sha": "371201266e8ba7c8ac100824c29b7c1e078924d3",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v1.72",
+      "last_version": "v1.81",
+      "index": "docs/v172_v181_batch_index_zh.md",
+      "last_path_commit_sha": "0ef9e1791ac46f977e32e632dd34969ea19d9e6d",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v1.82",
+      "last_version": "v1.91",
+      "index": "docs/v182_v191_batch_index_zh.md",
+      "last_path_commit_sha": "f0b383d5c87037317b18094e4642661a58af9500",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v1.92",
+      "last_version": "v2.01",
+      "index": "docs/v192_v201_batch_index_zh.md",
+      "last_path_commit_sha": "5280d77607e1ee1100680ceab735cbf4859dbf1d",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.02",
+      "last_version": "v2.11",
+      "index": "docs/v202_v211_batch_index_zh.md",
+      "last_path_commit_sha": "42d5d5e993696b123c440a317e371406a42c82ea",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.12",
+      "last_version": "v2.21",
+      "index": "docs/v212_v221_batch_index_zh.md",
+      "last_path_commit_sha": "d74fda7074214dd211e709a31fe13cf50a7e2936",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.22",
+      "last_version": "v2.31",
+      "index": "docs/v222_v231_batch_index_zh.md",
+      "last_path_commit_sha": "b44b277b493595392e5d57e9060a33f4073b6323",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.32",
+      "last_version": "v2.41",
+      "index": "docs/v232_v241_batch_index_zh.md",
+      "last_path_commit_sha": "bc68be5b29f75cd13585c1811c212fa66b6b340b",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.42",
+      "last_version": "v2.51",
+      "index": "docs/v242_v251_batch_index_zh.md",
+      "last_path_commit_sha": "6eba59b138c7adee918bee59b9c46474dd38eb71",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.52",
+      "last_version": "v2.61",
+      "index": "docs/v252_v261_batch_index_zh.md",
+      "last_path_commit_sha": "1e18c15b078820ed638a8874c54003155ac857e4",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.62",
+      "last_version": "v2.71",
+      "index": "docs/v262_v271_batch_index_zh.md",
+      "last_path_commit_sha": "adb31bc97876ea0065e44959f5f8d612ce005425",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.72",
+      "last_version": "v2.81",
+      "index": "docs/v272_v281_batch_index_zh.md",
+      "last_path_commit_sha": "40e9dd84eb18bcb8077288c879c77120634e8b42",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.82",
+      "last_version": "v2.91",
+      "index": "docs/v282_v291_batch_index_zh.md",
+      "last_path_commit_sha": "b34f7f83d07c89d7120a7755b01344aa07964290",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v2.92",
+      "last_version": "v3.01",
+      "index": "docs/v292_v301_batch_index_zh.md",
+      "last_path_commit_sha": "7272ae3e3b03167df9490ac52ec8a2539532cb9c",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v3.02",
+      "last_version": "v3.11",
+      "index": "docs/v302_v311_batch_index_zh.md",
+      "last_path_commit_sha": "5c4aea8c00b6ee018a8a2951e8f90e39a61b116f",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v3.12",
+      "last_version": "v3.21",
+      "index": "docs/v312_v321_batch_index_zh.md",
+      "last_path_commit_sha": "4cde646203ab417cc242bc7f3e9e780a0843d408",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v3.22",
+      "last_version": "v3.31",
+      "index": "v322_v331/README.md",
+      "last_path_commit_sha": "e4a7244b49a0d4c15f934063dcd7794e8404ae85",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v3.32",
+      "last_version": "v3.41",
+      "index": "v332_v341/README.md",
+      "last_path_commit_sha": "d781af496fb94473ed8f63f332cdaa4da19bf959",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v3.42",
+      "last_version": "v3.51",
+      "index": "v342_v351/README.md",
+      "last_path_commit_sha": "131e816ce1c267432a6380e83086181e42cf79aa",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v3.52",
+      "last_version": "v3.61",
+      "index": "v352_v361/README.md",
+      "last_path_commit_sha": "ca84c0d5ff7aae84c4648becb87fb1391dca9945",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v3.62",
+      "last_version": "v3.71",
+      "index": "v362_v371/README.md",
+      "last_path_commit_sha": "f458e3568da2017e2020ea2622cca60f831dfc43",
+      "verification": "index_present_otherwise_historical"
+    },
+    {
+      "first_version": "v3.72",
+      "last_version": "v3.81",
+      "index": "v372_v381/README.md",
+      "last_path_commit_sha": "54d5b434d7eea4116659e66f1a2ad361d4282e29",
+      "verification": "model_cli_and_10_unit_tests_passed"
+    },
+    {
+      "first_version": "v3.82",
+      "last_version": "v3.91",
+      "index": "v382_v391/README.md",
+      "last_path_commit_sha": "5dbab3f1b4931f2fe51a0789a4f76aeb3daecbff",
+      "verification": "model_cli_and_10_unit_tests_passed"
+    },
+    {
+      "first_version": "v3.92",
+      "last_version": "v4.01",
+      "index": "v392_v401/README.md",
+      "last_path_commit_sha": "0f4a79677fc90a534d7b63f46fc5629a79f90675",
+      "verification": "model_cli_and_10_unit_tests_passed"
+    },
+    {
+      "first_version": "v4.02",
+      "last_version": "v4.11",
+      "index": "v402_v411/README.md",
+      "last_path_commit_sha": "cbbaf25fc7ef1a3daf2cda3faec5c42a011f0c0c",
+      "verification": "model_cli_and_10_unit_tests_passed"
+    },
+    {
+      "first_version": "v4.12",
+      "last_version": "v4.21",
+      "index": "v412_v421/README.md",
+      "last_path_commit_sha": "7835f6f51766a3dc280d735ca72c06d7f062d8b9",
+      "verification": "model_cli_and_10_unit_tests_passed"
+    }
+  ],
+  "early_history": {
+    "index": "docs/historical_backfill_index_v087.md",
+    "status": "partial_historical_audit"
+  },
+  "science_status": {
+    "hypothesis": "unverified",
+    "real_optical_experiment": "none_in_reviewed_material",
+    "external_peer_review": "none_in_reviewed_material",
+    "model_scope": "finite HMMs, quantum diagonal subtheory and explicitly scoped finite-dimensional process counterexamples",
+    "open_questions": [
+      {
+        "id": "controlled_equivalence",
+        "status": "planned",
+        "versions": [
+          "v4.22",
+          "v4.23",
+          "v4.24"
+        ]
+      },
+      {
+        "id": "independent_constraints_on_ordinary_memory",
+        "status": "pending_verification",
+        "versions": [
+          "v4.25",
+          "v4.26"
+        ]
+      },
+      {
+        "id": "positive_global_distance_against_calibrated_null",
+        "status": "pending_verification",
+        "versions": [
+          "v4.27",
+          "v4.28",
+          "v4.29"
+        ]
+      },
+      {
+        "id": "identity_specific_consistent_dynamics_and_protocol",
+        "status": "not_constructed",
+        "versions": [
+          "v4.30",
+          "v4.31"
+        ]
+      }
+    ],
+    "scoped_counterexamples": [
+      {
+        "version": "v3.14",
+        "claim_excluded": "Initial reduced-state equality implies future operational equality even with correlated environment feedback."
+      },
+      {
+        "version": "v4.09",
+        "claim_excluded": "The tested finite optical-memory surrogate identifies a permanent label uniquely against an ordinary persistent device state."
+      },
+      {
+        "version": "v4.17",
+        "claim_excluded": "Counting empirical Hankel singular values above 1e-4 recovers the ordinary HMM rank in the stated simulation."
+      }
+    ]
+  },
+  "tests": {
+    "tested_sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f",
+    "runtime": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "latest_five_batches": {
+      "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model",
+      "ran": 50,
+      "passed": 50,
+      "exit_code": 0,
+      "model_commands": [
+        "python -m v372_v381.model",
+        "python -m v382_v391.model",
+        "python -m v392_v401.model",
+        "python -m v402_v411.model",
+        "python -m v412_v421.model"
+      ],
+      "model_exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "model_outputs_valid_json": true
+    },
+    "legacy_discovery": {
+      "command": "python -m unittest discover -s tests -v",
+      "ran": 1812,
+      "errors": 2,
+      "exit_code": 1,
+      "known_errors": [
+        {
+          "test": "test_continuous_partial_v106",
+          "error": "ImportError: models.full_sbc_v105 does not export REPEATS"
+        },
+        {
+          "test": "test_hyperposterior_v103.HyperTests.test_initial_phase",
+          "error": "KeyError: true_path"
+        }
+      ]
+    },
+    "github_combined_status": "no_reported_statuses_at_research_base"
+  },
+  "commit_history": [
+    {
+      "sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f",
+      "role": "research_base_and_master_index"
+    },
+    {
+      "sha": "7835f6f51766a3dc280d735ca72c06d7f062d8b9",
+      "role": "hankel_resampling_reproduction"
+    },
+    {
+      "sha": "0f4a79677fc90a534d7b63f46fc5629a79f90675",
+      "role": "bootstrap_random_stream_alignment"
+    },
+    {
+      "sha": "baa0df7c26a36b71274bda28eb3a81a25a3d23c6",
+      "role": "v4.12-v4.21_batch"
+    },
+    {
+      "sha": "cbbaf25fc7ef1a3daf2cda3faec5c42a011f0c0c",
+      "role": "v4.02-v4.11_batch"
+    },
+    {
+      "sha": "d8cefbc7aa7fa1b596a327292e97d3ee6326b47e",
+      "role": "v3.92-v4.01_batch"
+    },
+    {
+      "sha": "5dbab3f1b4931f2fe51a0789a4f76aeb3daecbff",
+      "role": "v3.82-v3.91_batch"
+    },
+    {
+      "sha": "54d5b434d7eea4116659e66f1a2ad361d4282e29",
+      "role": "v3.72-v3.81_batch"
+    },
+    {
+      "sha": "4cde646203ab417cc242bc7f3e9e780a0843d408",
+      "role": "conditioned_no_go_referee_review"
+    },
+    {
+      "sha": "b34f7f83d07c89d7120a7755b01344aa07964290",
+      "role": "independent_calibration_audit"
+    }
+  ],
+  "checkpoint_commit_location": "Resolve the commit containing this file from the remote branch. The research base and test SHAs above refer to predecessor code."
+}

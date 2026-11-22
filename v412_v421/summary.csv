@@ -1,0 +1,13 @@
+version,metric,value,provenance
+v4.12,one_time_p1,0.34,synthetic
+v4.13,depth3_shape,15x15,synthetic
+v4.14,depth1_rank,2,synthetic
+v4.14,depth3_rank,4,synthetic
+v4.15,fifth_exact_singular,5.3467275925e-17,synthetic
+v4.16,best_rank2_residual,0.03132070864,synthetic
+v4.17,sample_count,50000,synthetic
+v4.17,naive_rank_at_1e_minus4,8,synthetic
+v4.18,simulations,60,synthetic
+v4.18,fifth_singular_95pct,0.00443104367,synthetic
+v4.19,observed_fifth,0.002932818834,synthetic
+v4.21,identity_unique_prediction,false,synthetic

@@ -16,7 +16,7 @@
 | v4.31 | [合成盲标判据](v431_zh.md) | 强分离及漏测普通漂移在同一规则下均可触发拒绝 |
 
 - [批次论文增订](manuscript_zh.md) · [内部反方审稿](review_zh.md) · [文献与已知理论核查](literature_zh.md)
-- [全量输出及随机种子](results.json) · [自动化测试](test_model.py)
+- [已运行的 Jupyter 笔记本](reproduce.ipynb) · [全量输出及随机种子](results.json) · [自动化测试](test_model.py)
 
 复现环境为 Python 3.12.14、NumPy 2.3.5、SciPy 1.17.0、SymPy 1.14.0。在仓库根目录运行：
 

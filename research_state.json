@@ -4,17 +4,50 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-22",
-  "checkpoint_kind": "completed_batch",
+  "checkpoint_kind": "partial_batch",
   "research_base_commit_sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
   "latest_completed_version": "v4.31",
   "latest_completed_version_evidence": "v422_v431/README.md",
   "next_batch": {
     "first_version": "v4.32",
     "last_version": "v4.41",
-    "first_unfinished_version": "v4.32",
-    "completed_versions": [],
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md"
+    "first_unfinished_version": "v4.34",
+    "completed_versions": [
+      "v4.32",
+      "v4.33"
+    ],
+    "status": "partial_checkpoint",
+    "roadmap": "docs/research_roadmap.md",
+    "pending_versions": [
+      "v4.34",
+      "v4.35",
+      "v4.36",
+      "v4.37",
+      "v4.38",
+      "v4.39",
+      "v4.40",
+      "v4.41"
+    ],
+    "checkpoint": {
+      "source_parent_sha": "4a3364b2b1eb8bf9f0f792503853c33321ffc251",
+      "index": "v432_v441/README.md",
+      "results": "v432_v441/results.json",
+      "notebook": "v432_v441/reproduce.ipynb",
+      "model_command": "python -m v432_v441.model",
+      "model_exit_code": 0,
+      "test_command": "python -m unittest -v v432_v441.test_model",
+      "tests_ran": 2,
+      "tests_passed": 2,
+      "test_exit_code": 0,
+      "runtime": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "ipykernel": "7.4.0"
+      },
+      "random_seeds": [],
+      "next_action": "v4.34: 2x2 independent material/detector causal breaks and shared-drift controls",
+      "results_sha256": "1e2b249939db7ccee6b536a170c95013155edc494b404b20fe515dcf51f429f3"
+    }
   },
   "completed_batches": [
     {
@@ -240,7 +273,8 @@
       "index": "v422_v431/README.md",
       "source_parent_sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
       "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v422_v431",
-      "verification": "model_cli_and_10_unit_tests_passed"
+      "verification": "model_cli_and_10_unit_tests_passed",
+      "notebook": "v422_v431/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -390,6 +424,10 @@
   },
   "commit_history": [
     {
+      "sha": "4a3364b2b1eb8bf9f0f792503853c33321ffc251",
+      "role": "completed_v4.22-v4.31_research_batch"
+    },
+    {
       "sha": "4e60931ccd87d11940968481f65def70bc2ced8f",
       "role": "v4.21_research_handover_and_v4.22_roadmap"
     },
@@ -435,5 +473,11 @@
     }
   ],
   "checkpoint_commit_location": "Resolve the verified commit containing this file from origin/main. A commit cannot contain its own SHA.",
-  "previous_research_base_commit_sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f"
+  "previous_research_base_commit_sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f",
+  "workflow": {
+    "rounds_per_checkpoint": 10,
+    "target_rounds_per_run": 20,
+    "continue_while_resources_allow": true,
+    "executed_jupyter_required": true
+  }
 }

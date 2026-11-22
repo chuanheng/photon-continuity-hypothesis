@@ -1,0 +1,51 @@
+{
+  "evidence_scope": "finite-dimensional standard quantum theory, no optical data",
+  "v4.32": {
+    "leakage": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "bell_distance": [
+      0.0,
+      0.07499999999999998,
+      0.1875,
+      0.3749999999999999,
+      0.7499999999999998
+    ],
+    "unassisted_optimal_distance": [
+      0.0,
+      0.05,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "local_distance_after_reset": 0.0,
+    "distance_after_ordinary_swap": 1.0
+  },
+  "v4.33": {
+    "z_only_design_rank": 2,
+    "four_state_design_rank": 4,
+    "distance_by_calibration_input": [
+      0.0,
+      0.0,
+      0.5,
+      0.5
+    ],
+    "bell_distance": 0.4999999999999999,
+    "minimum_choi_eigenvalues": [
+      0.0,
+      0.0
+    ],
+    "minimum_choi_ppt_eigenvalues": [
+      -0.4999999999999999,
+      0.0
+    ],
+    "choi_trace_errors": [
+      1.1102230246251565e-16,
+      1.1102230246251565e-16
+    ]
+  }
+}

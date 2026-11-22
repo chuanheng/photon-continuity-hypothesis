@@ -1,6 +1,6 @@
 # 下一阶段研究路线
 
-本页以 [交接说明](research_handover.md) 和 [机器可读状态](../research_state.json) 为起点。已验证批次为 [v4.22–v4.31](../v422_v431/README.md)，下一批为 **v4.32–v4.41**。以下是待验证研究计划。
+本页以 [交接说明](research_handover.md) 和 [机器可读状态](../research_state.json) 为起点。已验证批次为 [v4.22–v4.31](../v422_v431/README.md)，下一批为 **v4.32–v4.41**。已完成并提交 [v4.32、v4.33 阶段检查点](../v432_v441/README.md)，从 v4.34 继续。
 
 ## 核心问题
 

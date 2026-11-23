@@ -3,43 +3,30 @@
   "project": "Photon Continuity Hypothesis",
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
-  "reviewed_on": "2026-11-22",
-  "checkpoint_kind": "partial_batch",
-  "research_base_commit_sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
-  "latest_completed_version": "v4.41",
-  "latest_completed_version_evidence": "v432_v441/README.md",
+  "reviewed_on": "2026-11-23",
+  "checkpoint_kind": "complete_batch",
+  "research_base_commit_sha": "8e8f7a449dd625c8743efda5f822ea42fcae6267",
+  "latest_completed_version": "v4.51",
+  "latest_completed_version_evidence": "v442_v451/README.md",
   "next_batch": {
-    "first_version": "v4.42",
-    "last_version": "v4.51",
-    "first_unfinished_version": "v4.44",
-    "completed_versions": [
-      "v4.42",
-      "v4.43"
-    ],
-    "status": "partial_checkpoint",
+    "first_version": "v4.52",
+    "last_version": "v4.61",
+    "first_unfinished_version": "v4.52",
+    "completed_versions": [],
+    "status": "planned",
     "roadmap": "docs/research_roadmap.md",
     "pending_versions": [
-      "v4.44",
-      "v4.45",
-      "v4.46",
-      "v4.47",
-      "v4.48",
-      "v4.49",
-      "v4.50",
-      "v4.51"
-    ],
-    "checkpoint": {
-      "source_parent_sha": "9a3f1c397139f43f48ba1b01b8377d044bed6a83",
-      "index": "v442_v451/README.md",
-      "model_command": "python -m v442_v451.model",
-      "test_command": "python -m unittest -v v442_v451.test_model",
-      "model_exit_code": 0,
-      "tests_ran": 2,
-      "tests_passed": 2,
-      "test_exit_code": 0,
-      "results": "v442_v451/results.json",
-      "results_sha256": "e5a0d422c006ee11238155cce0e4ebddaa30c26a80497078183da5b4f88436f5"
-    }
+      "v4.52",
+      "v4.53",
+      "v4.54",
+      "v4.55",
+      "v4.56",
+      "v4.57",
+      "v4.58",
+      "v4.59",
+      "v4.60",
+      "v4.61"
+    ]
   },
   "completed_batches": [
     {
@@ -276,6 +263,15 @@
       "source_parent_sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
       "verification": "model_notebook_and_10_unit_tests_passed",
       "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v432_v441"
+    },
+    {
+      "first_version": "v4.42",
+      "last_version": "v4.51",
+      "index": "v442_v451/README.md",
+      "notebook": "v442_v451/reproduce.ipynb",
+      "source_parent_sha": "8e8f7a449dd625c8743efda5f822ea42fcae6267",
+      "verification": "model_notebook_and_10_unit_tests_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v442_v451"
     }
   ],
   "early_history": {
@@ -290,24 +286,10 @@
     "open_questions": [
       {
         "versions": [
-          "v4.42",
-          "v4.43",
-          "v4.44",
-          "v4.45"
+          "v4.52",
+          "v4.61"
         ],
-        "id": "calibrate_noncommuting_environment_and_additional_carriers",
-        "status": "planned"
-      },
-      {
-        "versions": [
-          "v4.46",
-          "v4.47",
-          "v4.48",
-          "v4.49",
-          "v4.50",
-          "v4.51"
-        ],
-        "id": "robust_comparison_and_identity_specific_dynamics",
+        "id": "physical_optical_channels_detection_and_identity_observables",
         "status": "planned"
       }
     ],
@@ -343,6 +325,14 @@
       {
         "version": "v4.40",
         "claim_excluded": "Restricted system control alone identifies coherence of a persistent dephasing environment."
+      },
+      {
+        "version": "v4.47",
+        "claim_excluded": "A broadened and shifted Voigt line requires a nonstandard carrier in the specified synthetic model."
+      },
+      {
+        "version": "v4.51",
+        "claim_excluded": "Equal marginal heralding rates rule out a setting-dependent postselection contrast."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -394,22 +384,26 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "model_command": "python -m v432_v441.model",
-      "test_command": "python -m unittest -v v432_v441.test_model",
-      "ran": 10,
-      "passed": 10,
+      "model_command": "python -m v442_v451.model",
+      "test_command": "python -m unittest -v v442_v451.test_model v432_v441.test_model",
+      "ran": 20,
+      "passed": 20,
       "model_exit_code": 0,
       "exit_code": 0,
-      "results": "v432_v441/results.json",
-      "results_sha256": "e47f28f7bb57a528af8ab9c8cc77957813edd3983363a38ec4c382d95d6944a8",
+      "results": "v442_v451/results.json",
+      "results_sha256": "fa90cc9473203e2c82ad039d2b32e2d1e6bbd1ac2d6b64d9d87a3ceb6b4b2abb",
       "notebook_executed": true,
-      "source_parent_sha": "fea983aed86827c1a3537975e2e1b6d7ea12dcd3",
-      "github_actions": "not run for this batch",
+      "source_parent_sha": "8e8f7a449dd625c8743efda5f822ea42fcae6267",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
-        "scipy": "1.17.0"
-      }
+        "scipy": "1.17.0",
+        "ipykernel": "7.4.0",
+        "nbformat": "5.11.1",
+        "jupyter_client": "8.10.0"
+      },
+      "verification_record": "v442_v451/verification.json",
+      "github_actions": "not run"
     },
     "latest_six_batches": {
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
@@ -425,6 +419,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "8e8f7a449dd625c8743efda5f822ea42fcae6267",
+      "role": "v4.42-v4.43 verified partial checkpoint and parent"
+    },
     {
       "sha": "9a3f1c397139f43f48ba1b01b8377d044bed6a83",
       "role": "completed_v4.32-v4.41_batch"

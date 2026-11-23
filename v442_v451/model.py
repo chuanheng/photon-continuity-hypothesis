@@ -4,6 +4,8 @@ import json
 import numpy as np
 from scipy.optimize import linprog
 
+from .extensions import ROUNDS
+
 I = np.eye(2)
 X = np.array([[0, 1], [1, 0]])
 Z = np.diag([1, -1])
@@ -50,7 +52,8 @@ def constrained_refit():
 
 
 def run():
-    return {"v4.42": witness(), "v4.43": constrained_refit()}
+    return {"v4.42": witness(), "v4.43": constrained_refit(),
+            **{version: model() for version, model in ROUNDS.items()}}
 
 
 if __name__ == "__main__":

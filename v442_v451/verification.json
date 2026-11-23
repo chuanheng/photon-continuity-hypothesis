@@ -1,0 +1,53 @@
+{
+  "source_parent_sha": "8e8f7a449dd625c8743efda5f822ea42fcae6267",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "jupyter_client": "8.10.0"
+  },
+  "seeds": [
+    442451,
+    442452
+  ],
+  "commands": {
+    "model": {
+      "command": "python -m v442_v451.model",
+      "exit_code": 0
+    },
+    "tests": {
+      "command": "python -m unittest -v v442_v451.test_model v432_v441.test_model",
+      "exit_code": 0,
+      "ran": 20,
+      "passed": 20,
+      "batch_tests": 10,
+      "previous_batch_tests": 10
+    },
+    "notebook": {
+      "command": "PYTHONPATH=. python -Xfrozen_modules=off tools/execute_research_notebook.py v442_v451/reproduce.ipynb",
+      "exit_code": 0,
+      "execution_counts": [
+        1,
+        2,
+        3
+      ],
+      "matches_cli": true,
+      "kernel": "Fresh in-process IPython kernel in a new Python process"
+    }
+  },
+  "sha256": {
+    "v442_v451/results.json": "fa90cc9473203e2c82ad039d2b32e2d1e6bbd1ac2d6b64d9d87a3ceb6b4b2abb",
+    "v442_v451/reproduce.ipynb": "64fa2a8f712ad5ec31ea2634268105695a6951d965a597c2197f676a7e169ce0",
+    "v442_v451/model.py": "ffdd6571189cab9bec1f437c086f025b9c3622494ebed3bdb97e0c347cd9bd97",
+    "v442_v451/extensions.py": "24766081514b743389fca38ae8d75dcf1f8a0397dd370ba749d98eb1c46ece3d",
+    "v442_v451/test_model.py": "cf655094fb513fc824267840b292fa99a3962a38aaa56aa33ceef7227f2552cc"
+  },
+  "reproduced_partial_results_sha256": "e5a0d422c006ee11238155cce0e4ebddaa30c26a80497078183da5b4f88436f5",
+  "environment_exceptions": [
+    "TCP and IPC sockets blocked; executed all notebook cells via ipykernel.inprocess.",
+    "Known original tests/ suite errors were not rerun."
+  ],
+  "github_actions": "not run"
+}

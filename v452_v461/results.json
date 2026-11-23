@@ -1,0 +1,103 @@
+{
+  "v4.52": {
+    "no_calibration_rank": 1,
+    "calibrated_rank": 2,
+    "refit_max_error": 2.7755575615628914e-17,
+    "source_interval": [
+      0.6810810810810811,
+      0.7200000000000001
+    ]
+  },
+  "v4.53": {
+    "seed": 452461,
+    "trials": 180000,
+    "simulated_rate": 0.2190388888888889,
+    "stationary_rate": 0.21875000000000003,
+    "lag_covariance_simulation_and_theory": {
+      "1": [
+        -0.047978034845679016,
+        -0.047851562500000014
+      ],
+      "2": [
+        0.012744862075397885,
+        0.013398437500000004
+      ],
+      "3": [
+        -0.0035384052962976337,
+        -0.003751562500000002
+      ]
+    }
+  },
+  "v4.54": {
+    "passive_max_error": 2.7755575615628914e-17,
+    "second_detector_contrast": 0.08535999999999999,
+    "transfer_needed_to_refit": 0.08800000000000001
+  },
+  "v4.55": {
+    "cutoff": 55,
+    "bath_tail_bound": 4.2654170821144386e-20,
+    "equivalent_source_mean": 0.44000000000000006,
+    "pmf_max_error": 1.3877787807814457e-17,
+    "click_probability": 0.30555555555555564
+  },
+  "v4.56": {
+    "max_capture_error": 0.0,
+    "min_output_population": 1.0,
+    "phase_transfer_error": 0.0,
+    "excitation_error": 1.1102230246251565e-16
+  },
+  "v4.57": {
+    "grid_step": 0.0005,
+    "full_overlap_squared": 0.353684489722669,
+    "full_overlap_exact": 0.35345468195878016,
+    "conditional_overlap_squared": 0.9999999999999989,
+    "acceptances": [
+      0.26895721511613496,
+      0.7609383291391812
+    ],
+    "acceptance_ratio": 0.35345468195878027
+  },
+  "v4.58": {
+    "cp_min_eigenvalue": -0.03000000000000004,
+    "vacuum_output_variance": 0.47,
+    "minimum_noise": 0.21000000000000002,
+    "thermal_mean_for_valid_y": 0.1428571428571428,
+    "ordinary_refit_error": 0.0
+  },
+  "v4.59": {
+    "shared_visibility": 0.9999999999999998,
+    "independent_visibility": 1.9783900893524805e-17,
+    "population_error": 5.551115123125783e-17
+  },
+  "v4.60": {
+    "accepted_contrast": 0.18,
+    "marginal_intervals": [
+      [
+        0.372,
+        0.7719999999999999
+      ],
+      [
+        0.22,
+        0.72
+      ]
+    ],
+    "sharp_contrast_interval": [
+      -0.348,
+      0.552
+    ],
+    "equal_marginal_refit": [
+      0.26999999999999996,
+      0.52
+    ],
+    "ordinary_refit_error": 0.0
+  },
+  "v4.61": {
+    "sideband_cutoff": 12,
+    "fft_points": 2048,
+    "sum_loss": 0.0,
+    "bessel_max_error": 2.7755575615628914e-16,
+    "raw_mean_order": -4.06121490512117e-17,
+    "biased_mean_order": 0.3853734266642722,
+    "calibrated_mean_order": -4.06121490512117e-17
+  }
+}

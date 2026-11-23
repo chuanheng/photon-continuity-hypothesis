@@ -1,0 +1,50 @@
+{
+  "source_parent_sha": "76f9fc101f50380bd63107f497bb3fe35f94a661",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "jupyter_client": "8.10.0"
+  },
+  "seeds": [
+    452461
+  ],
+  "commands": {
+    "model": {
+      "command": "python -m v452_v461.model",
+      "exit_code": 0
+    },
+    "tests": {
+      "command": "python -m unittest -v v452_v461.test_model v442_v451.test_model v432_v441.test_model",
+      "exit_code": 0,
+      "ran": 30,
+      "passed": 30,
+      "batch_tests": 10,
+      "previous_batch_tests": 20
+    },
+    "notebook": {
+      "command": "PYTHONPATH=. python -Xfrozen_modules=off tools/execute_research_notebook.py v452_v461/reproduce.ipynb",
+      "exit_code": 0,
+      "execution_counts": [
+        1,
+        2,
+        3
+      ],
+      "matches_cli": true,
+      "kernel": "Fresh in-process IPython kernel in a new Python process"
+    }
+  },
+  "sha256": {
+    "v452_v461/results.json": "b348553964440b36a259a0875dec90d9f8358636cbe3099a16350e6f67bc072e",
+    "v452_v461/reproduce.ipynb": "9ceda427c61ee39392a636596e4547b7481367028b8bb44cbf4cc1ffe0bd3ef8",
+    "v452_v461/model.py": "e0a1860a21b1d71173c597ee30ca59d4e8b47ab60265892ba5f701cfeacf0e1f",
+    "v452_v461/test_model.py": "a135e301153f4f45f35c294880651f66d28a211c44864f19a5fabfa9fc7c4945"
+  },
+  "environment_exceptions": [
+    "Network interface discovery emits a sandbox warning; socket-free in-process kernel executed the whole notebook.",
+    "Original tests/ suite and GitHub Actions were not run."
+  ],
+  "github_actions": "not run"
+}

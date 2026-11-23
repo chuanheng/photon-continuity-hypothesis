@@ -1,12 +1,17 @@
 {
-  "source_parent_sha": "7c23a081e14a85aec7a9783d21be5dd7b79d7756",
+  "source_parent_sha": "04f0030fc746ba3b5ad997f8e53653944b94095c",
   "runtime": {
     "python": "3.12.14",
     "numpy": "2.3.5",
-    "scipy": "1.17.0"
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "jupyter_client": "8.10.0"
   },
   "seeds": [
-    462471
+    462471,
+    462472,
+    462473
   ],
   "commands": {
     "model": {
@@ -16,28 +21,33 @@
     "tests": {
       "command": "python -m unittest -v v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
       "exit_code": 0,
-      "ran": 33,
-      "passed": 33,
-      "new_tests": 3
+      "ran": 40,
+      "passed": 40,
+      "batch_tests": 10,
+      "previous_batch_tests": 30
+    },
+    "notebook": {
+      "command": "PYTHONPATH=. python -Xfrozen_modules=off tools/execute_research_notebook.py v462_v471/reproduce.ipynb",
+      "exit_code": 0,
+      "execution_counts": [
+        1,
+        2,
+        3
+      ],
+      "matches_cli": true,
+      "kernel": "Fresh in-process IPython kernel in a new Python process"
     }
   },
   "sha256": {
-    "v462_v471/model.py": "91b4f7c405d0ea0c5f4d77a978f68d2bfc08c2d22668ccbedbddc7c2dfba5acc",
-    "v462_v471/test_model.py": "c9016e25d85809fa39ffd3d7c07f549c7b0afd2365064348bfa31936f2edd515",
-    "v462_v471/results.json": "ce7c99cbb487005d08419ade4df7f5ad8911d3409e6f50f26a2e8106959c795a"
+    "v462_v471/results.json": "714bb73bd7734930219248b3d1164dd2fd44d743d8421e2c0214554e029450f1",
+    "v462_v471/reproduce.ipynb": "052d99721a36e580046196d847859c16a930037af80fe09cfcf46ea6e5c62572",
+    "v462_v471/model.py": "66f643ad8b030a2b096ef318dc6c5f71fdada56966b3fda811683bc5727340c5",
+    "v462_v471/controls.py": "805668ee8e3011a39ff6166d3bd142f0b23273cb90cbd1dbac199937c5edd7cf",
+    "v462_v471/test_model.py": "d5ed22e349bc086b72b6b4fa57e5180a1a6024e5e3389f30fa510e366ff90a7b"
   },
-  "next_round": "v4.65",
-  "pending": [
-    "v4.65",
-    "v4.66",
-    "v4.67",
-    "v4.68",
-    "v4.69",
-    "v4.70",
-    "v4.71"
-  ],
-  "exceptions": [
-    "Not a ten-round batch; notebook, review and revised manuscript are pending.",
+  "environment_exceptions": [
+    "Network interface discovery emits a sandbox warning; socket-free in-process kernel executed the whole notebook.",
     "Original tests/ suite and GitHub Actions were not run."
-  ]
+  ],
+  "github_actions": "not run"
 }

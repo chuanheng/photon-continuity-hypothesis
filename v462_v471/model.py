@@ -5,6 +5,8 @@ import numpy as np
 from scipy.integrate import solve_ivp
 from scipy.optimize import linprog
 
+from .controls import ROUNDS
+
 SEED = 462471
 
 
@@ -80,7 +82,8 @@ def cavity_ledger():
 
 
 def run():
-    return {"v4.62":gauge_probe(),"v4.63":rotation_fit(),"v4.64":cavity_ledger()}
+    return {"v4.62":gauge_probe(),"v4.63":rotation_fit(),"v4.64":cavity_ledger(),
+            **{version: model() for version, model in ROUNDS.items()}}
 
 
 if __name__ == "__main__":

@@ -4,21 +4,22 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-23",
-  "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "76f9fc101f50380bd63107f497bb3fe35f94a661",
+  "checkpoint_kind": "partial_batch",
+  "research_base_commit_sha": "7c23a081e14a85aec7a9783d21be5dd7b79d7756",
   "latest_completed_version": "v4.61",
   "latest_completed_version_evidence": "v452_v461/README.md",
   "next_batch": {
     "first_version": "v4.62",
     "last_version": "v4.71",
-    "first_unfinished_version": "v4.62",
-    "completed_versions": [],
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md",
-    "pending_versions": [
+    "first_unfinished_version": "v4.65",
+    "completed_versions": [
       "v4.62",
       "v4.63",
-      "v4.64",
+      "v4.64"
+    ],
+    "status": "partial_checkpoint",
+    "roadmap": "docs/research_roadmap.md",
+    "pending_versions": [
       "v4.65",
       "v4.66",
       "v4.67",
@@ -26,7 +27,20 @@
       "v4.69",
       "v4.70",
       "v4.71"
-    ]
+    ],
+    "checkpoint": {
+      "source_parent_sha": "7c23a081e14a85aec7a9783d21be5dd7b79d7756",
+      "index": "v462_v471/README.md",
+      "verification_record": "v462_v471/verification.json",
+      "model_command": "python -m v462_v471.model",
+      "model_exit_code": 0,
+      "test_command": "python -m unittest -v v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
+      "tests_ran": 33,
+      "tests_passed": 33,
+      "test_exit_code": 0,
+      "results": "v462_v471/results.json",
+      "results_sha256": "ce7c99cbb487005d08419ade4df7f5ad8911d3409e6f50f26a2e8106959c795a"
+    }
   },
   "completed_batches": [
     {
@@ -440,6 +454,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "7c23a081e14a85aec7a9783d21be5dd7b79d7756",
+      "role": "completed_v4.52-v4.61 batch; remote contents verified"
+    },
     {
       "sha": "76f9fc101f50380bd63107f497bb3fe35f94a661",
       "role": "completed_v4.42-v4.51 batch; remote contents verified"

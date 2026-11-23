@@ -1,0 +1,28 @@
+{
+  "v4.62": {
+    "seed": 462471,
+    "trials": 64,
+    "field_max_gauge_error": 2.220446049250313e-16,
+    "conserved_current_max_gauge_error": 1.4762115264470257e-16,
+    "bare_timelike_current_min_change": 0.7
+  },
+  "v4.63": {
+    "frequencies": 11,
+    "eikonal_angle_rad": 0.02,
+    "eikonal_max_error_rad": 7.111199630885356e-08,
+    "calibrated_max_residual_rad": 0.006648166501346784,
+    "free_offset_max_residual_rad": 1.1314907344406322e-13,
+    "certified_calibrated_lower_bound_rad": 0.006648095389490312
+  },
+  "v4.64": {
+    "time_end": 8.0,
+    "grid_points": 81,
+    "final_probabilities_stored_out_internal": [
+      0.0003354626279461262,
+      0.6997651761604373,
+      0.29989936121161626
+    ],
+    "ledger_max_error": 4.440892098500626e-16,
+    "ode_closed_form_error": 8.148481889236336e-13
+  }
+}

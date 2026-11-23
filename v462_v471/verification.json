@@ -1,0 +1,43 @@
+{
+  "source_parent_sha": "7c23a081e14a85aec7a9783d21be5dd7b79d7756",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "seeds": [
+    462471
+  ],
+  "commands": {
+    "model": {
+      "command": "python -m v462_v471.model",
+      "exit_code": 0
+    },
+    "tests": {
+      "command": "python -m unittest -v v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
+      "exit_code": 0,
+      "ran": 33,
+      "passed": 33,
+      "new_tests": 3
+    }
+  },
+  "sha256": {
+    "v462_v471/model.py": "91b4f7c405d0ea0c5f4d77a978f68d2bfc08c2d22668ccbedbddc7c2dfba5acc",
+    "v462_v471/test_model.py": "c9016e25d85809fa39ffd3d7c07f549c7b0afd2365064348bfa31936f2edd515",
+    "v462_v471/results.json": "ce7c99cbb487005d08419ade4df7f5ad8911d3409e6f50f26a2e8106959c795a"
+  },
+  "next_round": "v4.65",
+  "pending": [
+    "v4.65",
+    "v4.66",
+    "v4.67",
+    "v4.68",
+    "v4.69",
+    "v4.70",
+    "v4.71"
+  ],
+  "exceptions": [
+    "Not a ten-round batch; notebook, review and revised manuscript are pending.",
+    "Original tests/ suite and GitHub Actions were not run."
+  ]
+}

@@ -4,20 +4,21 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-23",
-  "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "04f0030fc746ba3b5ad997f8e53653944b94095c",
+  "checkpoint_kind": "partial_batch",
+  "research_base_commit_sha": "ac0b3f1e73bb90b71f63703b7603a4198cc5f4a1",
   "latest_completed_version": "v4.71",
   "latest_completed_version_evidence": "v462_v471/README.md",
   "next_batch": {
     "first_version": "v4.72",
     "last_version": "v4.81",
-    "first_unfinished_version": "v4.72",
-    "completed_versions": [],
-    "status": "planned",
+    "first_unfinished_version": "v4.74",
+    "completed_versions": [
+      "v4.72",
+      "v4.73"
+    ],
+    "status": "partial_checkpoint",
     "roadmap": "docs/research_roadmap.md",
     "pending_versions": [
-      "v4.72",
-      "v4.73",
       "v4.74",
       "v4.75",
       "v4.76",
@@ -26,7 +27,20 @@
       "v4.79",
       "v4.80",
       "v4.81"
-    ]
+    ],
+    "checkpoint": {
+      "source_parent_sha": "ac0b3f1e73bb90b71f63703b7603a4198cc5f4a1",
+      "index": "v472_v481/README.md",
+      "verification_record": "v472_v481/verification.json",
+      "model_command": "python -m v472_v481.model",
+      "model_exit_code": 0,
+      "test_command": "python -m unittest -v v472_v481.test_model v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
+      "tests_ran": 42,
+      "tests_passed": 42,
+      "test_exit_code": 0,
+      "results": "v472_v481/results.json",
+      "results_sha256": "e5ef8de9cd7eb49f370b36b799184e05429b3252868a37c9a4531f5464b29096"
+    }
   },
   "completed_batches": [
     {
@@ -457,6 +471,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "ac0b3f1e73bb90b71f63703b7603a4198cc5f4a1",
+      "role": "completed_v4.62-v4.71 batch; remote contents verified"
+    },
     {
       "sha": "04f0030fc746ba3b5ad997f8e53653944b94095c",
       "role": "v4.62-v4.64 verified partial checkpoint and parent"

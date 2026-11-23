@@ -1,0 +1,29 @@
+{
+  "v4.72": {
+    "seed": 472481,
+    "sample_count": 2048,
+    "analyzers": 64,
+    "polarization_summed_spectral_power_error": 2.220446049250313e-16,
+    "ordinary_rotator_probability_error": 6.661338147750939e-16,
+    "common_phase_probability_error": 0.22793339583169053,
+    "stokes_u_peak_to_peak": 0.8878960012161754
+  },
+  "v4.73": {
+    "duration": 4.0,
+    "matched_and_square_ledgers": [
+      [
+        0.4908421805556951,
+        0.29189363044980876,
+        0.21726418899451466
+      ],
+      [
+        0.37382253620759454,
+        0.2454210902778249,
+        0.38075637351462227
+      ]
+    ],
+    "optimal_storage_probability": 0.4908421805556329,
+    "max_ledger_error": 4.1744385725905886e-14,
+    "steady_resonant_reflection_amplitude": 0.0
+  }
+}

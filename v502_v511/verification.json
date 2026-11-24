@@ -1,0 +1,60 @@
+{
+  "source_parent_sha": "e23e71fef1f8f2446ff0241b3a8a7ee64edf11d0",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "seeds": [
+    502511
+  ],
+  "completed_versions": [
+    "v5.02",
+    "v5.03",
+    "v5.04"
+  ],
+  "first_unfinished_version": "v5.05",
+  "pending_versions": [
+    "v5.05",
+    "v5.06",
+    "v5.07",
+    "v5.08",
+    "v5.09",
+    "v5.10",
+    "v5.11"
+  ],
+  "commands": {
+    "model": {
+      "command": "python -m v502_v511.model",
+      "exit_code": 0
+    },
+    "tests": {
+      "command": "python -m unittest -v v502_v511.test_model v492_v501.test_model v482_v491.test_model v472_v481.test_model v462_v471.test_model",
+      "exit_code": 0,
+      "ran": 43,
+      "passed": 43,
+      "batch": 3,
+      "regression": 40
+    }
+  },
+  "numerical_errors": {
+    "mass_shell": 1.3322676295501878e-15,
+    "conversion_amplitude": 6.910727183560049e-16,
+    "clipping_rate_derivative": 1.9636842152337408e-10
+  },
+  "sha256": {
+    "v502_v511/README.md": "2cf679080168e9a96a397248ca3098a3690a1bdd96c3c0fc49203a75ef1c8636",
+    "v502_v511/model.py": "bbb826e6b14763d98fb6482d7bcd7ec6423d0d78c7182ee9fe323c8e97fe1262",
+    "v502_v511/results.json": "d0922b7d8bb6b5dc17eda4994d54ce0815658717660fa84441db80e1ccbdc8ca",
+    "v502_v511/test_log.txt": "ef2bb5480cd39978f3081d3cf2fd1d28f746943cb802937fdcffbf5f71e4643a",
+    "v502_v511/test_model.py": "827d1422a6bd8688b89d053296965dc28d2660ddfbe8495843a38f69f981acf5",
+    "v502_v511/v502_zh.md": "048789cb28ca682814c96548b84bb08e28acb735dca09ce07009e82e5be47f21",
+    "v502_v511/v503_zh.md": "39bbc447593f57857aec337834648aedae33004328a9610018e29e1151d09ded",
+    "v502_v511/v504_zh.md": "913e4bf221e466830b5602fd678e190688488417f2b0ad8732d8eecc9b7e8a94"
+  },
+  "github_actions": "not run; no relevant main workflow configured",
+  "environment_exceptions": [
+    "partial checkpoint: notebook, internal referee and revision remain open for this batch",
+    "legacy tests/ discovery not rerun"
+  ]
+}

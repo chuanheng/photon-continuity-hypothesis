@@ -1,0 +1,32 @@
+{
+  "v5.02": {
+    "angle_samples": 302,
+    "target_mass": 0.9,
+    "phase_matched_angle": 0.9807404552621901,
+    "kinematic_error": 1.85268467234323e-15,
+    "mass_shell_error": 1.3322676295501878e-15,
+    "collinear_source": 0.0,
+    "orthogonal_max_source": 0.0,
+    "counterpropagating_source": -8.0,
+    "ordinary_angular_refit_error": 0.0
+  },
+  "v5.03": {
+    "length": 6.0,
+    "mismatch": 1.0471975511965976,
+    "uniform_normalized_power": 2.364813880792566e-32,
+    "switched_normalized_power": 0.40528473456935116,
+    "uniform_quadrature_error": 6.910727183560049e-16,
+    "switched_quadrature_error": 0.0
+  },
+  "v5.04": {
+    "seed": 502511,
+    "phase_settings": 64,
+    "ceiling": 44,
+    "scan_means": 110,
+    "fisher_ratio_mu_20": 0.9999998467729245,
+    "fisher_ratio_mu_80": 7.746741209516841e-05,
+    "clipped_mean_slope_mu_52": 0.11714084637501115,
+    "derivative_check_error": 1.9636842152337408e-10,
+    "leakage_refit_error": 0.0
+  }
+}

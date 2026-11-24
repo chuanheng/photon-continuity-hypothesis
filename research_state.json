@@ -4,21 +4,22 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-24",
-  "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "dce884f0fe855c80624a819571bfd0576fd10014",
+  "checkpoint_kind": "partial_batch",
+  "research_base_commit_sha": "e23e71fef1f8f2446ff0241b3a8a7ee64edf11d0",
   "latest_completed_version": "v5.01",
   "latest_completed_version_evidence": "v492_v501/README.md",
   "next_batch": {
     "first_version": "v5.02",
     "last_version": "v5.11",
-    "first_unfinished_version": "v5.02",
-    "completed_versions": [],
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md",
-    "pending_versions": [
+    "first_unfinished_version": "v5.05",
+    "completed_versions": [
       "v5.02",
       "v5.03",
-      "v5.04",
+      "v5.04"
+    ],
+    "status": "partial_checkpoint",
+    "roadmap": "docs/research_roadmap.md",
+    "pending_versions": [
       "v5.05",
       "v5.06",
       "v5.07",
@@ -26,7 +27,23 @@
       "v5.09",
       "v5.10",
       "v5.11"
-    ]
+    ],
+    "checkpoint": {
+      "source_parent_sha": "e23e71fef1f8f2446ff0241b3a8a7ee64edf11d0",
+      "index": "v502_v511/README.md",
+      "verification_record": "v502_v511/verification.json",
+      "model_command": "python -m v502_v511.model",
+      "model_exit_code": 0,
+      "test_command": "python -m unittest -v v502_v511.test_model v492_v501.test_model v482_v491.test_model v472_v481.test_model v462_v471.test_model",
+      "tests_ran": 43,
+      "tests_passed": 43,
+      "test_exit_code": 0,
+      "seeds": [
+        502511
+      ],
+      "results": "v502_v511/results.json",
+      "results_sha256": "d0922b7d8bb6b5dc17eda4994d54ce0815658717660fa84441db80e1ccbdc8ca"
+    }
   },
   "completed_batches": [
     {
@@ -335,7 +352,7 @@
           "v5.11"
         ],
         "id": "candidate_source_coupling_phase_matching_and_standard_refits",
-        "status": "planned"
+        "status": "partial_checkpoint"
       }
     ],
     "scoped_counterexamples": [
@@ -520,6 +537,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "e23e71fef1f8f2446ff0241b3a8a7ee64edf11d0",
+      "role": "remote-verified complete v4.92–v5.01 and parent"
+    },
     {
       "sha": "dce884f0fe855c80624a819571bfd0576fd10014",
       "role": "remote-verified complete v4.82–v4.91 and parent"

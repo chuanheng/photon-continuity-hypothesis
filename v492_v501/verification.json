@@ -1,0 +1,75 @@
+{
+  "source_parent_sha": "dce884f0fe855c80624a819571bfd0576fd10014",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "jupyter_client": "8.10.0"
+  },
+  "seeds": [
+    492501
+  ],
+  "commands": {
+    "model": {
+      "command": "python -m v492_v501.model",
+      "exit_code": 0
+    },
+    "tests": {
+      "command": "python -m unittest -v v492_v501.test_model v482_v491.test_model v472_v481.test_model v462_v471.test_model v452_v461.test_model v442_v451.test_model",
+      "exit_code": 0,
+      "ran": 60,
+      "passed": 60,
+      "batch": 10,
+      "regression": 50
+    },
+    "notebook": {
+      "command": "PYTHONPATH=/tmp/pch_jupyter:. python -Xfrozen_modules=off tools/execute_research_notebook.py v492_v501/reproduce.ipynb",
+      "exit_code": 0,
+      "execution_counts": [
+        1,
+        2
+      ],
+      "matches_cli": true,
+      "kernel": "fresh Python process, socket-free IPython kernel"
+    }
+  },
+  "initial_model_failure": {
+    "command": "python -m v492_v501.model",
+    "exit_code": 1,
+    "error": "numpy.int64 null dimension not JSON serializable",
+    "resolution": "convert to Python int; reran model and tests successfully"
+  },
+  "numerical_errors": {
+    "phase_mc": 1.248395914749123e-05,
+    "boost_phase": 3.9968028886505635e-15,
+    "linear_label_pair_counts": 1.6653345369377348e-16,
+    "scalar_refit": 6.938893903907228e-18
+  },
+  "sha256": {
+    "v492_v501/README.md": "22cdab0557c08e5fcefc80abe8878579615efc53e919fd7c55ce5771993b2cb1",
+    "v492_v501/manuscript_zh.md": "d4e32275cefddeb158e7c8ef2795e652123eb525e721acea264261a6f4f77560",
+    "v492_v501/model.py": "eafcf045d069500c003593cc7cad9bf18e0717126fd424a60d8661355466410a",
+    "v492_v501/referee_zh.md": "9f8db5d509630224b404888aebb0380abf129ede6f526c00793880ece9435721",
+    "v492_v501/reproduce.ipynb": "7f74a95e5a04b9df93eb3397d13dea9f61d96ff9b2d49178ed283b4debdea2ac",
+    "v492_v501/results.json": "1752911ec2233db4565c12309b2474abae983d38bbc9bc935fbbf1395438731f",
+    "v492_v501/test_log.txt": "5959f88e9faa6ce130f491e26a0d4e8e5901f26d6b3f967f92949eeb579a17fe",
+    "v492_v501/test_model.py": "7aa3bdcba94a0673fce38258fa3006f68d441086c16b4c5d0853ae54eb320183",
+    "v492_v501/v492_zh.md": "f1d968b427d533f8013fb48ab6c0ff78a3ef1f2875bbb81b50fc3fc8118a2edc",
+    "v492_v501/v493_zh.md": "b29408a973b03c392f9eb5eacfb9001a9b50ba2882f6ad452dee6de05690f9ea",
+    "v492_v501/v494_zh.md": "c96430d2bc79b8db77ba274afd7ad029f5810766e2ecff051170c00eb1289284",
+    "v492_v501/v495_zh.md": "b053fb5514a8571ef11e3fc2fb88cbcbba47269861fe9e586fecb388ac80596f",
+    "v492_v501/v496_zh.md": "0e46cf319d4c9f774b25d7bc81ea74c1157690951f76372619c09ccf218bd580",
+    "v492_v501/v497_zh.md": "b2831f14d38c0a7167d936a1724b112470731725c3c449fe9a8d83d13165e398",
+    "v492_v501/v498_zh.md": "e90d3de7d878ec28bb13229bfd7ba32d1f77c4bdbbcc4cfe2178f2f8ed390813",
+    "v492_v501/v499_zh.md": "7da58e8b00e2de8079629b672c8cc0a4b7c1dfd535d4dff3b44c457ff0d9d5f4",
+    "v492_v501/v500_zh.md": "a0882f5b5693c7d1bcde20d8f6297cf9f5558364d4defabaab13b17b5e3c2f2e",
+    "v492_v501/v501_zh.md": "a6c8ea0e0a32185b728c5d70a1ade08e438d0d86955e18ac4cc97a16c58ebdb7"
+  },
+  "github_actions": "not run; no relevant main workflow configured",
+  "environment_exceptions": [
+    "socket-free Jupyter interface enumeration warning",
+    "legacy tests/ discovery not rerun"
+  ]
+}

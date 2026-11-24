@@ -1,0 +1,82 @@
+{
+  "v4.92": {
+    "seed": 492501,
+    "shots": 65536,
+    "single_mode_distinguishability": 0.0,
+    "independent_distance": 0.0,
+    "common_distance": 0.5,
+    "beam_splitter_probability_gap": 0.4999999999999999,
+    "relative_jitter_gap": 0.46157065715246537,
+    "gaussian_mc_error": 1.248395914749123e-05
+  },
+  "v4.93": {
+    "reset_error": 0.12131883789173684,
+    "heat": 0.6198130458974369,
+    "system_energy_removed": 0.6198130458974369,
+    "entropy_decrease": 0.11667849056054047,
+    "landauer_excess": 1.2469102104138208,
+    "ledger_error": 0.0,
+    "identity_error": 2.220446049250313e-16
+  },
+  "v4.94": {
+    "pair_overlap_squared": 0.1444,
+    "all_same_port_probabilities": [
+      0.05714607407407407,
+      0.04901688888888889
+    ],
+    "triad_gap": 0.008129185185185184,
+    "max_tensor_formula_error": 6.938893903907228e-18
+  },
+  "v4.95": {
+    "internal_modes": 2,
+    "two_boson_count_fit_error": 1.6653345369377348e-16,
+    "cross_mode_probability": 0.3300566951272411,
+    "normal_mode_fit_error": 1.1102230246251565e-16,
+    "residual_material_population": 0.0,
+    "joint_unitarity_error": 0.0
+  },
+  "v4.96": {
+    "boost_count": 101,
+    "minimum_interval_squared": 2.559999999999997,
+    "invariant_phase_error": 3.9968028886505635e-15,
+    "naive_max_phase_error": 19.319999999999986,
+    "proper_time_error": 1.1102230246251565e-15
+  },
+  "v4.97": {
+    "levels": 12,
+    "quadrature_phases": 65,
+    "tight_visibility": 0.970941817426052,
+    "tightness_error": 3.3306690738754696e-16,
+    "flat_visibility": 0.916666666666667
+  },
+  "v4.98": {
+    "eta": 0.59,
+    "reference_error": 1.1102230246251565e-16,
+    "recovery_tp_error": 2.220446049250313e-16,
+    "post_loss_trace_distance": 0.59,
+    "post_recovery_trace_distance": 0.46335078534031415
+  },
+  "v4.99": {
+    "branch_mutual_information": 0.0,
+    "conditional_mutual_information": 0.5310044064107189,
+    "parity_accuracy": 0.9,
+    "entropy_formula_error": 0.0
+  },
+  "v5.00": {
+    "grid": 32,
+    "time_support": 8,
+    "measured_bins": 5,
+    "null_dimension": 3,
+    "in_band_refit_error": 7.72682523912663e-17,
+    "omitted_band_energy": 0.9999999999999991,
+    "full_energy_error": 6.661338147750939e-16
+  },
+  "v5.01": {
+    "radii": 81,
+    "frequency_count": 2,
+    "plane_wave_source": 0,
+    "standing_antinode_source": -8,
+    "ordinary_gapped_refit_error": 6.938893903907228e-18,
+    "far_near_scaled_ratio": 0.10944544320641941
+  }
+}

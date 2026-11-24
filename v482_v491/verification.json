@@ -1,0 +1,77 @@
+{
+  "source_parent_sha": "e68243640437745bf25c0ce4da7ba421e2aef25c",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "jupyter_client": "8.10.0"
+  },
+  "seeds": [
+    482491,
+    482492
+  ],
+  "commands": {
+    "model": {
+      "command": "python -m v482_v491.model",
+      "exit_code": 0
+    },
+    "tests": {
+      "command": "python -m unittest -v v482_v491.test_model v472_v481.test_model v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
+      "exit_code": 0,
+      "ran": 60,
+      "passed": 60,
+      "batch": 10,
+      "regression": 50
+    },
+    "notebook": {
+      "command": "PYTHONPATH=/tmp/pch_jupyter:. python -Xfrozen_modules=off tools/execute_research_notebook.py v482_v491/reproduce.ipynb",
+      "exit_code": 0,
+      "execution_counts": [
+        1,
+        2
+      ],
+      "matches_cli": true,
+      "kernel": "fresh Python process, socket-free IPython kernel"
+    }
+  },
+  "initial_test_failure": {
+    "command": "python -m unittest -v v482_v491.test_model",
+    "exit_code": 1,
+    "ran": 10,
+    "passed": 9,
+    "error": "v4.85 expected positive separation at symmetric single echo; observed exactly zero",
+    "resolution": "verified covariance identity and added two-pulse protocol"
+  },
+  "numerical_errors": {
+    "mode_isometry": 2.220446049250313e-16,
+    "echo_integral": 5.89562220786044e-07,
+    "process_dual_gap": 0.0
+  },
+  "sha256": {
+    "v482_v491/README.md": "5aa12c168d4fdf6a43ae114f63a163310f50fa6fd73ee8a3c5d725dfbb658848",
+    "v482_v491/manuscript_zh.md": "0715f961985ea6d48a7de810ef10e754ecd0c9f7c996ce116c1ce2e7127452e6",
+    "v482_v491/model.py": "2183fd6bf3401c21437d78f49f9a558146978045d7385890420171d5b12ce0c1",
+    "v482_v491/referee_zh.md": "dbc628680ffc90a887f61a1990efb2f8b25c1a065b1676a464ba34c62528708e",
+    "v482_v491/reproduce.ipynb": "cdb7dcd0215741441522603038866cb92623a5521d02a00b4a9a31c1795ac74e",
+    "v482_v491/results.json": "7a5a53dd1a032ed3c3370d746e3f26ffd9bde3209ce662ec66f020988e27124e",
+    "v482_v491/test_log.txt": "c8f111f6af2aa8cc6fa0e419015dcfd62a81b8d4aa35780e4e5f5622398edc6e",
+    "v482_v491/test_model.py": "84d65d508ec5475bbc0d43de0732bc6a8e5c83f381e7d25bb1d8be9b5f550992",
+    "v482_v491/v482_zh.md": "9c118011fa96130f013da1fc6865ea226286294837fc16065dd21fc522440691",
+    "v482_v491/v483_zh.md": "66def086a4b630cc9e046b2fae913e36b880acc97187a5a4f18a70cf189a1c46",
+    "v482_v491/v484_zh.md": "135380e8066341939da279728c54d14ffeaf85fc11305403a56a84951aac73c9",
+    "v482_v491/v485_zh.md": "564b6b409c0f4cb332ae8a725b60b18bccfe17ca642c7a583e5e3e57b1f13b28",
+    "v482_v491/v486_zh.md": "ec428455f5de3545162d33e638e48db152bf9677575ad097d66e6216c1db3708",
+    "v482_v491/v487_zh.md": "70aafb501293b952befedf424ac171c4749f35cefd119752267050f003b95b66",
+    "v482_v491/v488_zh.md": "4560024ee922cfa075b12eb21749a950a53cfca77eba7511457da9a284d08d6a",
+    "v482_v491/v489_zh.md": "af939d70d817e1f220b0bf7fffd38fc0bb842b3cc1a907f0cd6ea165572d2009",
+    "v482_v491/v490_zh.md": "4017233c5c64ecec4f1a32bd685a132a389895ec39b7a7bdd63886b1be247b2b",
+    "v482_v491/v491_zh.md": "3cf61fb97440dccdf3f53387f3259c8b8ac32414baa4a5745939cabb81a03dce"
+  },
+  "github_actions": "not run; no relevant main workflow configured",
+  "environment_exceptions": [
+    "socket-free Jupyter interface enumeration warning",
+    "legacy tests/ discovery not rerun"
+  ]
+}

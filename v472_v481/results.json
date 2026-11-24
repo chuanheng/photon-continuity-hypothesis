@@ -25,5 +25,96 @@
     "optimal_storage_probability": 0.4908421805556329,
     "max_ledger_error": 4.1744385725905886e-14,
     "steady_resonant_reflection_amplitude": 0.0
+  },
+  "v4.74": {
+    "seed": 472482,
+    "inputs": 64,
+    "reduced_error": 1.1967181939361268e-16,
+    "filtered_inversion_error": 1.6735119127654515e-16,
+    "unfiltered_visibility": 0.36999999999999994
+  },
+  "v4.75": {
+    "single_setting_pairs": 36,
+    "single_depth_refit": 0.0,
+    "depth_two_gap": 0.0504,
+    "depth_ratio": 0.7,
+    "readout_drift_refit": 1.1102230246251565e-16,
+    "drifting_readout": 0.6222222222222221
+  },
+  "v4.76": {
+    "ports": 3,
+    "max_port": 0.083,
+    "calibrated_norm": 0.12,
+    "least_exact_refit_norm": 0.13421624342828256,
+    "bounded_residual": 0.014216243428282566,
+    "exact_refit_error": 1.3877787807814457e-17,
+    "ordinary_passive_slack": 0.8657837565717175
+  },
+  "v4.77": {
+    "eta": 0.37,
+    "coherent_information": -0.2599999999999998,
+    "quantum_capacity": 0,
+    "history_trace_distance": 0.36999999999999994,
+    "classical_capacity": 0.37,
+    "tp_error": 0.0
+  },
+  "v4.78": {
+    "seed": 472483,
+    "shots": 2000,
+    "observed": [
+      356,
+      375,
+      396,
+      382
+    ],
+    "positive": [
+      219,
+      257,
+      249,
+      247
+    ],
+    "complete_case": 0.6479513771754845,
+    "prediction": 0.75,
+    "identified_interval": [
+      0.456,
+      0.7702000000000001
+    ],
+    "lp_error": 1.1102230246251565e-16,
+    "exact_refit_error": 0.0
+  },
+  "v4.79": {
+    "samples": 301,
+    "real_refit_error": 0.00010000000000000286,
+    "ordinary_max_imaginary": 6.443747203622817e-05,
+    "analytic_ratio_bound": 0.001875,
+    "target_imaginary_peak": 8.623250791782879e-05,
+    "exact_ordinary_strengths": [
+      0.011,
+      0.74,
+      1.41
+    ]
+  },
+  "v4.80": {
+    "samples": 129,
+    "stored_arm_optical_population": 1.8746997283273213e-33,
+    "output_pop_variation": 3.3306690738754696e-16,
+    "reference_fringe_span": 0.9999999999999996,
+    "analytic_fringe_error": 6.661338147750939e-16,
+    "excitation_ledger_error": 3.3306690738754696e-16
+  },
+  "v4.81": {
+    "quadratures": 2,
+    "target": [
+      0.095,
+      0.075
+    ],
+    "readout_error": [
+      0.012,
+      0.013
+    ],
+    "minimum_shared_power": 0.010733000000000001,
+    "calibrated_power_bound": 0.008,
+    "max_marginal_required_power": 0.006889000000000001,
+    "critical_missing_power": 0.002733000000000001
   }
 }

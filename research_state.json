@@ -3,44 +3,30 @@
   "project": "Photon Continuity Hypothesis",
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
-  "reviewed_on": "2026-11-23",
-  "checkpoint_kind": "partial_batch",
-  "research_base_commit_sha": "ac0b3f1e73bb90b71f63703b7603a4198cc5f4a1",
-  "latest_completed_version": "v4.71",
-  "latest_completed_version_evidence": "v462_v471/README.md",
+  "reviewed_on": "2026-11-24",
+  "checkpoint_kind": "complete_batch",
+  "research_base_commit_sha": "4e279c0aa6f65a5e3c167926edfebe6aa75c0f21",
+  "latest_completed_version": "v4.81",
+  "latest_completed_version_evidence": "v472_v481/README.md",
   "next_batch": {
-    "first_version": "v4.72",
-    "last_version": "v4.81",
-    "first_unfinished_version": "v4.74",
-    "completed_versions": [
-      "v4.72",
-      "v4.73"
-    ],
-    "status": "partial_checkpoint",
+    "first_version": "v4.82",
+    "last_version": "v4.91",
+    "first_unfinished_version": "v4.82",
+    "completed_versions": [],
+    "status": "planned",
     "roadmap": "docs/research_roadmap.md",
     "pending_versions": [
-      "v4.74",
-      "v4.75",
-      "v4.76",
-      "v4.77",
-      "v4.78",
-      "v4.79",
-      "v4.80",
-      "v4.81"
-    ],
-    "checkpoint": {
-      "source_parent_sha": "ac0b3f1e73bb90b71f63703b7603a4198cc5f4a1",
-      "index": "v472_v481/README.md",
-      "verification_record": "v472_v481/verification.json",
-      "model_command": "python -m v472_v481.model",
-      "model_exit_code": 0,
-      "test_command": "python -m unittest -v v472_v481.test_model v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
-      "tests_ran": 42,
-      "tests_passed": 42,
-      "test_exit_code": 0,
-      "results": "v472_v481/results.json",
-      "results_sha256": "e5ef8de9cd7eb49f370b36b799184e05429b3252868a37c9a4531f5464b29096"
-    }
+      "v4.82",
+      "v4.83",
+      "v4.84",
+      "v4.85",
+      "v4.86",
+      "v4.87",
+      "v4.88",
+      "v4.89",
+      "v4.90",
+      "v4.91"
+    ]
   },
   "completed_batches": [
     {
@@ -304,6 +290,15 @@
       "source_parent_sha": "04f0030fc746ba3b5ad997f8e53653944b94095c",
       "verification": "model_notebook_and_10_unit_tests_passed",
       "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v462_v471"
+    },
+    {
+      "first_version": "v4.72",
+      "last_version": "v4.81",
+      "index": "v472_v481/README.md",
+      "notebook": "v472_v481/reproduce.ipynb",
+      "source_parent_sha": "4e279c0aa6f65a5e3c167926edfebe6aa75c0f21",
+      "verification": "model_notebook_10_batch_tests_40_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v472_v481"
     }
   ],
   "early_history": {
@@ -318,10 +313,10 @@
     "open_questions": [
       {
         "versions": [
-          "v4.72",
-          "v4.81"
+          "v4.82",
+          "v4.91"
         ],
-        "id": "candidate_fields_and_identifiable_phase_magnitude_observables",
+        "id": "ordinary_storage_and_joint_measurement_bounds",
         "status": "planned"
       }
     ],
@@ -385,6 +380,18 @@
       {
         "version": "v4.68",
         "claim_excluded": "A flat transmitted intensity excludes ordinary resonant group delay."
+      },
+      {
+        "version": "v4.75",
+        "claim_excluded": "Six-axis single-depth probabilities uniquely identify the tested isotropic process with uncalibrated SPAM."
+      },
+      {
+        "version": "v4.77",
+        "claim_excluded": "Zero unassisted quantum capacity implies zero classical history distinguishability."
+      },
+      {
+        "version": "v4.80",
+        "claim_excluded": "Storage-arm optical vacuum excludes an ordinary recoverable relative phase."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -436,16 +443,16 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "model_command": "python -m v462_v471.model",
-      "test_command": "python -m unittest -v v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
-      "ran": 40,
-      "passed": 40,
-      "model_exit_code": 0,
+      "model_command": "python -m v472_v481.model",
+      "test_command": "python -m unittest -v v472_v481.test_model v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
+      "ran": 50,
+      "passed": 50,
       "exit_code": 0,
-      "results": "v462_v471/results.json",
-      "results_sha256": "714bb73bd7734930219248b3d1164dd2fd44d743d8421e2c0214554e029450f1",
+      "model_exit_code": 0,
+      "results": "v472_v481/results.json",
+      "results_sha256": "7ca1be7ed6e1ade99aa597994ef57967a80bbd7ae615c0b1822832d96e82b6c0",
       "notebook_executed": true,
-      "source_parent_sha": "04f0030fc746ba3b5ad997f8e53653944b94095c",
+      "source_parent_sha": "4e279c0aa6f65a5e3c167926edfebe6aa75c0f21",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
@@ -454,7 +461,7 @@
         "nbformat": "5.11.1",
         "jupyter_client": "8.10.0"
       },
-      "verification_record": "v462_v471/verification.json",
+      "verification_record": "v472_v481/verification.json",
       "github_actions": "not run"
     },
     "latest_six_batches": {
@@ -471,6 +478,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "4e279c0aa6f65a5e3c167926edfebe6aa75c0f21",
+      "role": "verified v4.72–v4.73 partial checkpoint and parent"
+    },
     {
       "sha": "ac0b3f1e73bb90b71f63703b7603a4198cc5f4a1",
       "role": "completed_v4.62-v4.71 batch; remote contents verified"

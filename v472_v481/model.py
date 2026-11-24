@@ -1,8 +1,10 @@
-"""Oscillating polarization and finite cavity loading controls."""
+"""Optical field, calibration, and storage controls."""
 import json
 
 import numpy as np
 from scipy.integrate import solve_ivp
+
+from . import controls
 
 SEED = 472481
 
@@ -63,7 +65,18 @@ def pulsed_loading():
 
 
 def run():
-    return {"v4.72":modulated_rotation(),"v4.73":pulsed_loading()}
+    return {
+        "v4.72": modulated_rotation(),
+        "v4.73": pulsed_loading(),
+        "v4.74": controls.resolved_jones(),
+        "v4.75": controls.polarization_transfer(),
+        "v4.76": controls.multiport_reset(),
+        "v4.77": controls.flagged_history(),
+        "v4.78": controls.transported_contrast(),
+        "v4.79": controls.remote_lorentz(),
+        "v4.80": controls.coherent_reemission(),
+        "v4.81": controls.joint_quadrature(),
+    }
 
 
 if __name__ == "__main__":

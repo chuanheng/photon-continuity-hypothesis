@@ -1,12 +1,17 @@
 {
-  "source_parent_sha": "ac0b3f1e73bb90b71f63703b7603a4198cc5f4a1",
+  "source_parent_sha": "4e279c0aa6f65a5e3c167926edfebe6aa75c0f21",
   "runtime": {
     "python": "3.12.14",
     "numpy": "2.3.5",
-    "scipy": "1.17.0"
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "jupyter_client": "8.10.0"
   },
   "seeds": [
-    472481
+    472481,
+    472482,
+    472483
   ],
   "commands": {
     "model": {
@@ -16,29 +21,59 @@
     "tests": {
       "command": "python -m unittest -v v472_v481.test_model v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model",
       "exit_code": 0,
-      "ran": 42,
-      "passed": 42,
-      "new_tests": 2
+      "ran": 50,
+      "passed": 50,
+      "batch": 10,
+      "regression": 40
+    },
+    "notebook": {
+      "command": "PYTHONPATH=/tmp/pch_jupyter:. python -Xfrozen_modules=off tools/execute_research_notebook.py v472_v481/reproduce.ipynb",
+      "exit_code": 0,
+      "execution_counts": [
+        1,
+        2
+      ],
+      "matches_cli": true,
+      "kernel": "fresh Python process, socket-free IPython kernel"
     }
   },
-  "sha256": {
-    "v472_v481/model.py": "68c1c3410d0f58d8d91bb2b394d3a89b161a17499406b77b5f45e283758c8327",
-    "v472_v481/test_model.py": "369dc0f8ecb825d1503452c829e5c596ce0f9696a038a13b6568adc9b1af3199",
-    "v472_v481/results.json": "e5ef8de9cd7eb49f370b36b799184e05429b3252868a37c9a4531f5464b29096"
+  "baseline": {
+    "results_sha256": "e5ef8de9cd7eb49f370b36b799184e05429b3252868a37c9a4531f5464b29096",
+    "matches_remote": true,
+    "tests_passed": 42,
+    "model_exit_code": 0,
+    "test_exit_code": 0
   },
-  "next_round": "v4.74",
-  "pending": [
-    "v4.74",
-    "v4.75",
-    "v4.76",
-    "v4.77",
-    "v4.78",
-    "v4.79",
-    "v4.80",
-    "v4.81"
-  ],
-  "exceptions": [
-    "Not a ten-round batch; notebook, review and revised manuscript are pending.",
-    "Original tests/ suite and GitHub Actions were not run."
+  "numerical_errors": {
+    "matched_cavity_storage": 6.222800053024002e-14,
+    "polarization_mode_inversion": 1.6735119127654515e-16,
+    "material_phase_fringe": 6.661338147750939e-16
+  },
+  "sha256": {
+    "v472_v481/README.md": "e68b82bff248a32a3e6a120e8b75699f64ff9044d7c6fbdc2673ea9c4251abed",
+    "v472_v481/controls.py": "4b3f571af19bbb76b1935257b44d07900b587473f06c820847b6b6925e44c7f9",
+    "v472_v481/manuscript_zh.md": "a6e529b3eff2ef0899c08b358d45d66394e0a2df5c0a777499d3d7ea50ba99fb",
+    "v472_v481/model.py": "d7e7962e87159efd09027581dc8cc687bf031311940c1d9543b6e61cda5df9a9",
+    "v472_v481/referee_zh.md": "4a6333b9fae2016ead81610c402c5ba9f444e5fc7282a47b13dcfce4f66425c8",
+    "v472_v481/reproduce.ipynb": "2215103f24eae70b52cae8cdcab1718170f2f500e8dd4548b4e89bb0452b714f",
+    "v472_v481/results.json": "7ca1be7ed6e1ade99aa597994ef57967a80bbd7ae615c0b1822832d96e82b6c0",
+    "v472_v481/test_log.txt": "17afc70bc83fe412323d5bc7db6eb47333965715c5fa75e8d9b589a07f750a6d",
+    "v472_v481/test_model.py": "128f8a75d35a1660a4a6470cbbb8e5bfd8cbee3b8b075aa64b3877efb825cfaa",
+    "v472_v481/v472_zh.md": "930944ba6457846d842e60731bed58f97eaa683d51388e77c9e1643dedf78bc3",
+    "v472_v481/v473_zh.md": "f4b72164231f0d9c82c4660aea3c368e7be2e014c4e0ec4bacf19e64dca24fc9",
+    "v472_v481/v474_zh.md": "6e43a214cefd56d9e11b88faf6d349fdeb8441d61e1790cab54c6d49c8ccd528",
+    "v472_v481/v475_zh.md": "7526188a0c93cdefb1a9bdc04c0ce8d6f435bac7b1a40687d56b6423a856db3b",
+    "v472_v481/v476_zh.md": "1459acf04d55e321b2622b28639ff76ac715d08aca53230f694cf6b94c8f9a55",
+    "v472_v481/v477_zh.md": "b87406c711a70469c994844a75680f8ac5a086c560575e57179fad218898fa2d",
+    "v472_v481/v478_zh.md": "fedd2aa579d983e0f470a3535743e4bce56ffb75b25571c5f35146334d0d13d8",
+    "v472_v481/v479_zh.md": "074bf7564340f446b03e7e3e2d16846b72650a82c5bfbaca59d87513db00c42b",
+    "v472_v481/v480_zh.md": "6ea9a704feede2941575b7ba8df97d7c4d0c4ad0e2ff3dbf57d90c227e452beb",
+    "v472_v481/v481_zh.md": "4a997b7847205970ddeb6f945451a866d2cf057243fb40b618830aed723b16e3"
+  },
+  "github_actions": "not run locally; no relevant main workflow configured",
+  "environment_exceptions": [
+    "network interface enumeration warning in socket-free notebook execution",
+    "legacy tests/ discovery not rerun",
+    "plain Git HTTPS push has no terminal credentials; use GitHub Git Database API non-forced update"
   ]
 }

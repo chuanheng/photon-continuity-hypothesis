@@ -1,13 +1,18 @@
-# v4.72–v4.81 调制、腔加载与多端口可辨识性
+# v4.72–v4.81 调制、加载、模式读出和联合校准
 
-部分检查点。已完成 v4.72、v4.73，首个未完成轮次为 v4.74。最近完整批次仍为 v4.71。
+| 轮次 | 独立报告 |
+|---|---|
+| v4.72 | [振荡旋光和普通调制](v472_zh.md) |
+| v4.73 | [有限脉冲腔加载](v473_zh.md) |
+| v4.74 | [偏振与普通模式再读出](v474_zh.md) |
+| v4.75 | [偏振传输的深度迁移](v475_zh.md) |
+| v4.76 | [多端口相干串扰预算](v476_zh.md) |
+| v4.77 | [擦除容量与可访问历史](v477_zh.md) |
+| v4.78 | [异设备缺失回报](v478_zh.md) |
+| v4.79 | [带外材料振子](v479_zh.md) |
+| v4.80 | [材料相位和再发射](v480_zh.md) |
+| v4.81 | [相位正交联合标定](v481_zh.md) |
 
-- [v4.72 振荡旋光](v472_zh.md)
-- [v4.73 有限脉冲加载](v473_zh.md)
+十轮模型和十项本批测试均实跑，另有四十项近期回归。Jupyter 从源码执行输出与 CLI 相同。数值精度、边界和完整执行见 [验证记录](verification.json)、[测试日志](test_log.txt)、[数值输出](results.json) 和 [复现笔记本](reproduce.ipynb)。见 [内部反方审稿](referee_zh.md)、[修订工作稿](manuscript_zh.md) 与 [后续路线](../docs/research_roadmap.md)。
 
-```bash
-python -m v472_v481.model
-python -m unittest -v v472_v481.test_model v462_v471.test_model v452_v461.test_model v442_v451.test_model v432_v441.test_model
-```
-
-[输出](results.json) · [验证记录](verification.json) · [后续路线](../docs/research_roadmap.md)
+本批给出限定标准模型的数学与合成结论。普通量子光学对照产生偏振恢复、容量与判别分离、材料存储相位复原。多端口的正距离依赖独立校准，无项目实测及身份特异结论。

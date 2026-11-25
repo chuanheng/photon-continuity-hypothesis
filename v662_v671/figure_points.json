@@ -1,0 +1,9 @@
+{
+  "source": "https://hrcak.srce.hr/file/437541",
+  "pdf_sha256": "e21d3458d205b8298c34699f17e44a61c171285b2f2797334c3bade9d0bb5666",
+  "selection": "Highest plotted filled marker in the upper detector series within each annotated Ge K-alpha region. These are marker abscissae, not fitted peak centers. Grid and marker coordinates in each extracted original raster.",
+  "figures": [
+    {"figure": 2, "pdf_page_1based": 6, "width_px": 1342, "height_px": 828, "axis_anchors_px_keV": [[277,32],[1186,46]], "peak_marker_px": 1175, "incident_keV":55.791},
+    {"figure": 3, "pdf_page_1based": 7, "width_px": 1471, "height_px": 915, "axis_anchors_px_keV": [[308,34],[1369,46]], "peak_marker_px": 1253, "incident_keV":54.612}
+  ]
+}

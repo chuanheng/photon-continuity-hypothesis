@@ -1,0 +1,55 @@
+{
+  "source_parent_sha": "6b89a16134121512c5e3a851c000e100c11f2c1a",
+  "run_date": "2026-11-25",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "xraylib": "4.3.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1"
+  },
+  "seeds": [
+    66301
+  ],
+  "atomic_command": "PYTHONPATH=/tmp/pch_transport:. python -m v662_v671.atomic",
+  "model_command": "python -m v662_v671.model",
+  "test_command": "python -m unittest -v v662_v671.test_model v652_v661.test_model v642_v651.test_model v632_v641.test_model v622_v631.test_model v612_v621.test_model",
+  "notebook_command": "PYTHONPATH=/tmp/pch_jupyter:. python -Xfrozen_modules=off tools/execute_research_notebook.py v662_v671/reproduce.ipynb",
+  "exit_codes": {
+    "atomic": 0,
+    "model": 0,
+    "tests": 0,
+    "notebook": 0
+  },
+  "tests_passed": 60,
+  "batch_tests": 10,
+  "regression_tests": 50,
+  "execution_counts": [
+    1
+  ],
+  "errors": "Published marker extraction uses manual pixels. Raw event times, independent response and joint calibration are unavailable in the retrieved publication. Socket-free notebook used. Legacy full-suite and Actions not run.",
+  "sha256": {
+    "referee_zh.md": "a37b6ff04549906373cd19cd708f22b1b2a63b618d391f1c254c460bb5db1c39",
+    "v663_zh.md": "ed20b0fef937d1f72ef10fa6c502b15349a06d89c15f2e30e032377e69f88034",
+    "v667_zh.md": "c3446d9ce159f3b07ba4f2987898c8aefac6fad69087f5a5dd10a4bd2d1cb6cf",
+    "atomic.py": "b57dbfd0ba58e5cc77a1a23b506e2881496641d03f5860fd148eeea848423b7a",
+    "figure_points.json": "2138ebbe550b97a4b578d2a85db1fcd366b9151911142d447827ea91b91b761e",
+    "atomic.json": "5fd1ad9b9d7ff40da8ddfb689a09ad47e9e7e7000905a8ffefa401fe7a4572aa",
+    "v668_zh.md": "90f35a67c8d4b3b07e606c9c4d375088727abf630cdd0676c7c581a6f792f807",
+    "test_model.py": "57d5a24980a0526ef715a2ddde56debf2ac1f22270d7f4acac9cf77360c842e0",
+    "README.md": "b2c9655a0cc5d423c3c696cea87008826fab9d03c53fc7390ffccb53d6e0f33b",
+    "model.py": "eca6445a10a9d3a1cef191cff8c82b96bc220476fba99a2206ab2e20617cf735",
+    "results.json": "f159a750bb3b0f77cf5299a70e268be2aab1bea1949fc369de57243b54c02fbf",
+    "manuscript_zh.md": "34b4e21c030835674cece341d4b8f1d2e75f54ae94223dbc13c379a67498f26c",
+    "v662_zh.md": "512ce05c6a48fc16dc7b0e888d974dae4f7bff234678baa78ae239cbc70d3f2e",
+    "v666_zh.md": "5fe34cbba6916bf54746710c3d7f00a0b03390405b934cc2b839d65f85faf9ca",
+    "v670_zh.md": "e999c6bb47b2e976dea12baebe90ff803b0b41ed72ccf306ca80ccac4a7318dc",
+    "reproduce.ipynb": "afa7c8ea568eea3173885ce47b9f82b158e52e0cc46f92daf2732d46fe58b5ba",
+    "v665_zh.md": "e698cf336a2e41463a41a7b5309c5b3d83af19d0f34f638296b3d958746f1846",
+    "v669_zh.md": "38cfdfb2cb9abf9d8e30f8e6c35dad2f49155b10b6dee8cce6704ed791a09219",
+    "tests.log": "2af3e1f8128eaf7a20eaba4e7ca113e574fc56bf4a9a6958c3bcc3869ecbe0f7",
+    "v671_zh.md": "957cca276f66a77bab6975509015edb4f6316f7bad7d82e64d07de91a86c4d35",
+    "v664_zh.md": "446d9d699a7e07ad9ec2b160db25e884f827ceb29c6f851427cc73b206b2a9d5"
+  }
+}

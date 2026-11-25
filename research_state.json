@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "6fec2a4244fa332a0b48aa013589668ec74c2996",
-  "latest_completed_version": "v6.61",
-  "latest_completed_version_evidence": "v652_v661/README.md",
+  "research_base_commit_sha": "6b89a16134121512c5e3a851c000e100c11f2c1a",
+  "latest_completed_version": "v6.71",
+  "latest_completed_version_evidence": "v662_v671/README.md",
   "next_batch": {
-    "first_version": "v6.62",
-    "last_version": "v6.71",
-    "first_unfinished_version": "v6.62",
+    "first_version": "v6.72",
+    "last_version": "v6.81",
+    "first_unfinished_version": "v6.72",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -447,6 +447,14 @@
       "notebook": "v652_v661/reproduce.ipynb",
       "source_parent_sha": "6fec2a4244fa332a0b48aa013589668ec74c2996",
       "verification": "v652_v661/verification.json"
+    },
+    {
+      "first_version": "v6.62",
+      "last_version": "v6.71",
+      "index": "v662_v671/README.md",
+      "notebook": "v662_v671/reproduce.ipynb",
+      "source_parent_sha": "6b89a16134121512c5e3a851c000e100c11f2c1a",
+      "verification": "v662_v671/verification.json"
     }
   ],
   "early_history": {
@@ -461,10 +469,10 @@
     "open_questions": [
       {
         "versions": [
-          "v6.62",
-          "v6.71"
+          "v6.72",
+          "v6.81"
         ],
-        "id": "material_matched_reference_and_recoil_spectrum",
+        "id": "published_coincidence_response_and_identifiability",
         "status": "planned"
       }
     ],
@@ -719,12 +727,12 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "model_command": "python -m v652_v661.model",
-      "test_command": "python -m unittest -v v652_v661.test_model v642_v651.test_model v632_v641.test_model v622_v631.test_model v612_v621.test_model v602_v611.test_model",
-      "results": "v652_v661/results.json",
-      "results_sha256": "720a2753b7c0fff428ed48b28e7f5ac98355b3ccc6dfad4ca6def3ac4fc5b5c6",
-      "source_parent_sha": "6fec2a4244fa332a0b48aa013589668ec74c2996",
-      "verification_record": "v652_v661/verification.json",
+      "model_command": "python -m v662_v671.model",
+      "test_command": "python -m unittest -v v662_v671.test_model v652_v661.test_model v642_v651.test_model v632_v641.test_model v622_v631.test_model v612_v621.test_model",
+      "results": "v662_v671/results.json",
+      "results_sha256": "f159a750bb3b0f77cf5299a70e268be2aab1bea1949fc369de57243b54c02fbf",
+      "source_parent_sha": "6b89a16134121512c5e3a851c000e100c11f2c1a",
+      "verification_record": "v662_v671/verification.json",
       "notebook_executed": true,
       "github_actions": "not run"
     },
@@ -742,6 +750,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "6b89a16134121512c5e3a851c000e100c11f2c1a",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "6fec2a4244fa332a0b48aa013589668ec74c2996",
       "role": "verified predecessor on main"
@@ -900,7 +912,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "07580eeee16ba9dea56291d1f19f0b01ba8c010c",
+  "previous_research_base_commit_sha": "6fec2a4244fa332a0b48aa013589668ec74c2996",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -908,8 +920,8 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "6fec2a4244fa332a0b48aa013589668ec74c2996",
-    "source_latest_completed_version": "v6.51",
-    "source_first_unfinished_version": "v6.52"
+    "source_main_sha": "6b89a16134121512c5e3a851c000e100c11f2c1a",
+    "source_latest_completed_version": "v6.61",
+    "source_first_unfinished_version": "v6.62"
   }
 }

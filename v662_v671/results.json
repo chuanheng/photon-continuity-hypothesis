@@ -1,0 +1,214 @@
+{
+  "v6.62": [
+    {
+      "figure": 2,
+      "marker_keV": 45.830583058305834,
+      "complementary_Kalpha_keV": 45.915,
+      "marker_minus_complement_keV": -0.08441694169416358,
+      "four_pixel_sensitivity_keV": 0.061606160616061605
+    },
+    {
+      "figure": 3,
+      "marker_keV": 44.688030160226205,
+      "complementary_Kalpha_keV": 44.736000000000004,
+      "marker_minus_complement_keV": -0.04796983977379732,
+      "four_pixel_sensitivity_keV": 0.04524033930254477
+    }
+  ],
+  "v6.63": {
+    "free": [
+      {
+        "theta_deg": 3.0,
+        "single_keV": 59.52749499010948,
+        "double_support_keV": [
+          40.61286192329798,
+          59.532246301236725
+        ],
+        "sample_range": [
+          40.613812296141845,
+          59.53206486423741
+        ],
+        "backscatter_degeneracy_error": null
+      },
+      {
+        "theta_deg": 170.0,
+        "single_keV": 48.354847617144216,
+        "double_support_keV": [
+          47.50300596460114,
+          49.09406417984756
+        ],
+        "sample_range": [
+          47.503185020258805,
+          49.09403682210069
+        ],
+        "backscatter_degeneracy_error": null
+      },
+      {
+        "theta_deg": 180.0,
+        "single_keV": 48.28543184745512,
+        "double_support_keV": [
+          48.28543184745512,
+          48.28543184745512
+        ],
+        "sample_range": [
+          48.28543184745512,
+          48.28543184745512
+        ],
+        "backscatter_degeneracy_error": 0.0
+      }
+    ],
+    "conditional_doppler_keV": [
+      45.975353731529246,
+      48.28543184745512,
+      50.70589975313263
+    ],
+    "pz_truncation_au": 5.0
+  },
+  "v6.64": [
+    {
+      "material": "Al",
+      "thickness_cm": 0.1,
+      "areal_density": 0.27,
+      "first_interaction": 0.07226465378031585,
+      "first_compton": 0.03857953682814468,
+      "photo_fraction": 0.34425843982011844,
+      "rayleigh_fraction": 0.1218770107775381
+    },
+    {
+      "material": "Al",
+      "thickness_cm": 0.1,
+      "areal_density": 0.27,
+      "first_interaction": 0.07226465378031585,
+      "first_compton": 0.03857953682814468,
+      "photo_fraction": 0.34425843982011844,
+      "rayleigh_fraction": 0.1218770107775381
+    },
+    {
+      "material": "Ge",
+      "thickness_cm": 0.1,
+      "areal_density": 0.5323000000000001,
+      "first_interaction": 0.6593614838677673,
+      "first_compton": 0.040880627279041175,
+      "photo_fraction": 0.8775168194856211,
+      "rayleigh_fraction": 0.06048285401784428
+    },
+    {
+      "material": "Ge",
+      "thickness_cm": 0.050723276347924104,
+      "areal_density": 0.27,
+      "first_interaction": 0.4208859954797959,
+      "first_compton": 0.02609506913756638,
+      "photo_fraction": 0.8775168194856211,
+      "rayleigh_fraction": 0.06048285401784428
+    }
+  ],
+  "v6.65": [
+    {
+      "range_cm": 0.002,
+      "escape_probability": 0.01,
+      "analytic": 0.01,
+      "external_half_energy": 0.005,
+      "full_containment": 0.99
+    },
+    {
+      "range_cm": 0.01,
+      "escape_probability": 0.04999999999999996,
+      "analytic": 0.049999999999999996,
+      "external_half_energy": 0.024999999999999998,
+      "full_containment": 0.9500000000000001
+    },
+    {
+      "range_cm": 0.04,
+      "escape_probability": 0.19999999999999996,
+      "analytic": 0.19999999999999998,
+      "external_half_energy": 0.09999999999999999,
+      "full_containment": 0.8
+    }
+  ],
+  "v6.66": [
+    {
+      "thickness_um": 0.0,
+      "transmission": {
+        "9.876": 1.0,
+        "10.98": 1.0,
+        "45.0": 1.0
+      },
+      "alpha_over_continuum": 1.0,
+      "beta_over_continuum": 1.0
+    },
+    {
+      "thickness_um": 10.0,
+      "transmission": {
+        "9.876": 0.8137259701719284,
+        "10.98": 0.8570247593158364,
+        "45.0": 0.9764890899011498
+      },
+      "alpha_over_continuum": 0.8333180355904458,
+      "beta_over_continuum": 0.8776593288949017
+    },
+    {
+      "thickness_um": 100.0,
+      "transmission": {
+        "9.876": 0.12728633088295507,
+        "10.98": 0.21376356713969596,
+        "45.0": 0.7882681037218252
+      },
+      "alpha_over_continuum": 0.16147593728830312,
+      "beta_over_continuum": 0.27118129749308206
+    }
+  ],
+  "v6.67": {
+    "science_tag": 0.47809458340657734,
+    "external_tag": 0.682765784444324,
+    "relative_bias": 0.4280977198683129,
+    "reversed_science": 0.4594200054209545
+  },
+  "v6.68": {
+    "count_rates": [
+      0.7,
+      5.0,
+      3.0
+    ],
+    "recovered": [
+      0.7,
+      1.7999999999999998,
+      2.5
+    ],
+    "normal_and_off_residual": [
+      0.0,
+      0.0
+    ],
+    "heldout_residual": 0.3999999999999999,
+    "min_singular": 0.45255395828584605,
+    "crosstalk_offset_needed": -0.3999999999999999
+  },
+  "v6.69": {
+    "reference": 0.82,
+    "science": 0.55,
+    "unweighted_bias": 0.2699999999999999,
+    "max_density_ratio": 9.0,
+    "missing_third_stratum_interval": [
+      0.415,
+      0.865
+    ]
+  },
+  "v6.70": {
+    "stored_optical_fraction": 0.0,
+    "record_sum": 0.9999999999999998,
+    "joint_record_max_error": 0.0,
+    "ordinary_phase_drift_error": 0.02206800028832622
+  },
+  "v6.71": {
+    "candidate_rad_s": 7539.822368615503,
+    "ordinary_detuning_rad_s": 2513.2741228718346,
+    "refitted_rad_s": 10053.096491487338,
+    "delays_us": [
+      0.0,
+      20.0,
+      59.99999999999999,
+      109.99999999999999
+    ],
+    "max_error": 0.0,
+    "max_complex_distance_if_detuning_fixed": 0.8058128714273254
+  }
+}

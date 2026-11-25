@@ -1,0 +1,20 @@
+{
+  "physics": "polarized",
+  "cut_mm": 0.7,
+  "thickness_mm": 0.5,
+  "seed": 66001,
+  "incident": 1000000,
+  "counts": {
+    "primary_forward": 963368,
+    "primary_line": 963367
+  },
+  "selected": [],
+  "single_losses": [
+    [
+      2.6185500219275024,
+      0.01502080583987464
+    ]
+  ],
+  "secondary_gamma_births": 24,
+  "events_with_secondary_gamma": 23
+}

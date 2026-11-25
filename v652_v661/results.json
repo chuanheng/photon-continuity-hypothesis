@@ -1,0 +1,174 @@
+{
+  "v6.52": {
+    "selected": 9,
+    "threshold_scan": [
+      {
+        "threshold_keV": 2.0,
+        "foil_sum": 9,
+        "one_resolved_site": 9,
+        "two_resolved_sites": 8
+      },
+      {
+        "threshold_keV": 4.0,
+        "foil_sum": 8,
+        "one_resolved_site": 6,
+        "two_resolved_sites": 6
+      },
+      {
+        "threshold_keV": 6.0,
+        "foil_sum": 8,
+        "one_resolved_site": 4,
+        "two_resolved_sites": 3
+      }
+    ],
+    "max_abs_unaccounted_keV": 5.329070518200751e-15
+  },
+  "v6.53": {
+    "gate_hazard": 0.08,
+    "observed": 0.38335828061372734,
+    "accidentals": 0.07688365361336422,
+    "corrected": 0.39999999999999997,
+    "ignored_accidentals": 0.4658439495047786,
+    "simulated": 0.384295,
+    "mc_se": 0.0010871860680182902
+  },
+  "v6.54": {
+    "calibrated": {
+      "delta_interval": [
+        2.6,
+        4.214285714285714
+      ],
+      "witnesses": [
+        [
+          0.7857142857142858,
+          0.7464285714285714,
+          1.0535714285714286
+        ],
+        [
+          2.4,
+          1.8,
+          0.0
+        ]
+      ]
+    },
+    "widened": {
+      "delta_interval": [
+        0.0,
+        4.214285714285714
+      ],
+      "witnesses": [
+        [
+          0.7857142857142858,
+          0.7464285714285714,
+          1.0535714285714286
+        ],
+        [
+          5.0,
+          1.8,
+          -0.0
+        ]
+      ]
+    }
+  },
+  "v6.55": {
+    "n": 9,
+    "k": 7,
+    "size": 0.013281785444302844,
+    "power": 0.947027862,
+    "best_smaller": 0.8503056000000001,
+    "power_at_070": 0.46283116599999985
+  },
+  "v6.56": {
+    "events_per_stratum": 408,
+    "union_failure": 0.04969133338978088,
+    "smaller_union_bound": 0.05019326605028371,
+    "gaussian_threshold_in_sigma": 2.3263478740408408,
+    "drifted_tail": 0.02703047570808812
+  },
+  "v6.57": {
+    "measured_variances": [
+      0.28600000000000003,
+      0.5147058823529411
+    ],
+    "source_variance": 0.36000000000000015,
+    "common_detector_variance": 0.25,
+    "alternative_source_variance": 0.16,
+    "alternative_detector_variances": [
+      0.254,
+      0.37677484787018245
+    ]
+  },
+  "v6.58": {
+    "polarized": {
+      "count": 6,
+      "max_loss_keV": 0.1575140873309664,
+      "single_above_2keV": 0
+    },
+    "penelope": {
+      "count": 5,
+      "max_loss_keV": 0.0921974261200944,
+      "single_above_2keV": 0
+    },
+    "empirical_KS": 0.8,
+    "unadjusted_p": 0.04761904761904761
+  },
+  "v6.59": [
+    {
+      "cut_mm": 0.7,
+      "gamma_tracks": 42,
+      "birth_events": 42,
+      "incident": 1000000,
+      "one_sided_975_upper": 5.677137946555727e-05,
+      "selected_secondary": 0
+    },
+    {
+      "cut_mm": 0.001,
+      "gamma_tracks": 63,
+      "birth_events": 63,
+      "incident": 1000000,
+      "one_sided_975_upper": 8.060365778585897e-05,
+      "selected_secondary": 0
+    }
+  ],
+  "v6.60": [
+    {
+      "thickness_mm": 0.5,
+      "events": 0,
+      "incident": 1000000,
+      "two_strata_interval": [
+        0.0,
+        4.382017033609195e-06
+      ],
+      "restricted": 6.333284888977444e-07,
+      "integration_se": 3.509767048369566e-10
+    },
+    {
+      "thickness_mm": 1.0,
+      "events": 4,
+      "incident": 1000000,
+      "two_strata_interval": [
+        8.801347971781997e-07,
+        1.127908266407226e-05
+      ],
+      "restricted": 2.0008001027433414e-06,
+      "integration_se": 7.591105928647949e-10
+    }
+  ],
+  "v6.61": {
+    "single_setting": [
+      0.51,
+      0.49
+    ],
+    "ordinary_mixture": [
+      0.4,
+      0.6
+    ],
+    "two_settings": [
+      0.51,
+      0.44
+    ],
+    "nearest_mix": 0.4769230769230769,
+    "distance": 0.07071067811865482,
+    "distance_with_free_second": 0.0
+  }
+}

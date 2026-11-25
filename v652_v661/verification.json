@@ -1,0 +1,93 @@
+{
+  "source_parent_sha": "6fec2a4244fa332a0b48aa013589668ec74c2996",
+  "run_date": "2026-11-25",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "Geant4": "11.4.1",
+    "geant4-pybind": "0.1.3",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1"
+  },
+  "data": "See ../v622_v631/reproduction.md for four verified data MD5s. GEANT4_DATA_DIR points to extracted datasets.",
+  "seeds": {
+    "foil": 622628,
+    "variants": [
+      65801,
+      65802,
+      65901,
+      66001
+    ],
+    "time_gate": 65301,
+    "integration": [
+      66010,
+      66011,
+      66012,
+      66013
+    ]
+  },
+  "transport_commands": [
+    "python -m v652_v661.foil_tag v652_v661/tag.json",
+    "python -m v652_v661.switch_transport v652_v661/nominal.json polarized .7 1 65801",
+    "python -m v652_v661.switch_transport v652_v661/alternative.json penelope .7 1 65802",
+    "python -m v652_v661.switch_transport v652_v661/lowcut.json polarized .001 1 65901",
+    "python -m v652_v661.switch_transport v652_v661/thin.json polarized .7 .5 66001"
+  ],
+  "transport_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "incident_per_run": [
+    5000000,
+    1000000,
+    1000000,
+    1000000,
+    1000000
+  ],
+  "model_command": "python -m v652_v661.model",
+  "test_command": "python -m unittest -v v652_v661.test_model v642_v651.test_model v632_v641.test_model v622_v631.test_model v612_v621.test_model v602_v611.test_model",
+  "notebook_command": "PYTHONPATH=/tmp/pch_jupyter:. python -Xfrozen_modules=off tools/execute_research_notebook.py v652_v661/reproduce.ipynb",
+  "exit_codes": {
+    "model": 0,
+    "tests": 0,
+    "notebook": 0
+  },
+  "tests_passed": 60,
+  "batch_tests": 10,
+  "regression_tests": 50,
+  "execution_counts": [
+    1
+  ],
+  "errors": "Initial factory-based variant driver failed in setup/teardown (SIGSEGV 139); none of its events used. Final driver ran with explicit serial G4RunManager and retained initialization objects. No optical or detector measurement. GitHub Actions and legacy discovery not run.",
+  "sha256": {
+    "README.md": "fb5d4c4b8c56d860670cd8f55ef6739c3f37414f73cb57eea42583b226dc8c03",
+    "alternative.json": "07ddfdde862c3d430ddf0609526f8f42eba118290988e3c4dab703baad188088",
+    "foil_tag.py": "d80cdfb3457e5a7d7c5a10c8e7c114a6409a63121d767e2bd2a507f4d96a9dfa",
+    "lowcut.json": "e4d9e0b292b5a146916e340e7a67917471c63afa655c8ea1ec2227568b19132f",
+    "manuscript_zh.md": "6eefdcf2798e126a5644971114e06e5c4e92b1b05aede41c77c1baa662cb5337",
+    "model.py": "c6d3e932ce81c9e91bb3297bfc84ce67b808cbca3cae91f35cebf2085203c746",
+    "nominal.json": "7e57c39ad3943ec9be5e919e37fdf4bfbc28495a425d3547b21be72f0ef952c0",
+    "referee_zh.md": "3e9bee139d28664c6474849278f7c2f0c6e10739d151fe80ddbbf34e70ee9955",
+    "reproduce.ipynb": "b77ba5a77b4f79b60ff1f072932525526db7e8ebf64fc85fe1b1e6937cab0f32",
+    "results.json": "720a2753b7c0fff428ed48b28e7f5ac98355b3ccc6dfad4ca6def3ac4fc5b5c6",
+    "switch_transport.py": "617aecd20000008b75928f3eb5cbe3ab96cb2e73f09eaa62522af2e2fe073122",
+    "tag.json": "ca3dc5707008ac7cca649897a2d15b460aa5df5e05c0c4875e4e622f864e712a",
+    "test_model.py": "8f5b678b29278372bb04fa2d89c92761544c3576befc102a23f333f6f41e0e1c",
+    "tests.log": "8d172ea10f55b3e81c449bc89f292310c71b85e49c90e491ae0afd6208a52388",
+    "thin.json": "8aca319a603db5477a222328ba2f7d046a16d5258b74804679ba381769d6f855",
+    "v652_zh.md": "434c208ae0e68819c8317d309de1233b648d398d80b4bf146d12254d023e3fbb",
+    "v653_zh.md": "a071a430f00852888358c3b2e4f5e952b3dfad925f6e521321614b4abe7111ee",
+    "v654_zh.md": "dac652bd84a65b7c19bbb45817ab88dc85bb8df28c97d79ec83655686b5acc3c",
+    "v655_zh.md": "50bda115a41b599aa0afd29f6d3a254ff418bcfc20695683a5617af204d570a6",
+    "v656_zh.md": "2d90113a73094186508390b35b0783a590677f47e7d2a5250744bdc621aeaa07",
+    "v657_zh.md": "6c3f08b276bb11d54e955a1d48d720e03ae1f5da42a12892461dd932b939f1f9",
+    "v658_zh.md": "35da2479bdd6f6872f95551e60481d5b2098be9acf4af19cd17e376651601277",
+    "v659_zh.md": "b0fe3b1e06047e8a9912449643769c18d83269ba3e53a04ae2ac581e27ab5e37",
+    "v660_zh.md": "2322571c4f1a8cdd07b3a191db52aba0a739f861beddcdf4f9e13f0067d4b0ba",
+    "v661_zh.md": "f2a0de5666eb48fdafe217e090f25b5d653c2600026a3023afde639037b865b4"
+  }
+}

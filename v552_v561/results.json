@@ -1,0 +1,109 @@
+{
+  "v5.52": {
+    "probability_error": 2.220446049250313e-16,
+    "final_material_two_probability": 0.9999999999999998,
+    "final_optical_number": 1.1093356479670479e-31,
+    "charge_expectation": [
+      2.0,
+      2.0,
+      1.9999999999999996
+    ]
+  },
+  "v5.53": {
+    "same_port_and_coincidence": [
+      0.3725,
+      0.255,
+      0.3725
+    ],
+    "coincidence_formula": 0.255,
+    "normalization": 1.0,
+    "changed_by_input_marker_swap": 0.0
+  },
+  "v5.54": {
+    "optical_visibility": 0.55,
+    "physical_marker_distinguishability": 0.8351646544245033,
+    "squared_sum": 1.0,
+    "minimum_port_probability": 0.22499999999999998,
+    "maximum_port_probability": 0.775
+  },
+  "v5.55": {
+    "all_path_coherence_channel_gap": 0.0,
+    "independently_fixed_marker_probe_gap": 1.0,
+    "optical_marker_overlap_magnitudes": [
+      1.0,
+      0.6,
+      0.3
+    ]
+  },
+  "v5.56": {
+    "plus_fringe_span": 1.0,
+    "minus_fringe_span": 1.0,
+    "unconditioned_span": 0.0,
+    "opposite_phase_joint_difference": 0.5,
+    "unconditioned_output_probability": 0.5
+  },
+  "v5.57": {
+    "final_transition": [
+      [
+        0.7400000000000001,
+        0.34
+      ],
+      [
+        0.26,
+        0.6599999999999999
+      ]
+    ],
+    "end_only_refit_error": 0.0,
+    "independently_probed_intermediate_gap": 0.30000000000000004,
+    "input_outcome_conventions": [
+      "ordinary destination port 0",
+      "ordinary destination port 1"
+    ]
+  },
+  "v5.58": {
+    "seed": 552561,
+    "samples_per_condition": 5000,
+    "observed": [
+      0.424,
+      0.3986,
+      0.467,
+      0.4044
+    ],
+    "simultaneous_sampling_radius": 0.02252814642893158,
+    "per_condition_separation_lower": [
+      -0.008528146428931615,
+      -0.031128146428931566,
+      0.034471853571068425,
+      -0.02812814642893162
+    ],
+    "family_separation_lower": 0.034471853571068425
+  },
+  "v5.59": {
+    "contamination_threshold": 0.05181347150259068,
+    "certified_fraction": 0.027079496864851366,
+    "weak_fraction": 0.059752832693407795,
+    "tight_margin": 0.023868285525418434,
+    "weak_margin": -0.007661483549138523
+  },
+  "v5.60": {
+    "nominal_upper": 0.40235695704404656,
+    "worst_case_upper": 0.45777681621874683,
+    "numerical_upper": 0.4577768162187468,
+    "envelope_zero_probability": 0.024999999999999977,
+    "zero_probability_at_nominal_using_lower": 0.11063334519489927,
+    "joint_error_budget": 0.05
+  },
+  "v5.61": {
+    "ordinary_interval_separation": [
+      0.043,
+      0.008999999999999998,
+      -0.047
+    ],
+    "candidate_compatibility_margin": [
+      0.002000000000000012,
+      0.014000000000000009,
+      0.018
+    ],
+    "relaxed_ordinary_refit_residual": 0.0
+  }
+}

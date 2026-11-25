@@ -1,0 +1,64 @@
+{
+  "source_parent_sha": "57c05debf133cddcffd1eaa2b03755e21d3fbc2e",
+  "remote_main_observed_sha": "57c05debf133cddcffd1eaa2b03755e21d3fbc2e",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "jupyter_client": "8.10.0"
+  },
+  "seeds": [
+    552561
+  ],
+  "commands": {
+    "model": {
+      "command": "python -m v552_v561.model",
+      "exit_code": 0,
+      "deterministic_output_verified": true
+    },
+    "tests": {
+      "command": "python -m unittest -v v552_v561.test_model v542_v551.test_model v532_v541.test_model v522_v531.test_model v512_v521.test_model v502_v511.test_model",
+      "exit_code": 0,
+      "ran": 60,
+      "passed": 60,
+      "batch": 10,
+      "regression": 50
+    },
+    "notebook": {
+      "command": "PYTHONPATH=/tmp/pch_jupyter:. python -Xfrozen_modules=off tools/execute_research_notebook.py v552_v561/reproduce.ipynb",
+      "exit_code": 0,
+      "execution_counts": [
+        1,
+        2
+      ],
+      "matches_cli": true
+    }
+  },
+  "environment_exceptions": [
+    "socket-free Jupyter kernel; legacy full discovery outside this run"
+  ],
+  "github_actions": "not run",
+  "sha256": {
+    "v552_v561/README.md": "ff4f06faa30280f3ee1986fbff5056dada9c8e0446735dff085d2591703dbf36",
+    "v552_v561/manuscript_zh.md": "2814f6e813710b6cd24a143949c8a7be0b496efba31e60c4779d7217f267be40",
+    "v552_v561/model.py": "102c69bfb1d67920f1196bfb1b28c605de95f5317ef014c4570929b2ff72ed8d",
+    "v552_v561/referee_zh.md": "288013b5c17f6a1d6108fcc1f639d0e1e070c02793c92e4daf789f0f70b3d028",
+    "v552_v561/reproduce.ipynb": "265cba3188e4b3357208cd679304b76e3f5c5b32e9992750d14271e13caded16",
+    "v552_v561/results.json": "d94792b9e9b7951de023023a46c39f7c52e9b36d6d4dd3534f0cd10f92938e00",
+    "v552_v561/test_log.txt": "2bb8ca43050cb1bb268752292f5a7db3876fe47cfcd7e134c6335b2bb91904fa",
+    "v552_v561/test_model.py": "d0740a9b8f67ebd9188ea88762ef76163b30413cc3cc5f8ceb4d7a9feb1344ad",
+    "v552_v561/v552_zh.md": "2c11e88add1cd33ca58e6784196fa5d4304b967684000aebd79b3c9db6ea247e",
+    "v552_v561/v553_zh.md": "19771d58c22707b1008c9ded3745b2ffefda06bfe7f440aa4b9f7c6f27cb1c65",
+    "v552_v561/v554_zh.md": "95493337f176b0bfd97187cdf918a6c61aa7e2466165278b8f848fb8df849c0e",
+    "v552_v561/v555_zh.md": "c46955a8cbc12339a1f6ec4b3bff29a3df223255d58d5ccdfe1e0957323de2b2",
+    "v552_v561/v556_zh.md": "b0524320f5d025d43831b3ab8361058238b2752d0f68ac175c9dc53f8e40992f",
+    "v552_v561/v557_zh.md": "0f35e46fd0b1d4b9dba298d8ae0c5f1a377765407828aaa1ac5cd4ded09f75b2",
+    "v552_v561/v558_zh.md": "fe00f18a1500ecd9fe0ccc7c2406b7cc9d7741c5cfa1859e20bea4ad5d31ef0c",
+    "v552_v561/v559_zh.md": "a6c889aca9a02d5a6a1299be7860b38614f094d4ab90ecc6a91db59163432e3b",
+    "v552_v561/v560_zh.md": "47e3a700721f2ef190bbe49714c4b339c2da05fc56777e20c711a7cb253b52e4",
+    "v552_v561/v561_zh.md": "f110e31255e2b2dac83d322ab36acf7f705656c4330ad6f43d8526c37ea224f3"
+  },
+  "reproduced_on": "2026-11-25"
+}

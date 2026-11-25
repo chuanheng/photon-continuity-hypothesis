@@ -1,0 +1,16 @@
+{
+  "partial_response_mixture": [
+    3.140139383323852e-05,
+    0.021120009164016754
+  ],
+  "tail_allowance": 0.0010504515285458193,
+  "conditional_total_cap": 0.022170460692562573,
+  "exposure": 2700000,
+  "critical_count": 60341,
+  "power90_total_rate": 0.02246519217298245,
+  "increment_over_cap": 0.00029473148041987696,
+  "true_window_order4_bound": 5.412626070374138e-05,
+  "blank_expected_counts": 85.51235294942363,
+  "foil_leakage_rate": 2.9382530507257055e-05,
+  "blank_transfer_se": 3.1773707264469693e-06
+}

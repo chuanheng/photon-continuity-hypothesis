@@ -1,0 +1,11 @@
+{
+  "floor_keV": 35.0,
+  "aperture_deg": 3.0,
+  "first_scatter": 0.04738693681588545,
+  "continuation": 0.347742283328438,
+  "terminal": 0.006161034092505612,
+  "selected_order_ge3": 0.00015565050124381868,
+  "selected_order_ge4": 5.412626070374138e-05,
+  "selected_order_ge8": 7.914765112576639e-07,
+  "below_floor_entry_ge4": 0.0019926505356841558
+}

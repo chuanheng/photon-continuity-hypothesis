@@ -1,0 +1,84 @@
+{
+  "source_parent_sha": "8c20f11d1bad0c1515f78d95228cbac69b699f6b",
+  "remote_main_observed_sha": "8c20f11d1bad0c1515f78d95228cbac69b699f6b",
+  "runtime": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "geant4-pybind": "0.1.3",
+    "python": "3.12.14"
+  },
+  "seeds": {
+    "paths": "622–629",
+    "detector": "630–633",
+    "geant": 622628
+  },
+  "test_command": "python -m unittest -v v622_v631.test_model v612_v621.test_model v602_v611.test_model v592_v601.test_model v582_v591.test_model v572_v581.test_model",
+  "tests_passed": 60,
+  "exit_codes": {
+    "model": 0,
+    "notebook": 0,
+    "tests": 0,
+    "geant": 0
+  },
+  "notebook_internal_reproduction": true,
+  "external": {
+    "incident": 5000000,
+    "seed": 622628,
+    "selected": 9,
+    "forward": 4643103,
+    "forward_line": 4643052,
+    "selected_paths": {
+      "compt/compt": 9
+    },
+    "per_million": 1.8,
+    "exact_95_per_million": [
+      0.8230748953304476,
+      3.416958128655162
+    ]
+  },
+  "commands": "reproduction.md",
+  "github_actions": "not run",
+  "sha256": {
+    "README.md": "53d793c1b6832704ec7eab3c156a2309aca8c6829aa7a8958313c94060ee69db",
+    "bounds.json": "8a8c72919b2821fdf49e12b93f257e2bc951a8fcc66d546221629f9f49c62e72",
+    "bounds.py": "26f4dfd93c8c66c554954ed422e1d1450bff7ad620d744597a9c6460f512eea7",
+    "detector.json": "8f2f2aa79acde0364540ca8d757395db4e4326ccc95cf83a7002ebab4fc1fb28",
+    "detector.py": "531e16ce49f52f6f2d40bfa0d6b96f7deefdb13ba07db6662c7cd6c96ab9a779",
+    "geant.json": "e946e0faea4a45023f901efca6606d079609cab67dc93d59693ef10ce247a41f",
+    "geant.py": "2bc6c4130e2c7ca7fc164eafddb44c7f49e9411771dad977a3aa43f4bdbb9846",
+    "inference.json": "7a6b51ff6ad7037b67cdf4ab355a1d4c249fe3e51bc2cde4cd6dfa660ca666bb",
+    "inference.py": "c6edbb00801ceeb9bf546637dbfa03768b92ec7555c3fb59b22e30233e589ed6",
+    "manuscript_zh.md": "16129087c1f9a68b8e0f8b5d6532e9190d446fd71ff3b131b700748ca2828583",
+    "model.py": "d1b4c520642001a924592239e9d151bc2dd6af3d45cad0373382d907f0e9dfce",
+    "paths.json": "2d409f9c832464abf6536865cb799ba9690193da095f99bf9841637855b03b7c",
+    "paths.py": "c0230275b24c8aecdb049fc8b2753218a7bd73fab70ebf00655faef6ebad06ca",
+    "referee_zh.md": "fa4c165f8b72915a3aba3db3701160f97d0863f9319ae54e103b603c1a4b74b0",
+    "reproduce.ipynb": "38158a21a4a7096ade65e7e02b0fbfb60779df6543e7223671a73b247824e7fe",
+    "reproduction.md": "5cc8aa7f65f1ee249b9ec72f43fe25977bc3058e2323722a5008995271edf635",
+    "results.json": "ddfa3ee33012e6864d0217fd7fae6fd036cb1e85aa14780d277d63af1282bd67",
+    "test_model.py": "91d1160e180e64c09dc68bc3ceda59ca796186d5172e36be0fc93e48b1ce2fd1",
+    "tests.log": "9bb1b5708f60c20d6d4c96460fae531b883d2bd4dcd09d73e61d75f22ccb4fc1",
+    "v622_zh.md": "39d801092683f2c5c02255c49a340076e6e6294c8fb4721bd8620572caae5262",
+    "v623_zh.md": "4c1aae3d338e8f25ac7fb88021b8b7f318b4886c89e4bbcc47578ad46ff69a8c",
+    "v624_zh.md": "bb5a0aaf174f57bd4e04af31a9e70fee03b7297af667a69bf7433b8ebbebb834",
+    "v625_zh.md": "b33bed7021007d70e00ad8eb4ffde0a957f4293f5dfa3a101de5c96282454f4c",
+    "v626_zh.md": "4a36ad74e612422f3d2b1ef8c10a34c580b0419ef51510411d0fdf4d95868e46",
+    "v627_zh.md": "bf9e3292cc068503b41d959baa97b16d8ae716d354ef53545c7f7e79ba227e53",
+    "v628_zh.md": "70db33d46dbd69da5130685063ef7c1c5c747deb94c727c18a395ee059a14fc0",
+    "v629_zh.md": "28fe1f4e91679ce4d45ad5e54426d9a6fb4903932bd20d47881b4b0dadd741cc",
+    "v630_zh.md": "40c9d17232130765857c83ffea85563e281cd7e21923ec31b76a670685018860",
+    "v631_zh.md": "77db1d4b81771d669bef04c36e7b20566329f7ccdf6610e73ff914541eabd721"
+  },
+  "external_replay_2026_11_25": {
+    "seed": 622628,
+    "events": 5000000,
+    "exit": 0,
+    "matches_all_counts": true
+  },
+  "reproduced_on": "2026-11-25",
+  "environment_exceptions": [
+    "socket-free Jupyter kernel; legacy full discovery outside this run"
+  ]
+}

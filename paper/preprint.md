@@ -1,6 +1,6 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
-For current evidence, see the [v6.21 Chinese manuscript and reproduction index](../v612_v621/README.md). The historical preprint follows.
+For current evidence, see the [v6.31 Chinese manuscript and reproduction index](../v622_v631/README.md). The historical preprint follows.
 
 **Chuanheng Wang** — Independent Researcher  
 **Working preprint v0.1 — 2026-11-11**  

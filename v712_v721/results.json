@@ -1,0 +1,77 @@
+{
+  "v7.12": {
+    "recoil_windows_keV": [
+      [
+        18.112000000000002,
+        20.112000000000002
+      ],
+      [
+        19.290999999999997,
+        21.290999999999997
+      ],
+      [
+        23.037,
+        25.037
+      ],
+      [
+        50.0,
+        52.0
+      ]
+    ]
+  },
+  "v7.13": {
+    "common_efficiency_product": 0.9114,
+    "log_cross_contribution": 0.0
+  },
+  "v7.14": {
+    "slope_per_keV": -0.2517354942952993,
+    "ordinary_log_gains": [
+      1.2397973094043482,
+      0.9430011616301917,
+      -0.0,
+      -6.787544132684155
+    ]
+  },
+  "v7.15": {
+    "quadratic_per_keV2": 0.007064474779572859,
+    "ordinary_log_gains": [
+      1.1094644609722695,
+      0.8126683131981128,
+      -0.0,
+      0.0
+    ]
+  },
+  "v7.16": {
+    "center_keV": 55.201499999999996,
+    "half_gap_keV": 0.5894999999999975,
+    "required_log_slope_abs": 0.2517354942952993
+  },
+  "v7.17": {
+    "equal_reference_counts_per_cell": 1600,
+    "reference_log_sd": 0.05
+  },
+  "v7.18": {
+    "science_log_sd": 0.46344495903614874,
+    "combined_log_sd": 0.46613434764670325
+  },
+  "v7.19": {
+    "target_total_log_sd": 0.1059386471113901,
+    "science_exposure_multiplier": 24.622412600052904
+  },
+  "v7.20": {
+    "abba_drift_moments": [
+      0.0,
+      0.0,
+      2.0
+    ],
+    "quadratic_drift_to_mimic": 0.1483980738870783
+  },
+  "v7.21": {
+    "swap_odd_if_stable": 0.2967961477741566,
+    "ordinary_odd_counterexample": [
+      0.2967961477741566,
+      -0.2967961477741566
+    ],
+    "odd_null_reference_corrected": 0.19679614777415658
+  }
+}

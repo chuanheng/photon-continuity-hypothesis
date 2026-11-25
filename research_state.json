@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "31dd2bbb4f8f99880b8f692cfa2a45dee2fb1a06",
-  "latest_completed_version": "v7.11",
-  "latest_completed_version_evidence": "v702_v711/README.md",
+  "research_base_commit_sha": "17c99131cbba732b1ae25a30444be80baac99752",
+  "latest_completed_version": "v7.21",
+  "latest_completed_version_evidence": "v712_v721/README.md",
   "next_batch": {
-    "first_version": "v7.12",
-    "last_version": "v7.21",
-    "first_unfinished_version": "v7.12",
+    "first_version": "v7.22",
+    "last_version": "v7.31",
+    "first_unfinished_version": "v7.22",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -487,6 +487,14 @@
       "notebook": "v702_v711/reproduce.ipynb",
       "source_parent_sha": "31dd2bbb4f8f99880b8f692cfa2a45dee2fb1a06",
       "verification": "v702_v711/verification.json"
+    },
+    {
+      "first_version": "v7.12",
+      "last_version": "v7.21",
+      "index": "v712_v721/README.md",
+      "source_parent_sha": "17c99131cbba732b1ae25a30444be80baac99752",
+      "verification": "v712_v721/verification.json",
+      "notebook": "v712_v721/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -501,8 +509,8 @@
     "open_questions": [
       {
         "versions": [
-          "v7.12",
-          "v7.21"
+          "v7.22",
+          "v7.31"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -759,8 +767,8 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "verification_record": "v702_v711/verification.json",
-      "source_parent_sha": "31dd2bbb4f8f99880b8f692cfa2a45dee2fb1a06",
+      "verification_record": "v712_v721/verification.json",
+      "source_parent_sha": "17c99131cbba732b1ae25a30444be80baac99752",
       "notebook_executed": true
     },
     "latest_six_batches": {
@@ -777,6 +785,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "17c99131cbba732b1ae25a30444be80baac99752",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "31dd2bbb4f8f99880b8f692cfa2a45dee2fb1a06",
       "role": "verified parent on main"
@@ -955,7 +967,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "e062d133a16d154b6da50a1effd6e836b09e57b1",
+  "previous_research_base_commit_sha": "31dd2bbb4f8f99880b8f692cfa2a45dee2fb1a06",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -963,9 +975,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "31dd2bbb4f8f99880b8f692cfa2a45dee2fb1a06",
-    "source_latest_completed_version": "v7.01",
-    "source_first_unfinished_version": "v7.02"
+    "source_main_sha": "17c99131cbba732b1ae25a30444be80baac99752",
+    "source_latest_completed_version": "v7.11",
+    "source_first_unfinished_version": "v7.12"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

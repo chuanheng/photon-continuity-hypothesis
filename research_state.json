@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "6cc134693c54f046501dd0f076f75a2257b9e548",
-  "latest_completed_version": "v6.81",
-  "latest_completed_version_evidence": "v672_v681/README.md",
+  "research_base_commit_sha": "c941775bd56df37c4f778a4773328022c6fcdcff",
+  "latest_completed_version": "v6.91",
+  "latest_completed_version_evidence": "v682_v691/README.md",
   "next_batch": {
-    "first_version": "v6.82",
-    "last_version": "v6.91",
-    "first_unfinished_version": "v6.82",
+    "first_version": "v6.92",
+    "last_version": "v7.01",
+    "first_unfinished_version": "v6.92",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -463,6 +463,14 @@
       "notebook": "v672_v681/reproduce.ipynb",
       "source_parent_sha": "6cc134693c54f046501dd0f076f75a2257b9e548",
       "verification": "v672_v681/verification.json"
+    },
+    {
+      "first_version": "v6.82",
+      "last_version": "v6.91",
+      "index": "v682_v691/README.md",
+      "notebook": "v682_v691/reproduce.ipynb",
+      "source_parent_sha": "c941775bd56df37c4f778a4773328022c6fcdcff",
+      "verification": "v682_v691/verification.json"
     }
   ],
   "early_history": {
@@ -477,8 +485,8 @@
     "open_questions": [
       {
         "versions": [
-          "v6.82",
-          "v6.91"
+          "v6.92",
+          "v7.01"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -735,8 +743,8 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "verification_record": "v672_v681/verification.json",
-      "source_parent_sha": "6cc134693c54f046501dd0f076f75a2257b9e548",
+      "verification_record": "v682_v691/verification.json",
+      "source_parent_sha": "c941775bd56df37c4f778a4773328022c6fcdcff",
       "notebook_executed": true
     },
     "latest_six_batches": {
@@ -753,6 +761,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "c941775bd56df37c4f778a4773328022c6fcdcff",
+      "role": "verified local parent; publication pending"
+    },
     {
       "sha": "6cc134693c54f046501dd0f076f75a2257b9e548",
       "role": "verified parent on main"
@@ -919,7 +931,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "6b89a16134121512c5e3a851c000e100c11f2c1a",
+  "previous_research_base_commit_sha": "6cc134693c54f046501dd0f076f75a2257b9e548",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,

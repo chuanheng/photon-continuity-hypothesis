@@ -1,0 +1,31 @@
+{
+  "source_parent_sha": "c941775bd56df37c4f778a4773328022c6fcdcff",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "xraylib": "4.3.0"
+  },
+  "seeds": [],
+  "model_command": "python -m v682_v691.model",
+  "test_modules": [
+    "v682_v691.test_model",
+    "v672_v681.test_model",
+    "v662_v671.test_model",
+    "v652_v661.test_model",
+    "v642_v651.test_model",
+    "v632_v641.test_model"
+  ],
+  "notebook_command": "python tools/execute_research_notebook.py v682_v691/reproduce.ipynb",
+  "exit_codes": {
+    "model": 0,
+    "tests": 0,
+    "notebook": 0
+  },
+  "tests_passed": 60,
+  "github_actions": "not run",
+  "scope": "deterministic; adjacent five suites included; legacy suite not run",
+  "sha256_results": "dce3c923179e972104bf082b11b6d9bf0909faa4c0a21db4c2a1e555dcad2374"
+}

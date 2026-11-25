@@ -1,5 +1,7 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
+[v6.72–v6.81 工作论文](../v672_v681/manuscript_zh.md) · [复现](../v672_v681/README.md)。约 8 keV 的触发阈值裁切高能端，共同尺度则允许普通装置响应精确重现乘性候选信号。八个公开图上点可用于谱形比较；逐事件能量与时间的联合似然仍缺输入。
+
 For current evidence, see the [v6.71 Chinese manuscript and reproduction index](../v662_v671/README.md). The historical preprint follows.
 
 **Chuanheng Wang** — Independent Researcher  

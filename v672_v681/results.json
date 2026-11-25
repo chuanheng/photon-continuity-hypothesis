@@ -1,0 +1,233 @@
+{
+  "v6.72": [
+    {
+      "incident_keV": 55.791,
+      "bin_width_keV": 0.1415,
+      "ideal_upper_keV": 47.791,
+      "full_bins_between_Kalpha_marker_and_edge": 13.257950530035332,
+      "rounded_bin_uncertainty_keV": 0.07075
+    },
+    {
+      "incident_keV": 55.791,
+      "bin_width_keV": 0.1402,
+      "ideal_upper_keV": 47.791,
+      "full_bins_between_Kalpha_marker_and_edge": 13.38088445078459,
+      "rounded_bin_uncertainty_keV": 0.0701
+    },
+    {
+      "incident_keV": 54.612,
+      "bin_width_keV": 0.1415,
+      "ideal_upper_keV": 46.612,
+      "full_bins_between_Kalpha_marker_and_edge": 13.257950530035332,
+      "rounded_bin_uncertainty_keV": 0.07075
+    },
+    {
+      "incident_keV": 54.612,
+      "bin_width_keV": 0.1402,
+      "ideal_upper_keV": 46.612,
+      "full_bins_between_Kalpha_marker_and_edge": 13.38088445078459,
+      "rounded_bin_uncertainty_keV": 0.0701
+    }
+  ],
+  "v6.73": {
+    "total_hours": 2760.0,
+    "weights": [
+      0.13260869565217392,
+      0.32355072463768114,
+      0.24710144927536232,
+      0.2967391304347826
+    ],
+    "kish_groups": 3.6848240933782876,
+    "equal_weight_max_abs_bias": 0.02405797101449275,
+    "achieving_multipliers": [
+      0.9,
+      1.1,
+      0.9,
+      1.1
+    ]
+  },
+  "v6.74": [
+    {
+      "mixing": 0.0,
+      "output": [
+        0.8,
+        0.2
+      ],
+      "sum_mode": 1.0,
+      "difference_mode": 1.0,
+      "inverse_gain": 1.0
+    },
+    {
+      "mixing": 0.15,
+      "output": [
+        0.71,
+        0.29000000000000004
+      ],
+      "sum_mode": 1.0,
+      "difference_mode": 0.7,
+      "inverse_gain": 1.4285714285714286
+    },
+    {
+      "mixing": 0.45,
+      "output": [
+        0.53,
+        0.47000000000000003
+      ],
+      "sum_mode": 1.0,
+      "difference_mode": 0.09999999999999998,
+      "inverse_gain": 10.000000000000002
+    },
+    {
+      "mixing": 0.5,
+      "output": [
+        0.5,
+        0.5
+      ],
+      "sum_mode": 1.0,
+      "difference_mode": 0.0,
+      "inverse_gain": null
+    }
+  ],
+  "v6.75": {
+    "weighted_relative_common": 0.09000000000000001,
+    "weighted_relative_independent": 0.04645516453698615,
+    "max_ratio_shift_common": 0.0,
+    "independent_scale_ratio": 1.1978021978021978,
+    "common_cov_rank": 1
+  },
+  "v6.76": {
+    "edge_keV": 11.1031,
+    "nominal": 0.21376356713969596,
+    "below": 0.223794195692406,
+    "above": 2.6230265851391738e-05,
+    "rows": [
+      {
+        "sigma_keV": 0.01,
+        "weight_above_edge": 4.0011594323450077e-35,
+        "transmission": 0.21376372889264886
+      },
+      {
+        "sigma_keV": 0.05,
+        "weight_above_edge": 0.006908233337766002,
+        "transmission": 0.21221193366751426
+      },
+      {
+        "sigma_keV": 0.15,
+        "weight_above_edge": 0.20591808129138756,
+        "transmission": 0.16627352484207739
+      }
+    ]
+  },
+  "v6.77": [
+    {
+      "sigma_keV": 0.1,
+      "own_acceptance": 0.9875806693484477,
+      "other_acceptance": 0.002327400206729058,
+      "template_overlap": 0.0008232711056902096,
+      "gram_condition": 1.0016478988789126
+    },
+    {
+      "sigma_keV": 0.25,
+      "own_acceptance": 0.6826894921370859,
+      "other_acceptance": 0.12794911783142293,
+      "template_overlap": 0.32098656830954997,
+      "gram_condition": 1.945449834506019
+    },
+    {
+      "sigma_keV": 0.5,
+      "own_acceptance": 0.38292492254802624,
+      "other_acceptance": 0.22702258168080358,
+      "template_overlap": 0.7526996514560602,
+      "gram_condition": 7.087331909460064
+    }
+  ],
+  "v6.78": {
+    "fig2": {
+      "points": [
+        {
+          "energy_keV": 31.445544554455445,
+          "cross_section": 3.6160375504847966e-31,
+          "lower_plotted_error_endpoint": 2.4072772104607357e-31,
+          "upper_plotted_error_endpoint": 5.234503590161749e-31
+        },
+        {
+          "energy_keV": 32.554455445544555,
+          "cross_section": 6.535232520376674e-31,
+          "lower_plotted_error_endpoint": 4.951982673554641e-31,
+          "upper_plotted_error_endpoint": 8.311486711467095e-31
+        },
+        {
+          "energy_keV": 33.69416941694169,
+          "cross_section": 7.862892340741118e-31,
+          "lower_plotted_error_endpoint": 6.069215106410453e-31,
+          "upper_plotted_error_endpoint": 1e-30
+        },
+        {
+          "energy_keV": 34.81848184818482,
+          "cross_section": 5.957998665536634e-31,
+          "lower_plotted_error_endpoint": 4.514591649005101e-31,
+          "upper_plotted_error_endpoint": 7.718807333737891e-31
+        }
+      ],
+      "three_pixel_relative_up": 0.0570520810009838
+    },
+    "fig3": {
+      "points": [
+        {
+          "energy_keV": 33.29877474081056,
+          "cross_section": 3.786010535689845e-31,
+          "lower_plotted_error_endpoint": 2.252824044471492e-31,
+          "upper_plotted_error_endpoint": 6.47007166203806e-31
+        },
+        {
+          "energy_keV": 34.305372290292176,
+          "cross_section": 5.851574346391796e-31,
+          "lower_plotted_error_endpoint": 3.202244920661064e-31,
+          "upper_plotted_error_endpoint": 8.746175383324858e-31
+        },
+        {
+          "energy_keV": 35.77568331762488,
+          "cross_section": 5.117889550210759e-31,
+          "lower_plotted_error_endpoint": 2.4495759479144402e-31,
+          "upper_plotted_error_endpoint": 8.043675566579037e-31
+        },
+        {
+          "energy_keV": 36.69180018850141,
+          "cross_section": 6.918309709189362e-31,
+          "lower_plotted_error_endpoint": 3.9149594915090963e-31,
+          "upper_plotted_error_endpoint": 1e-30
+        }
+      ],
+      "three_pixel_relative_up": 0.05152156022978405
+    }
+  },
+  "v6.79": {
+    "half_angle_deg": 38.84265902246942,
+    "bare_solid_angle_sr": 1.3893931196215195,
+    "unit_transmission_integral": 0.15799686450734163,
+    "analytic": 0.15799686450734163,
+    "ratio_to_unweighted": 0.71450157887884
+  },
+  "v6.80": {
+    "energy_sums": [
+      20,
+      20
+    ],
+    "time_sums": [
+      15,
+      25
+    ],
+    "energy_marginal_max_diff": 0,
+    "time_marginal_max_diff": 0,
+    "first_bin_prompt_fractions": [
+      0.6,
+      0.2
+    ]
+  },
+  "v6.81": {
+    "points": 8,
+    "response_rank": 1,
+    "profiled_scale_residual": 0.0,
+    "known_scale_column_norm": 8.22884406417208
+  }
+}

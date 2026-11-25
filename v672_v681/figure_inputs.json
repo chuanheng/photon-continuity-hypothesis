@@ -1,0 +1,101 @@
+{
+  "source": "https://hrcak.srce.hr/file/437541",
+  "pdf_sha256": "e21d3458d205b8298c34699f17e44a61c171285b2f2797334c3bade9d0bb5666",
+  "method": "Upper experimental series, four separated markers below 37 keV per incident line. Columns are center x, center y, upper cap y, lower cap y. Original embedded raster pixel coordinates. Reference y gridlines are nominal horizontal fits; digitization sensitivity includes residual slope.",
+  "fig2": {
+    "x_grid": [
+      [
+        277,
+        32
+      ],
+      [
+        1186,
+        46
+      ]
+    ],
+    "y_grid": [
+      [
+        107,
+        -28
+      ],
+      [
+        605,
+        -32
+      ]
+    ],
+    "points": [
+      [
+        241,
+        411,
+        391,
+        433
+      ],
+      [
+        313,
+        379,
+        366,
+        394
+      ],
+      [
+        387,
+        369,
+        356,
+        383
+      ],
+      [
+        460,
+        384,
+        370,
+        399
+      ]
+    ]
+  },
+  "fig3": {
+    "x_grid": [
+      [
+        308,
+        34
+      ],
+      [
+        1369,
+        46
+      ]
+    ],
+    "y_grid": [
+      [
+        117,
+        -28
+      ],
+      [
+        667,
+        -32
+      ]
+    ],
+    "points": [
+      [
+        246,
+        450,
+        418,
+        481
+      ],
+      [
+        335,
+        424,
+        400,
+        460
+      ],
+      [
+        465,
+        432,
+        405,
+        476
+      ],
+      [
+        546,
+        414,
+        392,
+        448
+      ]
+    ]
+  }
+}

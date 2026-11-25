@@ -1,0 +1,23 @@
+{
+  "edge_keV": 11.1031,
+  "nominal": 0.21376356713969596,
+  "below": 0.223794195692406,
+  "above": 2.6230265851391738e-05,
+  "rows": [
+    {
+      "sigma_keV": 0.01,
+      "weight_above_edge": 4.0011594323450077e-35,
+      "transmission": 0.21376372889264886
+    },
+    {
+      "sigma_keV": 0.05,
+      "weight_above_edge": 0.006908233337766002,
+      "transmission": 0.21221193366751426
+    },
+    {
+      "sigma_keV": 0.15,
+      "weight_above_edge": 0.20591808129138756,
+      "transmission": 0.16627352484207739
+    }
+  ]
+}

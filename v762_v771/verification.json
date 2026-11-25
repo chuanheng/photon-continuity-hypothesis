@@ -1,0 +1,22 @@
+{
+  "source_parent_sha": "206c5130b432b8805b18ca3c620395250e5e1ad9",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1",
+  "seeds": [],
+  "tests_passed": 60,
+  "commands": [
+    "python -m v762_v771.model",
+    "python -m unittest -v v762_v771.test_model v752_v761.test_model v742_v751.test_model v732_v741.test_model v722_v731.test_model v712_v721.test_model",
+    "python tools/execute_research_notebook.py v762_v771/reproduce.ipynb"
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "github_actions": "not run",
+  "legacy_suite": "not run"
+}

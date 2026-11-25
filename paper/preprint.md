@@ -1,5 +1,7 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
+[v6.92–v7.01 工作论文](../v692_v701/manuscript_zh.md) · [复现](../v692_v701/README.md)。在 34.5–36.5 keV 固定窗口，以带平均截面衡量，55.791 keV 入射时两台探测器都更接近脉冲近似；54.612 keV 时两台给出不同排序。结果表明上批的低能点排序不能推广至所有探测方向和汇总方法。
+
 [v6.82–v6.91 工作论文](../v682_v691/manuscript_zh.md) · [复现](../v682_v691/README.md)。55.791 keV 的四个点较接近 Born 曲线，54.612 keV 的四个点较接近脉冲近似。两组横坐标和精度不同，局部排序无法外推到完整谱。
 
 [v6.72–v6.81 工作论文](../v672_v681/manuscript_zh.md) · [复现](../v672_v681/README.md)。约 8 keV 的触发阈值裁切高能端，共同尺度则允许普通装置响应精确重现乘性候选信号。八个公开图上点可用于谱形比较；逐事件能量与时间的联合似然仍缺输入。

@@ -1,0 +1,138 @@
+{
+  "v5.82": {
+    "channels": [
+      0.67,
+      0.08,
+      0.04,
+      0.16,
+      0.03,
+      0.02
+    ],
+    "closure": 1.0,
+    "measured_ledger": 0.9020000000000001,
+    "unmeasured_energy": 0.09799999999999986,
+    "nontransmitted_in_cone": 0.29799999999999993,
+    "nist_60kev_primary_survival": 0.9277379198843343,
+    "nist_60kev_mu_en_over_mu": 0.3956083513318934
+  },
+  "v5.83": {
+    "apertures_deg": [
+      1.0,
+      3.0,
+      8.0
+    ],
+    "ordinary_transmission": [
+      0.021384504448564517,
+      0.03103221791049467,
+      0.05890991225435242
+    ],
+    "single_aperture_flat_refit": 0.03103221791049467,
+    "wider_aperture_gap": 0.027877694343857753
+  },
+  "v5.84": {
+    "reduced_thicknesses": [
+      0.17,
+      0.2,
+      0.23
+    ],
+    "R_T_A": [
+      [
+        0.20678498548456886,
+        0.5711126952331291,
+        0.2221023213304028
+      ],
+      [
+        0.14634577953566894,
+        0.5823030659937568,
+        0.271351158195421
+      ],
+      [
+        0.07352392432870963,
+        0.589674612171703,
+        0.33680146776850556
+      ]
+    ],
+    "independently_integrated_closure_error": 4.2689183299415845e-09,
+    "transmission_range": 0.018561916938573897
+  },
+  "v5.85": {
+    "energy_kev": 60,
+    "mean_photon_energy": 51.0,
+    "mean_heat": 9.0,
+    "correlated_max_closure_error": 0.0,
+    "swapped_same_marginal_max_error": 18.0,
+    "linked_covariance": -45.0,
+    "swapped_covariance": 45.0
+  },
+  "v5.86": {
+    "single_loss_in_3deg_kev": 0.009653387682185155,
+    "return_direction_error": 0.0,
+    "two_scatter_output_kev": 53.6952714535902,
+    "two_scatter_loss_kev": 6.304728546409798,
+    "total_recoil_momentum_kev_over_c": [
+      0.0,
+      0.0,
+      6.304728546409798
+    ],
+    "gaussian_single_false_tail_upper": 6.475709643342931e-09
+  },
+  "v5.87": {
+    "energy_kev": [
+      30.0,
+      40.0,
+      60.0,
+      80.0
+    ],
+    "nist_mu_over_rho": [
+      1.128,
+      0.5685,
+      0.2778,
+      0.2018
+    ],
+    "recovered_shared_scale": 1.04,
+    "homogeneous_heldout_error": 0.0,
+    "mismatched_heldout_error": 0.025792649330489636
+  },
+  "v5.88": {
+    "ordinary_max": 0.078,
+    "components": [
+      0.020000000000000007,
+      0.09
+    ],
+    "monitor_load": 0.048,
+    "gap": 0.037000000000000005,
+    "unconstrained_box_gap": 0.007000000000000006,
+    "wider_ordinary_exact_refit_error": 1.3877787807814457e-17
+  },
+  "v5.89": {
+    "calibration_shots": 100000,
+    "background_upper": 0.00028446274179775715,
+    "required_shots": 23706,
+    "threshold": 13,
+    "heldout_power": 0.9000032733859139,
+    "lower_n_max_power": 0.8999736162094722,
+    "worst_case_null_tail": 0.02082329060562675
+  },
+  "v5.90": {
+    "rest_mass_kev": 511.0,
+    "requested_loss_kev": 6.0,
+    "invariant_mass_squared_increase_kev2": 6132.0,
+    "free_recoil_kinetic_kev": 0.035223834913381324,
+    "target_mass_increase_kev": 5.965182580026408,
+    "energy_closure_with_excitation": 0.0
+  },
+  "v5.91": {
+    "observed": [
+      0.19,
+      0.138,
+      0.136
+    ],
+    "base_residual": [
+      0.010000000000000009,
+      0.010000000000000009,
+      0.04000000000000001
+    ],
+    "third_bin_gap_with_calibration_radius": 0.02500000000000001,
+    "expanded_ordinary_refit": 0.0
+  }
+}

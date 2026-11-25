@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
-  "latest_completed_version": "v5.81",
-  "latest_completed_version_evidence": "v572_v581/README.md",
+  "research_base_commit_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
+  "latest_completed_version": "v5.91",
+  "latest_completed_version_evidence": "v582_v591/README.md",
   "next_batch": {
-    "first_version": "v5.82",
-    "last_version": "v5.91",
-    "first_unfinished_version": "v5.82",
+    "first_version": "v5.92",
+    "last_version": "v5.101",
+    "first_unfinished_version": "v5.92",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -376,6 +376,15 @@
       "source_parent_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H -- v572_v581"
+    },
+    {
+      "first_version": "v5.82",
+      "last_version": "v5.91",
+      "index": "v582_v591/README.md",
+      "notebook": "v582_v591/reproduce.ipynb",
+      "source_parent_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H -- v582_v591"
     }
   ],
   "early_history": {
@@ -390,10 +399,10 @@
     "open_questions": [
       {
         "versions": [
-          "v5.82",
-          "v5.91"
+          "v5.92",
+          "v5.101"
         ],
-        "id": "metal_foil_joint_optical_and_energy_balance",
+        "id": "finite_aperture_multiple_scattering_and_thickness",
         "status": "planned"
       }
     ],
@@ -613,13 +622,13 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "test_command": "python -m unittest -v v572_v581.test_model v562_v571.test_model v552_v561.test_model v542_v551.test_model v532_v541.test_model v522_v531.test_model",
-      "model_command": "python -m v572_v581.model",
+      "test_command": "python -m unittest -v v582_v591.test_model v572_v581.test_model v562_v571.test_model v552_v561.test_model v542_v551.test_model v532_v541.test_model",
+      "model_command": "python -m v582_v591.model",
       "model_exit_code": 0,
-      "results": "v572_v581/results.json",
-      "results_sha256": "f3f7e50b966d9a3e08b853651bab53c496aab5867379559bafec8e9af7acbb12",
+      "results": "v582_v591/results.json",
+      "results_sha256": "3a933cafed58baa487b0d19923da7776f251e3384c8fda0f384512ff9d1982c5",
       "notebook_executed": true,
-      "source_parent_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
+      "source_parent_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
@@ -628,7 +637,7 @@
         "nbformat": "5.11.1",
         "jupyter_client": "8.10.0"
       },
-      "verification_record": "v572_v581/verification.json",
+      "verification_record": "v582_v591/verification.json",
       "github_actions": "not run"
     },
     "latest_six_batches": {
@@ -645,6 +654,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "b0430c2b8792d4aee7840a346f158a193d284517",
       "role": "verified predecessor on main"
@@ -771,7 +784,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "b88e8b05affb514b4c9dd1251a82478561cf3e38",
+  "previous_research_base_commit_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -779,8 +792,8 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
-    "source_latest_completed_version": "v5.71",
-    "source_first_unfinished_version": "v5.72"
+    "source_main_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
+    "source_latest_completed_version": "v5.81",
+    "source_first_unfinished_version": "v5.82"
   }
 }

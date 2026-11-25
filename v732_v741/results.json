@@ -1,0 +1,49 @@
+{
+  "v7.32": {
+    "per_flux_rates": [
+      0.2,
+      0.2,
+      0.20000000000000004,
+      0.19999999999999998
+    ]
+  },
+  "v7.33": {
+    "raw_entrance_log_cross": -0.0015855636967604411,
+    "matched_log_cross": -2.2204460492503136e-16
+  },
+  "v7.34": {
+    "net_log_cross": -0.0007927818483801088,
+    "required_double_path_difference_mm": 3.7437303639151107
+  },
+  "v7.35": {
+    "weighted_ratio_low": 1.0168651965663034,
+    "weighted_ratio_high": 1.0158983872957263,
+    "single_arm_log_residual": 0.0009512265480870826
+  },
+  "v7.36": {
+    "one_arm_log_bound": 0.0015855636967603282,
+    "two_arm_log_bound": 0.0031711273935206563
+  },
+  "v7.37": {
+    "one_cell_background_fraction": 0.34554097996499955,
+    "normalized_log_bias": -0.29679614777415675
+  },
+  "v7.38": {
+    "pooled_ratio": 0.6666666666666666,
+    "equal_block_mean": 0.6000000000000001
+  },
+  "v7.39": {
+    "independent_log_variance": 0.011,
+    "subset_log_variance": 0.009000000000000001
+  },
+  "v7.40": {
+    "monitor_low": 0.7431954989776768,
+    "equal_signal_log_ratio": 0.2967961477741566
+  },
+  "v7.41": {
+    "raw_log_cross": 0.2084859060500965,
+    "monitor_log_cross": 0.2084859060500967,
+    "normalized_log_cross": -1.942890293094024e-16,
+    "target_log_cross": 0.2967961477741566
+  }
+}

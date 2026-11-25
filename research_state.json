@@ -3,15 +3,15 @@
   "project": "Photon Continuity Hypothesis",
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
-  "reviewed_on": "2026-11-25",
+  "reviewed_on": "2026-11-26",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "99485335c55eb3a8103c0b65b9d7cd47e33b3486",
-  "latest_completed_version": "v7.31",
-  "latest_completed_version_evidence": "v722_v731/README.md",
+  "research_base_commit_sha": "4701bb995f0fdce6a183fd0bbe966beec5ddcd06",
+  "latest_completed_version": "v7.41",
+  "latest_completed_version_evidence": "v732_v741/README.md",
   "next_batch": {
-    "first_version": "v7.32",
-    "last_version": "v7.41",
-    "first_unfinished_version": "v7.32",
+    "first_version": "v7.42",
+    "last_version": "v7.51",
+    "first_unfinished_version": "v7.42",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -503,6 +503,14 @@
       "source_parent_sha": "99485335c55eb3a8103c0b65b9d7cd47e33b3486",
       "verification": "v722_v731/verification.json",
       "notebook": "v722_v731/reproduce.ipynb"
+    },
+    {
+      "first_version": "v7.32",
+      "last_version": "v7.41",
+      "index": "v732_v741/README.md",
+      "source_parent_sha": "4701bb995f0fdce6a183fd0bbe966beec5ddcd06",
+      "verification": "v732_v741/verification.json",
+      "notebook": "v732_v741/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -517,8 +525,8 @@
     "open_questions": [
       {
         "versions": [
-          "v7.32",
-          "v7.41"
+          "v7.42",
+          "v7.51"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -775,8 +783,8 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "verification_record": "v722_v731/verification.json",
-      "source_parent_sha": "99485335c55eb3a8103c0b65b9d7cd47e33b3486",
+      "verification_record": "v732_v741/verification.json",
+      "source_parent_sha": "4701bb995f0fdce6a183fd0bbe966beec5ddcd06",
       "notebook_executed": true
     },
     "latest_six_batches": {
@@ -793,6 +801,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "4701bb995f0fdce6a183fd0bbe966beec5ddcd06",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "99485335c55eb3a8103c0b65b9d7cd47e33b3486",
       "role": "verified predecessor on main"
@@ -979,7 +991,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "17c99131cbba732b1ae25a30444be80baac99752",
+  "previous_research_base_commit_sha": "99485335c55eb3a8103c0b65b9d7cd47e33b3486",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -987,9 +999,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "99485335c55eb3a8103c0b65b9d7cd47e33b3486",
-    "source_latest_completed_version": "v7.21",
-    "source_first_unfinished_version": "v7.22"
+    "source_main_sha": "4701bb995f0fdce6a183fd0bbe966beec5ddcd06",
+    "source_latest_completed_version": "v7.31",
+    "source_first_unfinished_version": "v7.32"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

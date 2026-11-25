@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
-  "latest_completed_version": "v6.11",
-  "latest_completed_version_evidence": "v602_v611/README.md",
+  "research_base_commit_sha": "1e0f3c3d0576958359f76680e26cdfa3cd9ba1ec",
+  "latest_completed_version": "v6.21",
+  "latest_completed_version_evidence": "v612_v621/README.md",
   "next_batch": {
-    "first_version": "v6.12",
-    "last_version": "v6.21",
-    "first_unfinished_version": "v6.12",
+    "first_version": "v6.22",
+    "last_version": "v6.31",
+    "first_unfinished_version": "v6.22",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -403,6 +403,15 @@
       "source_parent_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H -- v602_v611"
+    },
+    {
+      "first_version": "v6.12",
+      "last_version": "v6.21",
+      "index": "v612_v621/README.md",
+      "notebook": "v612_v621/reproduce.ipynb",
+      "source_parent_sha": "1e0f3c3d0576958359f76680e26cdfa3cd9ba1ec",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H -- v612_v621"
     }
   ],
   "early_history": {
@@ -417,10 +426,10 @@
     "open_questions": [
       {
         "versions": [
-          "v6.12",
-          "v6.21"
+          "v6.22",
+          "v6.31"
         ],
-        "id": "mixed_interactions_and_response_brackets",
+        "id": "finite_aperture_higher_order_transport",
         "status": "planned"
       }
     ],
@@ -600,6 +609,18 @@
       {
         "version": "v6.01",
         "claim_excluded": "The specified full-rank joint aperture, thickness and recoil design rules out an ordinary component with the same linear thickness template."
+      },
+      {
+        "version": "v6.06",
+        "claim_excluded": "Treating both angular kernels as unpolarized leaves the calculated finite-foil rate unchanged."
+      },
+      {
+        "version": "v6.13",
+        "claim_excluded": "A Rayleigh interaction cannot contribute to the stated energy-loss gate when combined with one Compton interaction."
+      },
+      {
+        "version": "v6.20",
+        "claim_excluded": "The two-bin detected angle-energy spectrum uniquely fixes the hidden route mixture in the specified finite family."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -656,13 +677,13 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "test_command": "python -m unittest -v v602_v611.test_model v592_v601.test_model v582_v591.test_model v572_v581.test_model v562_v571.test_model v552_v561.test_model",
-      "model_command": "python -m v602_v611.model",
+      "test_command": "python -m unittest -v v612_v621.test_model v602_v611.test_model v592_v601.test_model v582_v591.test_model v572_v581.test_model v562_v571.test_model",
+      "model_command": "python -m v612_v621.model",
       "model_exit_code": 0,
-      "results": "v602_v611/results.json",
-      "results_sha256": "e30e53e00b0618851eb1c38a231507728e15f5f3ed297cc5ca81118a47b9f739",
+      "results": "v612_v621/results.json",
+      "results_sha256": "48cced7b3f69dc9b95ad33733c030c0febb2b00202be394871db97660cf824c9",
       "notebook_executed": true,
-      "source_parent_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
+      "source_parent_sha": "1e0f3c3d0576958359f76680e26cdfa3cd9ba1ec",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
@@ -672,7 +693,7 @@
         "jupyter_client": "8.10.0",
         "xraylib_snapshot": "4.3.0"
       },
-      "verification_record": "v602_v611/verification.json",
+      "verification_record": "v612_v621/verification.json",
       "github_actions": "not run"
     },
     "latest_six_batches": {
@@ -689,6 +710,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "1e0f3c3d0576958359f76680e26cdfa3cd9ba1ec",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
       "role": "verified predecessor on main"
@@ -827,7 +852,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
+  "previous_research_base_commit_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -835,8 +860,8 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
-    "source_latest_completed_version": "v6.01",
-    "source_first_unfinished_version": "v6.02"
+    "source_main_sha": "1e0f3c3d0576958359f76680e26cdfa3cd9ba1ec",
+    "source_latest_completed_version": "v6.11",
+    "source_first_unfinished_version": "v6.12"
   }
 }

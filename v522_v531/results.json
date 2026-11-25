@@ -1,0 +1,99 @@
+{
+  "v5.22": {
+    "calibration_l2": 0.05,
+    "narrow_condition": 84.51305634660575,
+    "wide_condition": 3.323384094631466,
+    "perturbation_norm": 0.4666779551385882,
+    "heldout_gap": 0.6599822934175341
+  },
+  "v5.23": {
+    "column_power": [
+      0.74,
+      0.74
+    ],
+    "coherent_output_power": 1.4799999999999998,
+    "distance_to_contraction": 0.2165525060596441,
+    "spectral_lower_bound": 0.21655250605964382,
+    "passive_norm": 0.9999999999999997
+  },
+  "v5.24": {
+    "amplitude": 0.13892443989449804,
+    "coarse_max": 5.415513384452633e-18,
+    "fine_fraction": 0.9003163161571062,
+    "uniform_center_phase_alias": 1.9673202119229575e-15,
+    "quadrature_at_zero": 6.370918326907636e-17
+  },
+  "v5.25": {
+    "nominal_science_port_amplitude": 0.09999980000060002,
+    "input_error": 0.10012472172326076,
+    "certified_input_error_bound": 0.1032510803478543,
+    "independently_allowed_matrix_drift": 0.03,
+    "observed_residual": 0.1,
+    "ordinary_drift_refit_error": 0.0
+  },
+  "v5.26": {
+    "first_output": [
+      0.8289548946025966,
+      0.35047650807778546
+    ],
+    "second_output": [
+      0.8289548946025966,
+      0.17523825403889273
+    ],
+    "order_difference": 0.17523825403889273,
+    "identical_commutator_prediction_error": 0.0,
+    "commuting_equal_loss_difference": 0.0
+  },
+  "v5.27": {
+    "exposure": 44.0,
+    "falsely_factorized_exposure": 100.0,
+    "exact_profile_upper": 0.06755113283329556,
+    "exponential_envelope_upper": 0.06808482439895434,
+    "falsely_factorized_upper": 0.029734078462542782,
+    "zero_probability_at_wrong_upper": 0.26905989297234567
+  },
+  "v5.28": {
+    "endpoint_gap": 2.4492935982947064e-16,
+    "unmonitored_coherence": 8.326672684688674e-17,
+    "smooth_reference_coherence": 0.993346653185865,
+    "guaranteed_coherence": 0.9800665778412416,
+    "midpoint_phase_error": 2.0
+  },
+  "v5.29": {
+    "experiments": 8,
+    "joint_se": 0.10222524150130437,
+    "wrongly_independent_se": 0.04123105625617661,
+    "common_offset_floor": 0.1,
+    "paired_contrast_se": 0.0848528137423857,
+    "fixed_offset_rank": 1
+  },
+  "v5.30": {
+    "mass": 0.8,
+    "frequency": 3.0,
+    "momentum_mismatch": 0.10863354103980782,
+    "signed_odd_magnitudes": [
+      0.0029970508487741836,
+      0.026761869222573214,
+      0.07317409408817778
+    ],
+    "fixed_ordinary_odd_radius": 0.025,
+    "fixed_family_global_gap": 0.04817409408817778,
+    "free_ordinary_refit_error": 0.0
+  },
+  "v5.31": {
+    "seed": 522531,
+    "fixed_shots": 1200,
+    "rejection_count": 20,
+    "null_size": 0.020716054653306514,
+    "synthetic_science_power_at_p_003": 0.9987514681701994,
+    "sham_hits": 0,
+    "sham_upper": 0.00917980458366526,
+    "allowed_sham_bound": 0.01,
+    "upstream_hits": 311,
+    "upstream_recovery_lower": 0.733512367480889,
+    "required_upstream_bound": 0.65,
+    "weak_upstream_hits": 213,
+    "weak_upstream_recovery_lower": 0.4822687168963803,
+    "joint_false_rejection_ceiling": 0.04571605465330651
+  }
+}

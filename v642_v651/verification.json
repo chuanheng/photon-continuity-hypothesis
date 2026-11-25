@@ -1,0 +1,51 @@
+{
+  "source_parent_sha": "07580eeee16ba9dea56291d1f19f0b01ba8c010c",
+  "remote_main_observed_sha": "07580eeee16ba9dea56291d1f19f0b01ba8c010c",
+  "runtime": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "geant4-pybind": "0.1.3",
+    "python": "3.12.14"
+  },
+  "seeds": {
+    "drift": 651642
+  },
+  "test_command": "python -m unittest -v v642_v651.test_model v632_v641.test_model v622_v631.test_model v612_v621.test_model v602_v611.test_model v592_v601.test_model",
+  "tests_passed": 60,
+  "notebook_executed": true,
+  "notebook_matches_cli": true,
+  "model_command": "python -m v642_v651.model",
+  "notebook_command": "PYTHONPATH=. python tools/execute_research_notebook.py v642_v651/reproduce.ipynb",
+  "exit_codes": {
+    "tests": 0,
+    "notebook": 0,
+    "model": 0
+  },
+  "github_actions": "not run",
+  "sha256": {
+    "README.md": "719920213ca6bc50731b0842d2c06b7f43a6b3f1deef6b12a60678ac5f6f59d0",
+    "manuscript_zh.md": "8bacd03fe00670d771c66bbd320da4d1275ad11e4821e8b2cc4bf22d7a64d1c0",
+    "model.py": "08dd40d90923068a76cfc02f4d10cc4a7da751b2785fc08cd6afeed5321f38ea",
+    "referee_zh.md": "0b253efc40604a288040dabd47e3276790e861a1bba2f8c65cea3efe9f0962b2",
+    "reproduce.ipynb": "5d4bbd5bdd0bc8958efadc640e88e3f3299787c8ea63b5ed058981f2e1b6e62a",
+    "results.json": "2ea49e836d8a0e8c240a994f01905803f190ed474cfa3a0a8a32b0b7fc368d5e",
+    "test_log.txt": "b2f3626d20088762fa97c02376079fd49495a8309ca5d938209629a9772cb030",
+    "test_model.py": "f20f3876feb7e6b99836712a7e797f0f52b18c30f652b860d1ebe703e1ac9e91",
+    "v642_zh.md": "d2d4fa53acd9cb6a61e8d2a17ed1a965205312fc0403291a93fda52eb69d20fc",
+    "v643_zh.md": "7654f26a1b8f9c2d81a3cfafa1d3f36e606d00ca2a12f36a4fef4ddc69ea5780",
+    "v644_zh.md": "3e8774a06bca2c3844ad036ef69e4d529f292051d904bc5c688609a1610026a3",
+    "v645_zh.md": "1ae8f58d89ca58557fd0f5d1e66cd07ceb05379a49461b4eaf4b26e905951350",
+    "v646_zh.md": "5bac19d2cf89098c02318848e3facb6503436e060698e90fc8c5500c083893f6",
+    "v647_zh.md": "8837ad7836fd5b18e1a57da622cef778b24569f799e4694ceea6234f2cb14d4f",
+    "v648_zh.md": "bf3657b582344849c5096906189a0ea5c28978364b0bb227f04997bcc689cd2d",
+    "v649_zh.md": "345d5c10688abfeaa1d8cc8e8c24da217240dc623c42015c326ac208aeae2abf",
+    "v650_zh.md": "9abdf492ba6f9f5f4d807f7a48d85d20d47c76d1d2d9c870fe8b86c37da0bc60",
+    "v651_zh.md": "bee646f63d674f7257ffb692115dfab748b5203ca1adf298b86d034fc0ab124f"
+  },
+  "reproduced_on": "2026-11-25",
+  "environment_exceptions": [
+    "socket-free Jupyter kernel; legacy full discovery outside this run"
+  ]
+}

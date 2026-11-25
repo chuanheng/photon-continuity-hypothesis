@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "99c1b77e99bfe16300f91d1bd4467938f346c163",
-  "latest_completed_version": "v6.41",
-  "latest_completed_version_evidence": "v632_v641/README.md",
+  "research_base_commit_sha": "07580eeee16ba9dea56291d1f19f0b01ba8c010c",
+  "latest_completed_version": "v6.51",
+  "latest_completed_version_evidence": "v642_v651/README.md",
   "next_batch": {
-    "first_version": "v6.42",
-    "last_version": "v6.51",
-    "first_unfinished_version": "v6.42",
+    "first_version": "v6.52",
+    "last_version": "v6.61",
+    "first_unfinished_version": "v6.52",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -430,6 +430,15 @@
       "source_parent_sha": "99c1b77e99bfe16300f91d1bd4467938f346c163",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H -- v632_v641"
+    },
+    {
+      "first_version": "v6.42",
+      "last_version": "v6.51",
+      "index": "v642_v651/README.md",
+      "notebook": "v642_v651/reproduce.ipynb",
+      "source_parent_sha": "07580eeee16ba9dea56291d1f19f0b01ba8c010c",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H -- v642_v651"
     }
   ],
   "early_history": {
@@ -643,6 +652,10 @@
       {
         "version": "v6.34",
         "claim_excluded": "A mixed ordinary Compton/Rayleigh trajectory cannot return into the selected low-energy forward cone in this simulated geometry."
+      },
+      {
+        "version": "v6.51",
+        "claim_excluded": "Three independent Poisson count channels suffice to distinguish an additive candidate effect when the scatter-reference efficiency is unrestricted."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -699,13 +712,13 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "test_command": "python -m unittest -v v632_v641.test_model v622_v631.test_model v612_v621.test_model v602_v611.test_model v592_v601.test_model v582_v591.test_model",
-      "model_command": "python -m v632_v641.model",
+      "test_command": "python -m unittest -v v642_v651.test_model v632_v641.test_model v622_v631.test_model v612_v621.test_model v602_v611.test_model v592_v601.test_model",
+      "model_command": "python -m v642_v651.model",
       "model_exit_code": 0,
-      "results": "v632_v641/results.json",
-      "results_sha256": "890facf61774bf3bbd8e3087f0320fc44936364b000546a106353634c59bf0fe",
+      "results": "v642_v651/results.json",
+      "results_sha256": "2ea49e836d8a0e8c240a994f01905803f190ed474cfa3a0a8a32b0b7fc368d5e",
       "notebook_executed": true,
-      "source_parent_sha": "99c1b77e99bfe16300f91d1bd4467938f346c163",
+      "source_parent_sha": "07580eeee16ba9dea56291d1f19f0b01ba8c010c",
       "runtime": {
         "numpy": "2.3.5",
         "scipy": "1.17.0",
@@ -714,7 +727,7 @@
         "geant4-pybind": "0.1.3",
         "python": "3.12.14"
       },
-      "verification_record": "v632_v641/verification.json",
+      "verification_record": "v642_v651/verification.json",
       "github_actions": "not run"
     },
     "latest_six_batches": {
@@ -731,6 +744,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "07580eeee16ba9dea56291d1f19f0b01ba8c010c",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "99c1b77e99bfe16300f91d1bd4467938f346c163",
       "role": "verified predecessor on main"
@@ -881,7 +898,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "8c20f11d1bad0c1515f78d95228cbac69b699f6b",
+  "previous_research_base_commit_sha": "99c1b77e99bfe16300f91d1bd4467938f346c163",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -889,8 +906,8 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "99c1b77e99bfe16300f91d1bd4467938f346c163",
-    "source_latest_completed_version": "v6.31",
-    "source_first_unfinished_version": "v6.32"
+    "source_main_sha": "07580eeee16ba9dea56291d1f19f0b01ba8c010c",
+    "source_latest_completed_version": "v6.41",
+    "source_first_unfinished_version": "v6.42"
   }
 }

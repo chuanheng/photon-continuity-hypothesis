@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
-  "latest_completed_version": "v5.91",
-  "latest_completed_version_evidence": "v582_v591/README.md",
+  "research_base_commit_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
+  "latest_completed_version": "v6.01",
+  "latest_completed_version_evidence": "v592_v601/README.md",
   "next_batch": {
-    "first_version": "v5.92",
-    "last_version": "v5.101",
-    "first_unfinished_version": "v5.92",
+    "first_version": "v6.02",
+    "last_version": "v6.11",
+    "first_unfinished_version": "v6.02",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -385,6 +385,15 @@
       "source_parent_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H -- v582_v591"
+    },
+    {
+      "first_version": "v5.92",
+      "last_version": "v6.01",
+      "index": "v592_v601/README.md",
+      "notebook": "v592_v601/reproduce.ipynb",
+      "source_parent_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H -- v592_v601"
     }
   ],
   "early_history": {
@@ -399,10 +408,10 @@
     "open_questions": [
       {
         "versions": [
-          "v5.92",
-          "v5.101"
+          "v6.02",
+          "v6.11"
         ],
-        "id": "finite_aperture_multiple_scattering_and_thickness",
+        "id": "finite_aluminum_transport_and_absolute_background",
         "status": "planned"
       }
     ],
@@ -566,6 +575,22 @@
       {
         "version": "v5.81",
         "claim_excluded": "Increasing repeats raises worst-case power above test size at an exact observational intersection of the candidate and ordinary families."
+      },
+      {
+        "version": "v5.85",
+        "claim_excluded": "The same marginal heat and photon energy spectra imply eventwise energy closure."
+      },
+      {
+        "version": "v5.86",
+        "claim_excluded": "A photon exiting parallel to its initial direction cannot lose appreciable energy by ordinary multiple Compton scattering."
+      },
+      {
+        "version": "v5.95",
+        "claim_excluded": "The Gaussian core resolution alone gives a valid rare leakage upper bound when a small non-Gaussian response is allowed."
+      },
+      {
+        "version": "v6.01",
+        "claim_excluded": "The specified full-rank joint aperture, thickness and recoil design rules out an ordinary component with the same linear thickness template."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -622,13 +647,13 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "test_command": "python -m unittest -v v582_v591.test_model v572_v581.test_model v562_v571.test_model v552_v561.test_model v542_v551.test_model v532_v541.test_model",
-      "model_command": "python -m v582_v591.model",
+      "test_command": "python -m unittest -v v592_v601.test_model v582_v591.test_model v572_v581.test_model v562_v571.test_model v552_v561.test_model v542_v551.test_model",
+      "model_command": "python -m v592_v601.model",
       "model_exit_code": 0,
-      "results": "v582_v591/results.json",
-      "results_sha256": "3a933cafed58baa487b0d19923da7776f251e3384c8fda0f384512ff9d1982c5",
+      "results": "v592_v601/results.json",
+      "results_sha256": "dbb17e8b66ae302e38f39f8caac9f2f17005bc0269ce0dfbd3d29653e204fd16",
       "notebook_executed": true,
-      "source_parent_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
+      "source_parent_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
@@ -637,7 +662,7 @@
         "nbformat": "5.11.1",
         "jupyter_client": "8.10.0"
       },
-      "verification_record": "v582_v591/verification.json",
+      "verification_record": "v592_v601/verification.json",
       "github_actions": "not run"
     },
     "latest_six_batches": {
@@ -654,6 +679,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
       "role": "verified predecessor on main"
@@ -784,7 +813,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
+  "previous_research_base_commit_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -792,8 +821,8 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
-    "source_latest_completed_version": "v5.81",
-    "source_first_unfinished_version": "v5.82"
+    "source_main_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
+    "source_latest_completed_version": "v5.91",
+    "source_first_unfinished_version": "v5.92"
   }
 }

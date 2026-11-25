@@ -1,0 +1,152 @@
+{
+  "v5.92": {
+    "cone_deg": 3,
+    "loss_threshold_kev": 2,
+    "conditional_probability": 0.0007976882084404786,
+    "refinement_difference": 6.076687547248993e-13,
+    "polarization_reset_probability": 0.0005989237678012686
+  },
+  "v5.93": {
+    "cones_deg": [
+      1.5,
+      3.0,
+      6.0
+    ],
+    "conditional_probabilities": [
+      0.00019951667869216595,
+      0.0007976882093790443,
+      0.003184713233904058
+    ],
+    "cone_area_normalized": [
+      0.582232915913907,
+      0.5820565038342079,
+      0.5813531226584531
+    ],
+    "half_aperture_ratio": 0.2501186257315732
+  },
+  "v5.94": {
+    "first_normal_optical_depth": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "second_path_cap_optical_depth": 0.2,
+    "second_upper": [
+      0.007331039530761085,
+      0.05032946201621313,
+      0.18126924692201815
+    ],
+    "two_stage_upper": [
+      7.3273752325302285e-06,
+      0.0005007865143762523,
+      0.017250049567776437
+    ],
+    "infinite_bound_over_naive_square": [
+      7.327375232530229,
+      5.0078651437625235,
+      2.6403332066792546
+    ]
+  },
+  "v5.95": {
+    "gaussian_upper": 6.475709643342931e-09,
+    "tail_mixture_upper": 0.00012000647311935949,
+    "inflation": 18531.787206167723,
+    "independent_tail_upper": 0.0004
+  },
+  "v5.96": {
+    "minimum_first_angle_deg": 29.91071176615223,
+    "qualifying_loss_at_bound": 1.9999999999997513,
+    "straight_return_symmetric_angle_deg": 31.44284887183791
+  },
+  "v5.97": {
+    "relative_thickness": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "linear": [
+      0.003,
+      0.006,
+      0.012
+    ],
+    "pair": [
+      0.0015,
+      0.006,
+      0.024
+    ],
+    "central_point_gap": 0.0,
+    "heldout_max_gap": 0.012,
+    "ordinary_linear_nuisance_refit": 0.0
+  },
+  "v5.98": {
+    "internal_axial_spacing_mm": [
+      0.02,
+      0.07,
+      0.15
+    ],
+    "ideal_shift_mm": [
+      0.03464101615137754,
+      0.12124355652982138,
+      0.2598076211353315
+    ],
+    "resolvable_at_fixed_tolerance": [
+      false,
+      true,
+      true
+    ],
+    "near_surface_exact_limit_mm": 0.0
+  },
+  "v5.99": {
+    "recoils_kev_c": [
+      [
+        -49.08010883554694,
+        0.0,
+        31.66358595194084
+      ],
+      [
+        49.08010883554694,
+        0.0,
+        -25.35885740553104
+      ]
+    ],
+    "kinetic_energies_kev": [
+      3.3271719038816627,
+      2.9775566425281568
+    ],
+    "sum_energy_error": 2.1316282072803006e-14,
+    "net_transverse_recoil": 0.0,
+    "individual_transverse_recoil": 49.08010883554694
+  },
+  "v6.00": {
+    "collision_counts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "kinematic_any_direction_max_losses_kev": [
+      11.410459587955621,
+      19.174434087882823,
+      24.799081515499424,
+      29.06155398587285
+    ],
+    "all_backscatter_exit_direction_z": [
+      -1.0,
+      1.0,
+      -1.0,
+      1.0
+    ],
+    "minimum_collisions_for_20kev_loss": 3
+  },
+  "v6.01": {
+    "single_cell_rank": 1,
+    "joint_rank": 3,
+    "fitted_weights": [
+      0.002,
+      0.0060000000000000045,
+      0.003999999999999999
+    ],
+    "ordinary_without_linear_floor": 0.00929113876312107,
+    "ordinary_with_linear_refit_error": 1.5762375645498323e-17
+  }
+}

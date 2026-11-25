@@ -4,46 +4,16 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-24",
-  "checkpoint_kind": "partial_batch",
-  "research_base_commit_sha": "e23e71fef1f8f2446ff0241b3a8a7ee64edf11d0",
-  "latest_completed_version": "v5.01",
-  "latest_completed_version_evidence": "v492_v501/README.md",
+  "checkpoint_kind": "complete_batch",
+  "research_base_commit_sha": "fda732fce9a6827f63af357661d411891ff67aca",
+  "latest_completed_version": "v5.11",
+  "latest_completed_version_evidence": "v502_v511/README.md",
   "next_batch": {
-    "first_version": "v5.02",
-    "last_version": "v5.11",
-    "first_unfinished_version": "v5.05",
-    "completed_versions": [
-      "v5.02",
-      "v5.03",
-      "v5.04"
-    ],
-    "status": "partial_checkpoint",
-    "roadmap": "docs/research_roadmap.md",
-    "pending_versions": [
-      "v5.05",
-      "v5.06",
-      "v5.07",
-      "v5.08",
-      "v5.09",
-      "v5.10",
-      "v5.11"
-    ],
-    "checkpoint": {
-      "source_parent_sha": "e23e71fef1f8f2446ff0241b3a8a7ee64edf11d0",
-      "index": "v502_v511/README.md",
-      "verification_record": "v502_v511/verification.json",
-      "model_command": "python -m v502_v511.model",
-      "model_exit_code": 0,
-      "test_command": "python -m unittest -v v502_v511.test_model v492_v501.test_model v482_v491.test_model v472_v481.test_model v462_v471.test_model",
-      "tests_ran": 43,
-      "tests_passed": 43,
-      "test_exit_code": 0,
-      "seeds": [
-        502511
-      ],
-      "results": "v502_v511/results.json",
-      "results_sha256": "d0922b7d8bb6b5dc17eda4994d54ce0815658717660fa84441db80e1ccbdc8ca"
-    }
+    "first_version": "v5.12",
+    "last_version": "v5.21",
+    "first_unfinished_version": "v5.12",
+    "status": "planned",
+    "roadmap": "docs/research_roadmap.md"
   },
   "completed_batches": [
     {
@@ -334,6 +304,15 @@
       "source_parent_sha": "dce884f0fe855c80624a819571bfd0576fd10014",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v492_v501"
+    },
+    {
+      "first_version": "v5.02",
+      "last_version": "v5.11",
+      "index": "v502_v511/README.md",
+      "notebook": "v502_v511/reproduce.ipynb",
+      "source_parent_sha": "fda732fce9a6827f63af357661d411891ff67aca",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v502_v511"
     }
   ],
   "early_history": {
@@ -348,11 +327,11 @@
     "open_questions": [
       {
         "versions": [
-          "v5.02",
-          "v5.11"
+          "v5.12",
+          "v5.21"
         ],
-        "id": "candidate_source_coupling_phase_matching_and_standard_refits",
-        "status": "partial_checkpoint"
+        "id": "joint_calibrated_complex_response_and_candidate_separation",
+        "status": "planned"
       }
     ],
     "scoped_counterexamples": [
@@ -451,6 +430,14 @@
       {
         "version": "v5.00",
         "claim_excluded": "Five measured bins fix a general eight-tap causal mode in the specified discrete window."
+      },
+      {
+        "version": "v5.05",
+        "claim_excluded": "The specified two-plane excess over the calibrated one-mode fit cannot be reproduced by ordinary optics."
+      },
+      {
+        "version": "v5.09",
+        "claim_excluded": "The specified nonexponential arrival histogram localizes the latency to material storage."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -502,16 +489,17 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "model_command": "python -m v492_v501.model",
-      "test_command": "python -m unittest -v v492_v501.test_model v482_v491.test_model v472_v481.test_model v462_v471.test_model v452_v461.test_model v442_v451.test_model",
+      "exit_code": 0,
       "ran": 60,
       "passed": 60,
-      "exit_code": 0,
+      "batch": 10,
+      "regression": 50,
+      "model_command": "python -m v502_v511.model",
       "model_exit_code": 0,
-      "results": "v492_v501/results.json",
-      "results_sha256": "1752911ec2233db4565c12309b2474abae983d38bbc9bc935fbbf1395438731f",
+      "results": "v502_v511/results.json",
+      "results_sha256": "e5a99d8338a3a59ef3c2e1ca4af6183fe0d124a823e5371554648a55816f9ae2",
       "notebook_executed": true,
-      "source_parent_sha": "dce884f0fe855c80624a819571bfd0576fd10014",
+      "source_parent_sha": "fda732fce9a6827f63af357661d411891ff67aca",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
@@ -520,8 +508,9 @@
         "nbformat": "5.11.1",
         "jupyter_client": "8.10.0"
       },
-      "verification_record": "v492_v501/verification.json",
-      "github_actions": "not run"
+      "verification_record": "v502_v511/verification.json",
+      "github_actions": "not run",
+      "test_command": "python -m unittest -v v502_v511.test_model v492_v501.test_model v482_v491.test_model v472_v481.test_model v462_v471.test_model v452_v461.test_model"
     },
     "latest_six_batches": {
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
@@ -537,6 +526,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "fda732fce9a6827f63af357661d411891ff67aca",
+      "role": "remote-verified v5.02–v5.04 partial checkpoint and parent"
+    },
     {
       "sha": "e23e71fef1f8f2446ff0241b3a8a7ee64edf11d0",
       "role": "remote-verified complete v4.92–v5.01 and parent"

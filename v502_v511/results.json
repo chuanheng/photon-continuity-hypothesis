@@ -28,5 +28,112 @@
     "clipped_mean_slope_mu_52": 0.11714084637501115,
     "derivative_check_error": 1.9636842152337408e-10,
     "leakage_refit_error": 0.0
+  },
+  "v5.05": {
+    "planes": [
+      0.0,
+      1.0,
+      2.0,
+      8.975979010256552
+    ],
+    "amplitude": [
+      0.25,
+      0.15
+    ],
+    "single_plane_error": 0.0,
+    "two_plane_minimax_radius": 0.09997103100603318,
+    "calibration_radius": 0.03,
+    "margin": 0.06997103100603318,
+    "aliased_plane_error": 2.7755575615628914e-17,
+    "ordinary_two_path_error": 1.1102230246251565e-16
+  },
+  "v5.06": {
+    "odd_harmonics": [
+      0.504,
+      -4.85722573273506e-17
+    ],
+    "even_harmonics": [
+      -1.1102230246251565e-16,
+      0.06299999999999997
+    ],
+    "ideal_unbiased_fundamental": -1.3877787807814457e-17,
+    "ordinary_mixer_error": 2.220446049250313e-16
+  },
+  "v5.07": {
+    "initial_energy": 0.5,
+    "final_energies": [
+      0.5,
+      0.5
+    ],
+    "initial_quadrature": -1.0,
+    "final_quadratures": [
+      1.0,
+      0.0
+    ],
+    "ordinary_swap_trace_error": 0.0
+  },
+  "v5.08": {
+    "efficiency_lower": 0.9403705077138331,
+    "observed_event_upper": 0.0018427397934059368,
+    "rate_upper": 0.0019595890963083097,
+    "wrongly_pooled_cluster_upper": 0.0018427397934059368,
+    "independent_cluster_upper": 0.16843347098308534,
+    "joint_coverage_lower": 0.95,
+    "reported_trials": 2000,
+    "independent_blocks_counterexample": 20
+  },
+  "v5.09": {
+    "rates": [
+      0.25,
+      2.0
+    ],
+    "weights": [
+      0.22,
+      0.78
+    ],
+    "early_hazard": 1.615,
+    "late_hazard": 0.25000000470463407,
+    "max_hazard_slope": -8.233109596855748e-09,
+    "bins": [
+      0.7231023067997331,
+      0.12917474973027496,
+      0.041868875169169026,
+      0.024658930393341716,
+      0.018128670653024717,
+      0.013973039536166396,
+      0.04909342771829016
+    ],
+    "detector_latency_refit_error": 1.3877787807814457e-16
+  },
+  "v5.10": {
+    "singular_values": [
+      1.4443795548177976,
+      0.16319237648612528,
+      0.006587116104277223,
+      2.7470529730612275e-18
+    ],
+    "entry_error": 0.0001,
+    "operator_radius": 0.0004,
+    "certified_rank": 3,
+    "ordinary_three_pole_error": 5.551115123125783e-17
+  },
+  "v5.11": {
+    "measured_magnitude": 0.2,
+    "radii": [
+      0.06,
+      0.05,
+      0.03
+    ],
+    "global_distance": 0.06,
+    "nearest_point_residual": 0.06,
+    "grid_distance": 0.06000175484877799,
+    "reopened_port_required": 0.06,
+    "reopened_port_refit_error": 0.0,
+    "joint_false_exclusion_bound": 0.05,
+    "component_error_budgets": [
+      0.01,
+      0.01,
+      0.03
+    ]
   }
 }

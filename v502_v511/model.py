@@ -5,6 +5,8 @@ import numpy as np
 from scipy.integrate import quad
 from scipy.stats import poisson
 
+from . import controls
+
 SEED = 502511
 
 
@@ -80,7 +82,18 @@ def clipped_readout():
 
 
 def run():
-    return {"v5.02":two_beam_source(),"v5.03":finite_converter(),"v5.04":clipped_readout()}
+    return {
+        "v5.02": two_beam_source(),
+        "v5.03": finite_converter(),
+        "v5.04": clipped_readout(),
+        "v5.05": controls.propagation_planes(),
+        "v5.06": controls.chopping_parity(),
+        "v5.07": controls.reset_logs(),
+        "v5.08": controls.zero_event_limit(),
+        "v5.09": controls.lifetime_mixture(),
+        "v5.10": controls.memory_dimension(),
+        "v5.11": controls.preregistered_disk(),
+    }
 
 
 if __name__=="__main__":

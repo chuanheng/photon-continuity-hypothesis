@@ -1,3 +1,10 @@
+test_chopping_parity (v502_v511.test_model.DeviceControlsTests.test_chopping_parity) ... ok
+test_lifetime_mixture (v502_v511.test_model.DeviceControlsTests.test_lifetime_mixture) ... ok
+test_memory_dimension (v502_v511.test_model.DeviceControlsTests.test_memory_dimension) ... ok
+test_preregistered_disk (v502_v511.test_model.DeviceControlsTests.test_preregistered_disk) ... ok
+test_propagation_planes (v502_v511.test_model.DeviceControlsTests.test_propagation_planes) ... ok
+test_reset_logs (v502_v511.test_model.DeviceControlsTests.test_reset_logs) ... ok
+test_zero_event_limit (v502_v511.test_model.DeviceControlsTests.test_zero_event_limit) ... ok
 test_clipped_readout (v502_v511.test_model.SourceControlsTests.test_clipped_readout) ... ok
 test_finite_converter (v502_v511.test_model.SourceControlsTests.test_finite_converter) ... ok
 test_two_beam_source (v502_v511.test_model.SourceControlsTests.test_two_beam_source) ... ok
@@ -41,8 +48,18 @@ test_rotating_wave (v462_v471.test_model.FurtherTests.test_rotating_wave) ... ok
 test_cavity (v462_v471.test_model.PreliminaryTests.test_cavity) ... ok
 test_gauge (v462_v471.test_model.PreliminaryTests.test_gauge) ... ok
 test_rotation (v462_v471.test_model.PreliminaryTests.test_rotation) ... ok
+test_afterpulse (v452_v461.test_model.OpticalTests.test_afterpulse) ... ok
+test_coherent_storage (v452_v461.test_model.OpticalTests.test_coherent_storage) ... ok
+test_dead_time (v452_v461.test_model.OpticalTests.test_dead_time) ... ok
+test_efficiency (v452_v461.test_model.OpticalTests.test_efficiency) ... ok
+test_gaussian_cp (v452_v461.test_model.OpticalTests.test_gaussian_cp) ... ok
+test_missing_bounds (v452_v461.test_model.OpticalTests.test_missing_bounds) ... ok
+test_phase_reference (v452_v461.test_model.OpticalTests.test_phase_reference) ... ok
+test_sidebands (v452_v461.test_model.OpticalTests.test_sidebands) ... ok
+test_temporal_gate (v452_v461.test_model.OpticalTests.test_temporal_gate) ... ok
+test_thermal_loss (v452_v461.test_model.OpticalTests.test_thermal_loss) ... ok
 
 ----------------------------------------------------------------------
-Ran 43 tests in 0.136s
+Ran 60 tests in 0.511s
 
 OK

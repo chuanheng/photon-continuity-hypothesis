@@ -3,15 +3,15 @@
   "project": "Photon Continuity Hypothesis",
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
-  "reviewed_on": "2026-11-24",
+  "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "fda732fce9a6827f63af357661d411891ff67aca",
-  "latest_completed_version": "v5.11",
-  "latest_completed_version_evidence": "v502_v511/README.md",
+  "research_base_commit_sha": "987f0926858e9f20d7f4e3cfb848c5bc44643054",
+  "latest_completed_version": "v5.21",
+  "latest_completed_version_evidence": "v512_v521/README.md",
   "next_batch": {
-    "first_version": "v5.12",
-    "last_version": "v5.21",
-    "first_unfinished_version": "v5.12",
+    "first_version": "v5.22",
+    "last_version": "v5.31",
+    "first_unfinished_version": "v5.22",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -313,6 +313,15 @@
       "source_parent_sha": "fda732fce9a6827f63af357661d411891ff67aca",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H origin/main -- v502_v511"
+    },
+    {
+      "first_version": "v5.12",
+      "last_version": "v5.21",
+      "index": "v512_v521/README.md",
+      "notebook": "v512_v521/reproduce.ipynb",
+      "source_parent_sha": "987f0926858e9f20d7f4e3cfb848c5bc44643054",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H -- v512_v521"
     }
   ],
   "early_history": {
@@ -327,10 +336,10 @@
     "open_questions": [
       {
         "versions": [
-          "v5.12",
-          "v5.21"
+          "v5.22",
+          "v5.31"
         ],
-        "id": "joint_calibrated_complex_response_and_candidate_separation",
+        "id": "controlled_standard_response_stress_test_and_candidate_gap",
         "status": "planned"
       }
     ],
@@ -438,6 +447,14 @@
       {
         "version": "v5.09",
         "claim_excluded": "The specified nonexponential arrival histogram localizes the latency to material storage."
+      },
+      {
+        "version": "v5.12",
+        "claim_excluded": "A nonzero residual against one shared ordinary-path coefficient remains nonzero when per-setting ordinary coefficients are independently admissible."
+      },
+      {
+        "version": "v5.21",
+        "claim_excluded": "Downstream injection provides the same recovery rate as upstream injection in the specified attenuating chain."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -494,12 +511,12 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "model_command": "python -m v502_v511.model",
+      "model_command": "python -m v512_v521.model",
       "model_exit_code": 0,
-      "results": "v502_v511/results.json",
-      "results_sha256": "e5a99d8338a3a59ef3c2e1ca4af6183fe0d124a823e5371554648a55816f9ae2",
+      "results": "v512_v521/results.json",
+      "results_sha256": "c0c747831da5014ea98b666092d65d1e7c15a4f403f613f5c3718f2024c96b12",
       "notebook_executed": true,
-      "source_parent_sha": "fda732fce9a6827f63af357661d411891ff67aca",
+      "source_parent_sha": "987f0926858e9f20d7f4e3cfb848c5bc44643054",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
@@ -508,9 +525,9 @@
         "nbformat": "5.11.1",
         "jupyter_client": "8.10.0"
       },
-      "verification_record": "v502_v511/verification.json",
+      "verification_record": "v512_v521/verification.json",
       "github_actions": "not run",
-      "test_command": "python -m unittest -v v502_v511.test_model v492_v501.test_model v482_v491.test_model v472_v481.test_model v462_v471.test_model v452_v461.test_model"
+      "test_command": "python -m unittest -v v512_v521.test_model v502_v511.test_model v492_v501.test_model v482_v491.test_model v472_v481.test_model v462_v471.test_model"
     },
     "latest_six_batches": {
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
@@ -526,6 +543,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "987f0926858e9f20d7f4e3cfb848c5bc44643054",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "fda732fce9a6827f63af357661d411891ff67aca",
       "role": "remote-verified v5.02–v5.04 partial checkpoint and parent"
@@ -623,12 +644,17 @@
       "role": "independent_calibration_audit"
     }
   ],
-  "checkpoint_commit_location": "Resolve the verified commit containing this file from origin/main. A commit cannot contain its own SHA.",
-  "previous_research_base_commit_sha": "fbe0e647a9083965ad2d3eee0854eb42e145648f",
+  "checkpoint_commit_location": "Containing main commit",
+  "previous_research_base_commit_sha": "fda732fce9a6827f63af357661d411891ff67aca",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
     "continue_while_resources_allow": true,
     "executed_jupyter_required": true
+  },
+  "remote_verification": {
+    "source_main_sha": "987f0926858e9f20d7f4e3cfb848c5bc44643054",
+    "source_latest_completed_version": "v5.11",
+    "source_first_unfinished_version": "v5.12"
   }
 }

@@ -1,0 +1,100 @@
+{
+  "v5.12": {
+    "shared_residual": 0.14696938456699069,
+    "per_setting_max_amplitude": 0.11401754250991379,
+    "per_setting_bound": 0.2,
+    "per_setting_refit_error": 0.0,
+    "projected_residual_dot": 0.0
+  },
+  "v5.13": {
+    "support": 0.030000000000000002,
+    "global_distance": 0.039999999999999994,
+    "attainable_residual": 0.04,
+    "circular_outer_radius": 0.12,
+    "observed_norm": 0.06999999999999999,
+    "sampled_support": 0.03
+  },
+  "v5.14": {
+    "offset_only_endpoint_gap": 0.4169197996921991,
+    "free_reference_refit_error": 0.0,
+    "independently_allowed_slope": 0.03,
+    "calibrated_endpoint_gap": 0.35805914685164836
+  },
+  "v5.15": {
+    "null_response": 0.0,
+    "signal_response": 0.15999999999999992,
+    "normalized_noise_gain": 2.449489742783178,
+    "curvature_refit_error": 0.0
+  },
+  "v5.16": {
+    "settings": 20,
+    "nominal": 0.05,
+    "single_cutoff": 1.6448536269514722,
+    "uncorrected_family_error": 0.6415140775914581,
+    "independent_adjusted_cutoff": 2.799211472482397,
+    "corrected_family_error": 0.050000000000000155,
+    "bonferroni_cutoff": 2.807033768343811
+  },
+  "v5.17": {
+    "seed": 512521,
+    "replications": 3000,
+    "blocks": 24,
+    "repeats_per_block": 16,
+    "correct_se": 0.08228507357554792,
+    "naive_se": 0.022821773229381923,
+    "paired_se": 0.014433756729740645,
+    "naive_coverage": 0.419,
+    "valid_coverage": 0.9496666666666667,
+    "paired_coverage": 0.9483333333333334
+  },
+  "v5.18": {
+    "noise_sd": 0.3,
+    "target_magnitude": 0.05,
+    "required_count": 379,
+    "positive_power": 0.9005497343013757,
+    "negative_power": 0.9005497343013757,
+    "previous_count_power": 0.8997989711095304,
+    "size": 0.05
+  },
+  "v5.19": {
+    "null_radius": 0.1,
+    "alternative_radius": 0.07,
+    "shifts": [
+      0.13,
+      0.21
+    ],
+    "global_gaps": [
+      0.0,
+      0.03999999999999998
+    ],
+    "overlap_point": 0.07647058823529412,
+    "distance_to_alternative_center": 0.05352941176470588
+  },
+  "v5.20": {
+    "signal": 0.15,
+    "budget": 5.0,
+    "baseline_margin": 0.022999999999999993,
+    "intervention_cost": [
+      5.0,
+      1.0,
+      2.0
+    ],
+    "margins": [
+      0.059,
+      0.032999999999999995,
+      0.040499999999999994
+    ],
+    "chosen_index": 0,
+    "chosen_margin": 0.059
+  },
+  "v5.21": {
+    "seed": 512522,
+    "trials": 4000,
+    "injected_amplitude": 0.15,
+    "chain_gain": 0.7,
+    "threshold": 0.08652695748081682,
+    "sham_false_positive": 0.002,
+    "full_chain_recovery": 0.7075,
+    "downstream_recovery": 0.984
+  }
+}

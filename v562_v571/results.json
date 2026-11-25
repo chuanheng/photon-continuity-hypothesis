@@ -1,0 +1,114 @@
+{
+  "v5.62": {
+    "single_setting_gap": 0.0,
+    "recovered_components": [
+      [
+        0.12999999999999998,
+        0.06999999999999998
+      ],
+      [
+        0.08999999999999994,
+        -0.049999999999999996
+      ]
+    ],
+    "smallest_singular_value": 0.8597011961427439,
+    "error_under_joint_response_radius": 0.023263896909455063,
+    "ordinary_two_path_refit": 0.0
+  },
+  "v5.63": {
+    "without_selective_reset": [
+      0.9999999999999998,
+      0.9999999999999998
+    ],
+    "with_reset_on_first_memory": [
+      0.0,
+      0.9999999999999998
+    ],
+    "with_common_reset": [
+      0.0,
+      0.0
+    ]
+  },
+  "v5.64": {
+    "full_window_coincidence": 0.1679,
+    "main_window_only_coincidence": 0.09499999999999997,
+    "unbiased_resolved_weights": [
+      0.82,
+      0.18
+    ],
+    "matched_ordinary_overlap_squared": 0.6642
+  },
+  "v5.65": {
+    "assignments": 256,
+    "observed_pvalue": 0.015625,
+    "exact_null_rejection_fraction": 0.046875,
+    "invariance_to_additive_drift": 2.55351295663786e-15
+  },
+  "v5.66": {
+    "rank_first_two": 2,
+    "rank_all": 3,
+    "recovered_effects": [
+      0.3,
+      0.12,
+      0.07
+    ],
+    "two_control_alternative_gap": 0.0,
+    "third_control_alternative_gap": 0.04
+  },
+  "v5.67": {
+    "shots_per_stratum": 900,
+    "rejection_threshold": 106,
+    "null_size": 0.044980399218736436,
+    "powers": [
+      0.9977029698780321,
+      0.5964724268801007,
+      0.1169095026889538
+    ],
+    "worst_condition_power": 0.1169095026889538
+  },
+  "v5.68": {
+    "witness": [
+      -0.17782168978975468,
+      -0.3111879571320708,
+      0.933563871396213
+    ],
+    "lower_distance": 0.20494443758403988,
+    "matching_upper_distance": 0.20494443758403985,
+    "uncalibrated_extra_mode_refit": 0.0
+  },
+  "v5.69": {
+    "identified_interval": [
+      0.22352941176470587,
+      0.5272727272727272
+    ],
+    "nominal": 0.34285714285714286,
+    "endpoint_predictors": [
+      0.29,
+      0.31
+    ],
+    "naive_fixed_calibration_interval": [
+      0.32857142857142857,
+      0.35714285714285715
+    ]
+  },
+  "v5.70": {
+    "phases": [
+      0.0,
+      1.5707963267948966,
+      3.141592653589793
+    ],
+    "ordinary_storage_echo": [
+      0.9999999999999996,
+      0.4999999999999998,
+      4.249867503421167e-33
+    ],
+    "phase_blind_probability": 0.9999999999999996,
+    "ordinary_refit_error": 4.440892098500626e-16,
+    "contrast": 0.9999999999999996
+  },
+  "v5.71": {
+    "max_calibrated_ordinary_gap": 0.009999999999999988,
+    "candidate_margin": 0.0049999999999999906,
+    "relaxed_ordinary_exact_refit": 0.0
+  }
+}

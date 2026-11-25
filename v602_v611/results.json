@@ -1,0 +1,98 @@
+{
+  "v6.02": {
+    "energy_kev": 60.0,
+    "total_cm2_g": 0.277810274566,
+    "compton_cm2_g": 0.148313057051,
+    "rayleigh_cm2_g": 0.0338586858274,
+    "photoelectric_cm2_g": 0.0956385316881,
+    "sum_error": 5.000305725033627e-13,
+    "nist_total_cm2_g": 0.2778,
+    "relative_total_difference": 3.698547876163083e-05
+  },
+  "v6.03": {
+    "thickness_cm": 0.1,
+    "uncollided_survival": 0.9277353462196922,
+    "first_compton_probability": 0.03857953682826553,
+    "analytic_first_compton": 0.03857953682826553,
+    "nist_survival": 0.9277379198843343
+  },
+  "v6.04": {
+    "thickness_cm": 0.1,
+    "radius_cm": 0.5,
+    "energy_kev": 60,
+    "cone_deg": 3.0,
+    "min_loss_kev": 2.0,
+    "reference_rate_per_incident": 1.576659936998581e-06,
+    "replicate_values": [
+      1.5768252078195257e-06,
+      1.5765762612263848e-06,
+      1.5764411711392001e-06,
+      1.5767971078092136e-06
+    ],
+    "quadrature_standard_error": 9.173803810698506e-11,
+    "narrow_radius_rate": 8.85797879248101e-07,
+    "wide_radius_rate": 1.7797777415832626e-06
+  },
+  "v6.05": {
+    "sigma_values_kev": [
+      0.35,
+      0.55,
+      0.75
+    ],
+    "survival_into_loss_window": [
+      5.5082885485197005e-09,
+      0.00013825695781905753,
+      0.0038303805675897365
+    ],
+    "broadened_over_core": 695384.8793232,
+    "example_secondary_escape_fraction": 0.0004
+  },
+  "v6.06": {
+    "polarized_rate": 1.5768252078195257e-06,
+    "erased_polarization_rate": 1.0174090077945662e-06,
+    "narrow_cone_rate": 3.944866785472411e-07,
+    "polarization_ratio": 1.5498439622012037,
+    "aperture_ratio": 0.25017781082580953
+  },
+  "v6.07": {
+    "tensor_quadrature": 1.5805479572414918e-06,
+    "sobol_average": 1.576716952957818e-06,
+    "relative_disagreement": 0.002423845645506359,
+    "independent_material_engine": null
+  },
+  "v6.08": {
+    "nominal": 1.5768252078195257e-06,
+    "thickness_cases": [
+      1.4543398695157997e-06,
+      1.7020550788136777e-06
+    ],
+    "aperture_cases": [
+      1.473528544749368e-06,
+      1.6836135877614283e-06
+    ],
+    "scenario_min": 1.3590661548927607e-06,
+    "scenario_max": 1.8173256695099253e-06,
+    "counts_per_10m_low": 13.318848317949055,
+    "counts_per_10m_high": 18.536721829001237
+  },
+  "v6.09": {
+    "detector_tail_upper": 1.02415567135497e-05,
+    "empty_geometry_upper": 5.571630655166939e-06,
+    "ordinary_two_compton_estimate": 1.5768252078195257e-06,
+    "illustrative_sum": 1.7390012576536164e-05,
+    "comparison_uses_synthetic_controls": true
+  },
+  "v6.10": {
+    "probability_sum": 0.9999999999999999,
+    "visible_total_variation": 0.0,
+    "hidden_joint_total_variation": 0.8799999999999999
+  },
+  "v6.11": {
+    "assumed_background_upper": 2e-05,
+    "assumed_alternative": 3e-05,
+    "grid_exposure": 2700000,
+    "counts_threshold": 70,
+    "power": 0.9016372892543781,
+    "size": 0.020646818842577817
+  }
+}

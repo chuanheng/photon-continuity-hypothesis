@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
-  "latest_completed_version": "v6.01",
-  "latest_completed_version_evidence": "v592_v601/README.md",
+  "research_base_commit_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
+  "latest_completed_version": "v6.11",
+  "latest_completed_version_evidence": "v602_v611/README.md",
   "next_batch": {
-    "first_version": "v6.02",
-    "last_version": "v6.11",
-    "first_unfinished_version": "v6.02",
+    "first_version": "v6.12",
+    "last_version": "v6.21",
+    "first_unfinished_version": "v6.12",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -394,6 +394,15 @@
       "source_parent_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H -- v592_v601"
+    },
+    {
+      "first_version": "v6.02",
+      "last_version": "v6.11",
+      "index": "v602_v611/README.md",
+      "notebook": "v602_v611/reproduce.ipynb",
+      "source_parent_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H -- v602_v611"
     }
   ],
   "early_history": {
@@ -408,10 +417,10 @@
     "open_questions": [
       {
         "versions": [
-          "v6.02",
-          "v6.11"
+          "v6.12",
+          "v6.21"
         ],
-        "id": "finite_aluminum_transport_and_absolute_background",
+        "id": "mixed_interactions_and_response_brackets",
         "status": "planned"
       }
     ],
@@ -647,22 +656,23 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "test_command": "python -m unittest -v v592_v601.test_model v582_v591.test_model v572_v581.test_model v562_v571.test_model v552_v561.test_model v542_v551.test_model",
-      "model_command": "python -m v592_v601.model",
+      "test_command": "python -m unittest -v v602_v611.test_model v592_v601.test_model v582_v591.test_model v572_v581.test_model v562_v571.test_model v552_v561.test_model",
+      "model_command": "python -m v602_v611.model",
       "model_exit_code": 0,
-      "results": "v592_v601/results.json",
-      "results_sha256": "dbb17e8b66ae302e38f39f8caac9f2f17005bc0269ce0dfbd3d29653e204fd16",
+      "results": "v602_v611/results.json",
+      "results_sha256": "e30e53e00b0618851eb1c38a231507728e15f5f3ed297cc5ca81118a47b9f739",
       "notebook_executed": true,
-      "source_parent_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
+      "source_parent_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
         "scipy": "1.17.0",
         "ipykernel": "7.4.0",
         "nbformat": "5.11.1",
-        "jupyter_client": "8.10.0"
+        "jupyter_client": "8.10.0",
+        "xraylib_snapshot": "4.3.0"
       },
-      "verification_record": "v592_v601/verification.json",
+      "verification_record": "v602_v611/verification.json",
       "github_actions": "not run"
     },
     "latest_six_batches": {
@@ -679,6 +689,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
       "role": "verified predecessor on main"
@@ -813,7 +827,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "19b83f27c58d1a95664c6d9bac372ee800154ffa",
+  "previous_research_base_commit_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -821,8 +835,8 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "4f382f1e1dabdaa86bb2970ff7cbc06e20453cd3",
-    "source_latest_completed_version": "v5.91",
-    "source_first_unfinished_version": "v5.92"
+    "source_main_sha": "1a81a27a9a708e8ff9067cb29945f57d649b0588",
+    "source_latest_completed_version": "v6.01",
+    "source_first_unfinished_version": "v6.02"
   }
 }

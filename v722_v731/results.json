@@ -1,0 +1,59 @@
+{
+  "v7.22": {
+    "active_mm": 13,
+    "published_area_mm2": 200
+  },
+  "v7.23": {
+    "mu_low_cm_inverse": 13.937709419160486,
+    "mu_high_cm_inverse": 13.144927570780322,
+    "difference": 0.7927818483801641
+  },
+  "v7.24": {
+    "illustrative_depth_difference_um": 20,
+    "ray_cross_ratio": 1.0015868213674963
+  },
+  "v7.25": {
+    "required_normal_path_difference_mm": 3.7437303639151107,
+    "thin_10um_abs_log_ratio": 0.0007927818483801641
+  },
+  "v7.26": {
+    "secant": 1.2838613239600938,
+    "required_thickness_difference_mm_common_angle": 2.9159927899124694
+  },
+  "v7.27": {
+    "transmission_extra_path_lo": 0.005418682384401826,
+    "transmission_extra_path_hi": 0.007291059205627109
+  },
+  "v7.28": {
+    "scattered_mu_span_cm_inverse": 7.262380391761454,
+    "log_span_for_total_40um": 0.029049521567045815
+  },
+  "v7.29": {
+    "recoil_keV": [
+      19.112000000000002,
+      20.290999999999997
+    ],
+    "full_collection_trigger": [
+      1.0,
+      1.0
+    ]
+  },
+  "v7.30": {
+    "toy_charge_fraction": 0.43205760541704324,
+    "trigger_probabilities": [
+      0.6967129764203683,
+      0.9374558610522463
+    ],
+    "sum_deficits_keV": [
+      10.85451504526947,
+      11.524119128482772
+    ]
+  },
+  "v7.31": {
+    "max_loss_fraction_for_half_keV_gate": [
+      0.026161573880284634,
+      0.024641466660095614
+    ],
+    "toy_deficit_min_keV": 10.85451504526947
+  }
+}

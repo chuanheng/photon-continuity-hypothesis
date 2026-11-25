@@ -1,0 +1,107 @@
+{
+  "v5.42": {
+    "common_angle_gap": 0.5710578162817888,
+    "independently_profiled_gap": 0.4152904793583285,
+    "numerical_independent_gap": 0.4152904793583285,
+    "uncalibrated_perpendicular_gap": 3.796405077356795e-17,
+    "angle_uncertainty": 0.4
+  },
+  "v5.43": {
+    "visible_trace_distance": 0.0,
+    "coherent_parities": [
+      0.9999999999999998,
+      -0.9999999999999998
+    ],
+    "visible_diagonal": [
+      0.4999999999999999,
+      0.0,
+      0.0,
+      0.4999999999999999
+    ]
+  },
+  "v5.44": {
+    "estimate": 0.18000000000000002,
+    "joint_standard_error": 0.045825756949558406,
+    "interval": [
+      0.09018316681457945,
+      0.2698168331854206
+    ],
+    "falsely_fixed_reference_se": 0.04,
+    "science_only_rank": 1,
+    "joint_rank": 2,
+    "untracked_reference_refit_error": 0.0
+  },
+  "v5.45": {
+    "calibration_shots": 2000,
+    "multi_pair_upper": 0.03564599123154172,
+    "contamination_adjusted_bound": 0.7589114978078855,
+    "science_lower": 0.7835394288107456,
+    "certified_gap": 0.024627931002860093,
+    "worst_case_mixture_at_10_percent": 0.775
+  },
+  "v5.46": {
+    "basis_success_rates": [
+      0.5,
+      0.5
+    ],
+    "conditioned_correct_rate": 1.0,
+    "all_trials_score": 0.5,
+    "classical_all_trials_bound": 0.75
+  },
+  "v5.47": {
+    "trials_per_setting": 5000,
+    "alpha": 0.05,
+    "estimated_pt_minimum": -0.11902099999185348,
+    "true_pt_minimum": -0.11749999999999994,
+    "simultaneous_operator_radius": 0.09795608446045719,
+    "eigenvalue_upper": -0.02106491553139629,
+    "weaker_triangle_radius": 0.1896911418875189
+  },
+  "v5.48": {
+    "predicted_phase": 0.27,
+    "observed_phase": 0.31,
+    "residual": 0.03999999999999998,
+    "joint_radius": 0.072,
+    "valid_margin": 0.032000000000000015,
+    "falsely_ignored_readout_residual": 0.0,
+    "untracked_pulse_exact_refit_error": 2.7755575615628914e-17
+  },
+  "v5.49": {
+    "singular_values": [
+      1.3970354039374984,
+      0.3287687375831352,
+      0.03923269444203566
+    ],
+    "entry_radius": 0.001,
+    "simultaneous_op_radius": 0.003,
+    "certified_gap": 0.036232694442035654,
+    "without_control_singular": [
+      1.5328893272810011,
+      9.253322334482726e-18,
+      3.454239936333646e-34
+    ]
+  },
+  "v5.50": {
+    "allowed_charge_commutator": 0.0,
+    "wrong_charge_commutator": 1.4142135623730951,
+    "free_energy_commutator": 0.0,
+    "stored_optical_population": 0.0,
+    "stored_charge": 1.0,
+    "ordinary_port_refit_error": 0.0
+  },
+  "v5.51": {
+    "seed": 542552,
+    "shots_per_cell": 12000,
+    "readout_means": [
+      0.42916666666666664,
+      0.33158333333333334,
+      0.30366666666666664,
+      0.2955
+    ],
+    "contrast": 0.08941666666666664,
+    "sampling_radius": 0.024795427851769823,
+    "validated_ordinary_radius": 0.04,
+    "exclusion_margin": 0.024621238814896813,
+    "matched_ordinary_contrast": -0.008166666666666655
+  }
+}

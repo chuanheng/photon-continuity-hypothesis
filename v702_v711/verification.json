@@ -1,0 +1,32 @@
+{
+  "source_parent_sha": "31dd2bbb4f8f99880b8f692cfa2a45dee2fb1a06",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "xraylib": "4.3.0"
+  },
+  "seeds": [],
+  "model_command": "python -m v702_v711.model",
+  "test_modules": [
+    "v702_v711.test_model",
+    "v692_v701.test_model",
+    "v682_v691.test_model",
+    "v672_v681.test_model",
+    "v662_v671.test_model",
+    "v652_v661.test_model"
+  ],
+  "notebook_command": "python tools/execute_research_notebook.py v702_v711/reproduce.ipynb",
+  "exit_codes": {
+    "model": 0,
+    "tests": 0,
+    "notebook": 0
+  },
+  "tests_passed": 60,
+  "github_actions": "not run",
+  "scope": "deterministic; adjacent five suites included; legacy suite not run",
+  "sha256_results": "09dc3ad8f35a13c8d4e7224eff1fe443e77e76208e0165ab0d3908307c41694a",
+  "reproduction_note": "Initial exact JSON assertion failed across NumPy environments. Regenerated model, tests and executed notebook under the single runtime specified above."
+}

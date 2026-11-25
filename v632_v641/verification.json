@@ -1,0 +1,84 @@
+{
+  "source_parent_sha": "99c1b77e99bfe16300f91d1bd4467938f346c163",
+  "remote_main_observed_sha": "99c1b77e99bfe16300f91d1bd4467938f346c163",
+  "runtime": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "geant4-pybind": "0.1.3",
+    "python": "3.12.14"
+  },
+  "seeds": {
+    "transport": [
+      622628,
+      632641
+    ],
+    "geometry": [
+      640,
+      641,
+      642,
+      643
+    ]
+  },
+  "test_command": "python -m unittest -v v632_v641.test_model v622_v631.test_model v612_v621.test_model v602_v611.test_model v592_v601.test_model v582_v591.test_model",
+  "tests_passed": 60,
+  "notebook_executed": true,
+  "notebook_matches_cli": true,
+  "model_command": "python -m v632_v641.model",
+  "notebook_command": "PYTHONPATH=. python tools/execute_research_notebook.py v632_v641/reproduce.ipynb",
+  "exit_codes": {
+    "tests": 0,
+    "notebook": 0,
+    "model": 0
+  },
+  "github_actions": "not run",
+  "trace_commands": [
+    "GEANT4_DATA_DIR=/tmp/data632 python -m v632_v641.trace v632_v641/trace_622628.json 5000000 622628",
+    "GEANT4_DATA_DIR=/tmp/data632 python -m v632_v641.trace v632_v641/trace_632641.json 5000000 632641"
+  ],
+  "trace_exit_codes": [
+    0,
+    0
+  ],
+  "dataset_checksums": "All four MD5 matched ../v622_v631/reproduction.md",
+  "sha256": {
+    "README.md": "8b6dc523bcb7060a06cb546fab49b8101ff8fc09ef7e36af99b5b5fd184aa01e",
+    "manuscript_zh.md": "d534cc1a207b5fbf1352cedddb9e22e85f0bb026015ee999b7b073a2f7cc5efb",
+    "model.py": "ef860b71ed1d42a67328570433562f8053fd24d966953b1061a1f4388e26e941",
+    "referee_zh.md": "068b8b34e478362984c9cf253402706d5dd61efc582b76b3969592161af0579f",
+    "reproduce.ipynb": "2ddc712d346781710c6254add1ca1cb4dc956625f7e510f3b90d20d230deb336",
+    "results.json": "890facf61774bf3bbd8e3087f0320fc44936364b000546a106353634c59bf0fe",
+    "test_log.txt": "589614d062655b871cb39e6778005c7fedc21f98f11a16563727b234ba58d54e",
+    "test_model.py": "df6874225ae360efff0a71a11c061382e73335ec88ef1b33bf3588059edc79e1",
+    "trace.py": "28f85087a8eab29430e706cd51c7c0b54351c03f8cf3d3cf2ca7002036129979",
+    "trace_622628.json": "123eb775d779dc7b808f6e14c4239243c4624b0ae9aab6887e156c4a26ce7785",
+    "trace_632641.json": "0bb29469ba79be32f95197a27a3cc6c3fb685be39e58fa6383bd459ecd476070",
+    "v632_zh.md": "fa890bdcbc5a778d4d19934f0b6d39125869874d4843397e3cdcfa26c778524f",
+    "v633_zh.md": "70292357374c4bda1d9c1c3e1133f0c9048ceedf7c8e2bb5f4334ee6d7fd5637",
+    "v634_zh.md": "a4e088fbf219ee2cd5048e9e8b4fab12dfc862e62d5c24a77752cff4fe116757",
+    "v635_zh.md": "4da2d7508486285d47658af220b58f16045847c13d1f7e847e0d45782f7ea560",
+    "v636_zh.md": "746176e7bb22912b18ffd41b04595200861f4d5ea694f15312c503601afdc855",
+    "v637_zh.md": "b3cfbf7c1ad564858173f82c7c411e264f47f7991d65d88bebb582a8ac1599f0",
+    "v638_zh.md": "d631f6a919820b3cdb85a301656c0c8258f11c969575bece92d0d8ae8d8f4422",
+    "v639_zh.md": "f22f604acb381a6273365531259915abbaef81f9fe841cefe52f49d72628cfc4",
+    "v640_zh.md": "492a0996da8ac9060aaa7c178dd91b56a7fb010fe78119f89a09aee8cba26c0b",
+    "v641_zh.md": "88481f542f8e9f9da58b8972ee3d2716c2787fbb9feae3e64db9305f969c925c"
+  },
+  "external_replay_2026_11_25": {
+    "seeds": [
+      622628,
+      632641
+    ],
+    "events_each": 5000000,
+    "exit": [
+      0,
+      0
+    ],
+    "matches_event_logs": true
+  },
+  "reproduced_on": "2026-11-25",
+  "environment_exceptions": [
+    "socket-free Jupyter kernel; legacy full discovery outside this run"
+  ]
+}

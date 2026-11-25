@@ -1,0 +1,208 @@
+{
+  "v6.32": {
+    "step_angles_range_deg": [
+      49.401922884904906,
+      168.46667058309637
+    ],
+    "exit_energy_range": [
+      40.44159707272824,
+      57.037912972717244
+    ],
+    "largest_exit_angle": 2.999281657421268,
+    "path_counts": [
+      [
+        52343,
+        [
+          "compt",
+          "compt"
+        ]
+      ],
+      [
+        984908,
+        [
+          "compt",
+          "compt"
+        ]
+      ],
+      [
+        2279270,
+        [
+          "compt",
+          "compt"
+        ]
+      ],
+      [
+        2589686,
+        [
+          "compt",
+          "compt"
+        ]
+      ],
+      [
+        3575033,
+        [
+          "compt",
+          "compt"
+        ]
+      ],
+      [
+        3655956,
+        [
+          "compt",
+          "compt"
+        ]
+      ],
+      [
+        4572348,
+        [
+          "compt",
+          "compt"
+        ]
+      ],
+      [
+        4575522,
+        [
+          "compt",
+          "compt"
+        ]
+      ],
+      [
+        4800123,
+        [
+          "compt",
+          "compt"
+        ]
+      ]
+    ]
+  },
+  "v6.33": {
+    "n_single": 80,
+    "free_max_3deg": 0.00965340751475452,
+    "observed_max_loss": 0.30892992545168596,
+    "max_abs_free_residual": 0.2998859825869502,
+    "single_over_gate": 0
+  },
+  "v6.34": {
+    "counts": [
+      9,
+      13
+    ],
+    "paths_by_seed": [
+      {
+        "compt/compt": 9
+      },
+      {
+        "compt/Rayl": 1,
+        "Rayl/compt": 3,
+        "compt/compt": 9
+      }
+    ],
+    "replay_forward_difference": 0,
+    "replay_line_difference": 0,
+    "replay_selected_difference": 0,
+    "combined_rate": 2.2e-06,
+    "ci": [
+      1.3787287844422228e-06,
+      3.3308245554896017e-06
+    ],
+    "equal_rate_conditional_p": 0.5234670639038086
+  },
+  "v6.35": {
+    "secondary_selected": 0,
+    "events_with_any_selected": 22,
+    "tracks_selected": 22,
+    "secondary_event_upper": 2.995731824833443e-07
+  },
+  "v6.36": {
+    "pilot_rate": 2.2e-06,
+    "incident_for_10pct_relative_se": 45454446,
+    "incident_at_pilot_lower": 72530482
+  },
+  "v6.37": {
+    "linear_bias": 0.0,
+    "quadratic_bias": -1.8554706924393793e-06,
+    "ab_preceding_bias": 1.4691265253628537e-06
+  },
+  "v6.38": {
+    "exposure": 2700000,
+    "synthetic_counts": [
+      0,
+      36,
+      87
+    ],
+    "simultaneous_intervals": [
+      [
+        0.0,
+        1.7731435178984517e-06
+      ],
+      [
+        8.600984366486613e-06,
+        1.9674539311364266e-05
+      ],
+      [
+        2.4538863008216862e-05,
+        4.149015789741407e-05
+      ]
+    ]
+  },
+  "v6.39": [
+    {
+      "h_cm": 0.05,
+      "angle_deg": 1.5,
+      "rate": 1.584391729440854e-07,
+      "integration_se": 9.447106184522068e-11
+    },
+    {
+      "h_cm": 0.05,
+      "angle_deg": 3.0,
+      "rate": 6.332901005485135e-07,
+      "integration_se": 3.449579709797911e-10
+    },
+    {
+      "h_cm": 0.1,
+      "angle_deg": 1.5,
+      "rate": 5.007065644848749e-07,
+      "integration_se": 1.7728166545587429e-10
+    },
+    {
+      "h_cm": 0.1,
+      "angle_deg": 3.0,
+      "rate": 2.001296803770508e-06,
+      "integration_se": 9.268056911485204e-10
+    }
+  ],
+  "v6.40": {
+    "corners": [
+      {
+        "source_sigma": 0.0,
+        "shift": -0.05,
+        "rate": 4.4620678369071985e-05
+      },
+      {
+        "source_sigma": 0.0,
+        "shift": 0.05,
+        "rate": 1.9164699327547214e-05
+      },
+      {
+        "source_sigma": 0.15,
+        "shift": -0.05,
+        "rate": 8.689439196630384e-05
+      },
+      {
+        "source_sigma": 0.15,
+        "shift": 0.05,
+        "rate": 3.98836262070706e-05
+      }
+    ],
+    "conditional_range": [
+      1.9164699327547214e-05,
+      8.689439196630384e-05
+    ]
+  },
+  "v6.41": {
+    "shared_template_residual": 1.3644345174839773e-16,
+    "linear_thickness_residual": 0.26128981301698145,
+    "free_setting_offsets_residual": 0.0,
+    "rank": 2
+  }
+}

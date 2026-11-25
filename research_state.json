@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "b88e8b05affb514b4c9dd1251a82478561cf3e38",
-  "latest_completed_version": "v5.71",
-  "latest_completed_version_evidence": "v562_v571/README.md",
+  "research_base_commit_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
+  "latest_completed_version": "v5.81",
+  "latest_completed_version_evidence": "v572_v581/README.md",
   "next_batch": {
-    "first_version": "v5.72",
-    "last_version": "v5.81",
-    "first_unfinished_version": "v5.72",
+    "first_version": "v5.82",
+    "last_version": "v5.91",
+    "first_unfinished_version": "v5.82",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -367,6 +367,15 @@
       "source_parent_sha": "b88e8b05affb514b4c9dd1251a82478561cf3e38",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H -- v562_v571"
+    },
+    {
+      "first_version": "v5.72",
+      "last_version": "v5.81",
+      "index": "v572_v581/README.md",
+      "notebook": "v572_v581/reproduce.ipynb",
+      "source_parent_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H -- v572_v581"
     }
   ],
   "early_history": {
@@ -381,10 +390,10 @@
     "open_questions": [
       {
         "versions": [
-          "v5.72",
-          "v5.81"
+          "v5.82",
+          "v5.91"
         ],
-        "id": "measurement_power_and_control_perturbation",
+        "id": "metal_foil_joint_optical_and_energy_balance",
         "status": "planned"
       }
     ],
@@ -532,6 +541,22 @@
       {
         "version": "v5.57",
         "claim_excluded": "The specified complete end-to-end transition matrix localizes the transitions within the two stages."
+      },
+      {
+        "version": "v5.62",
+        "claim_excluded": "Full-rank responses to the stated reset and shutter controls force a material interpretation when ordinary optical paths may share those response columns."
+      },
+      {
+        "version": "v5.68",
+        "claim_excluded": "The positive calibrated ordinary dictionary distance is preserved when a previously unconstrained ordinary mode is admitted."
+      },
+      {
+        "version": "v5.80",
+        "claim_excluded": "Resolving a merged spectral bin ensures separation even if the ordinary line centroid can match the candidate."
+      },
+      {
+        "version": "v5.81",
+        "claim_excluded": "Increasing repeats raises worst-case power above test size at an exact observational intersection of the candidate and ordinary families."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -588,13 +613,13 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "test_command": "python -m unittest -v v562_v571.test_model v552_v561.test_model v542_v551.test_model v532_v541.test_model v522_v531.test_model v512_v521.test_model",
-      "model_command": "python -m v562_v571.model",
+      "test_command": "python -m unittest -v v572_v581.test_model v562_v571.test_model v552_v561.test_model v542_v551.test_model v532_v541.test_model v522_v531.test_model",
+      "model_command": "python -m v572_v581.model",
       "model_exit_code": 0,
-      "results": "v562_v571/results.json",
-      "results_sha256": "295f5127d4879c0925b485ac2ee5103547cd540bfb6e79fe3f03c23c519e0730",
+      "results": "v572_v581/results.json",
+      "results_sha256": "f3f7e50b966d9a3e08b853651bab53c496aab5867379559bafec8e9af7acbb12",
       "notebook_executed": true,
-      "source_parent_sha": "b88e8b05affb514b4c9dd1251a82478561cf3e38",
+      "source_parent_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
@@ -603,7 +628,7 @@
         "nbformat": "5.11.1",
         "jupyter_client": "8.10.0"
       },
-      "verification_record": "v562_v571/verification.json",
+      "verification_record": "v572_v581/verification.json",
       "github_actions": "not run"
     },
     "latest_six_batches": {
@@ -620,6 +645,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "b0430c2b8792d4aee7840a346f158a193d284517",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "b88e8b05affb514b4c9dd1251a82478561cf3e38",
       "role": "verified predecessor on main"
@@ -742,7 +771,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "57c05debf133cddcffd1eaa2b03755e21d3fbc2e",
+  "previous_research_base_commit_sha": "b88e8b05affb514b4c9dd1251a82478561cf3e38",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -750,8 +779,8 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "b88e8b05affb514b4c9dd1251a82478561cf3e38",
-    "source_latest_completed_version": "v5.61",
-    "source_first_unfinished_version": "v5.62"
+    "source_main_sha": "b0430c2b8792d4aee7840a346f158a193d284517",
+    "source_latest_completed_version": "v5.71",
+    "source_first_unfinished_version": "v5.72"
   }
 }

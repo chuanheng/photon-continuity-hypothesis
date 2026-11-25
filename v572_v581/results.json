@@ -1,0 +1,104 @@
+{
+  "v5.72": {
+    "pair": [
+      0,
+      4
+    ],
+    "smallest_singular": 0.848528137423857,
+    "calibration_error_bound": 0.035355339059327376,
+    "close_controls_scale": 0.10498756211208898,
+    "all_pair_smallest": [
+      0.10498756211208898,
+      0.42869667746480045,
+      0.4286966774648003,
+      0.848528137423857,
+      0.49374916120251927,
+      0.337334982463182,
+      0.839407783523486,
+      0.7,
+      0.6000000000000001,
+      0.6
+    ]
+  },
+  "v5.73": {
+    "nominal_sigma_min": 0.7856248601441036,
+    "robust_sigma_min_lower": 0.7256248601441035,
+    "matrix_error": 0.04050077065616511,
+    "actual_response_shift": 0.00546076917659041,
+    "response_shift_bound": 0.020999999999999998,
+    "nominal_coefficient_bias": 0.00481403245287571,
+    "coefficient_bias_bound": 0.026730315021024235
+  },
+  "v5.74": {
+    "clean_target_click": 0.6759999999999999,
+    "wrongly_perfect_assumption": 0.7,
+    "composite_target_click": 0.63856,
+    "ordinary_false_path_probability": 0.13
+  },
+  "v5.75": {
+    "ellipse_support": 0.04472135954999579,
+    "marginal_box_support": 0.1414213562373095,
+    "distance_lower": 0.04527864045000421,
+    "box_contains_projection": 0.05142135623730951
+  },
+  "v5.76": {
+    "minimal_error": 0.3476845378827218,
+    "trace_distance": 0.30463092423455634,
+    "projective_prediction_gap": 0.30463092423455634,
+    "old_population_gap": 0.0
+  },
+  "v5.77": {
+    "first_n": 968,
+    "threshold": 113,
+    "power": 0.900244142097858,
+    "max_smaller_n_power": 0.898366227938626,
+    "null_probability": 0.04864970730432433
+  },
+  "v5.78": {
+    "blocks": 24,
+    "repeats": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "correct_se": [
+      0.026140645235596872,
+      0.0219848432637882,
+      0.020816659994661327,
+      0.020514222708485286
+    ],
+    "naive_se": [
+      0.026140645235596872,
+      0.013070322617798436,
+      0.006535161308899218,
+      0.003267580654449609
+    ],
+    "power": [
+      0.5305305120614682,
+      0.6561620679570842,
+      0.6973787957314459,
+      0.7084102592598351
+    ],
+    "se_floor": 0.020412414523193152
+  },
+  "v5.79": {
+    "residual": 0.14,
+    "calibrated_margin": 0.05000000000000002,
+    "unmonitored_margin": -0.03999999999999998,
+    "ordinary_shift_exact_refit": 0.0
+  },
+  "v5.80": {
+    "coarse_bin_gap": 0.0,
+    "resolved_total_variation": 0.16204982158402112,
+    "ordinary_unbounded_centroid_refit": 0.0,
+    "bounded_centroid_first_bin_certificate": 0.1267498027396674
+  },
+  "v5.81": {
+    "single_operational_gap": 0.0,
+    "enlarged_ordinary_gap": 0.0,
+    "independently_constrained_gap": 0.04949747468305833,
+    "analytic_constrained_gap": 0.049497474683058325,
+    "uniform_power_ceiling_at_intersection": 0.05
+  }
+}

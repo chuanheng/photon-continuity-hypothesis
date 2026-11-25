@@ -1,0 +1,65 @@
+{
+  "v7.42": {
+    "published_groups": 4,
+    "monitor_cells_for_one_peak_per_line_arm_group": 16
+  },
+  "v7.43": {
+    "unweighted_log_cross": 0.2967961570796005,
+    "constant_weight_log_cross": 0.2967961570795996
+  },
+  "v7.44": {
+    "pivot_point_ratio": 1.5100009476875553,
+    "integrated_ratio": 1.3455409924858557
+  },
+  "v7.45": {
+    "arm_centroids_keV": [
+      35.386359741904684,
+      35.5436480811531,
+      35.51198610488878,
+      35.536370512868096
+    ],
+    "log_cross_derivative_keV": -0.13290393126909672
+  },
+  "v7.46": {
+    "finite_difference": -0.13290393115372723,
+    "analytic": -0.13290393126909672
+  },
+  "v7.47": {
+    "tilts_per_keV": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "cross_ratios": [
+      1.5023868136415954,
+      1.3455409924858557,
+      1.1743573621226002
+    ]
+  },
+  "v7.48": {
+    "original": 0.2967961570796005,
+    "inverse_material_weight": 0.28862380745231153
+  },
+  "v7.49": {
+    "linewise_direction_ratio_ranges": [
+      [
+        0.8702824486231372,
+        2.095872593371884
+      ],
+      [
+        1.3831267188448377,
+        2.2860973264748403
+      ]
+    ]
+  },
+  "v7.50": {
+    "grid_cross_bounds": [
+      0.6599288159112927,
+      2.6268452616637803
+    ]
+  },
+  "v7.51": {
+    "flattening_tilt_per_keV": 2.7893254524765,
+    "weight_ratio_across_band": 264.7142401100944
+  }
+}

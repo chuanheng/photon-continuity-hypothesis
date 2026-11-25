@@ -1,0 +1,105 @@
+{
+  "v5.32": {
+    "survival": 0.3,
+    "bath_ground_probability": 0.6,
+    "coherence_threshold": 0.6260990336999411,
+    "coherence_settings": [
+      0.5,
+      0.8
+    ],
+    "choi_minimum_eigenvalues": [
+      0.13999999999999999,
+      0.10313292267666212
+    ],
+    "partial_transpose_minima": [
+      0.0336670597489743,
+      -0.046867077323337905
+    ]
+  },
+  "v5.33": {
+    "correlations": [
+      0.6799999999999999,
+      -0.6799999999999999,
+      0.6799999999999999
+    ],
+    "overlap_from_settings": 0.76,
+    "omitted_axis_overlap_difference": 0.24999999999999994,
+    "direct_overlap": 0.7599999999999998,
+    "dephased_overlap": 0.4199999999999999,
+    "common_population_error": 0.0
+  },
+  "v5.34": {
+    "classical_two_basis_score": 0.75,
+    "classical_z_only_score": 1.0,
+    "partially_coherent_two_basis_score": 0.7999999999999999,
+    "excess_over_exact_separable_bound": 0.04999999999999993
+  },
+  "v5.35": {
+    "reported_values": [
+      1.0,
+      -1.0,
+      1.0
+    ],
+    "reported_overlap": 1.0,
+    "true_overlap": 0.5,
+    "trusted_direct_overlap": 0.4999999999999999,
+    "independently_measured_axis_gram_rank": 1
+  },
+  "v5.36": {
+    "leak_power": 0.02,
+    "surviving_orthogonal_quadratures": [
+      0.1414213562373095,
+      -0.1414213562373095
+    ],
+    "paired_quadrature_gap": 0.282842712474619,
+    "predicted_amplitude_gap": 0.282842712474619,
+    "naive_power_gap": 0.04
+  },
+  "v5.37": {
+    "efficiency": 0.2,
+    "success_conditioned_overlap": 0.9999999999999997,
+    "flagged_pt_minimum": -0.09999999999999998,
+    "fallback_pt_minimum": 0.10000000000000003,
+    "fallback_overlap": 0.39999999999999986,
+    "flagged_trace": 1.0
+  },
+  "v5.38": {
+    "theta": 0.37,
+    "old_menu_gap": 0.0,
+    "new_quadrature_gap": 0.723230863929924,
+    "full_output_trace_distance": 0.361615431964962
+  },
+  "v5.39": {
+    "output_trace_norm_difference": 0.0,
+    "calibrated_environment_x": [
+      0.32786239491591584,
+      -0.32786239491591584
+    ],
+    "population_only_environment_z": [
+      0.12249999999999994,
+      0.12249999999999994
+    ],
+    "conjugated_measurement_gap": 0.0
+  },
+  "v5.40": {
+    "pulse_labels": [
+      "X",
+      "Z"
+    ],
+    "coherent_system_x": [
+      0.9999999999999998,
+      -0.9999999999999998
+    ],
+    "incoherent_system_x": [
+      0.0,
+      0.0
+    ],
+    "initial_local_population_gap": 0.0
+  },
+  "v5.41": {
+    "record_count": 36,
+    "largest_normalization_error": 2.220446049250313e-16,
+    "largest_record_gap": 0.0,
+    "fixed_hidden_reference_gap": 0.8980418992745278
+  }
+}

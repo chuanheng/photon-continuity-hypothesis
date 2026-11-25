@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-25",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "f36f815a4cd589733ae955e9d5251471fc192df9",
-  "latest_completed_version": "v5.31",
-  "latest_completed_version_evidence": "v522_v531/README.md",
+  "research_base_commit_sha": "f08aacc251a9be2ba440112ef221beffba2b628a",
+  "latest_completed_version": "v5.41",
+  "latest_completed_version_evidence": "v532_v541/README.md",
   "next_batch": {
-    "first_version": "v5.32",
-    "last_version": "v5.41",
-    "first_unfinished_version": "v5.32",
+    "first_version": "v5.42",
+    "last_version": "v5.51",
+    "first_unfinished_version": "v5.42",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -331,6 +331,15 @@
       "source_parent_sha": "f36f815a4cd589733ae955e9d5251471fc192df9",
       "verification": "model_notebook_10_batch_tests_50_regressions_passed",
       "last_path_commit_lookup": "git log -1 --format=%H -- v522_v531"
+    },
+    {
+      "first_version": "v5.32",
+      "last_version": "v5.41",
+      "index": "v532_v541/README.md",
+      "notebook": "v532_v541/reproduce.ipynb",
+      "source_parent_sha": "f08aacc251a9be2ba440112ef221beffba2b628a",
+      "verification": "model_notebook_10_batch_tests_50_regressions_passed",
+      "last_path_commit_lookup": "git log -1 --format=%H -- v532_v541"
     }
   ],
   "early_history": {
@@ -345,10 +354,10 @@
     "open_questions": [
       {
         "versions": [
-          "v5.32",
-          "v5.41"
+          "v5.42",
+          "v5.51"
         ],
-        "id": "channel_certification_and_physical_attribution",
+        "id": "bounded_environment_probes_and_candidate_operator",
         "status": "planned"
       }
     ],
@@ -464,6 +473,22 @@
       {
         "version": "v5.21",
         "claim_excluded": "Downstream injection provides the same recovery rate as upstream injection in the specified attenuating chain."
+      },
+      {
+        "version": "v5.22",
+        "claim_excluded": "Small calibration error in the specified narrow band forces small out-of-band prediction error for the ordinary two-path dictionary."
+      },
+      {
+        "version": "v5.27",
+        "claim_excluded": "The product of mean efficiency and mean event profile gives valid zero-event exposure when both drift across the stated strata."
+      },
+      {
+        "version": "v5.35",
+        "claim_excluded": "A Bell fidelity of one computed from the nominal axis labels certifies entanglement when the actual axes may be duplicates."
+      },
+      {
+        "version": "v5.41",
+        "claim_excluded": "Arbitrary adaptive measurements on the accessible system always distinguish two globally environment-conjugate memory realizations."
       }
     ],
     "scope_v431": "finite controlled models, a nested Bernoulli marginal family, and ordinary finite-dimensional quantum counterexamples"
@@ -520,12 +545,12 @@
       "passed": 60,
       "batch": 10,
       "regression": 50,
-      "model_command": "python -m v522_v531.model",
+      "model_command": "python -m v532_v541.model",
       "model_exit_code": 0,
-      "results": "v522_v531/results.json",
-      "results_sha256": "18b25ba45f0f7bcee55b6e8499bcc5b0616e9d1e8d2045129913a8cf71c20a11",
+      "results": "v532_v541/results.json",
+      "results_sha256": "c7af20f9e9cfe409ff1e8f2c0a314cd311c3cc6130fc5ecbeea7c0c650c21ccd",
       "notebook_executed": true,
-      "source_parent_sha": "f36f815a4cd589733ae955e9d5251471fc192df9",
+      "source_parent_sha": "f08aacc251a9be2ba440112ef221beffba2b628a",
       "runtime": {
         "python": "3.12.14",
         "numpy": "2.3.5",
@@ -534,9 +559,9 @@
         "nbformat": "5.11.1",
         "jupyter_client": "8.10.0"
       },
-      "verification_record": "v522_v531/verification.json",
+      "verification_record": "v532_v541/verification.json",
       "github_actions": "not run",
-      "test_command": "python -m unittest -v v522_v531.test_model v512_v521.test_model v502_v511.test_model v492_v501.test_model v482_v491.test_model v472_v481.test_model"
+      "test_command": "python -m unittest -v v532_v541.test_model v522_v531.test_model v512_v521.test_model v502_v511.test_model v492_v501.test_model v482_v491.test_model"
     },
     "latest_six_batches": {
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
@@ -552,6 +577,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "f08aacc251a9be2ba440112ef221beffba2b628a",
+      "role": "verified predecessor on main"
+    },
     {
       "sha": "f36f815a4cd589733ae955e9d5251471fc192df9",
       "role": "verified predecessor on main"
@@ -658,7 +687,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "987f0926858e9f20d7f4e3cfb848c5bc44643054",
+  "previous_research_base_commit_sha": "f36f815a4cd589733ae955e9d5251471fc192df9",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -666,8 +695,8 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "f36f815a4cd589733ae955e9d5251471fc192df9",
-    "source_latest_completed_version": "v5.21",
-    "source_first_unfinished_version": "v5.22"
+    "source_main_sha": "f08aacc251a9be2ba440112ef221beffba2b628a",
+    "source_latest_completed_version": "v5.31",
+    "source_first_unfinished_version": "v5.32"
   }
 }

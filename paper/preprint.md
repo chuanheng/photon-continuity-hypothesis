@@ -1,5 +1,7 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
+[v8.82–v8.91 explicit label-Hamiltonian audit](../v882_v891/README.md) constructs an energy-conserving dispersive label coupling. Its Ramsey signal is exactly reproduced by ordinary detuning; a symmetric excitation-exchange coupling is the standard two-mode exchange, and label-induced dephasing is exactly a standard phase channel. The tested nine-time curve has zero candidate–ordinary separation.
+
 [v8.72–v8.81 operational audit of permanent identity labels](../v872_v881/README.md) shows that an uncoupled label is invisible to all accessible measurements even when global label states are orthogonal. Coupling makes the label visible, but the same accessible channel has an ordinary internal-mode or environmental dilation. No identity-exclusive prediction or real experimental evidence was obtained.
 
 [v8.62–v8.71 correlated calibration, swaps and drift controls](../v862_v871/README.md) finds that cellwise marginal errors do not determine cross-ratio uncertainty. A matched reference restores rank only under shared-response assumptions; physical exchange removes exchange-even interactions but not exchange-odd ordinary responses. A full-rank protocol therefore needs a matched reference, physical detector-role exchange, interleaved blank drift monitoring and a preregistered held-out prediction.

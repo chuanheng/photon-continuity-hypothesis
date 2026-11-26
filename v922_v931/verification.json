@@ -1,0 +1,19 @@
+{
+  "source_parent_sha": "ead693c5a36624454ac4e707068757ad96b3151d",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seeds": [],
+  "commands": [
+    "python -m v922_v931.model",
+    "python -m unittest -q v922_v931.test_model v912_v921.test_model v902_v911.test_model v892_v901.test_instruments v892_v901.test_model v882_v891.test_model v872_v881.test_model",
+    "PYTHONPATH=.:/tmp/pch-nb python -Xfrozen_modules=off tools/execute_research_notebook.py v922_v931/reproduce.ipynb"
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "test_log": "----------------------------------------------------------------------\nRan 61 tests in 0.054s\n\nOK\n",
+  "ci": "not run"
+}

@@ -1,0 +1,26 @@
+{
+  "independent_enclosure": {
+    "lower": -0.011234099298715312,
+    "upper": -0.011101339250127273,
+    "rings": 96
+  },
+  "sync": {
+    "rate": 0.03,
+    "bound": -0.015
+  },
+  "exclusive": {
+    "single_optimal_axes": 4,
+    "clean_floor_at_saturation": 0.16666666666666663
+  },
+  "independent": {
+    "sectors": [
+      -2.7739901525999894e-17,
+      -0.18301270189221933,
+      -0.18301270189221935,
+      -0.5
+    ],
+    "feasible": -0.011101339250127192,
+    "relaxation": -0.015,
+    "gap_to_relaxation": 0.003898660749872808
+  }
+}

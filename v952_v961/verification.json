@@ -1,0 +1,27 @@
+{
+  "source_parent_sha": "eaac05653d7130e036c60b7ed7f6c83efb5ce132",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1",
+  "phase_seed": 939940,
+  "additional_random_draws": 0,
+  "commands": [
+    "python -m v952_v961.model",
+    "python -m unittest -q v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model v922_v931.test_model v912_v921.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v952_v961/reproduce.ipynb"
+  ],
+  "environment": "PYTHONPATH=.:/tmp/pch-kernel",
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "passed": 50,
+  "batch_tests": 10,
+  "regressions": 40,
+  "stdout_json_matches_notebook": true,
+  "ci": "not run",
+  "numeric_checks": "点击简并误差 <1e-13，双衰减重建最大误差 <1e-10；单光子双击数值残差为 1.11e-16。"
+}

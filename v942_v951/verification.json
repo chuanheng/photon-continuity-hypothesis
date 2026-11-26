@@ -1,0 +1,27 @@
+{
+  "source_parent_sha": "e84f412f649a0ce3a6067343769b09536fe6985c",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1",
+  "phase_seed": 939940,
+  "additional_random_draws": 0,
+  "commands": [
+    "python -m v942_v951.model",
+    "python -m unittest -q v942_v951.test_model v932_v941.test_audit v932_v941.test_model v922_v931.test_model v912_v921.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v942_v951/reproduce.ipynb"
+  ],
+  "environment": "PYTHONPATH=.:/tmp/pch-kernel",
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "passed": 40,
+  "batch_tests": 10,
+  "regressions": 30,
+  "stdout_json_matches_notebook": true,
+  "ci": "not run",
+  "numeric_checks": "有限参考泊松尾 <1e-14；与 N=60 截断差 <1e-13。离散相位用单位根直接求和交叉验证。抖动以自适应积分复核。\n开发期首跑 40 项中 1 项因理论零矩阵元 2.2e-36 的相对误差失败，删除冗余对称比较，保留直接保真度断言。"
+}

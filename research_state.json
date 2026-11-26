@@ -3,15 +3,15 @@
   "project": "Photon Continuity Hypothesis",
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
-  "reviewed_on": "2026-11-26",
+  "reviewed_on": "2026-11-27",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "51075f22f27868ae3136169b973e76277f1b6540",
-  "latest_completed_version": "v9.41",
-  "latest_completed_version_evidence": "v932_v941/README.md",
+  "research_base_commit_sha": "e84f412f649a0ce3a6067343769b09536fe6985c",
+  "latest_completed_version": "v9.51",
+  "latest_completed_version_evidence": "v942_v951/README.md",
   "next_batch": {
-    "first_version": "v9.42",
-    "last_version": "v9.51",
-    "first_unfinished_version": "v9.42",
+    "first_version": "v9.52",
+    "last_version": "v9.61",
+    "first_unfinished_version": "v9.52",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -671,6 +671,14 @@
       "index": "v932_v941/README.md",
       "verification": "v932_v941/verification.json",
       "notebook": "v932_v941/reproduce.ipynb"
+    },
+    {
+      "first_version": "v9.42",
+      "last_version": "v9.51",
+      "source_parent_sha": "e84f412f649a0ce3a6067343769b09536fe6985c",
+      "index": "v942_v951/README.md",
+      "verification": "v942_v951/verification.json",
+      "notebook": "v942_v951/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -685,8 +693,8 @@
     "open_questions": [
       {
         "versions": [
-          "v9.42",
-          "v9.51"
+          "v9.52",
+          "v9.61"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -958,9 +966,40 @@
       "passed": 70,
       "exit_code": 0,
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
+    },
+    "latest_checkpoint": {
+      "source_parent_sha": "e84f412f649a0ce3a6067343769b09536fe6985c",
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "ipykernel": "7.4.0",
+      "nbformat": "5.11.1",
+      "phase_seed": 939940,
+      "additional_random_draws": 0,
+      "commands": [
+        "python -m v942_v951.model",
+        "python -m unittest -q v942_v951.test_model v932_v941.test_audit v932_v941.test_model v922_v931.test_model v912_v921.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v942_v951/reproduce.ipynb"
+      ],
+      "environment": "PYTHONPATH=.:/tmp/pch-kernel",
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "passed": 40,
+      "batch_tests": 10,
+      "regressions": 30,
+      "stdout_json_matches_notebook": true,
+      "ci": "not run",
+      "numeric_checks": "有限参考泊松尾 <1e-14；与 N=60 截断差 <1e-13。离散相位用单位根直接求和交叉验证。抖动以自适应积分复核。\n开发期首跑 40 项中 1 项因理论零矩阵元 2.2e-36 的相对误差失败，删除冗余对称比较，保留直接保真度断言。"
     }
   },
   "commit_history": [
+    {
+      "sha": "e84f412f649a0ce3a6067343769b09536fe6985c",
+      "role": "verified remote parent"
+    },
     {
       "sha": "51075f22f27868ae3136169b973e76277f1b6540",
       "role": "verified partial v9.32"
@@ -1231,7 +1270,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "ead693c5a36624454ac4e707068757ad96b3151d",
+  "previous_research_base_commit_sha": "51075f22f27868ae3136169b973e76277f1b6540",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1239,9 +1278,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "51075f22f27868ae3136169b973e76277f1b6540",
-    "source_latest_completed_version": "v9.31",
-    "source_first_unfinished_version": "v9.33"
+    "source_main_sha": "e84f412f649a0ce3a6067343769b09536fe6985c",
+    "source_latest_completed_version": "v9.41",
+    "source_first_unfinished_version": "v9.42"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

@@ -125,3 +125,5 @@ Replace the uncollided-only baseline with cross-section-based transport; include
 - NIST, X-Ray Mass Attenuation Coefficients: https://physics.nist.gov/PhysRefData/XrayMassCoef/chap2.html
 - NIST, Aluminum (Z=13): https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z13.html
 - NIST, XCOM: https://www.nist.gov/pml/xcom-photon-cross-sections-database
+
+[v9.42–v9.51](../v942_v951/README.md)　给定 v9.41 的六种相干振幅，一个与信号共用未知整体相位的有限参考已足以构造测量后重发策略。平均参考光子数约 0.23268 时，按总光子数分块的倒易测量可达到每脉冲 9.3% 成功率及单位条件偏振保真度。此值是具体接收器的充分资源。实际波片光程、参考可访问性和逐脉冲相位均待核实。原论文给出的反射脉冲偏振保真度与控制光信息不足以确定这六个全局相位。没有永久身份独有的可观测量。

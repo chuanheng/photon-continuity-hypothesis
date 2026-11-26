@@ -1,5 +1,7 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
+[Two-time instrument audit](../v892_v901/manuscript_zh.md): an ordinary phase bit reproduces the joint weak-measurement records.
+
 [v8.82–v8.91 explicit label-Hamiltonian audit](../v882_v891/README.md) constructs an energy-conserving dispersive label coupling. Its Ramsey signal is exactly reproduced by ordinary detuning; a symmetric excitation-exchange coupling is the standard two-mode exchange, and label-induced dephasing is exactly a standard phase channel. The tested nine-time curve has zero candidate–ordinary separation.
 
 [v8.72–v8.81 operational audit of permanent identity labels](../v872_v881/README.md) shows that an uncoupled label is invisible to all accessible measurements even when global label states are orthogonal. Coupling makes the label visible, but the same accessible channel has an ordinary internal-mode or environmental dilation. No identity-exclusive prediction or real experimental evidence was obtained.

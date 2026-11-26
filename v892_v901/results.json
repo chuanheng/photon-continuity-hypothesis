@@ -1,0 +1,30 @@
+{
+  "v8.92": {
+    "count": {
+      "rank": 2,
+      "projection_norm": 0.0,
+      "probability_plus": [
+        0.5,
+        0.5
+      ]
+    },
+    "ramsey": {
+      "rank": 3,
+      "projection_norm": 1.0000000000000002,
+      "probability_plus": [
+        1.0,
+        0.0
+      ]
+    }
+  },
+  "resolved_tv": 1.0,
+  "discarded_tv": 0.0,
+  "weak_tv": 0.6000000000000001,
+  "reset_cov": 0.0,
+  "telegraph_tv": 0.5000000000000001,
+  "revival": 0.9999999999999998,
+  "echo_gain": 0.5000000000000001,
+  "readout_tv": 0.4900000000000001,
+  "loss_tv": 0.4000000000000001,
+  "ordinary_error": 2.9309887850104134e-16
+}

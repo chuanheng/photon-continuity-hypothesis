@@ -1,1 +1,58 @@
-{"source":"625c9f3d1a01df7f61b7b1796c20e6c3a343183c","completed":["v8.92"],"pending":"v8.93-v9.01","next":"add intermediate instruments and compare unconditional versus outcome-resolved reachable effects","python":"3.12.14","numpy":"2.3.5","scipy":"1.17.0","seeds":[],"model":"python -m v892_v901.model","model_exit":0,"tests":"python -m unittest -q v892_v901.test_model v882_v891.test_model","tests_exit":0,"passed":12,"batch_notebook":"pending","results":{"count":{"rank":2,"projection_norm":0.0,"probability_plus":[0.5,0.5]},"ramsey":{"rank":3,"projection_norm":1.0000000000000002,"probability_plus":[1,0]}},"baseline_exact_compare":"v8.89 swap probability differs by 4.2e-17; other recorded fields equal"}
+{
+  "prior": {
+    "source": "625c9f3d1a01df7f61b7b1796c20e6c3a343183c",
+    "completed": [
+      "v8.92"
+    ],
+    "pending": "v8.93-v9.01",
+    "next": "add intermediate instruments and compare unconditional versus outcome-resolved reachable effects",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "seeds": [],
+    "model": "python -m v892_v901.model",
+    "model_exit": 0,
+    "tests": "python -m unittest -q v892_v901.test_model v882_v891.test_model",
+    "tests_exit": 0,
+    "passed": 12,
+    "batch_notebook": "pending",
+    "results": {
+      "count": {
+        "rank": 2,
+        "projection_norm": 0,
+        "probability_plus": [
+          0.5,
+          0.5
+        ]
+      },
+      "ramsey": {
+        "rank": 3,
+        "projection_norm": 1.0000000000000002,
+        "probability_plus": [
+          1,
+          0
+        ]
+      }
+    },
+    "baseline_exact_compare": "v8.89 swap probability differs by 4.2e-17; other recorded fields equal"
+  },
+  "parent": "bae7e25cfdf4c5d3487df948d84967f30b2b4f4d",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seeds": [],
+  "commands": [
+    "python -m v892_v901.instruments",
+    "python -m unittest -q v892_v901.test_instruments v892_v901.test_model v882_v891.test_model v872_v881.test_model v862_v871.test_model v852_v861.test_model v842_v851.test_model",
+    "PYTHONPATH=.:/tmp/pch-nb python tools/execute_research_notebook.py v892_v901/reproduce.ipynb"
+  ],
+  "exits": [
+    0,
+    0,
+    0
+  ],
+  "passed": 61,
+  "new_batch_tests": 11,
+  "regression": 50,
+  "ci": "not run"
+}

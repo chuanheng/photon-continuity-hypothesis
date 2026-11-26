@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "44402f797e5a1fa52b5f230b32349b37ebd42ff6",
-  "latest_completed_version": "v10.91",
-  "latest_completed_version_evidence": "v1082_v1091/README.md",
+  "research_base_commit_sha": "88810623ea73e154d64944d509cb909df2200b63",
+  "latest_completed_version": "v11.01",
+  "latest_completed_version_evidence": "v1092_v1101/README.md",
   "next_batch": {
-    "first_version": "v10.92",
-    "last_version": "v11.01",
-    "first_unfinished_version": "v10.92",
+    "first_version": "v11.02",
+    "last_version": "v11.11",
+    "first_unfinished_version": "v11.02",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -791,6 +791,14 @@
       "index": "v1082_v1091/README.md",
       "verification": "v1082_v1091/verification.json",
       "notebook": "v1082_v1091/reproduce.ipynb"
+    },
+    {
+      "first_version": "v10.92",
+      "last_version": "v11.01",
+      "source_parent_sha": "88810623ea73e154d64944d509cb909df2200b63",
+      "index": "v1092_v1101/README.md",
+      "verification": "v1092_v1101/verification.json",
+      "notebook": "v1092_v1101/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -805,8 +813,8 @@
     "open_questions": [
       {
         "versions": [
-          "v10.92",
-          "v11.01"
+          "v11.02",
+          "v11.11"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -1059,14 +1067,14 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "parent": "44402f797e5a1fa52b5f230b32349b37ebd42ff6",
+      "parent": "88810623ea73e154d64944d509cb909df2200b63",
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
       "commands": [
-        "python -m v1082_v1091.audit",
-        "python -m unittest -q v1082_v1091.test_audit v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1082_v1091/reproduce.ipynb"
+        "python -m v1092_v1101.model",
+        "python -m unittest -q v1082_v1091.test_audit v1092_v1101.test_model v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1092_v1101/reproduce.ipynb"
       ],
       "exit_codes": [
         0,
@@ -1074,31 +1082,11 @@
         0
       ],
       "batch_tests": 10,
-      "regressions": 20,
-      "passed": 30,
-      "seed": 10871091,
+      "regressions": 30,
+      "passed": 40,
+      "seed": null,
       "method": "fixed model inputs; seed for explicitly randomized holdout only",
       "github_actions": "not run",
-      "prior_partial": {
-        "parent": "63636a726b7a41df2968257a7ee686fcc0999e53",
-        "python": "3.12.14",
-        "numpy": "2.3.5",
-        "scipy": "1.17.0",
-        "commands": [
-          "python -m v1082_v1091.model",
-          "python -m unittest -q v1052_v1061.test_audit v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model v1052_v1061.test_model v1042_v1051.test_model v1032_v1041.test_model"
-        ],
-        "exit_codes": [
-          0,
-          0
-        ],
-        "batch_tests": 5,
-        "regressions": 50,
-        "passed": 55,
-        "seed": null,
-        "method": "deterministic exact enumeration and matrix calculations; no random input",
-        "github_actions": "not run"
-      },
       "environment": "OPENBLAS_NUM_THREADS=1 PYTHONPATH=.:/tmp/kernel",
       "nbformat": "5.11.1",
       "ipykernel": "7.4.0",
@@ -1117,14 +1105,14 @@
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     },
     "latest_checkpoint": {
-      "parent": "44402f797e5a1fa52b5f230b32349b37ebd42ff6",
+      "parent": "88810623ea73e154d64944d509cb909df2200b63",
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
       "commands": [
-        "python -m v1082_v1091.audit",
-        "python -m unittest -q v1082_v1091.test_audit v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1082_v1091/reproduce.ipynb"
+        "python -m v1092_v1101.model",
+        "python -m unittest -q v1082_v1091.test_audit v1092_v1101.test_model v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1092_v1101/reproduce.ipynb"
       ],
       "exit_codes": [
         0,
@@ -1132,31 +1120,11 @@
         0
       ],
       "batch_tests": 10,
-      "regressions": 20,
-      "passed": 30,
-      "seed": 10871091,
+      "regressions": 30,
+      "passed": 40,
+      "seed": null,
       "method": "fixed model inputs; seed for explicitly randomized holdout only",
       "github_actions": "not run",
-      "prior_partial": {
-        "parent": "63636a726b7a41df2968257a7ee686fcc0999e53",
-        "python": "3.12.14",
-        "numpy": "2.3.5",
-        "scipy": "1.17.0",
-        "commands": [
-          "python -m v1082_v1091.model",
-          "python -m unittest -q v1052_v1061.test_audit v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model v1052_v1061.test_model v1042_v1051.test_model v1032_v1041.test_model"
-        ],
-        "exit_codes": [
-          0,
-          0
-        ],
-        "batch_tests": 5,
-        "regressions": 50,
-        "passed": 55,
-        "seed": null,
-        "method": "deterministic exact enumeration and matrix calculations; no random input",
-        "github_actions": "not run"
-      },
       "environment": "OPENBLAS_NUM_THREADS=1 PYTHONPATH=.:/tmp/kernel",
       "nbformat": "5.11.1",
       "ipykernel": "7.4.0",
@@ -1164,6 +1132,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "88810623ea73e154d64944d509cb909df2200b63",
+      "role": "verified main parent"
+    },
     {
       "sha": "44402f797e5a1fa52b5f230b32349b37ebd42ff6",
       "role": "verified main parent"
@@ -1510,7 +1482,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "63636a726b7a41df2968257a7ee686fcc0999e53",
+  "previous_research_base_commit_sha": "44402f797e5a1fa52b5f230b32349b37ebd42ff6",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1518,9 +1490,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "44402f797e5a1fa52b5f230b32349b37ebd42ff6",
-    "source_latest_completed_version": "v10.81",
-    "source_first_unfinished_version": "v10.87"
+    "source_main_sha": "88810623ea73e154d64944d509cb909df2200b63",
+    "source_latest_completed_version": "v10.91",
+    "source_first_unfinished_version": "v10.92"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

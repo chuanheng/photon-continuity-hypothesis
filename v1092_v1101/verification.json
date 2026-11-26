@@ -1,0 +1,26 @@
+{
+  "parent": "88810623ea73e154d64944d509cb909df2200b63",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "commands": [
+    "python -m v1092_v1101.model",
+    "python -m unittest -q v1082_v1091.test_audit v1092_v1101.test_model v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v1092_v1101/reproduce.ipynb"
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "batch_tests": 10,
+  "regressions": 30,
+  "passed": 40,
+  "seed": null,
+  "method": "fixed model inputs; seed for explicitly randomized holdout only",
+  "github_actions": "not run",
+  "environment": "OPENBLAS_NUM_THREADS=1 PYTHONPATH=.:/tmp/kernel",
+  "nbformat": "5.11.1",
+  "ipykernel": "7.4.0",
+  "notebook_matches": true
+}

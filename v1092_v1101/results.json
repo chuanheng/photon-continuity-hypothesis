@@ -1,0 +1,49 @@
+{
+  "order_flag": {
+    "posterior_F": 0.375,
+    "no_record": 0.25,
+    "full_tag": 1.0
+  },
+  "parity_only": {
+    "Fe": 0.5,
+    "Z_letter": 1.0,
+    "X_letter": 0.5
+  },
+  "imperfect_marker": {
+    "overlap": 0.6,
+    "optimal_Fe": 0.9
+  },
+  "unambiguous": {
+    "accepted": 0.4,
+    "conditional_Fe": 1.0,
+    "filled_Fe": 0.7
+  },
+  "repeat_read": {
+    "both_wrong_independent": 0.0225,
+    "both_wrong_shared": 0.15,
+    "accepted_independent": 0.7449999999999999,
+    "conditional_independent": 0.0302013422818792
+  },
+  "basis_choice": {
+    "projective_Fe": 0.5,
+    "error_basis_Fe": 0.9999999999999998
+  },
+  "nonunital": {
+    "shift": 0.3599999999999999,
+    "best_count_unitary_Fe": 0.9
+  },
+  "heralded_inverse": {
+    "success": 0.6400000000000001,
+    "reverse_error": 0.0
+  },
+  "missing_tags": {
+    "F": 0.79,
+    "certify_threshold": 0.3333333333333333
+  },
+  "heldout": {
+    "Fe": 0.76,
+    "Z_noise_z": 1.0,
+    "Z_noise_x": 0.76,
+    "isotropic_survival": 0.84
+  }
+}

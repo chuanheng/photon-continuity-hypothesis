@@ -1,0 +1,16 @@
+{
+  "classical": 0.75,
+  "qubit": 0.8535533905932737,
+  "biased_classical": 0.9,
+  "biased_quantum": 0.9123105625617661,
+  "tilted": 0.8415063509461098,
+  "dephase": 0.7795084971874737,
+  "damping": 0.756124969497314,
+  "postselected": 1.0,
+  "acceptance": 0.5,
+  "leak_fraction": 0.4142135623730949,
+  "critical": 165,
+  "alpha": 0.007288408611681759,
+  "power": 0.8909150613820933,
+  "swap_error": 0.0
+}

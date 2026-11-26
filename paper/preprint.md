@@ -1,5 +1,7 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
+[v9.11 双输入随机读出的记忆容量](../v902_v911/README.md) 均匀延迟查询下，一位经典记忆的成功率至多 0.75，普通双轨量子态给出 0.853553。理想材料存储逐格复现八个条件概率。限定维数能检验可用记忆资源，现有协议对永久身份的物理归因仍未决。
+
 [Two-time instrument audit](../v892_v901/manuscript_zh.md): an ordinary phase bit reproduces the joint weak-measurement records.
 
 [v8.82–v8.91 explicit label-Hamiltonian audit](../v882_v891/README.md) constructs an energy-conserving dispersive label coupling. Its Ramsey signal is exactly reproduced by ordinary detuning; a symmetric excitation-exchange coupling is the standard two-mode exchange, and label-induced dephasing is exactly a standard phase channel. The tested nine-time curve has zero candidate–ordinary separation.

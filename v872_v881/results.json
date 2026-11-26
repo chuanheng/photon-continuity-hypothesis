@@ -1,0 +1,13 @@
+{
+  "seed": 872881,
+  "v8.72": {"global_trace_distance": 1.0, "accessible_trace_distance": 0.0},
+  "v8.73": {"label_only_accessible_change": 0.0},
+  "v8.74": {"random_factorized_accessible_distance": 0.0, "unitarity_error": 5.778075498836611e-17},
+  "v8.75": {"coupled_accessible_trace_distance": 1.0, "coupling_unitarity_error": 0.0},
+  "v8.76": {"candidate_ordinary_max_difference": 0.0},
+  "v8.77": {"labeled_assignment_distance": 1.0, "accessible_occupation_distance": 0.0},
+  "v8.78": {"replacement_output_distance": 0.0, "choi_rank": 2, "choi_trace": 1.0},
+  "v8.79": {"candidate_vs_ordinary_memory_tv": 0.0, "candidate_vs_memoryless_tv": 0.5},
+  "v8.80": {"finite_control_max_difference": 0.0, "candidate_table": [[0.8, 0.2], [0.3, 0.7]]},
+  "v8.81": {"restricted_ordinary_distance": 0.08164965809277254, "expanded_ordinary_distance": 5.095246377785861e-16, "required_claim_elements": ["defined label Hilbert space", "specified accessible coupling", "conservation-compatible dilation", "preregistered sign and magnitude", "positive distance from a complete ordinary family"]}
+}

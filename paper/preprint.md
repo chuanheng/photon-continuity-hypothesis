@@ -1,5 +1,7 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
+[v8.72–v8.81 operational audit of permanent identity labels](../v872_v881/README.md) shows that an uncoupled label is invisible to all accessible measurements even when global label states are orthogonal. Coupling makes the label visible, but the same accessible channel has an ordinary internal-mode or environmental dilation. No identity-exclusive prediction or real experimental evidence was obtained.
+
 [v8.62–v8.71 correlated calibration, swaps and drift controls](../v862_v871/README.md) finds that cellwise marginal errors do not determine cross-ratio uncertainty. A matched reference restores rank only under shared-response assumptions; physical exchange removes exchange-even interactions but not exchange-odd ordinary responses. A full-rank protocol therefore needs a matched reference, physical detector-role exchange, interleaved blank drift monitoring and a preregistered held-out prediction.
 
 [v8.52–v8.61 independent directional calibration](../v852_v861/README.md) shows that the candidate column and an ordinary energy-by-direction response column are identical for the published four-cell observable. An alternating per-cell log-response of 0.0742 exactly refits the central contrast.

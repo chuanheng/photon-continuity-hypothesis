@@ -1,0 +1,45 @@
+{
+  "alias": {
+    "clicks": [
+      0.136,
+      0.136
+    ],
+    "occupancies": [
+      0.3,
+      0
+    ]
+  },
+  "spectral": {
+    "measured": [
+      0.48410000000000003,
+      0.5398000000000001
+    ],
+    "individual_lower": [
+      0.0,
+      0.3980000000000007
+    ],
+    "individual_upper": [
+      0.6747058823529412,
+      0.8691304347826089
+    ]
+  },
+  "joint": {
+    "interval": [
+      0.4254938670109751,
+      0.6500000000000001
+    ],
+    "intersection": [
+      0.3980000000000007,
+      0.6747058823529412
+    ]
+  },
+  "angle_error": {
+    "residual": 0.0599640064794446,
+    "worst_population_bias": 0.014991001619861149
+  },
+  "unequal_duty": {
+    "raw_max_bias": 0.015000000000000015,
+    "weighted_phase_coefficient": 0.06000000000000005,
+    "balanced_coeff": 0.0
+  }
+}

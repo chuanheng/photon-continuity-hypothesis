@@ -4,16 +4,31 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
-  "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "1a9203afacd66dd880e7f83a531366746602df6a",
+  "checkpoint_kind": "partial_batch",
+  "research_base_commit_sha": "6114620deb0990d95e1d648695ceaf8561a90e55",
   "latest_completed_version": "v10.51",
   "latest_completed_version_evidence": "v1042_v1051/README.md",
   "next_batch": {
     "first_version": "v10.52",
     "last_version": "v10.61",
-    "first_unfinished_version": "v10.52",
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md"
+    "first_unfinished_version": "v10.57",
+    "status": "partial",
+    "roadmap": "docs/research_roadmap.md",
+    "completed_rounds": [
+      "v10.52",
+      "v10.53",
+      "v10.54",
+      "v10.55",
+      "v10.56"
+    ],
+    "remaining": [
+      "v10.57",
+      "v10.58",
+      "v10.59",
+      "v10.60",
+      "v10.61"
+    ],
+    "verification": "v1052_v1061/verification.json"
   },
   "completed_batches": [
     {
@@ -773,10 +788,10 @@
     "open_questions": [
       {
         "versions": [
-          "v10.52",
+          "v10.57",
           "v10.61"
         ],
-        "status": "planned",
+        "status": "partial",
         "roadmap": "docs/research_roadmap.md"
       }
     ],
@@ -1089,9 +1104,33 @@
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
       "environment": "OPENBLAS_NUM_THREADS=1 PYTHONPATH=.:/tmp/kernel"
+    },
+    "partial_checkpoint": {
+      "parent": "6114620deb0990d95e1d648695ceaf8561a90e55",
+      "commands": [
+        "python -m v1052_v1061.model",
+        "python -m unittest -q v1052_v1061.test_model v1042_v1051.test_model v1032_v1041.test_model v1022_v1031.test_model v1012_v1021.test_model v1002_v1011.test_model"
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "passed": 55,
+      "batch_tests": 5,
+      "regressions": 50,
+      "seed": null,
+      "inputs": "deterministic formulas, no random draws",
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "github_actions": "not run"
     }
   },
   "commit_history": [
+    {
+      "sha": "6114620deb0990d95e1d648695ceaf8561a90e55",
+      "role": "remote verified parent"
+    },
     {
       "sha": "1a9203afacd66dd880e7f83a531366746602df6a",
       "role": "remote verified parent"
@@ -1414,7 +1453,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "d3a63eeb40e0f076a7068ea64e1d5ab175456967",
+  "previous_research_base_commit_sha": "1a9203afacd66dd880e7f83a531366746602df6a",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1422,9 +1461,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "1a9203afacd66dd880e7f83a531366746602df6a",
-    "source_latest_completed_version": "v10.41",
-    "source_first_unfinished_version": "v10.42"
+    "source_main_sha": "6114620deb0990d95e1d648695ceaf8561a90e55",
+    "source_latest_completed_version": "v10.51",
+    "source_first_unfinished_version": "v10.52"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

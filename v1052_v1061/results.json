@@ -1,45 +1,73 @@
 {
-  "alias": {
-    "clicks": [
-      0.136,
-      0.136
+  "prefix": {
+    "alias": {
+      "clicks": [
+        0.136,
+        0.136
+      ],
+      "occupancies": [
+        0.3,
+        0
+      ]
+    },
+    "spectral": {
+      "measured": [
+        0.48410000000000003,
+        0.5398000000000001
+      ],
+      "individual_lower": [
+        0.0,
+        0.3980000000000007
+      ],
+      "individual_upper": [
+        0.6747058823529412,
+        0.8691304347826089
+      ]
+    },
+    "joint": {
+      "interval": [
+        0.4254938670109751,
+        0.6500000000000001
+      ],
+      "intersection": [
+        0.3980000000000007,
+        0.6747058823529412
+      ]
+    },
+    "angle_error": {
+      "residual": 0.0599640064794446,
+      "worst_population_bias": 0.014991001619861149
+    },
+    "unequal_duty": {
+      "raw_max_bias": 0.015000000000000015,
+      "weighted_phase_coefficient": 0.06000000000000005,
+      "balanced_coeff": 0.0
+    }
+  },
+  "mixing": {
+    "bias": [
+      -0.079659103307123,
+      0.07965910330712297
     ],
-    "occupancies": [
-      0.3,
-      0
+    "transfer": 0.02538229095877957
+  },
+  "axis_interval": [
+    0.5411363762352417,
+    0.6957981717749089
+  ],
+  "third_effect": {
+    "center_occupation": 0.5377469335054876,
+    "range": [
+      0.2758201819808345,
+      0.3641798180191655
     ]
   },
-  "spectral": {
-    "measured": [
-      0.48410000000000003,
-      0.5398000000000001
-    ],
-    "individual_lower": [
-      0.0,
-      0.3980000000000007
-    ],
-    "individual_upper": [
-      0.6747058823529412,
-      0.8691304347826089
-    ]
+  "schedule": {
+    "blocked_norm": 1.4142135623730951,
+    "blind_norm": 0.7071067811865476
   },
-  "joint": {
-    "interval": [
-      0.4254938670109751,
-      0.6500000000000001
-    ],
-    "intersection": [
-      0.3980000000000007,
-      0.6747058823529412
-    ]
-  },
-  "angle_error": {
-    "residual": 0.0599640064794446,
-    "worst_population_bias": 0.014991001619861149
-  },
-  "unequal_duty": {
-    "raw_max_bias": 0.015000000000000015,
-    "weighted_phase_coefficient": 0.06000000000000005,
-    "balanced_coeff": 0.0
+  "conditional_probe": {
+    "max_error": 0.0,
+    "largest_deviation": 0.48486479915743996
   }
 }

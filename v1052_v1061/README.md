@@ -5,7 +5,12 @@
 - [v10.54　两个监测器共用同一非材料态，能否再缩紧界](v1054_zh.md)
 - [v10.55　相位踢动偏离 π 时，双模反演的最坏误差有多大](v1055_zh.md)
 - [v10.56　两个相位设置曝光不等时，怎样合并点击率](v1056_zh.md)
+- [v10.57　相位循环若混入旁模旋转，占据估计会偏多少](v1057_zh.md)
+- [v10.58　不确定测量轴如何转换成真实占据区间](v1058_zh.md)
+- [v10.59　第三个非交换读出能否留出检验旁模模型](v1059_zh.md)
+- [v10.60　测量顺序与制备漂移关联时能否伪造超出圆盘的读出](v1060_zh.md)
+- [v10.61　身份耦合若产生条件探针相位，普通材料能否精确重拟合](v1061_zh.md)
 
-中间操作及可观测记忆见 [Pollock 等原文](https://pubmed.ncbi.nlm.nih.gov/29437441/)，外部记录模型见 [Dalibard 等](https://doi.org/10.1103/PhysRevLett.68.580)。本部分采用标准量子效果与 Bloch 球的凸性。
+测量轴偏差的已知系统误差背景见 [Rosset 等原文](https://doi.org/10.1103/PhysRevA.86.062325)；操作及可见记忆背景见 [Pollock 等](https://pubmed.ncbi.nlm.nih.gov/29437441/)。
 
-[源码](model.py) · [数值](results.json) · [运行记录](verification.json)
+[模型](audit.py) · [结果](results.json) · [运行记录](verification.json) · [已执行笔记本](reproduce.ipynb) · [审稿](referee_zh.md) · [修订](manuscript_zh.md)

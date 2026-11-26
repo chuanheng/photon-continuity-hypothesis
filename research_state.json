@@ -4,16 +4,20 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-26",
-  "checkpoint_kind": "complete_batch",
+  "checkpoint_kind": "partial_batch",
   "research_base_commit_sha": "ead693c5a36624454ac4e707068757ad96b3151d",
   "latest_completed_version": "v9.31",
   "latest_completed_version_evidence": "v922_v931/README.md",
   "next_batch": {
     "first_version": "v9.32",
     "last_version": "v9.41",
-    "first_unfinished_version": "v9.32",
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md"
+    "first_unfinished_version": "v9.33",
+    "status": "partial",
+    "roadmap": "docs/research_roadmap.md",
+    "completed_versions": [
+      "v9.32"
+    ],
+    "partial_record": "v932_v941/verification.json"
   },
   "completed_batches": [
     {
@@ -1244,5 +1248,6 @@
       "f8dd632",
       "31dd2bbb4f8f99880b8f692cfa2a45dee2fb1a06"
     ]
-  }
+  },
+  "partial_source_sha": "ffbd5121da0ff18e5ce98f103208e4f20a99451e"
 }

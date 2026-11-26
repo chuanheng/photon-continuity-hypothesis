@@ -1,0 +1,32 @@
+{
+  "parent": "ffbd5121da0ff18e5ce98f103208e4f20a99451e",
+  "seeds": [],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "commands": [
+    "python -m v932_v941.model",
+    "python -m unittest -q v932_v941.test_model v922_v931.test_model"
+  ],
+  "exits": [
+    0,
+    0
+  ],
+  "passed": 11,
+  "results": {
+    "equal": 0.9271666666666666,
+    "minimum": 0.909,
+    "minimizing_weights": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "margin": 0.05301638815080556,
+    "low_eff_margin": 0.04024727828945662
+  },
+  "pending": "v9.33-v9.41 and full notebook",
+  "next": "simultaneous intervals for six fidelities and phase-reference scope"
+}

@@ -1,21 +1,47 @@
 {
-  "source_parent_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
+  "parent": "ec8f2cc5fd25a0b36ec3bb7c43ad812871b06804",
   "commands": [
-    "python -m v962_v971.model",
-    "python -m unittest -q v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model"
+    "python -m v962_v971.selection",
+    "python -m unittest -q v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v962_v971/reproduce.ipynb"
   ],
-  "exit_codes": [
+  "exits": [
+    0,
     0,
     0
   ],
-  "passed": 32,
-  "batch_tests": 2,
-  "regressions": 30,
   "python": "3.12.14",
   "numpy": "2.3.5",
   "scipy": "1.17.0",
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1",
+  "environment": "PYTHONPATH=.:/tmp/pch-kernel",
   "seed": null,
-  "inputs": "deterministic; h=.093; kappa=1,1.5,2,4,8,32",
-  "max_lp_error": 1.1102230246251565e-16,
-  "ci": "not run"
+  "method": "fixed parameters; seed only for explicitly randomized checks",
+  "batch_tests": 10,
+  "regressions": 30,
+  "passed": 40,
+  "checks": "解析门值按 1e−7 回归，宽窗极限误差 <1e−8，普通旁路 Bell 返回误差 <1e−14。起始 v9.62–v9.63 模型输出逐字节重现，含上批回归 12 项通过。",
+  "github_actions": "not run",
+  "partial_record": {
+    "source_parent_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
+    "commands": [
+      "python -m v962_v971.model",
+      "python -m unittest -q v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model"
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "passed": 32,
+    "batch_tests": 2,
+    "regressions": 30,
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "seed": null,
+    "inputs": "deterministic; h=.093; kappa=1,1.5,2,4,8,32",
+    "max_lp_error": 1.1102230246251565e-16,
+    "ci": "not run"
+  }
 }

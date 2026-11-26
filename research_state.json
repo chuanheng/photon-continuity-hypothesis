@@ -4,31 +4,16 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
-  "checkpoint_kind": "partial_batch",
-  "research_base_commit_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
-  "latest_completed_version": "v9.61",
-  "latest_completed_version_evidence": "v952_v961/README.md",
+  "checkpoint_kind": "complete_batch",
+  "research_base_commit_sha": "ec8f2cc5fd25a0b36ec3bb7c43ad812871b06804",
+  "latest_completed_version": "v9.71",
+  "latest_completed_version_evidence": "v962_v971/README.md",
   "next_batch": {
-    "first_version": "v9.62",
-    "last_version": "v9.71",
-    "first_unfinished_version": "v9.64",
-    "status": "partial",
-    "roadmap": "docs/research_roadmap.md",
-    "completed_rounds": [
-      "v9.62",
-      "v9.63"
-    ],
-    "remaining": [
-      "v9.64",
-      "v9.65",
-      "v9.66",
-      "v9.67",
-      "v9.68",
-      "v9.69",
-      "v9.70",
-      "v9.71"
-    ],
-    "verification": "v962_v971/verification.json"
+    "first_version": "v9.72",
+    "last_version": "v9.81",
+    "first_unfinished_version": "v9.72",
+    "status": "planned",
+    "roadmap": "docs/research_roadmap.md"
   },
   "completed_batches": [
     {
@@ -702,6 +687,14 @@
       "index": "v952_v961/README.md",
       "verification": "v952_v961/verification.json",
       "notebook": "v952_v961/reproduce.ipynb"
+    },
+    {
+      "first_version": "v9.62",
+      "last_version": "v9.71",
+      "source_parent_sha": "ec8f2cc5fd25a0b36ec3bb7c43ad812871b06804",
+      "index": "v962_v971/README.md",
+      "verification": "v962_v971/verification.json",
+      "notebook": "v962_v971/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -716,10 +709,10 @@
     "open_questions": [
       {
         "versions": [
-          "v9.64",
-          "v9.71"
+          "v9.72",
+          "v9.81"
         ],
-        "status": "partial_batch_remaining",
+        "status": "planned",
         "roadmap": "docs/research_roadmap.md"
       }
     ],
@@ -970,31 +963,51 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "source_parent_sha": "eaac05653d7130e036c60b7ed7f6c83efb5ce132",
+      "parent": "ec8f2cc5fd25a0b36ec3bb7c43ad812871b06804",
+      "commands": [
+        "python -m v962_v971.selection",
+        "python -m unittest -q v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v962_v971/reproduce.ipynb"
+      ],
+      "exits": [
+        0,
+        0,
+        0
+      ],
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
-      "phase_seed": 939940,
-      "additional_random_draws": 0,
-      "commands": [
-        "python -m v952_v961.model",
-        "python -m unittest -q v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model v922_v931.test_model v912_v921.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v952_v961/reproduce.ipynb"
-      ],
       "environment": "PYTHONPATH=.:/tmp/pch-kernel",
-      "exit_codes": [
-        0,
-        0,
-        0
-      ],
-      "passed": 50,
+      "seed": null,
+      "method": "fixed parameters; seed only for explicitly randomized checks",
       "batch_tests": 10,
-      "regressions": 40,
-      "stdout_json_matches_notebook": true,
-      "ci": "not run",
-      "numeric_checks": "点击简并误差 <1e-13，双衰减重建最大误差 <1e-10；单光子双击数值残差为 1.11e-16。"
+      "regressions": 30,
+      "passed": 40,
+      "checks": "解析门值按 1e−7 回归，宽窗极限误差 <1e−8，普通旁路 Bell 返回误差 <1e−14。起始 v9.62–v9.63 模型输出逐字节重现，含上批回归 12 项通过。",
+      "github_actions": "not run",
+      "partial_record": {
+        "source_parent_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
+        "commands": [
+          "python -m v962_v971.model",
+          "python -m unittest -q v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model"
+        ],
+        "exit_codes": [
+          0,
+          0
+        ],
+        "passed": 32,
+        "batch_tests": 2,
+        "regressions": 30,
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "seed": null,
+        "inputs": "deterministic; h=.093; kappa=1,1.5,2,4,8,32",
+        "max_lp_error": 1.1102230246251565e-16,
+        "ci": "not run"
+      }
     },
     "latest_six_batches": {
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
@@ -1009,55 +1022,58 @@
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     },
     "latest_checkpoint": {
-      "source_parent_sha": "eaac05653d7130e036c60b7ed7f6c83efb5ce132",
+      "parent": "ec8f2cc5fd25a0b36ec3bb7c43ad812871b06804",
+      "commands": [
+        "python -m v962_v971.selection",
+        "python -m unittest -q v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v962_v971/reproduce.ipynb"
+      ],
+      "exits": [
+        0,
+        0,
+        0
+      ],
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
-      "phase_seed": 939940,
-      "additional_random_draws": 0,
-      "commands": [
-        "python -m v952_v961.model",
-        "python -m unittest -q v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model v922_v931.test_model v912_v921.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v952_v961/reproduce.ipynb"
-      ],
       "environment": "PYTHONPATH=.:/tmp/pch-kernel",
-      "exit_codes": [
-        0,
-        0,
-        0
-      ],
-      "passed": 50,
-      "batch_tests": 10,
-      "regressions": 40,
-      "stdout_json_matches_notebook": true,
-      "ci": "not run",
-      "numeric_checks": "点击简并误差 <1e-13，双衰减重建最大误差 <1e-10；单光子双击数值残差为 1.11e-16。"
-    },
-    "partial_checkpoint": {
-      "source_parent_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
-      "commands": [
-        "python -m v962_v971.model",
-        "python -m unittest -q v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model"
-      ],
-      "exit_codes": [
-        0,
-        0
-      ],
-      "passed": 32,
-      "batch_tests": 2,
-      "regressions": 30,
-      "python": "3.12.14",
-      "numpy": "2.3.5",
-      "scipy": "1.17.0",
       "seed": null,
-      "inputs": "deterministic; h=.093; kappa=1,1.5,2,4,8,32",
-      "max_lp_error": 1.1102230246251565e-16,
-      "ci": "not run"
+      "method": "fixed parameters; seed only for explicitly randomized checks",
+      "batch_tests": 10,
+      "regressions": 30,
+      "passed": 40,
+      "checks": "解析门值按 1e−7 回归，宽窗极限误差 <1e−8，普通旁路 Bell 返回误差 <1e−14。起始 v9.62–v9.63 模型输出逐字节重现，含上批回归 12 项通过。",
+      "github_actions": "not run",
+      "partial_record": {
+        "source_parent_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
+        "commands": [
+          "python -m v962_v971.model",
+          "python -m unittest -q v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model"
+        ],
+        "exit_codes": [
+          0,
+          0
+        ],
+        "passed": 32,
+        "batch_tests": 2,
+        "regressions": 30,
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "seed": null,
+        "inputs": "deterministic; h=.093; kappa=1,1.5,2,4,8,32",
+        "max_lp_error": 1.1102230246251565e-16,
+        "ci": "not run"
+      }
     }
   },
   "commit_history": [
+    {
+      "sha": "ec8f2cc5fd25a0b36ec3bb7c43ad812871b06804",
+      "role": "remote verified parent"
+    },
     {
       "sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
       "role": "remote verified v9.52-v9.61"
@@ -1340,7 +1356,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "eaac05653d7130e036c60b7ed7f6c83efb5ce132",
+  "previous_research_base_commit_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1348,9 +1364,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
+    "source_main_sha": "ec8f2cc5fd25a0b36ec3bb7c43ad812871b06804",
     "source_latest_completed_version": "v9.61",
-    "source_first_unfinished_version": "v9.62"
+    "source_first_unfinished_version": "v9.64"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

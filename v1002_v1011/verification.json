@@ -1,0 +1,26 @@
+{
+  "source_parent_sha": "72aaeec53bb187b54b79c8de108dd4247331b655",
+  "commands": [
+    "python -m v1002_v1011.model",
+    "python -m unittest -q v1002_v1011.test_model v992_v1001.test_correlation v992_v1001.test_model v982_v991.test_model v972_v981.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v1002_v1011/reproduce.ipynb"
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "passed": 40,
+  "batch_tests": 10,
+  "regressions": 30,
+  "seed": null,
+  "inputs": "deterministic; all parameter values in model and reports",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "nbformat": "5.11.1",
+  "ipykernel": "7.4.0",
+  "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
+  "ci": "not run",
+  "notebook_result_matches": true
+}

@@ -1,20 +1,46 @@
 {
-  "parent": "63636a726b7a41df2968257a7ee686fcc0999e53",
+  "parent": "44402f797e5a1fa52b5f230b32349b37ebd42ff6",
   "python": "3.12.14",
   "numpy": "2.3.5",
   "scipy": "1.17.0",
   "commands": [
-    "python -m v1082_v1091.model",
-    "python -m unittest -q v1052_v1061.test_audit v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model v1052_v1061.test_model v1042_v1051.test_model v1032_v1041.test_model"
+    "python -m v1082_v1091.audit",
+    "python -m unittest -q v1082_v1091.test_audit v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v1082_v1091/reproduce.ipynb"
   ],
   "exit_codes": [
     0,
+    0,
     0
   ],
-  "batch_tests": 5,
-  "regressions": 50,
-  "passed": 55,
-  "seed": null,
-  "method": "deterministic exact enumeration and matrix calculations; no random input",
-  "github_actions": "not run"
+  "batch_tests": 10,
+  "regressions": 20,
+  "passed": 30,
+  "seed": 10871091,
+  "method": "fixed model inputs; seed for explicitly randomized holdout only",
+  "github_actions": "not run",
+  "prior_partial": {
+    "parent": "63636a726b7a41df2968257a7ee686fcc0999e53",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "commands": [
+      "python -m v1082_v1091.model",
+      "python -m unittest -q v1052_v1061.test_audit v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model v1052_v1061.test_model v1042_v1051.test_model v1032_v1041.test_model"
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "batch_tests": 5,
+    "regressions": 50,
+    "passed": 55,
+    "seed": null,
+    "method": "deterministic exact enumeration and matrix calculations; no random input",
+    "github_actions": "not run"
+  },
+  "environment": "OPENBLAS_NUM_THREADS=1 PYTHONPATH=.:/tmp/kernel",
+  "nbformat": "5.11.1",
+  "ipykernel": "7.4.0",
+  "notebook_matches": true
 }

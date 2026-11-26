@@ -1,0 +1,12 @@
+{
+  "v8.52": {"log_cross_ratio": 0.2967961477741566, "cross_ratio": 1.3455409799649996, "contrast_vector": [1.0, -1.0, -1.0, 1.0]},
+  "v8.53": {"min_linf_log_bias": 0.07419903694353915, "symmetric_cell_multipliers": [1.0770211511622134, 0.9284868722595652, 0.9284868722595652, 1.0770211511622134]},
+  "v8.54": {"min_l2_log_bias": 0.1483980738870783, "min_l1_log_bias": 0.2967961477741566, "l2_solution": [0.07419903694353915, -0.07419903694353915, -0.07419903694353915, 0.07419903694353915]},
+  "v8.55": {"mode_gram": [[4.0, 0.0, 0.0, 0.0], [0.0, 4.0, 0.0, 0.0], [0.0, 0.0, 4.0, 0.0], [0.0, 0.0, 0.0, 4.0]], "contrast_on_common_detector_line": [0.0, 0.0, 0.0]},
+  "v8.56": {"interaction_projection": 0.2967961477741566, "ordinary_exact_refit": [-0.07419903694353915, 0.07419903694353915, 0.07419903694353915, -0.07419903694353915], "post_refit_contrast": 0.0},
+  "v8.57": {"per_cell_independent_log_sd_limit_95pct": 0.07571469427888645, "contrast_sd_at_limit": 0.1514293885577729},
+  "v8.58": {"poisson_counts_per_cell_95pct": 175, "poisson_contrast_sd": 0.15118578920369088},
+  "v8.59": {"science_log_sd_proxy": 0.46344495903614874, "combined_log_sd_at_calibration_limit": 0.48755726820036077, "observed_z_proxy": 0.6087411000346091},
+  "v8.60": {"candidate_ordinary_rank": 1, "candidate_column_equals_ordinary": true},
+  "v8.61": {"independent_reference_log_sd": 0.05, "science_minus_reference_sd": 0.46613434764670325, "two_sided_95pct_half_width": 0.9136065333446111, "falsification_requires_abs_difference_gt": 0.9136065333446111}
+}

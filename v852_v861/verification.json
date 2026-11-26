@@ -1,0 +1,15 @@
+{
+  "source_parent_sha": "221b6d0340f72aca19feba18588913d8ba87d900",
+  "run_date": "2026-11-26",
+  "runtime": {"python": "3.12.14", "numpy": "2.3.5", "scipy": "1.17.0", "ipykernel": "7.4.0", "nbformat": "5.11.1"},
+  "seeds": [],
+  "model_command": "python -m v852_v861.model",
+  "test_command": "python -m unittest -v v852_v861.test_model v842_v851.test_model v832_v841.test_model v822_v831.test_model v812_v821.test_model v802_v811.test_model",
+  "notebook_command": "python -Xfrozen_modules=off tools/execute_research_notebook.py v852_v861/reproduce.ipynb",
+  "exit_codes": {"model": 0, "tests": 0, "notebook": 0},
+  "tests_passed": 60,
+  "batch_tests": 10,
+  "regression_tests": 50,
+  "github_actions": "not run",
+  "legacy_suite": "not run"
+}

@@ -1,5 +1,7 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
+[v8.52–v8.61 independent directional calibration](../v852_v861/README.md) shows that the candidate column and an ordinary energy-by-direction response column are identical for the published four-cell observable. An alternating per-cell log-response of 0.0742 exactly refits the central contrast.
+
 [v8.51 复合符合选择](../v842_v851/README.md)　复合符合选择模型在共同能窗内的最大与最小响应之比为 2.1798。加权后交叉比为 1.340281，逆向修正后为 1.354362，基线为 1.345541。
 
 [v8.41 有限分辨率能窗](../v832_v841/README.md)　有限分辨率能窗模型在共同能窗内的最大与最小响应之比为 1.9091。加权后交叉比为 1.358593，逆向修正后为 1.331212，基线为 1.345541。

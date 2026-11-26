@@ -1,0 +1,21 @@
+{
+  "source_parent_sha": "8abdc8b4f13aa499ff3cecbe9394e94f61be8a6c",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seeds": [],
+  "commands": [
+    "python -m v912_v921.model",
+    "python -m unittest -q v912_v921.test_model v902_v911.test_model v892_v901.test_instruments v892_v901.test_model v882_v891.test_model v872_v881.test_model v862_v871.test_model",
+    "PYTHONPATH=.:/tmp/pch-nb python -Xfrozen_modules=off tools/execute_research_notebook.py v912_v921/reproduce.ipynb"
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "test_log": "----------------------------------------------------------------------\nRan 61 tests in 0.070s\n\nOK\n",
+  "ci": "not run",
+  "initial_test_exit": 1,
+  "correction": "v9.17 provisional expected range was wrong. Independent integration gives flat=1-1/(2(e-1)), selection gain 0.0920318."
+}

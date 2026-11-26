@@ -1,5 +1,7 @@
 # A Testable Toy Model for a Photon-Continuity and Discrete Energy-Transfer Hypothesis
 
+[v9.21 单原子光学记忆的有损经典基准](../v912_v921/README.md) 在平均一光子、9.3% 光子效率的设定下，重算连续纯态经典门槛为 80.1043%。已知六态可在恰五拷贝时无歧义判别，以约 0.1533% 效率达到单位条件保真度。其适用效率和真实工作点须分别评估。
+
 [v9.11 双输入随机读出的记忆容量](../v902_v911/README.md) 均匀延迟查询下，一位经典记忆的成功率至多 0.75，普通双轨量子态给出 0.853553。理想材料存储逐格复现八个条件概率。限定维数能检验可用记忆资源，现有协议对永久身份的物理归因仍未决。
 
 [Two-time instrument audit](../v892_v901/manuscript_zh.md): an ordinary phase bit reproduces the joint weak-measurement records.

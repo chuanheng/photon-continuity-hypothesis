@@ -1,0 +1,66 @@
+{
+  "local_phase": {
+    "high": 0.8380677910464576,
+    "low": 0.011932208953542356,
+    "visibility": 0.9719242142269593
+  },
+  "reciprocal": {
+    "roots": [
+      0.20000000000000007,
+      0.7999999999999999
+    ],
+    "minimum": 0.3600000000000001
+  },
+  "swapped": {
+    "max_error": 0.0,
+    "occupancies": [
+      0.25,
+      0.65
+    ]
+  },
+  "blocked_reference": {
+    "no_material": [
+      0.26249999999999996,
+      0.5249999999999999
+    ],
+    "estimated_x": 0.2500000000000001
+  },
+  "distinguishability": {
+    "D": 0.8,
+    "V": 0.6,
+    "quadratic_sum": 1.0
+  },
+  "eraser": {
+    "joints": [
+      0.4027303151059132,
+      0.02226968489408683
+    ],
+    "unconditional": 0.425
+  },
+  "conditional_phase": {
+    "slope": -3.6903389552322916,
+    "true_population": 0.25,
+    "selected_probability": 0.011932208953542356
+  },
+  "echo": {
+    "free": 0.2780373004531941,
+    "static_echo": 1.0,
+    "independent_echo": 0.5272924240430485
+  },
+  "crosstalk": {
+    "peak": 0.8380677910464575,
+    "minimum_common": 0.8380677910464575,
+    "relative": 0.7037694394434375
+  },
+  "scale_alias": {
+    "fringe_coefficients": [
+      0.54,
+      0.54
+    ],
+    "inferred_marker": [
+      0.5806451612903226,
+      0.6206896551724138
+    ],
+    "physical_phase_jitter": 0.4590436050264207
+  }
+}

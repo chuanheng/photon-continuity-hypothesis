@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "6f6a4a73c6ddaa063afee530f10a898b4b987ff1",
-  "latest_completed_version": "v10.21",
-  "latest_completed_version_evidence": "v1012_v1021/README.md",
+  "research_base_commit_sha": "4f6246216e40aa97fae67a1622d57f188958911c",
+  "latest_completed_version": "v10.31",
+  "latest_completed_version_evidence": "v1022_v1031/README.md",
   "next_batch": {
-    "first_version": "v10.22",
-    "last_version": "v10.31",
-    "first_unfinished_version": "v10.22",
+    "first_version": "v10.32",
+    "last_version": "v10.41",
+    "first_unfinished_version": "v10.32",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -735,6 +735,14 @@
       "index": "v1012_v1021/README.md",
       "verification": "v1012_v1021/verification.json",
       "notebook": "v1012_v1021/reproduce.ipynb"
+    },
+    {
+      "first_version": "v10.22",
+      "last_version": "v10.31",
+      "source_parent_sha": "4f6246216e40aa97fae67a1622d57f188958911c",
+      "index": "v1022_v1031/README.md",
+      "verification": "v1022_v1031/verification.json",
+      "notebook": "v1022_v1031/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -749,8 +757,8 @@
     "open_questions": [
       {
         "versions": [
-          "v10.22",
-          "v10.31"
+          "v10.32",
+          "v10.41"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -1003,30 +1011,30 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "source_parent_sha": "6f6a4a73c6ddaa063afee530f10a898b4b987ff1",
+      "parent": "4f6246216e40aa97fae67a1622d57f188958911c",
       "commands": [
-        "python -m v1012_v1021.model",
-        "python -m unittest -q v1012_v1021.test_model v1002_v1011.test_model v992_v1001.test_correlation v992_v1001.test_model v982_v991.test_model v972_v981.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1012_v1021/reproduce.ipynb"
+        "python -m v1022_v1031.model",
+        "python -m unittest -q v1022_v1031.test_model v1012_v1021.test_model v1002_v1011.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1022_v1031/reproduce.ipynb"
       ],
       "exit_codes": [
         0,
         0,
         0
       ],
-      "passed": 50,
+      "passed": 30,
       "batch_tests": 10,
-      "regressions": 40,
+      "regressions": 20,
       "seed": null,
-      "inputs": "deterministic; all parameter values in model and reports",
+      "inputs": "deterministic formulas, no random draws",
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "nbformat": "5.11.1",
+      "github_actions": "not run",
+      "notebook_matches": true,
       "ipykernel": "7.4.0",
-      "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
-      "ci": "not run",
-      "notebook_result_matches": true
+      "nbformat": "5.11.1",
+      "environment": "OPENBLAS_NUM_THREADS=1 PYTHONPATH=.:/tmp/kernel"
     },
     "latest_six_batches": {
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
@@ -1041,33 +1049,37 @@
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     },
     "latest_checkpoint": {
-      "source_parent_sha": "6f6a4a73c6ddaa063afee530f10a898b4b987ff1",
+      "parent": "4f6246216e40aa97fae67a1622d57f188958911c",
       "commands": [
-        "python -m v1012_v1021.model",
-        "python -m unittest -q v1012_v1021.test_model v1002_v1011.test_model v992_v1001.test_correlation v992_v1001.test_model v982_v991.test_model v972_v981.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1012_v1021/reproduce.ipynb"
+        "python -m v1022_v1031.model",
+        "python -m unittest -q v1022_v1031.test_model v1012_v1021.test_model v1002_v1011.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1022_v1031/reproduce.ipynb"
       ],
       "exit_codes": [
         0,
         0,
         0
       ],
-      "passed": 50,
+      "passed": 30,
       "batch_tests": 10,
-      "regressions": 40,
+      "regressions": 20,
       "seed": null,
-      "inputs": "deterministic; all parameter values in model and reports",
+      "inputs": "deterministic formulas, no random draws",
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "nbformat": "5.11.1",
+      "github_actions": "not run",
+      "notebook_matches": true,
       "ipykernel": "7.4.0",
-      "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
-      "ci": "not run",
-      "notebook_result_matches": true
+      "nbformat": "5.11.1",
+      "environment": "OPENBLAS_NUM_THREADS=1 PYTHONPATH=.:/tmp/kernel"
     }
   },
   "commit_history": [
+    {
+      "sha": "4f6246216e40aa97fae67a1622d57f188958911c",
+      "role": "remote verified parent"
+    },
     {
       "sha": "6f6a4a73c6ddaa063afee530f10a898b4b987ff1",
       "role": "verified parent on main"
@@ -1378,7 +1390,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "72aaeec53bb187b54b79c8de108dd4247331b655",
+  "previous_research_base_commit_sha": "6f6a4a73c6ddaa063afee530f10a898b4b987ff1",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1386,9 +1398,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "6f6a4a73c6ddaa063afee530f10a898b4b987ff1",
-    "source_latest_completed_version": "v10.11",
-    "source_first_unfinished_version": "v10.12"
+    "source_main_sha": "4f6246216e40aa97fae67a1622d57f188958911c",
+    "source_latest_completed_version": "v10.21",
+    "source_first_unfinished_version": "v10.22"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

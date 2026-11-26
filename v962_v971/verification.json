@@ -1,0 +1,21 @@
+{
+  "source_parent_sha": "0471ed56a1fb87415341647feb4fa759aedf78ac",
+  "commands": [
+    "python -m v962_v971.model",
+    "python -m unittest -q v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model"
+  ],
+  "exit_codes": [
+    0,
+    0
+  ],
+  "passed": 32,
+  "batch_tests": 2,
+  "regressions": 30,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seed": null,
+  "inputs": "deterministic; h=.093; kappa=1,1.5,2,4,8,32",
+  "max_lp_error": 1.1102230246251565e-16,
+  "ci": "not run"
+}

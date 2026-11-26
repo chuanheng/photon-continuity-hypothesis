@@ -4,16 +4,31 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
-  "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "48b08d466b5c2aeca333f495955e58329382883b",
+  "checkpoint_kind": "partial_batch",
+  "research_base_commit_sha": "63636a726b7a41df2968257a7ee686fcc0999e53",
   "latest_completed_version": "v10.81",
   "latest_completed_version_evidence": "v1072_v1081/README.md",
   "next_batch": {
     "first_version": "v10.82",
     "last_version": "v10.91",
-    "first_unfinished_version": "v10.82",
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md"
+    "first_unfinished_version": "v10.87",
+    "status": "partial",
+    "roadmap": "docs/research_roadmap.md",
+    "completed_rounds": [
+      "v10.82",
+      "v10.83",
+      "v10.84",
+      "v10.85",
+      "v10.86"
+    ],
+    "remaining": [
+      "v10.87",
+      "v10.88",
+      "v10.89",
+      "v10.90",
+      "v10.91"
+    ],
+    "verification": "v1082_v1091/verification.json"
   },
   "completed_batches": [
     {
@@ -797,10 +812,10 @@
     "open_questions": [
       {
         "versions": [
-          "v10.82",
+          "v10.87",
           "v10.91"
         ],
-        "status": "planned",
+        "status": "partial",
         "roadmap": "docs/research_roadmap.md"
       }
     ],
@@ -1113,9 +1128,33 @@
       "nbformat": "5.11.1",
       "ipykernel": "7.4.0",
       "notebook_matches": true
+    },
+    "partial_checkpoint": {
+      "parent": "63636a726b7a41df2968257a7ee686fcc0999e53",
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "commands": [
+        "python -m v1082_v1091.model",
+        "python -m unittest -q v1052_v1061.test_audit v1082_v1091.test_model v1072_v1081.test_model v1062_v1071.test_model v1052_v1061.test_model v1042_v1051.test_model v1032_v1041.test_model"
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "batch_tests": 5,
+      "regressions": 50,
+      "passed": 55,
+      "seed": null,
+      "method": "deterministic exact enumeration and matrix calculations; no random input",
+      "github_actions": "not run"
     }
   },
   "commit_history": [
+    {
+      "sha": "63636a726b7a41df2968257a7ee686fcc0999e53",
+      "role": "verified main parent"
+    },
     {
       "sha": "48b08d466b5c2aeca333f495955e58329382883b",
       "role": "verified main parent"
@@ -1454,7 +1493,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "22ad9a4a53991a4c2f91ecf9777fe8e8377213c9",
+  "previous_research_base_commit_sha": "48b08d466b5c2aeca333f495955e58329382883b",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1462,9 +1501,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "48b08d466b5c2aeca333f495955e58329382883b",
-    "source_latest_completed_version": "v10.71",
-    "source_first_unfinished_version": "v10.72"
+    "source_main_sha": "63636a726b7a41df2968257a7ee686fcc0999e53",
+    "source_latest_completed_version": "v10.81",
+    "source_first_unfinished_version": "v10.82"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

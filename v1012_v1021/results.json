@@ -1,0 +1,56 @@
+{
+  "joint": {
+    "truth": 0.122,
+    "range": [
+      0.11974008085555629,
+      0.13018912419643516
+    ]
+  },
+  "diagonal_alias": {
+    "diagonal": 0.0,
+    "off_axis": -0.0023711056502664883,
+    "delta_y11": 0.1
+  },
+  "vacuum_rails": {
+    "value": 0.13748611462741095,
+    "remainder": 0.08386494404580103
+  },
+  "extrapolation": {
+    "lower": 0.12152728936697355,
+    "upper": 0.12349312068514917
+  },
+  "rectangular_scan": {
+    "diagonal": [
+      0.0,
+      0.1884285423333786
+    ],
+    "rich": [
+      0.12179836442631141,
+      0.12206700220395406
+    ]
+  },
+  "joint_error": [
+    0.1110838484770143,
+    0.13512550993497888
+  ],
+  "shared_pump": {
+    "shared": 0.030829333538338652,
+    "independent": 0.02334236671885718
+  },
+  "phase_lock": {
+    "common": 0.0,
+    "independent": 0.27356504412667026
+  },
+  "attenuation_gauge": {
+    "effective": 0.48,
+    "alternative": 0.48,
+    "one_photon_yields": [
+      0.122,
+      0.10200000000000001
+    ]
+  },
+  "signed_joint": {
+    "upper": -0.027911913592827683,
+    "truth": -0.028
+  }
+}

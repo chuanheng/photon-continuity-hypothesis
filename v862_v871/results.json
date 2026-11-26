@@ -1,0 +1,12 @@
+{
+  "v8.62": {"mode_standard_deviations": [0.1, 0.08, 0.06, 0.04], "cell_covariance": [[0.0054, 0.0014000000000000004, 0.0028000000000000004, 0.00040000000000000045], [0.0014000000000000004, 0.0054, 0.00040000000000000045, 0.0028000000000000004], [0.0028000000000000004, 0.00040000000000000045, 0.0054, 0.0014000000000000004], [0.00040000000000000045, 0.0028000000000000004, 0.0014000000000000004, 0.0054]], "contrast_standard_deviation": 0.08},
+  "v8.63": {"equal_cell_marginal_sd": 0.05, "worst_case_contrast_sd": 0.2, "independent_contrast_sd": 0.1},
+  "v8.64": {"main_effect_calibration_contrast_sensitivity": [0.0, 0.0, 0.0], "interaction_unconstrained": true},
+  "v8.65": {"science_only_rank": 1, "science_plus_reference_rank": 2, "determinant": 1.0},
+  "v8.66": {"stable_swap_observations": [0.4167961477741566, -0.1767961477741566], "recovered_candidate": 0.2967961477741566, "recovered_ordinary": 0.12},
+  "v8.67": {"ordinary_odd_counterexample": [0.4167961477741566, -0.4167961477741566], "apparent_candidate": 0.4167961477741566, "true_candidate": 0.2967961477741566},
+  "v8.68": {"abba_drift_moments_orders_0_to_3": [0.0, 0.0, 2.0, 0.0], "quadratic_coefficient_to_mimic_effect": 0.1483980738870783},
+  "v8.69": {"independent_difference_variance": 0.05, "paired_difference_variance": 0.020000000000000004, "variance_reduction_fraction": 0.5999999999999999},
+  "v8.70": {"target_total_sd_alpha05_power80": 0.1059386471113901, "reference_sd": 0.05, "required_science_exposure_multiplier": 24.622412600052904},
+  "v8.71": {"protocol_design": [[1.0, 1.0, 0.0], [-1.0, 1.0, 0.0], [0.0, 1.0, 1.0], [0.0, 0.0, 1.0]], "protocol_rank": 3, "parameters": ["candidate", "ordinary_interaction", "drift"], "minimum_conditions": ["matched energy-direction reference", "physical detector-role exchange", "interleaved blank drift monitor", "held-out prediction fixed before unblinding"]}
+}

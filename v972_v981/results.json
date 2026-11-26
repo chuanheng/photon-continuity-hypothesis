@@ -1,0 +1,32 @@
+{
+  "tetra": {
+    "score": -0.12500000000000003,
+    "operator_error": 4.569153680900317e-16
+  },
+  "product_error": 1.6653345369377348e-16,
+  "uniform_loss": -0.011625000000000002,
+  "postselection": {
+    "raw": 0.0625,
+    "conditional": -0.21875
+  },
+  "noisy_probe": {
+    "score": -0.04250000000000002,
+    "threshold": 0.5952380952380952
+  },
+  "rotation": {
+    "score": -0.042752517915708624,
+    "trace": 1.6840402866513378
+  },
+  "confusion": {
+    "uncorrected": -0.06357500000000005,
+    "corrected": -0.12500000000000006,
+    "amplification": 1.48720999405116
+  },
+  "dark_threshold": 0.15470053837925155,
+  "label_sideband": -0.00375,
+  "pair_sampling": {
+    "uniform_var": 0.23437499999999944,
+    "weighted_var": 0.48437499999999967,
+    "absolute_weight": 4.0
+  }
+}

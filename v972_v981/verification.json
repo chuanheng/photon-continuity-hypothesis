@@ -1,0 +1,26 @@
+{
+  "parent": "58c24c8a10e8833ee811d944d0f68c203ff42312",
+  "commands": [
+    "python -m v972_v981.model",
+    "python -m unittest -q v972_v981.test_model v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v972_v981/reproduce.ipynb"
+  ],
+  "exits": [
+    0,
+    0,
+    0
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1",
+  "environment": "PYTHONPATH=.:/tmp/pch-kernel",
+  "seed": 972981,
+  "method": "fixed parameters; seed only for explicitly randomized checks",
+  "batch_tests": 10,
+  "regressions": 40,
+  "passed": 50,
+  "checks": "算符重建 Frobenius 误差 4.57e−16；128 组乘积效应的解析分数误差至多 1.67e−16。开发阶段一次模型括号错误造成导入失败，修正后重跑全部测试和内核。",
+  "github_actions": "not run"
+}

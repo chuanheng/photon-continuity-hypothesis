@@ -1,0 +1,26 @@
+{
+  "parent": "f3da8a8755d9f35590283d20889ba80dc67ce474",
+  "commands": [
+    "python -m v982_v991.model",
+    "python -m unittest -q v982_v991.test_model v972_v981.test_model v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v982_v991/reproduce.ipynb"
+  ],
+  "exits": [
+    0,
+    0,
+    0
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1",
+  "environment": "PYTHONPATH=.:/tmp/pch-kernel",
+  "seed": null,
+  "method": "fixed parameters; seed only for explicitly randomized checks",
+  "batch_tests": 10,
+  "regressions": 50,
+  "passed": 60,
+  "checks": "256 个双端矩形穷举，单端 16 个谱问题，额外解析本征值复核。双副本负分与 −1/6 差 <3e−16，三份等成功率与 2/3 差 <5e−16。确定性计算不使用随机输入。",
+  "github_actions": "not run"
+}

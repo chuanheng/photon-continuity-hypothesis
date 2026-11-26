@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "58c24c8a10e8833ee811d944d0f68c203ff42312",
-  "latest_completed_version": "v9.81",
-  "latest_completed_version_evidence": "v972_v981/README.md",
+  "research_base_commit_sha": "f3da8a8755d9f35590283d20889ba80dc67ce474",
+  "latest_completed_version": "v9.91",
+  "latest_completed_version_evidence": "v982_v991/README.md",
   "next_batch": {
-    "first_version": "v9.82",
-    "last_version": "v9.91",
-    "first_unfinished_version": "v9.82",
+    "first_version": "v9.92",
+    "last_version": "v10.01",
+    "first_unfinished_version": "v9.92",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -703,6 +703,14 @@
       "index": "v972_v981/README.md",
       "verification": "v972_v981/verification.json",
       "notebook": "v972_v981/reproduce.ipynb"
+    },
+    {
+      "first_version": "v9.82",
+      "last_version": "v9.91",
+      "source_parent_sha": "f3da8a8755d9f35590283d20889ba80dc67ce474",
+      "index": "v982_v991/README.md",
+      "verification": "v982_v991/verification.json",
+      "notebook": "v982_v991/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -717,8 +725,8 @@
     "open_questions": [
       {
         "versions": [
-          "v9.82",
-          "v9.91"
+          "v9.92",
+          "v10.01"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -971,11 +979,11 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "parent": "58c24c8a10e8833ee811d944d0f68c203ff42312",
+      "parent": "f3da8a8755d9f35590283d20889ba80dc67ce474",
       "commands": [
-        "python -m v972_v981.model",
-        "python -m unittest -q v972_v981.test_model v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v972_v981/reproduce.ipynb"
+        "python -m v982_v991.model",
+        "python -m unittest -q v982_v991.test_model v972_v981.test_model v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v982_v991/reproduce.ipynb"
       ],
       "exits": [
         0,
@@ -988,12 +996,12 @@
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
       "environment": "PYTHONPATH=.:/tmp/pch-kernel",
-      "seed": 972981,
+      "seed": null,
       "method": "fixed parameters; seed only for explicitly randomized checks",
       "batch_tests": 10,
-      "regressions": 40,
-      "passed": 50,
-      "checks": "算符重建 Frobenius 误差 4.57e−16；128 组乘积效应的解析分数误差至多 1.67e−16。开发阶段一次模型括号错误造成导入失败，修正后重跑全部测试和内核。",
+      "regressions": 50,
+      "passed": 60,
+      "checks": "256 个双端矩形穷举，单端 16 个谱问题，额外解析本征值复核。双副本负分与 −1/6 差 <3e−16，三份等成功率与 2/3 差 <5e−16。确定性计算不使用随机输入。",
       "github_actions": "not run"
     },
     "latest_six_batches": {
@@ -1009,11 +1017,11 @@
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     },
     "latest_checkpoint": {
-      "parent": "58c24c8a10e8833ee811d944d0f68c203ff42312",
+      "parent": "f3da8a8755d9f35590283d20889ba80dc67ce474",
       "commands": [
-        "python -m v972_v981.model",
-        "python -m unittest -q v972_v981.test_model v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v972_v981/reproduce.ipynb"
+        "python -m v982_v991.model",
+        "python -m unittest -q v982_v991.test_model v972_v981.test_model v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v982_v991/reproduce.ipynb"
       ],
       "exits": [
         0,
@@ -1026,16 +1034,20 @@
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
       "environment": "PYTHONPATH=.:/tmp/pch-kernel",
-      "seed": 972981,
+      "seed": null,
       "method": "fixed parameters; seed only for explicitly randomized checks",
       "batch_tests": 10,
-      "regressions": 40,
-      "passed": 50,
-      "checks": "算符重建 Frobenius 误差 4.57e−16；128 组乘积效应的解析分数误差至多 1.67e−16。开发阶段一次模型括号错误造成导入失败，修正后重跑全部测试和内核。",
+      "regressions": 50,
+      "passed": 60,
+      "checks": "256 个双端矩形穷举，单端 16 个谱问题，额外解析本征值复核。双副本负分与 −1/6 差 <3e−16，三份等成功率与 2/3 差 <5e−16。确定性计算不使用随机输入。",
       "github_actions": "not run"
     }
   },
   "commit_history": [
+    {
+      "sha": "f3da8a8755d9f35590283d20889ba80dc67ce474",
+      "role": "remote verified parent"
+    },
     {
       "sha": "58c24c8a10e8833ee811d944d0f68c203ff42312",
       "role": "remote verified parent"
@@ -1326,7 +1338,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "ec8f2cc5fd25a0b36ec3bb7c43ad812871b06804",
+  "previous_research_base_commit_sha": "58c24c8a10e8833ee811d944d0f68c203ff42312",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1334,9 +1346,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "58c24c8a10e8833ee811d944d0f68c203ff42312",
-    "source_latest_completed_version": "v9.71",
-    "source_first_unfinished_version": "v9.72"
+    "source_main_sha": "f3da8a8755d9f35590283d20889ba80dc67ce474",
+    "source_latest_completed_version": "v9.81",
+    "source_first_unfinished_version": "v9.82"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

@@ -4,31 +4,16 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
-  "checkpoint_kind": "partial_batch",
-  "research_base_commit_sha": "b10527e8ba63ac32cdf803fc002d946763528693",
-  "latest_completed_version": "v9.91",
-  "latest_completed_version_evidence": "v982_v991/README.md",
+  "checkpoint_kind": "complete_batch",
+  "research_base_commit_sha": "b643cab6ec43a3422bec91d323b303bce8549e95",
+  "latest_completed_version": "v10.01",
+  "latest_completed_version_evidence": "v992_v1001/README.md",
   "next_batch": {
-    "first_version": "v9.92",
-    "last_version": "v10.01",
-    "first_unfinished_version": "v9.96",
-    "status": "partial",
-    "roadmap": "docs/research_roadmap.md",
-    "completed_rounds": [
-      "v9.92",
-      "v9.93",
-      "v9.94",
-      "v9.95"
-    ],
-    "remaining": [
-      "v9.96",
-      "v9.97",
-      "v9.98",
-      "v9.99",
-      "v10.00",
-      "v10.01"
-    ],
-    "verification": "v992_v1001/verification.json"
+    "first_version": "v10.02",
+    "last_version": "v10.11",
+    "first_unfinished_version": "v10.02",
+    "status": "planned",
+    "roadmap": "docs/research_roadmap.md"
   },
   "completed_batches": [
     {
@@ -726,6 +711,14 @@
       "index": "v982_v991/README.md",
       "verification": "v982_v991/verification.json",
       "notebook": "v982_v991/reproduce.ipynb"
+    },
+    {
+      "first_version": "v9.92",
+      "last_version": "v10.01",
+      "source_parent_sha": "b643cab6ec43a3422bec91d323b303bce8549e95",
+      "index": "v992_v1001/README.md",
+      "verification": "v992_v1001/verification.json",
+      "notebook": "v992_v1001/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -740,10 +733,10 @@
     "open_questions": [
       {
         "versions": [
-          "v9.96",
-          "v10.01"
+          "v10.02",
+          "v10.11"
         ],
-        "status": "partial_batch_remaining",
+        "status": "planned",
         "roadmap": "docs/research_roadmap.md"
       }
     ],
@@ -994,30 +987,52 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "parent": "f3da8a8755d9f35590283d20889ba80dc67ce474",
+      "source_parent_sha": "b643cab6ec43a3422bec91d323b303bce8549e95",
       "commands": [
-        "python -m v982_v991.model",
-        "python -m unittest -q v982_v991.test_model v972_v981.test_model v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v982_v991/reproduce.ipynb"
+        "python -m v992_v1001.correlation",
+        "python -m unittest -q v992_v1001.test_correlation v992_v1001.test_model v982_v991.test_model v972_v981.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v992_v1001/reproduce.ipynb"
       ],
-      "exits": [
+      "exit_codes": [
         0,
         0,
         0
       ],
+      "passed": 30,
+      "batch_tests": 10,
+      "regressions": 20,
+      "seed": null,
+      "inputs": "deterministic; all parameter values in model and reports",
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
-      "environment": "PYTHONPATH=.:/tmp/pch-kernel",
-      "seed": null,
-      "method": "fixed parameters; seed only for explicitly randomized checks",
-      "batch_tests": 10,
-      "regressions": 50,
-      "passed": 60,
-      "checks": "256 个双端矩形穷举，单端 16 个谱问题，额外解析本征值复核。双副本负分与 −1/6 差 <3e−16，三份等成功率与 2/3 差 <5e−16。确定性计算不使用随机输入。",
-      "github_actions": "not run"
+      "ipykernel": "7.4.0",
+      "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
+      "ci": "not run",
+      "notebook_result_matches": true,
+      "prior_partial": {
+        "parent": "b10527e8ba63ac32cdf803fc002d946763528693",
+        "commands": [
+          "OPENBLAS_NUM_THREADS=1 python -m v992_v1001.model",
+          "OPENBLAS_NUM_THREADS=1 python -m unittest -q v992_v1001.test_model v982_v991.test_model v972_v981.test_model"
+        ],
+        "exits": [
+          0,
+          0
+        ],
+        "batch_tests": 4,
+        "regressions": 20,
+        "passed": 24,
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "seed": null,
+        "inputs": "deterministic, e=.03, rings=96, longitude count=192",
+        "bracket_width": 0.00013276004858803897,
+        "notebook": "due at full batch",
+        "ci": "not run"
+      }
     },
     "latest_six_batches": {
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model",
@@ -1032,55 +1047,59 @@
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     },
     "latest_checkpoint": {
-      "parent": "f3da8a8755d9f35590283d20889ba80dc67ce474",
+      "source_parent_sha": "b643cab6ec43a3422bec91d323b303bce8549e95",
       "commands": [
-        "python -m v982_v991.model",
-        "python -m unittest -q v982_v991.test_model v972_v981.test_model v962_v971.test_selection v962_v971.test_model v952_v961.test_model v942_v951.test_model v932_v941.test_audit v932_v941.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v982_v991/reproduce.ipynb"
+        "python -m v992_v1001.correlation",
+        "python -m unittest -q v992_v1001.test_correlation v992_v1001.test_model v982_v991.test_model v972_v981.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v992_v1001/reproduce.ipynb"
       ],
-      "exits": [
+      "exit_codes": [
         0,
         0,
         0
       ],
-      "python": "3.12.14",
-      "numpy": "2.3.5",
-      "scipy": "1.17.0",
-      "ipykernel": "7.4.0",
-      "nbformat": "5.11.1",
-      "environment": "PYTHONPATH=.:/tmp/pch-kernel",
-      "seed": null,
-      "method": "fixed parameters; seed only for explicitly randomized checks",
+      "passed": 30,
       "batch_tests": 10,
-      "regressions": 50,
-      "passed": 60,
-      "checks": "256 个双端矩形穷举，单端 16 个谱问题，额外解析本征值复核。双副本负分与 −1/6 差 <3e−16，三份等成功率与 2/3 差 <5e−16。确定性计算不使用随机输入。",
-      "github_actions": "not run"
-    },
-    "partial_checkpoint": {
-      "parent": "b10527e8ba63ac32cdf803fc002d946763528693",
-      "commands": [
-        "OPENBLAS_NUM_THREADS=1 python -m v992_v1001.model",
-        "OPENBLAS_NUM_THREADS=1 python -m unittest -q v992_v1001.test_model v982_v991.test_model v972_v981.test_model"
-      ],
-      "exits": [
-        0,
-        0
-      ],
-      "batch_tests": 4,
       "regressions": 20,
-      "passed": 24,
+      "seed": null,
+      "inputs": "deterministic; all parameter values in model and reports",
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "seed": null,
-      "inputs": "deterministic, e=.03, rings=96, longitude count=192",
-      "bracket_width": 0.00013276004858803897,
-      "notebook": "due at full batch",
-      "ci": "not run"
+      "nbformat": "5.11.1",
+      "ipykernel": "7.4.0",
+      "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
+      "ci": "not run",
+      "notebook_result_matches": true,
+      "prior_partial": {
+        "parent": "b10527e8ba63ac32cdf803fc002d946763528693",
+        "commands": [
+          "OPENBLAS_NUM_THREADS=1 python -m v992_v1001.model",
+          "OPENBLAS_NUM_THREADS=1 python -m unittest -q v992_v1001.test_model v982_v991.test_model v972_v981.test_model"
+        ],
+        "exits": [
+          0,
+          0
+        ],
+        "batch_tests": 4,
+        "regressions": 20,
+        "passed": 24,
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "seed": null,
+        "inputs": "deterministic, e=.03, rings=96, longitude count=192",
+        "bracket_width": 0.00013276004858803897,
+        "notebook": "due at full batch",
+        "ci": "not run"
+      }
     }
   },
   "commit_history": [
+    {
+      "sha": "b643cab6ec43a3422bec91d323b303bce8549e95",
+      "role": "verified parent on main"
+    },
     {
       "sha": "b10527e8ba63ac32cdf803fc002d946763528693",
       "role": "remote verified completed v9.82-v9.91"
@@ -1379,7 +1398,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "f3da8a8755d9f35590283d20889ba80dc67ce474",
+  "previous_research_base_commit_sha": "b10527e8ba63ac32cdf803fc002d946763528693",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1387,9 +1406,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "b10527e8ba63ac32cdf803fc002d946763528693",
+    "source_main_sha": "b643cab6ec43a3422bec91d323b303bce8549e95",
     "source_latest_completed_version": "v9.91",
-    "source_first_unfinished_version": "v9.92"
+    "source_first_unfinished_version": "v9.96"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

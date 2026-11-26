@@ -1,22 +1,48 @@
 {
-  "parent": "b10527e8ba63ac32cdf803fc002d946763528693",
+  "source_parent_sha": "b643cab6ec43a3422bec91d323b303bce8549e95",
   "commands": [
-    "OPENBLAS_NUM_THREADS=1 python -m v992_v1001.model",
-    "OPENBLAS_NUM_THREADS=1 python -m unittest -q v992_v1001.test_model v982_v991.test_model v972_v981.test_model"
+    "python -m v992_v1001.correlation",
+    "python -m unittest -q v992_v1001.test_correlation v992_v1001.test_model v982_v991.test_model v972_v981.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v992_v1001/reproduce.ipynb"
   ],
-  "exits": [
+  "exit_codes": [
+    0,
     0,
     0
   ],
-  "batch_tests": 4,
+  "passed": 30,
+  "batch_tests": 10,
   "regressions": 20,
-  "passed": 24,
+  "seed": null,
+  "inputs": "deterministic; all parameter values in model and reports",
   "python": "3.12.14",
   "numpy": "2.3.5",
   "scipy": "1.17.0",
-  "seed": null,
-  "inputs": "deterministic, e=.03, rings=96, longitude count=192",
-  "bracket_width": 0.00013276004858803897,
-  "notebook": "due at full batch",
-  "ci": "not run"
+  "nbformat": "5.11.1",
+  "ipykernel": "7.4.0",
+  "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
+  "ci": "not run",
+  "notebook_result_matches": true,
+  "prior_partial": {
+    "parent": "b10527e8ba63ac32cdf803fc002d946763528693",
+    "commands": [
+      "OPENBLAS_NUM_THREADS=1 python -m v992_v1001.model",
+      "OPENBLAS_NUM_THREADS=1 python -m unittest -q v992_v1001.test_model v982_v991.test_model v972_v981.test_model"
+    ],
+    "exits": [
+      0,
+      0
+    ],
+    "batch_tests": 4,
+    "regressions": 20,
+    "passed": 24,
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "seed": null,
+    "inputs": "deterministic, e=.03, rings=96, longitude count=192",
+    "bracket_width": 0.00013276004858803897,
+    "notebook": "due at full batch",
+    "ci": "not run"
+  }
 }

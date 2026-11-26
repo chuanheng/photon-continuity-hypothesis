@@ -1,0 +1,45 @@
+{
+  "order_sign": {
+    "anticommuting": -1.0,
+    "same_channel_error": 0.0
+  },
+  "finite_rotation": {
+    "pminus": 0.04691414116082199,
+    "trace_imag": 2.7755575615628914e-17
+  },
+  "quadrature": {
+    "eigen_imag": [
+      -0.4229099408619498,
+      0.4229099408619498
+    ],
+    "real": 0.9061717176783562
+  },
+  "order_record": {
+    "overlap": 0.38,
+    "pminus": 0.69
+  },
+  "unequal_loss": {
+    "unconditional_dark": 0.049999999999999996,
+    "conditional_visibility": 0.8
+  },
+  "channel_memory": {
+    "independent": 0.25,
+    "shared": 1.0
+  },
+  "noisy_pair": {
+    "plus_probability": 0.625,
+    "conditional_fidelity": 0.6
+  },
+  "kraus_gauge": {
+    "diagonal_error": 0.0,
+    "cross_error": 0.0
+  },
+  "device_phase": {
+    "commuting_with_offset": 0.0,
+    "anti_without_offset": 0.0
+  },
+  "material": {
+    "diagonal": 3.051948207119734e-16,
+    "cross": 3.9451470868611273e-16
+  }
+}

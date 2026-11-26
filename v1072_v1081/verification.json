@@ -1,0 +1,26 @@
+{
+  "parent": "48b08d466b5c2aeca333f495955e58329382883b",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "commands": [
+    "python -m v1072_v1081.model",
+    "python -m unittest -q v1052_v1061.test_audit v1072_v1081.test_model v1062_v1071.test_model v1052_v1061.test_model v1042_v1051.test_model v1032_v1041.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v1072_v1081/reproduce.ipynb"
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "batch_tests": 10,
+  "regressions": 40,
+  "passed": 50,
+  "seed": null,
+  "method": "deterministic exact enumeration and matrix calculations; no random input",
+  "github_actions": "not run",
+  "environment": "OPENBLAS_NUM_THREADS=1 PYTHONPATH=.:/tmp/kernel",
+  "nbformat": "5.11.1",
+  "ipykernel": "7.4.0",
+  "notebook_matches": true
+}

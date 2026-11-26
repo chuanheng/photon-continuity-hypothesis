@@ -1,32 +1,57 @@
 {
-  "parent": "ffbd5121da0ff18e5ce98f103208e4f20a99451e",
-  "seeds": [],
+  "prior": {
+    "parent": "ffbd5121da0ff18e5ce98f103208e4f20a99451e",
+    "seeds": [],
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "commands": [
+      "python -m v932_v941.model",
+      "python -m unittest -q v932_v941.test_model v922_v931.test_model"
+    ],
+    "exits": [
+      0,
+      0
+    ],
+    "passed": 11,
+    "results": {
+      "equal": 0.9271666666666666,
+      "minimum": 0.909,
+      "minimizing_weights": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "margin": 0.05301638815080556,
+      "low_eff_margin": 0.04024727828945662
+    },
+    "pending": "v9.33-v9.41 and full notebook",
+    "next": "simultaneous intervals for six fidelities and phase-reference scope"
+  },
+  "source_parent_sha": "51075f22f27868ae3136169b973e76277f1b6540",
+  "seeds": [
+    939940
+  ],
   "python": "3.12.14",
   "numpy": "2.3.5",
   "scipy": "1.17.0",
   "commands": [
-    "python -m v932_v941.model",
-    "python -m unittest -q v932_v941.test_model v922_v931.test_model"
+    "python -m v932_v941.audit",
+    "python -m unittest -q v932_v941.test_audit v932_v941.test_model v922_v931.test_model v912_v921.test_model v902_v911.test_model v892_v901.test_instruments v892_v901.test_model v882_v891.test_model",
+    "PYTHONPATH=.:/tmp/pch-nb python -Xfrozen_modules=off tools/execute_research_notebook.py v932_v941/reproduce.ipynb"
   ],
-  "exits": [
+  "exit_codes": [
+    0,
     0,
     0
   ],
-  "passed": 11,
-  "results": {
-    "equal": 0.9271666666666666,
-    "minimum": 0.909,
-    "minimizing_weights": [
-      0,
-      0,
-      0,
-      1,
-      0,
-      0
-    ],
-    "margin": 0.05301638815080556,
-    "low_eff_margin": 0.04024727828945662
-  },
-  "pending": "v9.33-v9.41 and full notebook",
-  "next": "simultaneous intervals for six fidelities and phase-reference scope"
+  "batch_tests": 10,
+  "regression": 51,
+  "passed": 61,
+  "fock_probability_tolerance": 1e-13,
+  "ci": "not run",
+  "development_correction": "three-copy fidelity cap corrected from continuous-prior 4/5 to six-state 5/6; regression checks previous benchmark"
 }

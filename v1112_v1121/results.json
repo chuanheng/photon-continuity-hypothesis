@@ -1,0 +1,47 @@
+{
+  "conservation": {
+    "gram_error": 1.1102230246251565e-16,
+    "energy_defect": 0
+  },
+  "finite_coherence": {
+    "number_Fe": 0.625,
+    "flat_g4": 0.75,
+    "flat_Fe": 0.90625
+  },
+  "energy_shift": {
+    "base": 0.75,
+    "raised": 0.75
+  },
+  "optimized": {
+    "max_g4": 0.8090169943749471,
+    "flat_g4": 0.75,
+    "rayleigh": 0.8090169943749471
+  },
+  "worst_input": {
+    "Fe": 0.90625,
+    "worst": 0.875,
+    "best": 1.0
+  },
+  "phase_drift": {
+    "known_offset_g": 0.7119265635618306,
+    "Gaussian_g": 0.7125664753519702
+  },
+  "which_shift": {
+    "trace_distance": 0.6614378277661479,
+    "overlap": 0.75
+  },
+  "eraser": {
+    "accept": 0.8750000000000004,
+    "arm_mismatch": 1.1102230246251565e-16
+  },
+  "reuse": {
+    "shared_g8": 0.5,
+    "fresh_g4_squared": 0.5625,
+    "exchange_shared": 1.0,
+    "exchange_fresh": 0.5625
+  },
+  "number_readout": {
+    "population_distance": 0.0,
+    "phase_contrast_gap": 0.25
+  }
+}

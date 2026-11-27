@@ -11,5 +11,48 @@
   "differential": {
     "exchange": 0.7261490370736908,
     "equivalent_flip_probability": 0.13692548146315459
+  },
+  "all_event_bell": {
+    "S": 2.414213562373095,
+    "useful_weight": 0.5,
+    "conditional_S": 2.8284271247461903
+  },
+  "multicopy": {
+    "entanglement_ebit": {
+      "1": 0.0,
+      "2": 0.4662,
+      "4": 1.8381633258228567,
+      "8": 5.11880278211081,
+      "16": 12.217303102735867,
+      "32": 26.92620030513169
+    },
+    "n32_per_copy": 0.8414437595353653,
+    "identity_error": 3.552713678800501e-15
+  },
+  "loss_dark": {
+    "S": 2.2086973136559673,
+    "useful_weight": 0.33619999999999994,
+    "conditional_S": 2.620753461201568
+  },
+  "crosstalk": {
+    "Smax": 2.447751098457521,
+    "yz_contrast": 0.7055999999999999
+  },
+  "calibration": {
+    "seed": 113241,
+    "shots": 20000,
+    "estimate": 0.9861,
+    "expected": 0.9839305142725083,
+    "standard_error": 0.0011748785043569398,
+    "z_score": 1.8465617674051322
+  },
+  "identifiability": {
+    "candidate_residual_linear": 2.0,
+    "candidate_residual_quadratic": 3.1401849173675503e-16,
+    "rank_with_candidate": 3
+  },
+  "permutation": {
+    "labelled_swap_commutator": 2.8284271247461903,
+    "symmetric_swap_commutator": 0.0
   }
 }

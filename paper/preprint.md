@@ -163,3 +163,7 @@ Replace the uncollided-only baseline with cross-section-based transport; include
 [v11.12–v11.21](../v1112_v1121/README.md)　单跳恢复可以在每个总能量扇区保持能量；有限泵浦把不同 Fock 输出与相差四级的泵浦态关联。16 级等幅泵浦给逻辑纠缠保真度 .90625，泵浦能级数固定时最优四级重叠为 cos(π/5)。连续两次复用同一参考时同向历史重叠为 .5，独立刷新则为 .5625。
 
 [v11.22–v11.31](../v1122_v1131/README.md)　泵浦只经历远离能级底的平移且只观察信号时，其任意历史相干矩阵可由每次实验抽取一次的普通共同相位精确重现；三轮八历史的逐元残差约 1.0e−15。干预泵浦或测量信号与泵浦的非对角联合观测才有机会区分该缩小的经典族。标准量子泵浦已能给全部合成结果。
+
+## v11.32–v11.41 revision note
+
+Two time-bin copies can activate mode entanglement under a local-particle-number superselection rule. Including every locally flagged number sector gives an ideal balanced all-event CHSH value of (1+\sqrt2). This is a standard quantum-optical multi-copy effect. Loss, dark flips, time-bin crosstalk, phase drift, and quadratic calibration drift provide ordinary countermodels for degraded or ABBA-like signals. An interaction tied to a formal particle slot fails exchange symmetry; symmetrising it reduces it to a collective mode observable. These conditional derivations and fixed-seed simulations provide no permanent-identity-specific prediction and use no experimental data.

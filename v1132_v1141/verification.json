@@ -1,20 +1,24 @@
 {
-  "parent": "458f7c11e73119270925716c68a15dde62bdd343",
+  "parent": "04d9f7f18c30d7a5444e9e3521bc2ead76a5237c",
   "commands": [
     "python -m v1132_v1141.model",
-    "python -m unittest -q v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model"
+    "python -m unittest -q v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+    "PYTHONPATH=. python -Xfrozen_modules=off tools/execute_research_notebook.py v1132_v1141/reproduce.ipynb",
+    "PYTHONPATH=.:/tmp/pch-kernel python -Xfrozen_modules=off tools/execute_research_notebook.py v1132_v1141/reproduce.ipynb"
   ],
-  "exit_codes": [
-    0,
-    0
-  ],
+  "exit_codes": [0, 0, 1, 0],
+  "failed_attempt": "initial notebook execution lacked ipykernel; dependency installed into isolated /tmp/pch-kernel and clean execution repeated",
   "python": "3.12.14",
   "numpy": "2.3.5",
   "scipy": "1.17.0",
-  "passed": 48,
-  "batch_tests": 3,
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1",
+  "passed": 55,
+  "batch_tests": 10,
   "regressions": 45,
-  "seed": null,
-  "inputs": "fixed deterministic model; no random draws",
-  "ci": "not run"
+  "seed": 113241,
+  "synthetic_trials": 20000,
+  "notebook_matches": true,
+  "ci": "not run",
+  "evidence_scope": "mathematical derivations, deterministic calculations and fixed-seed synthetic calibration; no real experimental data"
 }

@@ -3,32 +3,17 @@
   "project": "Photon Continuity Hypothesis",
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
-  "reviewed_on": "2026-11-27",
-  "checkpoint_kind": "partial_batch",
-  "research_base_commit_sha": "458f7c11e73119270925716c68a15dde62bdd343",
-  "latest_completed_version": "v11.31",
-  "latest_completed_version_evidence": "v1122_v1131/README.md",
+  "reviewed_on": "2026-11-28",
+  "checkpoint_kind": "complete_batch",
+  "research_base_commit_sha": "04d9f7f18c30d7a5444e9e3521bc2ead76a5237c",
+  "latest_completed_version": "v11.41",
+  "latest_completed_version_evidence": "v1132_v1141/README.md",
   "next_batch": {
-    "first_version": "v11.32",
-    "last_version": "v11.41",
-    "first_unfinished_version": "v11.35",
-    "status": "partial",
-    "roadmap": "docs/research_roadmap.md",
-    "completed_rounds": [
-      "v11.32",
-      "v11.33",
-      "v11.34"
-    ],
-    "remaining": [
-      "v11.35",
-      "v11.36",
-      "v11.37",
-      "v11.38",
-      "v11.39",
-      "v11.40",
-      "v11.41"
-    ],
-    "verification": "v1132_v1141/verification.json"
+    "first_version": "v11.42",
+    "last_version": "v11.51",
+    "first_unfinished_version": "v11.42",
+    "status": "planned",
+    "roadmap": "docs/research_roadmap.md"
   },
   "completed_batches": [
     {
@@ -838,6 +823,14 @@
       "index": "v1122_v1131/README.md",
       "verification": "v1122_v1131/verification.json",
       "notebook": "v1122_v1131/reproduce.ipynb"
+    },
+    {
+      "first_version": "v11.32",
+      "last_version": "v11.41",
+      "source_parent_sha": "04d9f7f18c30d7a5444e9e3521bc2ead76a5237c",
+      "index": "v1132_v1141/README.md",
+      "verification": "v1132_v1141/verification.json",
+      "notebook": "v1132_v1141/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -852,10 +845,10 @@
     "open_questions": [
       {
         "versions": [
-          "v11.35",
-          "v11.41"
+          "v11.42",
+          "v11.51"
         ],
-        "status": "partial",
+        "status": "planned",
         "roadmap": "docs/research_roadmap.md"
       }
     ],
@@ -1106,11 +1099,11 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "parent": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+      "parent": "04d9f7f18c30d7a5444e9e3521bc2ead76a5237c",
       "commands": [
-        "python -m v1122_v1131.model",
-        "python -m unittest -q v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1122_v1131/reproduce.ipynb"
+        "python -m v1132_v1141.model",
+        "python -m unittest -q v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+        "PYTHONPATH=.:/tmp/pch-kernel python -Xfrozen_modules=off tools/execute_research_notebook.py v1132_v1141/reproduce.ipynb"
       ],
       "exit_codes": [
         0,
@@ -1120,13 +1113,13 @@
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "passed": 45,
+      "passed": 55,
       "batch_tests": 10,
-      "regressions": 35,
-      "seed": null,
-      "inputs": "fixed deterministic model; no random draws",
+      "regressions": 45,
+      "seed": 113241,
+      "inputs": "deterministic model plus 20000 fixed-seed synthetic calibration trials",
       "ci": "not run",
-      "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
+      "environment": "PYTHONPATH=.:/tmp/pch-kernel OPENBLAS_NUM_THREADS=1",
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
       "notebook_matches": true
@@ -1144,11 +1137,11 @@
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     },
     "latest_checkpoint": {
-      "parent": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+      "parent": "04d9f7f18c30d7a5444e9e3521bc2ead76a5237c",
       "commands": [
-        "python -m v1122_v1131.model",
-        "python -m unittest -q v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1122_v1131/reproduce.ipynb"
+        "python -m v1132_v1141.model",
+        "python -m unittest -q v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+        "PYTHONPATH=.:/tmp/pch-kernel python -Xfrozen_modules=off tools/execute_research_notebook.py v1132_v1141/reproduce.ipynb"
       ],
       "exit_codes": [
         0,
@@ -1158,39 +1151,23 @@
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "passed": 45,
+      "passed": 55,
       "batch_tests": 10,
-      "regressions": 35,
-      "seed": null,
-      "inputs": "fixed deterministic model; no random draws",
+      "regressions": 45,
+      "seed": 113241,
+      "inputs": "deterministic model plus 20000 fixed-seed synthetic calibration trials",
       "ci": "not run",
-      "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
+      "environment": "PYTHONPATH=.:/tmp/pch-kernel OPENBLAS_NUM_THREADS=1",
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
       "notebook_matches": true
-    },
-    "partial_checkpoint": {
-      "parent": "458f7c11e73119270925716c68a15dde62bdd343",
-      "commands": [
-        "python -m v1132_v1141.model",
-        "python -m unittest -q v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model"
-      ],
-      "exit_codes": [
-        0,
-        0
-      ],
-      "python": "3.12.14",
-      "numpy": "2.3.5",
-      "scipy": "1.17.0",
-      "passed": 48,
-      "batch_tests": 3,
-      "regressions": 45,
-      "seed": null,
-      "inputs": "fixed deterministic model; no random draws",
-      "ci": "not run"
     }
   },
   "commit_history": [
+    {
+      "sha": "04d9f7f18c30d7a5444e9e3521bc2ead76a5237c",
+      "role": "remote verified partial parent completed by v11.32-v11.41 batch"
+    },
     {
       "sha": "458f7c11e73119270925716c68a15dde62bdd343",
       "role": "remote verified parent"
@@ -1557,7 +1534,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+  "previous_research_base_commit_sha": "458f7c11e73119270925716c68a15dde62bdd343",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1565,9 +1542,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "458f7c11e73119270925716c68a15dde62bdd343",
+    "source_main_sha": "04d9f7f18c30d7a5444e9e3521bc2ead76a5237c",
     "source_latest_completed_version": "v11.31",
-    "source_first_unfinished_version": "v11.32"
+    "source_first_unfinished_version": "v11.35"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

@@ -1,0 +1,15 @@
+{
+  "single": {
+    "coherence": 0.0,
+    "purity": 0.5000000000000002
+  },
+  "activation": {
+    "weight": 0.46620000000000006,
+    "fidelity": 1.0,
+    "independent_fidelity": 0.5
+  },
+  "differential": {
+    "exchange": 0.7261490370736908,
+    "equivalent_flip_probability": 0.13692548146315459
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "parent": "458f7c11e73119270925716c68a15dde62bdd343",
+  "commands": [
+    "python -m v1132_v1141.model",
+    "python -m unittest -q v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model"
+  ],
+  "exit_codes": [
+    0,
+    0
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "passed": 48,
+  "batch_tests": 3,
+  "regressions": 45,
+  "seed": null,
+  "inputs": "fixed deterministic model; no random draws",
+  "ci": "not run"
+}

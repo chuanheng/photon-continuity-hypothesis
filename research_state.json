@@ -4,16 +4,31 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
-  "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+  "checkpoint_kind": "partial_batch",
+  "research_base_commit_sha": "458f7c11e73119270925716c68a15dde62bdd343",
   "latest_completed_version": "v11.31",
   "latest_completed_version_evidence": "v1122_v1131/README.md",
   "next_batch": {
     "first_version": "v11.32",
     "last_version": "v11.41",
-    "first_unfinished_version": "v11.32",
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md"
+    "first_unfinished_version": "v11.35",
+    "status": "partial",
+    "roadmap": "docs/research_roadmap.md",
+    "completed_rounds": [
+      "v11.32",
+      "v11.33",
+      "v11.34"
+    ],
+    "remaining": [
+      "v11.35",
+      "v11.36",
+      "v11.37",
+      "v11.38",
+      "v11.39",
+      "v11.40",
+      "v11.41"
+    ],
+    "verification": "v1132_v1141/verification.json"
   },
   "completed_batches": [
     {
@@ -837,10 +852,10 @@
     "open_questions": [
       {
         "versions": [
-          "v11.32",
+          "v11.35",
           "v11.41"
         ],
-        "status": "planned",
+        "status": "partial",
         "roadmap": "docs/research_roadmap.md"
       }
     ],
@@ -1153,9 +1168,33 @@
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1",
       "notebook_matches": true
+    },
+    "partial_checkpoint": {
+      "parent": "458f7c11e73119270925716c68a15dde62bdd343",
+      "commands": [
+        "python -m v1132_v1141.model",
+        "python -m unittest -q v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model"
+      ],
+      "exit_codes": [
+        0,
+        0
+      ],
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "passed": 48,
+      "batch_tests": 3,
+      "regressions": 45,
+      "seed": null,
+      "inputs": "fixed deterministic model; no random draws",
+      "ci": "not run"
     }
   },
   "commit_history": [
+    {
+      "sha": "458f7c11e73119270925716c68a15dde62bdd343",
+      "role": "remote verified parent"
+    },
     {
       "sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
       "role": "remote verified parent"
@@ -1518,7 +1557,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "08d077620d7673af8899c8964da4f74c2b3e8553",
+  "previous_research_base_commit_sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1526,9 +1565,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
-    "source_latest_completed_version": "v11.21",
-    "source_first_unfinished_version": "v11.22"
+    "source_main_sha": "458f7c11e73119270925716c68a15dde62bdd343",
+    "source_latest_completed_version": "v11.31",
+    "source_first_unfinished_version": "v11.32"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

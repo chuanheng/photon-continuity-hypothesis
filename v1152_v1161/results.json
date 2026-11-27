@@ -1,0 +1,11 @@
+{
+  "exchange_symmetry": {
+    "slot_commutator": 2.8284271247461903,
+    "collective_commutator": 0.0
+  },
+  "number_conservation": {
+    "exchange_commutator": 0.0,
+    "pair_commutator": 2.8284271247461903
+  }
+}
+

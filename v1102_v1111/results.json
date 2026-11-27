@@ -1,0 +1,63 @@
+{
+  "jump_KL": {
+    "mean": [
+      1.9999999999999996,
+      2.0000000000000004
+    ],
+    "cross": 0.0
+  },
+  "finite_single": {
+    "prob": [
+      0.20479999999999995,
+      0.32
+    ],
+    "ratio": 0.7999999999999998
+  },
+  "vacuum_record": {
+    "prob": [
+      0.7047999999999999,
+      0.6400000000000001
+    ],
+    "difference": -0.06479999999999975
+  },
+  "filter": {
+    "one": 0.20479999999999995,
+    "all_number_resolved": 0.8848
+  },
+  "odd_alias": {
+    "prob": 0.2688,
+    "three_fraction": 0.023809523809523794
+  },
+  "wrong_flag": {
+    "total": 0.26192,
+    "single_fraction": 0.9216860109957239
+  },
+  "double_jump": {
+    "prob": [
+      0.07679999999999997,
+      0.03999999999999998
+    ],
+    "overlap_with_code": 0.31112698372208086
+  },
+  "emitted_info": {
+    "count_tv": 0.11519999999999987
+  },
+  "timing": {
+    "known_visibility": 1.0,
+    "unknown_visibility": 0.9485467820015776
+  },
+  "energy": {
+    "before": [
+      1.9999999999999996,
+      2.0
+    ],
+    "after": [
+      3.0,
+      1.0
+    ],
+    "required_work": [
+      -1.0,
+      1.0
+    ]
+  }
+}

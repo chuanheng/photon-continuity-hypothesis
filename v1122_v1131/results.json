@@ -1,0 +1,50 @@
+{
+  "loop": {
+    "phase": 1.12,
+    "visibility": 1.0
+  },
+  "classical_kick_fit": {
+    "phase_variance": 2.09230087289983,
+    "complex_error": 5.551115123125783e-17
+  },
+  "pump_entanglement": {
+    "schmidt": [
+      0.125,
+      0.875
+    ],
+    "negativity": 0.33071891388307384
+  },
+  "bell_test": {
+    "ideal": 2.3979157616563596,
+    "critical_white_visibility": 0.8340576562282991
+  },
+  "energy_superselection": {
+    "twirled_negativity": 0.0,
+    "blocks": 20,
+    "joint_trace": 1.0
+  },
+  "phase_representation": {
+    "max_error": 1.0329400704738531e-15,
+    "weights_sum": 0.9999999999999993,
+    "histories": 8
+  },
+  "moment_bound": {
+    "g4": 0.75,
+    "lower": 0.125,
+    "upper": 1.0,
+    "flat_g8": 0.5
+  },
+  "boundary": {
+    "second_failure": 0.0625,
+    "success_both": 0.9375
+  },
+  "interposed_kerr": {
+    "real": -0.34417350387193624,
+    "imag": 0.07033828133381714,
+    "visibility": 0.3512874529334643
+  },
+  "number_access": {
+    "energy_TV": 0.25,
+    "optimal_pure_TV": 0.6614378277661477
+  }
+}

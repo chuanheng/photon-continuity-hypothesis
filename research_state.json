@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-27",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "08d077620d7673af8899c8964da4f74c2b3e8553",
-  "latest_completed_version": "v11.21",
-  "latest_completed_version_evidence": "v1112_v1121/README.md",
+  "research_base_commit_sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+  "latest_completed_version": "v11.31",
+  "latest_completed_version_evidence": "v1122_v1131/README.md",
   "next_batch": {
-    "first_version": "v11.22",
-    "last_version": "v11.31",
-    "first_unfinished_version": "v11.22",
+    "first_version": "v11.32",
+    "last_version": "v11.41",
+    "first_unfinished_version": "v11.32",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -815,6 +815,14 @@
       "index": "v1112_v1121/README.md",
       "verification": "v1112_v1121/verification.json",
       "notebook": "v1112_v1121/reproduce.ipynb"
+    },
+    {
+      "first_version": "v11.22",
+      "last_version": "v11.31",
+      "source_parent_sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+      "index": "v1122_v1131/README.md",
+      "verification": "v1122_v1131/verification.json",
+      "notebook": "v1122_v1131/reproduce.ipynb"
     }
   ],
   "early_history": {
@@ -829,8 +837,8 @@
     "open_questions": [
       {
         "versions": [
-          "v11.22",
-          "v11.31"
+          "v11.32",
+          "v11.41"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -1083,11 +1091,11 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "parent": "08d077620d7673af8899c8964da4f74c2b3e8553",
+      "parent": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
       "commands": [
-        "python -m v1112_v1121.model",
-        "python -m unittest -q v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1112_v1121/reproduce.ipynb"
+        "python -m v1122_v1131.model",
+        "python -m unittest -q v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1122_v1131/reproduce.ipynb"
       ],
       "exit_codes": [
         0,
@@ -1097,9 +1105,9 @@
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "passed": 35,
+      "passed": 45,
       "batch_tests": 10,
-      "regressions": 25,
+      "regressions": 35,
       "seed": null,
       "inputs": "fixed deterministic model; no random draws",
       "ci": "not run",
@@ -1121,11 +1129,11 @@
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     },
     "latest_checkpoint": {
-      "parent": "08d077620d7673af8899c8964da4f74c2b3e8553",
+      "parent": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
       "commands": [
-        "python -m v1112_v1121.model",
-        "python -m unittest -q v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1112_v1121/reproduce.ipynb"
+        "python -m v1122_v1131.model",
+        "python -m unittest -q v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1122_v1131/reproduce.ipynb"
       ],
       "exit_codes": [
         0,
@@ -1135,9 +1143,9 @@
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "passed": 35,
+      "passed": 45,
       "batch_tests": 10,
-      "regressions": 25,
+      "regressions": 35,
       "seed": null,
       "inputs": "fixed deterministic model; no random draws",
       "ci": "not run",
@@ -1148,6 +1156,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+      "role": "remote verified parent"
+    },
     {
       "sha": "08d077620d7673af8899c8964da4f74c2b3e8553",
       "role": "remote verified parent"
@@ -1506,7 +1518,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "d3b8d5af97585bc988313ca9d724e6ee535f7b07",
+  "previous_research_base_commit_sha": "08d077620d7673af8899c8964da4f74c2b3e8553",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1514,9 +1526,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "08d077620d7673af8899c8964da4f74c2b3e8553",
-    "source_latest_completed_version": "v11.11",
-    "source_first_unfinished_version": "v11.12"
+    "source_main_sha": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+    "source_latest_completed_version": "v11.21",
+    "source_first_unfinished_version": "v11.22"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

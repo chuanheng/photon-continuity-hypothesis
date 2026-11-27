@@ -1,0 +1,26 @@
+{
+  "parent": "69809e667a19cfa24fa34a8a9f084f42910ce7ae",
+  "commands": [
+    "python -m v1122_v1131.model",
+    "python -m unittest -q v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v1122_v1131/reproduce.ipynb"
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "passed": 45,
+  "batch_tests": 10,
+  "regressions": 35,
+  "seed": null,
+  "inputs": "fixed deterministic model; no random draws",
+  "ci": "not run",
+  "environment": "PYTHONPATH=.:/tmp/kernel OPENBLAS_NUM_THREADS=1",
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1",
+  "notebook_matches": true
+}

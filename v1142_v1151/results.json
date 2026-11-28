@@ -7,7 +7,7 @@
     "fidelity": 1.0
   },
   "history_equivalence": {
-    "max_error": 0.0,
+    "max_error": 1.2425807332666531e-16,
     "output_trace": 0.9999999999999994
   },
   "process_memory": {
@@ -15,9 +15,10 @@
     "environment_reset_coherence": 0.6623981422193881
   },
   "causal_break": {
-    "system_reset_only": 0.32479628443877623,
+    "system_reset_only": 0.8138784566625339,
     "environment_reset": 0.6623981422193881,
-    "difference": 0.33760185778061186
+    "both_reset": 0.8138784566625339,
+    "difference_after_system_repreparation": 0.0
   },
   "cross_kerr": {
     "coherence": 0.8138784566625339,
@@ -47,4 +48,3 @@
     ]
   }
 }
-

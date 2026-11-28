@@ -170,3 +170,5 @@ Two time-bin copies can activate mode entanglement under a local-particle-number
 ## v11.42–v11.51 revision note
 
 An explicit inaccessible label reduces to ordinary partial distinguishability in Hong–Ou–Mandel interference. Energy-preserving SWAP storage reproduces absorption and re-emission, while an unmanipulated quantum label is operationally identical to quasi-static classical phase noise for every system-control history. A silent label is erased operationally by the partial trace. Making the hypothesis testable therefore requires an exchange-symmetric accessible coupling, a cross-absorption mapping, and a positive operational distance from a calibrated complete standard family. None is presently supplied.
+
+[v11.52–v11.61](../v1152_v1161/manuscript_zh.md)　普通材料辅助路径在三模环内产生可观测的合成磁通。交换端口可见方向差，测量全部时刻仍只识别施加在同一边上的相位总和。附勘误：v11.46 无条件重制备后的 X 为 .81387846，同时刷新环境亦然；v11.44 改为独立量子演化。v11.52 的槽编号算例与 v11.41 重合，归档保留原编号。

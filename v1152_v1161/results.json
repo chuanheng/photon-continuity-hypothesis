@@ -1,5 +1,21 @@
 {
+  "tree_gauge": 2.7755575615628914e-16,
+  "flux_spectrum": [
+    -1.3733889772578718,
+    -0.5724131469050296,
+    1.9458021241629009
+  ],
+  "direction": -0.4264556988881214,
+  "short_time": -1.2884344081490366,
+  "material_elimination": 1.3877787807814457e-16,
+  "dark_leak": 0.06936836702866167,
+  "efficiency": [
+    0.07579391067349323,
+    1.6653345369377348e-16
+  ],
+  "heldout": 0.0,
   "exchange_symmetry": {
+    "invariant_dimension": 10,
     "slot_commutator": 2.8284271247461903,
     "collective_commutator": 0.0
   },
@@ -8,4 +24,3 @@
     "pair_commutator": 2.8284271247461903
   }
 }
-

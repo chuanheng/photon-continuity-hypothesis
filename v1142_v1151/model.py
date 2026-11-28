@@ -32,13 +32,23 @@ def hidden_and_classical_histories(seed=SEED, steps=5, theta=.31):
         branches.append(u@initial@u.conj().T)
     classical=sum(branches)/2
     # Quantum label is a coherent |+> control; tracing it gives the same two branches.
-    quantum=sum(branches)/2
+    joint = np.kron(np.ones((2, 2))/2, initial)
+    coupling = expm(-1j * theta * np.kron(Z, Z))
+    for control in controls:
+        step = coupling @ np.kron(I2, control)
+        joint = step @ joint @ step.conj().T
+    quantum = np.trace(joint.reshape(2, 2, 2, 2), axis1=0, axis2=2)
     return float(np.max(abs(quantum-classical))), classical
 
 def reset_witness(theta=.31):
     static=math.cos(4*theta)
     environment_reset=math.cos(2*theta)**2
-    system_reset_only=static
+    plus = (I2 + X)/2
+    coupling = expm(-1j * theta * np.kron(Z, Z))
+    after = coupling @ np.kron(plus, plus) @ coupling.conj().T
+    environment = np.trace(after.reshape(2,2,2,2), axis1=1, axis2=3)
+    fresh = coupling @ np.kron(environment, plus) @ coupling.conj().T
+    system_reset_only = float(np.trace(fresh @ np.kron(I2, X)).real)
     return static, environment_reset, system_reset_only
 
 def cross_kerr_channel(theta=.31):
@@ -87,7 +97,7 @@ def run():
             'storage':{'fidelity':swap_storage_fidelity(pure)},
             'history_equivalence':{'max_error':hist_error,'output_trace':float(np.trace(history_output).real)},
             'process_memory':{'static_coherence':static,'environment_reset_coherence':env_reset},
-            'causal_break':{'system_reset_only':sys_reset,'environment_reset':env_reset,'difference':abs(sys_reset-env_reset)},
+            'causal_break':{'system_reset_only':sys_reset,'environment_reset':env_reset,'both_reset':coherence,'difference_after_system_repreparation':abs(sys_reset-coherence)},
             'cross_kerr':{'coherence':coherence,'choi_min_eigenvalue':float(min(choi_eigs))},
             'convex_refit':{'max_error':convex_error,'settings':len(candidate)},
             'calibration':{'restricted_l2':restricted,'expanded_l2':expanded},

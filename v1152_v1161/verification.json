@@ -1,8 +1,23 @@
 {
-  "parent": "eba26f93fc0a9da5e86c2463da07b9b32bb2bc88",
-  "commands": ["python -m v1152_v1161.model", "python -m unittest -q v1152_v1161.test_model v1142_v1151.test_model v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model"],
-  "exit_codes": [0, 0], "python": "3.12.14", "numpy": "2.3.5", "scipy": "1.17.0",
-  "passed": 67, "batch_tests": 2, "regressions": 65, "seed": null,
-  "inputs": "deterministic matrices; no random draws", "ci": "not run",
-  "evidence_scope": "partial checkpoint; no notebook required before ten completed rounds; no real data"
+  "parent": "494208f6666d2338a0e25e11d71a19168095c928",
+  "commands": [
+    "python -m v1152_v1161.model",
+    "python -m unittest -q v1152_v1161.test_model v1142_v1151.test_model v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+    "python -Xfrozen_modules=off tools/execute_research_notebook.py v1152_v1161/reproduce.ipynb"
+  ],
+  "passed": 75,
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seed": 115261,
+  "environment": "PYTHONPATH=.:/tmp/pchrun OPENBLAS_NUM_THREADS=1",
+  "ci": "not run",
+  "notebook_matches": true,
+  "ipykernel": "7.4.0",
+  "nbformat": "5.11.1"
 }

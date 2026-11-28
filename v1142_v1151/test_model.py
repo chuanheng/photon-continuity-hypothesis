@@ -13,7 +13,7 @@ class IdentityAuditTests(unittest.TestCase):
     def test_static_memory(self):
         static,reset,_=reset_witness(); self.assertNotAlmostEqual(static,reset)
     def test_system_break_not_environment_break(self):
-        static,reset,system=reset_witness(); self.assertEqual(static,system); self.assertNotEqual(reset,system)
+        static,reset,system=reset_witness(); self.assertAlmostEqual(system,np.cos(.62)); self.assertNotAlmostEqual(static,system); self.assertAlmostEqual(reset,system**2)
     def test_cross_kerr_cp(self):
         _,eigs=cross_kerr_channel(); self.assertGreaterEqual(min(eigs),-1e-14)
     def test_convex_refit(self): self.assertLess(convex_refit()[0],1e-14)

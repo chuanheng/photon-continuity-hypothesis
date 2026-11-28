@@ -5,13 +5,13 @@
   "default_branch": "main",
   "reviewed_on": "2026-11-28",
   "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "a9fb42a38122b2c0b893d80f0617191a99847706",
-  "latest_completed_version": "v11.71",
-  "latest_completed_version_evidence": "v1162_v1171/README.md",
+  "research_base_commit_sha": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
+  "latest_completed_version": "v11.81",
+  "latest_completed_version_evidence": "v1172_v1181/README.md",
   "next_batch": {
-    "first_version": "v11.72",
-    "last_version": "v11.81",
-    "first_unfinished_version": "v11.72",
+    "first_version": "v11.82",
+    "last_version": "v11.91",
+    "first_unfinished_version": "v11.82",
     "status": "planned",
     "roadmap": "docs/research_roadmap.md"
   },
@@ -855,6 +855,14 @@
       "index": "v1162_v1171/README.md",
       "notebook": "v1162_v1171/reproduce.ipynb",
       "verification": "v1162_v1171/verification.json"
+    },
+    {
+      "first_version": "v11.72",
+      "last_version": "v11.81",
+      "source_parent_sha": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
+      "index": "v1172_v1181/README.md",
+      "notebook": "v1172_v1181/reproduce.ipynb",
+      "verification": "v1172_v1181/verification.json"
     }
   ],
   "early_history": {
@@ -869,8 +877,8 @@
     "open_questions": [
       {
         "versions": [
-          "v11.72",
-          "v11.81"
+          "v11.82",
+          "v11.91"
         ],
         "status": "planned",
         "roadmap": "docs/research_roadmap.md"
@@ -1123,13 +1131,13 @@
     },
     "github_combined_status": "no_reported_statuses_at_research_base",
     "current_batch": {
-      "parent": "a9fb42a38122b2c0b893d80f0617191a99847706",
+      "parent": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
       "commands": [
-        "python -m v1162_v1171.model",
-        "python -m unittest -q v1162_v1171.test_model v1152_v1161.test_model v1142_v1151.test_model v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1162_v1171/reproduce.ipynb"
+        "python -m v1172_v1181.model",
+        "python -m unittest -q v1172_v1181.test_model v1162_v1171.test_model v1152_v1161.test_model v1142_v1151.test_model v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1172_v1181/reproduce.ipynb"
       ],
-      "passed": 85,
+      "passed": 95,
       "exit_codes": [
         0,
         0,
@@ -1138,7 +1146,7 @@
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "seed": 116271,
+      "seed": 0,
       "environment": "PYTHONPATH=.:/tmp/pchrun OPENBLAS_NUM_THREADS=1",
       "ci": "not run",
       "notebook_matches": true,
@@ -1158,13 +1166,13 @@
       "command": "python -m unittest -v v372_v381.test_model v382_v391.test_model v392_v401.test_model v402_v411.test_model v412_v421.test_model v422_v431.test_model v432_v441.test_model"
     },
     "latest_checkpoint": {
-      "parent": "a9fb42a38122b2c0b893d80f0617191a99847706",
+      "parent": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
       "commands": [
-        "python -m v1162_v1171.model",
-        "python -m unittest -q v1162_v1171.test_model v1152_v1161.test_model v1142_v1151.test_model v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
-        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1162_v1171/reproduce.ipynb"
+        "python -m v1172_v1181.model",
+        "python -m unittest -q v1172_v1181.test_model v1162_v1171.test_model v1152_v1161.test_model v1142_v1151.test_model v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model",
+        "python -Xfrozen_modules=off tools/execute_research_notebook.py v1172_v1181/reproduce.ipynb"
       ],
-      "passed": 85,
+      "passed": 95,
       "exit_codes": [
         0,
         0,
@@ -1173,7 +1181,7 @@
       "python": "3.12.14",
       "numpy": "2.3.5",
       "scipy": "1.17.0",
-      "seed": 116271,
+      "seed": 0,
       "environment": "PYTHONPATH=.:/tmp/pchrun OPENBLAS_NUM_THREADS=1",
       "ci": "not run",
       "notebook_matches": true,
@@ -1182,6 +1190,10 @@
     }
   },
   "commit_history": [
+    {
+      "sha": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
+      "role": "remote verified source"
+    },
     {
       "sha": "a9fb42a38122b2c0b893d80f0617191a99847706",
       "role": "remote verified source"
@@ -1568,7 +1580,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "494208f6666d2338a0e25e11d71a19168095c928",
+  "previous_research_base_commit_sha": "a9fb42a38122b2c0b893d80f0617191a99847706",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1576,9 +1588,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "a9fb42a38122b2c0b893d80f0617191a99847706",
-    "source_latest_completed_version": "v11.61",
-    "source_first_unfinished_version": "v11.62"
+    "source_main_sha": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
+    "source_latest_completed_version": "v11.71",
+    "source_first_unfinished_version": "v11.72"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

@@ -4,16 +4,31 @@
   "repository": "chuanheng/photon-continuity-hypothesis",
   "default_branch": "main",
   "reviewed_on": "2026-11-28",
-  "checkpoint_kind": "complete_batch",
-  "research_base_commit_sha": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
+  "checkpoint_kind": "partial_batch",
+  "research_base_commit_sha": "44eb87750735933d4aca9db1774827a0828ab9e0",
   "latest_completed_version": "v11.81",
   "latest_completed_version_evidence": "v1172_v1181/README.md",
   "next_batch": {
     "first_version": "v11.82",
     "last_version": "v11.91",
-    "first_unfinished_version": "v11.82",
-    "status": "planned",
-    "roadmap": "docs/research_roadmap.md"
+    "first_unfinished_version": "v11.86",
+    "status": "partial",
+    "roadmap": "docs/research_roadmap.md",
+    "completed_rounds": [
+      "v11.82",
+      "v11.83",
+      "v11.84",
+      "v11.85"
+    ],
+    "remaining": [
+      "v11.86",
+      "v11.87",
+      "v11.88",
+      "v11.89",
+      "v11.90",
+      "v11.91"
+    ],
+    "verification": "v1182_v1191/verification.json"
   },
   "completed_batches": [
     {
@@ -877,10 +892,10 @@
     "open_questions": [
       {
         "versions": [
-          "v11.82",
+          "v11.86",
           "v11.91"
         ],
-        "status": "planned",
+        "status": "partial",
         "roadmap": "docs/research_roadmap.md"
       }
     ],
@@ -1187,9 +1202,31 @@
       "notebook_matches": true,
       "ipykernel": "7.4.0",
       "nbformat": "5.11.1"
+    },
+    "partial_checkpoint": {
+      "parent": "44eb87750735933d4aca9db1774827a0828ab9e0",
+      "commands": [
+        "python -m v1182_v1191.model",
+        "python -m unittest -q v1182_v1191.test_model v1172_v1181.test_model v1162_v1171.test_model v1152_v1161.test_model v1142_v1151.test_model v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model"
+      ],
+      "passed": 99,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "seed": 0,
+      "environment": "PYTHONPATH=.:/tmp/pchrun OPENBLAS_NUM_THREADS=1",
+      "ci": "not run"
     }
   },
   "commit_history": [
+    {
+      "sha": "44eb87750735933d4aca9db1774827a0828ab9e0",
+      "role": "remote verified source"
+    },
     {
       "sha": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
       "role": "remote verified source"
@@ -1580,7 +1617,7 @@
     }
   ],
   "checkpoint_commit_location": "Containing main commit",
-  "previous_research_base_commit_sha": "a9fb42a38122b2c0b893d80f0617191a99847706",
+  "previous_research_base_commit_sha": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
   "workflow": {
     "rounds_per_checkpoint": 10,
     "target_rounds_per_run": 20,
@@ -1588,9 +1625,9 @@
     "executed_jupyter_required": true
   },
   "remote_verification": {
-    "source_main_sha": "603cbc7812ae3412bfcea5f8f93f3ee6078a0a57",
-    "source_latest_completed_version": "v11.71",
-    "source_first_unfinished_version": "v11.72"
+    "source_main_sha": "44eb87750735933d4aca9db1774827a0828ab9e0",
+    "source_latest_completed_version": "v11.81",
+    "source_first_unfinished_version": "v11.82"
   },
   "publication_provenance": {
     "v6.72-v6.81": [

@@ -1,0 +1,18 @@
+{
+  "parent": "44eb87750735933d4aca9db1774827a0828ab9e0",
+  "commands": [
+    "python -m v1182_v1191.model",
+    "python -m unittest -q v1182_v1191.test_model v1172_v1181.test_model v1162_v1171.test_model v1152_v1161.test_model v1142_v1151.test_model v1132_v1141.test_model v1122_v1131.test_model v1112_v1121.test_model v1102_v1111.test_model v1092_v1101.test_model v1082_v1091.test_model"
+  ],
+  "passed": 99,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seed": 0,
+  "environment": "PYTHONPATH=.:/tmp/pchrun OPENBLAS_NUM_THREADS=1",
+  "ci": "not run"
+}
